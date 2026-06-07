@@ -1,0 +1,26 @@
+---
+// src/components/ProductCard.astro
+export interface Props {
+  name: string;
+  price: string;
+  category: string;
+  image?: string;
+  href: string;
+}
+const { name, price, category, image = '/images/placeholder.jpg', href } = Astro.props;
+---
+<a href={href} class="product-card group">
+  <div class="aspect-[3/4] bg-cream overflow-hidden">
+    <img 
+      src={image} 
+      alt={name}
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      loading="lazy"
+    />
+  </div>
+  <div class="p-3 sm:p-4">
+    <span class="text-xs text-brand-600 uppercase tracking-wider">{category}</span>
+    <h3 class="font-display font-semibold text-gray-900 mt-1 text-sm sm:text-base">{name}</h3>
+    <p class="text-sm text-gray-600 mt-1">${price}</p>
+  </div>
+</a>

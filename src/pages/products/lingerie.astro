@@ -1,0 +1,22 @@
+---
+// src/pages/products/lingerie.astro
+import ProductLayout from '../../layouts/ProductLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+
+const products = [
+  { name: 'Lace Embrace Bralette', price: '48.00', category: 'Lingerie', href: '/products/lingerie/lace-embrace' },
+  { name: 'Mesh Seduction Set', price: '72.00', category: 'Lingerie', href: '/products/lingerie/mesh-seduction' },
+  { name: 'Tulle Romance Babydoll', price: '55.00', category: 'Lingerie', href: '/products/lingerie/tulle-romance' },
+  { name: 'Satin Corset Top', price: '62.00', category: 'Lingerie', href: '/products/lingerie/satin-corset' },
+];
+---
+<ProductLayout title="Lingerie Collection" description="Explore our lingerie collection — bralettes, sets, babydolls, and more. Designed for confidence." category="Lingerie">
+  <h1 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Lingerie</h1>
+  <p class="text-gray-600 mb-10">Bralettes, sets, babydolls, and more — for every mood and moment.</p>
+
+  <div class="product-grid">
+    {products.map(product => (
+      <ProductCard {...product} />
+    ))}
+  </div>
+</ProductLayout>

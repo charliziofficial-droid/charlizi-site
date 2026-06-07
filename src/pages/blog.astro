@@ -1,0 +1,35 @@
+---
+// src/pages/blog.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const blogPosts = [
+  { title: 'How to Find Your Perfect Bralette Fit', date: '2026-06-01', desc: 'A complete guide to measuring, sizing, and choosing the right bralette for your body type.', href: '/blog/perfect-bralette-fit' },
+  { title: '5 Sleepwear Trends for Summer', date: '2026-05-25', desc: 'From silky slips to breathable cottons — the hottest sleepwear trends this season.', href: '/blog/sleepwear-trends-summer' },
+  { title: 'Caring for Lace: A Simple Guide', date: '2026-05-18', desc: 'Keep your favorite lace pieces looking beautiful with these easy care tips.', href: '/blog/caring-for-lace' },
+];
+---
+<BaseLayout title="Journal" description="Charlizi Journal — style guides, fit tips, and inspiration for your everyday elegance.">
+  <div class="container-site py-12">
+    <nav class="text-sm text-gray-500 mb-8">
+      <a href="/" class="hover:text-brand-600">Home</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900 font-medium">Journal</span>
+    </nav>
+
+    <h1 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Journal</h1>
+    <p class="text-gray-600 mb-10">Style guides, fit tips, and inspiration.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {blogPosts.map(post => (
+        <a href={post.href} class="group">
+          <div class="aspect-[4/3] bg-cream rounded-lg mb-4 overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-brand-100 to-brand-200 group-hover:scale-105 transition-transform duration-500"></div>
+          </div>
+          <time class="text-xs text-gray-500">{post.date}</time>
+          <h2 class="font-display font-semibold text-lg text-gray-900 mt-1 group-hover:text-brand-600 transition-colors">{post.title}</h2>
+          <p class="text-sm text-gray-600 mt-2">{post.desc}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,22 @@
+---
+// src/components/Newsletter.astro
+---
+<section class="container-site py-16 md:py-24">
+  <div class="bg-gradient-to-r from-brand-600 to-brand-700 rounded-2xl p-8 md:p-16 text-center text-white">
+    <h2 class="text-2xl md:text-3xl font-display font-bold">Join the Inner Circle</h2>
+    <p class="mt-4 text-white/80 max-w-md mx-auto">
+      Be the first to know about new drops, exclusive offers, and styling tips.
+    </p>
+    <form class="mt-8 max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+      <input 
+        type="email" 
+        placeholder="Your email address" 
+        class="flex-1 px-5 py-3 rounded-full text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+        required
+      />
+      <button type="submit" class="btn bg-white text-brand-700 hover:bg-brand-50 whitespace-nowrap">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
