@@ -1,22 +1,87 @@
 ---
 // src/components/Newsletter.astro
 ---
+
 <section class="container-site py-16 md:py-24">
-  <div class="bg-gradient-to-r from-brand-600 to-brand-700 rounded-2xl p-8 md:p-16 text-center text-white">
+  <div class="bg-gradient-to-r from-rose to-rose-dark rounded-2xl p-8 md:p-16 text-center text-white">
     <h2 class="text-2xl md:text-3xl font-display font-bold">Join the Inner Circle</h2>
     <p class="mt-4 text-white/80 max-w-md mx-auto">
       Be the first to know about new drops, exclusive offers, and styling tips.
     </p>
-    <form class="mt-8 max-w-md mx-auto flex flex-col sm:flex-row gap-3">
+    <form 
+      class="mt-8 max-w-md mx-auto flex flex-col sm:flex-row gap-3"
+      action="https://api.omnisend.com/v3/contacts" 
+      method="POST"
+      id="newsletter-form"
+    >
+      <input type="hidden" name="status" value="subscribed" />
+      <input type="hidden" name="statuses" value='{"email":"subscribed"}' />
       <input 
         type="email" 
+        name="email"
         placeholder="Your email address" 
         class="flex-1 px-5 py-3 rounded-full text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
         required
       />
-      <button type="submit" class="btn bg-white text-brand-700 hover:bg-brand-50 whitespace-nowrap">
+      <button type="submit" class="btn bg-white text-rose-dark hover:bg-rose-light hover:text-white whitespace-nowrap">
         Subscribe
       </button>
     </form>
+    <p id="newsletter-message" class="mt-4 text-white/70 text-sm hidden"></p>
   </div>
 </section>
+
+<script>
+  const form = document.getElementById('newsletter-form');
+  const message = document.getElementById('newsletter-message');
+  
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const email = form.querySelector('[name="email"]').value;
+    const button = form.querySelector('button');
+    const originalText = button.textContent;
+    
+    button.disabled = true;
+    button.textContent = 'Subscribing...';
+    message.classList.add('hidden');
+    
+    try {
+      const res = await fetch('https://api.omnisend.com/v3/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-API-KEY': '68b46dd117ed960e3182fb2f-IJCvx8OKr7TuQfazOXyWbYo7tb1Quow4u8Jx4Twcvm2X34r4Au'
+        },
+        body: JSON.stringify({
+          email: email,
+          status: 'subscribed',
+          statuses: { email: 'subscribed' },
+          tags: ['charlizi-website'],
+          source: 'website'
+        })
+      });
+      
+      if (res.ok) {
+        message.textContent = '🎉 Thank you! You\'re now subscribed.';
+        message.className = 'mt-4 text-green-200 text-sm';
+        form.querySelector('[name="email"]').value = '';
+      } else {
+        const data = await res.json().catch(() => ({}));
+        if (data.errors && data.errors[0]?.title === 'already exists') {
+          message.textContent = '💌 You\'re already subscribed!';
+        } else {
+          message.textContent = 'Something went wrong. Please try again.';
+        }
+        message.className = 'mt-4 text-yellow-200 text-sm';
+      }
+    } catch (err) {
+      message.textContent = 'Network error. Please try again.';
+      message.className = 'mt-4 text-red-200 text-sm';
+    }
+    
+    button.disabled = false;
+    button.textContent = originalText;
+    message.classList.remove('hidden');
+  });
+</script>
