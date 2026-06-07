@@ -1,48 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --color-blush: #fce4ec;
-  --color-cream: #faf5f0;
+@import "tailwindcss";
+@theme {
+  --color-rose: #e8a0b4;
+  --color-rose-light: #f2c4d0;
+  --color-rose-dark: #c47a8e;
+  --color-ivory: #faf5ef;
+  --color-ivory-dark: #f0e6d8;
+  --color-charcoal: #2c2c2c;
+  --color-warm-gray: #8a7f7a;
+  --color-cream: #fff9f5;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  @apply font-body text-charcoal bg-white antialiased;
-}
-
-h1, h2, h3, h4 {
-  @apply font-display;
-}
-
-/* Mobile-first responsive containers */
-.container-site {
-  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
-}
-
-/* Product grid */
-.product-grid {
-  @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6;
-}
-
-/* Card styling */
-.product-card {
-  @apply bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300;
-}
-
-/* Button base */
-.btn {
-  @apply inline-block px-6 py-3 rounded-full font-medium text-sm transition-all duration-200;
-}
-
-.btn-primary {
-  @apply btn bg-brand-600 text-white hover:bg-brand-700;
-}
-
-.btn-outline {
-  @apply btn border-2 border-brand-600 text-brand-600 hover:bg-brand-600 hover:text-white;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-charcoal);
+    background-color: var(--color-cream);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
 }

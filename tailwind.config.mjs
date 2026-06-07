@@ -1,30 +1,3 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx}'],
-  theme: {
-    extend: {
-      colors: {
-        brand: {
-          50: '#fdf2f8',
-          100: '#fce7f3',
-          200: '#fbcfe8',
-          300: '#f9a8d4',
-          400: '#f472b6',
-          500: '#ec4899',
-          600: '#db2777',
-          700: '#be185d',
-          800: '#9d174d',
-          900: '#831843',
-        },
-        blush: '#fce4ec',
-        cream: '#faf5f0',
-        charcoal: '#333333',
-      },
-      fontFamily: {
-        display: ['Playfair Display', 'Georgia', 'serif'],
-        body: ['Inter', 'system-ui', 'sans-serif'],
-      },
-    },
-  },
-  plugins: [],
-};
+const { default: tailwindcss } = await import('@tailwindcss/vite');
+
+export default tailwindcss;
