@@ -13,176 +13,90 @@
       config: {
         backend: {
           name: 'github',
-          repo: 'kate-viomisha/charlizi-site',
+          repo: 'charliziofficial-droid/charlizi-site',
           branch: 'main',
           base_url: 'https://api.github.com',
+          auth_endpoint: 'https://charlizi-site.vercel.app/api/auth',
         },
+        local_backend: true,
         media_folder: 'public/images',
         public_folder: '/images',
         collections: [
           {
-            name: 'site',
-            label: '网站基本信息',
-            label_singular: '基本信息',
+            name: 'site', label: '网站基本信息',
             files: [
-              {
-                name: 'site_content',
-                label: '站点内容 (首页文案/品牌/工厂信息)',
-                file: 'src/data/site-content.json',
-                description: '管理首页文案、品牌名称、工厂统计数据',
+              { name: 'content', label: '站点内容', file: 'src/data/site-content.json',
                 fields: [
-                  { label: '品牌名称', name: 'brandName', widget: 'string', default: 'Charlizi' },
-                  { label: '品牌副标题', name: 'brandTagline', widget: 'string', default: 'Factory Direct' },
-                  { label: '首页大标题', name: 'heroTitle', widget: 'text', default: 'Your Intimate Apparel OEM/ODM Partner' },
-                  { label: '首页副标题', name: 'heroSubtitle', widget: 'text', default: '200+ skilled workers. BSCI & OEKO-TEX certified.' },
-                  { label: '首页标语', name: 'heroTagline', widget: 'string', default: 'Direct from Factory | Shenzhen, China' },
-                  { label: '工人数', name: 'workers', widget: 'string', default: '200+' },
-                  { label: '工厂面积', name: 'area', widget: 'string', default: '5,000㎡' },
-                  { label: '年产量', name: 'annualOutput', widget: 'string', default: '5M+' },
-                  { label: '月出货量', name: 'monthlyContainers', widget: 'string', default: '40+' },
-                  { label: '成立年份', name: 'founded', widget: 'string', default: '2018' },
-                  { label: 'LOGO 图标 SVG', name: 'logoSvg', widget: 'text', default: 'M12 3c-1 0-3 2-3 4s2 3 4 3 3-1 3-3-2-4-4-4z M4 21c0-4 4-8 8-8s8 4 8 8' },
-                ],
+                  { label: '品牌名称', name: 'brandName', widget: 'string' },
+                  { label: '品牌副标题', name: 'brandTagline', widget: 'string' },
+                  { label: '首页大标题', name: 'heroTitle', widget: 'text' },
+                  { label: '首页副标题', name: 'heroSubtitle', widget: 'text' },
+                  { label: '首页标语', name: 'heroTagline', widget: 'string' },
+                  { label: 'Logo SVG路径', name: 'logoSvg', widget: 'text' },
+                  { label: '工人数', name: 'workers', widget: 'string' },
+                  { label: '工厂面积', name: 'area', widget: 'string' },
+                  { label: '年产量', name: 'annualOutput', widget: 'string' },
+                  { label: '月出货量', name: 'monthlyContainers', widget: 'string' },
+                  { label: '成立年份', name: 'founded', widget: 'string' },
+                ]
               },
-              {
-                name: 'factory_images',
-                label: '网站图片 (首页大图/品牌标识)',
-                file: 'src/data/images.json',
-                description: '管理网站上使用的图片路径',
+              { name: 'images', label: '图片', file: 'src/data/images.json',
                 fields: [
-                  { label: '首页大图', name: 'heroImage', widget: 'image', default: '/images/hero-image.png' },
-                  { label: '默认产品图', name: 'defaultImage', widget: 'image', default: '/images/default.png' },
-                  { label: '公司 LOGO 图片 (选填-如用图片LOGO取代SVG)', name: 'logoImage', widget: 'image', required: false },
-                ],
+                  { label: '首页大图', name: 'heroImage', widget: 'image' },
+                  { label: '默认产品图', name: 'defaultImage', widget: 'image' },
+                ]
               },
-            ],
+            ]
           },
           {
-            name: 'homepage',
-            label: '首页区域',
-            label_singular: '区域',
-            files: [
-              {
-                name: 'stats_section',
-                label: '数据统计区',
-                file: 'src/data/stats.json',
-                fields: [
-                  { label: '区块标题', name: 'title', widget: 'string', default: 'Factory Capacity at a Glance' },
-                  { label: '区块标语', name: 'tagline', widget: 'string', default: 'By the Numbers' },
-                  {
-                    label: '统计数据',
-                    name: 'stats',
-                    widget: 'list',
-                    fields: [
-                      { label: '数字', name: 'amount', widget: 'string' },
-                      { label: '名称', name: 'title', widget: 'string' },
-                      { label: '描述', name: 'desc', widget: 'string' },
-                    ],
-                  },
-                ],
-              },
-              {
-                name: 'production_steps',
-                label: '生产流程',
-                file: 'src/data/production-steps.json',
-                fields: [
-                  { label: '区块标题', name: 'title', widget: 'string', default: 'From Design to Delivery' },
-                  {
-                    label: '生产步骤',
-                    name: 'steps',
-                    widget: 'list',
-                    fields: [
-                      { label: '步骤编号', name: 'step', widget: 'string' },
-                      { label: '步骤名称', name: 'title', widget: 'string' },
-                      { label: '耗时', name: 'duration', widget: 'string' },
-                      { label: '描述', name: 'desc', widget: 'text' },
-                    ],
-                  },
-                ],
-              },
-              {
-                name: 'faq',
-                label: '常见问题',
-                file: 'src/data/faq.json',
-                fields: [
-                  { label: '区块标题', name: 'title', widget: 'string', default: 'Frequently Asked Questions' },
-                  {
-                    label: '问答列表',
-                    name: 'items',
-                    widget: 'list',
-                    fields: [
-                      { label: '问题', name: 'q', widget: 'string' },
-                      { label: '答案', name: 'a', widget: 'markdown' },
-                    ],
-                  },
-                ],
-              },
-            ],
+            name: 'products', label: '产品管理', files: [{
+              name: 'categories', label: '产品分类', file: 'src/data/products.json',
+              fields: [{ label: '分类列表', name: 'categories', widget: 'list', fields: [
+                { label: 'ID', name: 'id', widget: 'string' },
+                { label: '名称', name: 'name', widget: 'string' },
+                { label: 'URL标识', name: 'slug', widget: 'string' },
+                { label: '描述', name: 'description', widget: 'text' },
+                { label: '图片', name: 'image', widget: 'image', required: false },
+                { label: '子分类', name: 'subCategories', widget: 'text' },
+                { label: '规格', name: 'specs', widget: 'text' },
+                { label: 'MOQ', name: 'moq', widget: 'string' },
+                { label: '交期', name: 'leadTime', widget: 'string' },
+                { label: '标签1', name: 'badge1', widget: 'string' },
+                { label: '标签2', name: 'badge2', widget: 'string' },
+              ]}]
+            }]
           },
           {
-            name: 'products',
-            label: '产品管理',
-            label_singular: '产品',
-            files: [
-              {
-                name: 'product_categories',
-                label: '产品分类',
-                file: 'src/data/products.json',
-                description: '管理所有产品分类及其详细信息',
-                fields: [
-                  {
-                    label: '产品分类',
-                    name: 'categories',
-                    widget: 'list',
-                    fields: [
-                      { label: 'ID (英文标识, 如 bra-sets)', name: 'id', widget: 'string' },
-                      { label: '产品名称', name: 'name', widget: 'string' },
-                      { label: 'URL标识 (小写英文)', name: 'slug', widget: 'string' },
-                      { label: '描述文案', name: 'description', widget: 'text' },
-                      { label: '产品图片', name: 'image', widget: 'image', required: false },
-                      { label: '子分类 (逗号分隔)', name: 'subCategories', widget: 'text' },
-                      { label: '关键规格 (每行一条)', name: 'specs', widget: 'text' },
-                      { label: '最小起订量', name: 'moq', widget: 'string' },
-                      { label: '交期(天)', name: 'leadTime', widget: 'string' },
-                      { label: '标签1', name: 'badge1', widget: 'string' },
-                      { label: '标签2', name: 'badge2', widget: 'string' },
-                    ],
-                  },
-                ],
-              },
-            ],
-          },
-          {
-            name: 'certifications',
-            label: '资质认证',
-            file: 'src/data/certifications.json',
-            fields: [
-              { label: '区块标题', name: 'title', widget: 'string', default: 'Certifications & Compliance' },
-              {
-                label: '认证列表',
-                name: 'certifications',
-                widget: 'list',
-                fields: [
-                  { label: '认证名称', name: 'name', widget: 'string' },
-                  { label: '描述', name: 'desc', widget: 'text' },
-                ],
-              },
-            ],
-          },
-          {
-            name: 'post',
-            label: '博客文章',
-            label_singular: '文章',
-            folder: 'src/content/post',
-            create: true,
-            identifier_field: 'title',
+            name: 'faq', label: 'FAQ', file: 'src/data/faq.json',
             fields: [
               { label: '标题', name: 'title', widget: 'string' },
-              { label: '发布日', name: 'date', widget: 'datetime', date_format: true, time_format: false, format: 'YYYY-MM-DD' },
+              { label: '问答', name: 'items', widget: 'list', fields: [
+                { label: '问题', name: 'q', widget: 'string' },
+                { label: '答案', name: 'a', widget: 'markdown' },
+              ]}
+            ]
+          },
+          {
+            name: 'stats', label: '统计数据', file: 'src/data/stats.json',
+            fields: [
+              { label: '标题', name: 'title', widget: 'string' },
+              { label: '标语', name: 'tagline', widget: 'string' },
+              { label: '统计项', name: 'stats', widget: 'list', fields: [
+                { label: '数字', name: 'amount', widget: 'string' },
+                { label: '名称', name: 'title', widget: 'string' },
+                { label: '描述', name: 'desc', widget: 'string' },
+              ]}
+            ]
+          },
+          {
+            name: 'post', label: '博客文章', folder: 'src/content/post', create: true,
+            fields: [
+              { label: '标题', name: 'title', widget: 'string' },
+              { label: '日期', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD' },
               { label: '封面图', name: 'image', widget: 'image', required: false },
               { label: '摘要', name: 'excerpt', widget: 'text' },
               { label: '正文', name: 'body', widget: 'markdown' },
-            ],
+            ]
           },
         ],
       },
