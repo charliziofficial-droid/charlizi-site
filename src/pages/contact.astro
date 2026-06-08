@@ -1,34 +1,174 @@
 ---
-// src/pages/contact.astro
-import BaseLayout from '../layouts/BaseLayout.astro';
+import FactoryLayout from '../layouts/FactoryLayout.astro';
+import { productCategories } from '../data/products-b2b.js';
+const title = "Contact Charlizi Factory | Lingerie OEM/ODM Inquiry";
+const description = "Get in touch with Charlizi Factory. OEM/ODM inquiries, sampling requests, factory visits. We respond within 24 hours.";
+const quantityOptions = [
+  '200-500 pcs',
+  '500-1,000 pcs',
+  '1,000-3,000 pcs',
+  '3,000-10,000 pcs',
+  '10,000+ pcs',
+  'Not sure yet',
+];
+const marketOptions = [
+  'North America',
+  'Europe',
+  'Middle East',
+  'Southeast Asia',
+  'South America',
+  'Australia / Oceania',
+  'Africa',
+  'Global / Multi-region',
+];
+const categoryOptions = productCategories.map(c => c.name);
 ---
-<BaseLayout title="Contact Us" description="Get in touch with Charlizi. We'd love to hear from you.">
-  <div class="container-site py-12 max-w-2xl">
-    <nav class="text-sm text-gray-500 mb-8">
-      <a href="/" class="hover:text-brand-600">Home</a>
-      <span class="mx-2">/</span>
-      <span class="text-gray-900 font-medium">Contact</span>
+<FactoryLayout title={title} description={description}>
+  <div class="container-site py-12">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <span class="text-navy font-medium">Contact</span>
     </nav>
 
-    <h1 class="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-4">Get in Touch</h1>
-    <p class="text-gray-600 mb-10">Have a question or just want to say hello? We'd love to hear from you.</p>
+    <!-- Hero -->
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="section-label">Get in Touch</span>
+      <h1 class="section-title text-balance">Start Your OEM/ODM Project</h1>
+      <p class="section-desc mx-auto">Fill out the form below and our team will respond within <strong>24 hours</strong>. For urgent inquiries, reach us directly via WhatsApp or WeChat.</p>
+    </div>
 
-    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-6">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
-          <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm" />
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+      <!-- Form -->
+      <div class="lg:col-span-3">
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="card p-8 rounded-lg">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Full Name -->
+            <div>
+              <label for="name" class="block text-sm font-medium text-navy mb-1">Full Name <span class="text-red-400">*</span></label>
+              <input type="text" id="name" name="name" required
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm" />
+            </div>
+            <!-- Company Name -->
+            <div>
+              <label for="company" class="block text-sm font-medium text-navy mb-1">Company Name <span class="text-red-400">*</span></label>
+              <input type="text" id="company" name="company" required
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm" />
+            </div>
+            <!-- Email -->
+            <div>
+              <label for="email" class="block text-sm font-medium text-navy mb-1">Email Address <span class="text-red-400">*</span></label>
+              <input type="email" id="email" name="email" required
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm" />
+            </div>
+            <!-- WhatsApp/Phone -->
+            <div>
+              <label for="phone" class="block text-sm font-medium text-navy mb-1">WhatsApp / Phone</label>
+              <input type="tel" id="phone" name="phone"
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm" placeholder="Include country code" />
+            </div>
+            <!-- Product Category -->
+            <div>
+              <label for="category" class="block text-sm font-medium text-navy mb-1">Product Category <span class="text-red-400">*</span></label>
+              <select id="category" name="category" required
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
+                <option value="">Select category...</option>
+                {categoryOptions.map(cat => (
+                  <option value={cat}>{cat}</option>
+                ))}
+              </select>
+            </div>
+            <!-- Quantity Estimate -->
+            <div>
+              <label for="quantity" class="block text-sm font-medium text-navy mb-1">Quantity Estimate <span class="text-red-400">*</span></label>
+              <select id="quantity" name="quantity" required
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
+                <option value="">Select quantity...</option>
+                {quantityOptions.map(q => (
+                  <option value={q}>{q}</option>
+                ))}
+              </select>
+            </div>
+            <!-- Target Market -->
+            <div class="md:col-span-2">
+              <label for="market" class="block text-sm font-medium text-navy mb-1">Target Market</label>
+              <select id="market" name="market"
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
+                <option value="">Select market...</option>
+                {marketOptions.map(m => (
+                  <option value={m}>{m}</option>
+                ))}
+              </select>
+            </div>
+            <!-- Message -->
+            <div class="md:col-span-2">
+              <label for="message" class="block text-sm font-medium text-navy mb-1">Message Details <span class="text-red-400">*</span></label>
+              <textarea id="message" name="message" rows="5" required
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm resize-y"
+                placeholder="Describe your product requirements — style, fabric, size range, target price, or attach a tech pack..."></textarea>
+            </div>
+            <!-- File attach hint -->
+            <div class="md:col-span-2">
+              <p class="text-xs text-stone/70 flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg>
+                Attach files (tech pack, sketches, reference images) — we'll follow up via email to receive attachments securely.
+              </p>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary w-full mt-6 text-base py-4">
+            📩 Send Inquiry
+          </button>
+          <p class="text-xs text-stone/50 text-center mt-3">We respect your privacy. Your information will never be shared.</p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="lg:col-span-2 space-y-8">
+        <!-- Direct Contact -->
+        <div class="card p-6 rounded-lg">
+          <h3 class="text-sm font-semibold text-navy uppercase tracking-wider mb-4">Direct Contact</h3>
+          <div class="space-y-4">
+            <div>
+              <p class="text-xs text-stone uppercase tracking-wider">WhatsApp</p>
+              <a href="https://wa.me/861234567890" target="_blank" class="text-navy font-medium hover:text-accent transition-colors">+86 123 4567 890</a>
+            </div>
+            <div>
+              <p class="text-xs text-stone uppercase tracking-wider">WeChat</p>
+              <p class="text-navy font-medium">charlizi_factory</p>
+            </div>
+            <div>
+              <p class="text-xs text-stone uppercase tracking-wider">Email</p>
+              <a href="mailto:sales@charlizi.com" class="text-navy font-medium hover:text-accent transition-colors">sales@charlizi.com</a>
+            </div>
+          </div>
         </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-          <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm" />
+
+        <!-- Address -->
+        <div class="card p-6 rounded-lg">
+          <h3 class="text-sm font-semibold text-navy uppercase tracking-wider mb-4">Factory Address</h3>
+          <p class="text-sm text-stone leading-relaxed">
+            Charlizi Intimate Apparel Co., Ltd.<br />
+            No. 88, Industrial Avenue<br />
+            Buji Street, Longgang District<br />
+            Shenzhen, Guangdong Province<br />
+            China 518112
+          </p>
+          <p class="text-xs text-stone/60 mt-3">Factory visits welcome by appointment. Located in Shenzhen — the global hub for lingerie and apparel manufacturing.</p>
+        </div>
+
+        <!-- Viomisha -->
+        <div class="bg-cream rounded-lg p-6">
+          <div class="flex items-start gap-3">
+            <span class="text-2xl">📦</span>
+            <div>
+              <h3 class="text-sm font-semibold text-navy">Need Small Quantities?</h3>
+              <p class="text-sm text-stone mt-1">Visit <a href="https://viomisha.com" target="_blank" class="text-accent font-medium hover:underline">Viomisha.com</a> for small batch sampling, inventory testing, or retail quantities.</p>
+              <a href="https://viomisha.com" target="_blank" class="inline-block mt-3 btn-outline text-xs py-2 px-4">Visit Viomisha ↗</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
-        <textarea name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm"></textarea>
-      </div>
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
+    </div>
   </div>
-</BaseLayout>
+</FactoryLayout>

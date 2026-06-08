@@ -1,0 +1,72 @@
+---
+import FactoryLayout from '../layouts/FactoryLayout.astro';
+import { faqItems } from '../data/products-b2b.js';
+const title = "OEM/ODM FAQ | Lingerie Manufacturing Questions";
+const description = "Common questions about MOQ, lead time, payment, sampling, certifications, and OEM/ODM process. Charlizi Factory.";
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+};
+---
+<FactoryLayout title={title} description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)}></script>
+
+  <div class="container-site py-12">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <span class="text-navy font-medium">FAQ</span>
+    </nav>
+
+    <!-- Hero -->
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="section-label">Help Center</span>
+      <h1 class="section-title text-balance">OEM/ODM Questions</h1>
+      <p class="section-desc mx-auto">{description}</p>
+    </div>
+
+    <!-- Quick links -->
+    <div class="flex flex-wrap justify-center gap-2 mb-12">
+      <a href="#moq" class="btn-ghost text-sm">MOQ</a>
+      <a href="#sampling" class="btn-ghost text-sm">Sampling</a>
+      <a href="#leadtime" class="btn-ghost text-sm">Lead Time</a>
+      <a href="#payment" class="btn-ghost text-sm">Payment</a>
+      <a href="#certification" class="btn-ghost text-sm">Certifications</a>
+      <a href="#shipping" class="btn-ghost text-sm">Shipping</a>
+      <a href="#packaging" class="btn-ghost text-sm">Packaging</a>
+    </div>
+
+    <!-- FAQ Accordion -->
+    <div class="max-w-3xl mx-auto">
+      {faqItems.map((item, index) => (
+        <details class="group border-b border-gray-200 py-4 open:pb-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-navy font-medium text-base md:text-lg hover:text-accent transition-colors">
+            <span>{item.q}</span>
+            <svg class="w-5 h-5 text-slate/50 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </summary>
+          <p class="mt-4 text-stone leading-relaxed text-sm md:text-base">{item.a}</p>
+        </details>
+      ))}
+    </div>
+
+    <!-- Still have questions -->
+    <div class="bg-cream rounded-lg p-8 mt-16 text-center max-w-2xl mx-auto">
+      <h2 class="text-xl font-bold text-navy">Still have questions?</h2>
+      <p class="text-stone mt-2 text-sm">We respond within 24 hours. Get in touch for a detailed quote.</p>
+      <div class="flex flex-wrap justify-center gap-4 mt-6">
+        <a href="/contact" class="btn-primary">Contact Us</a>
+        <a href="/process" class="btn-outline">Production Process →</a>
+      </div>
+    </div>
+  </div>
+</FactoryLayout>
