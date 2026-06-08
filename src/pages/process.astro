@@ -1,75 +1,70 @@
 ---
-import PageLayout from '~/layouts/PageLayout.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
-import { productionSteps } from '~/data/b2b';
+import FactoryLayout from '../layouts/FactoryLayout.astro';
+import { productionSteps } from '../data/products-b2b.js';
+const title = "Lingerie Production Process | From Design to Delivery";
+const description = "Our 7-step production process: pattern making, sample, fabric sourcing, cutting, sewing, QC, packaging. OEM/ODM intimate apparel manufacturing.";
 ---
-<PageLayout
-  metadata={{
-    title: 'Lingerie Production Process | From Design to Delivery',
-    description: 'Our 7-step production process: pattern making, sample, fabric sourcing, cutting, sewing, QC, packaging. OEM/ODM intimate apparel manufacturing.',
-  }}
->
+<FactoryLayout title={title} description={description}>
   <div class="container-site py-12">
-    <nav class="text-xs text-stone/60 mb-8">
-      <a href="/" class="hover:text-accent">Home</a>
-      <span> / </span>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
       <span class="text-navy font-medium">Production Process</span>
     </nav>
 
-    <div class="max-w-2xl mb-12">
-      <span class="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Process</span>
-      <h1 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-4">How We Make Your Products</h1>
-      <p class="text-stone leading-relaxed">
-        From your tech pack to finished shipment — our 7-step production process ensures quality at every stage. Each step is managed by trained specialists with years of intimate apparel experience.
-      </p>
+    <!-- Hero -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="section-label">Manufacturing</span>
+      <h1 class="section-title text-balance">From Design to Delivery</h1>
+      <p class="section-desc mx-auto">{description}</p>
     </div>
 
-    <!-- Full Production Timeline -->
-    <div class="relative space-y-8 before:absolute before:left-[23px] before:top-8 before:bottom-0 before:w-[2px] before:bg-accent/20">
-      {productionSteps.map((s, i) => (
-        <div class="flex gap-6 items-start relative" key={s.step}>
-          <div class="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm shrink-0 z-10">{s.step}</div>
-          <div class="flex-1 pt-2">
-            <div class="flex items-center gap-3 mb-2">
-              <h2 class="text-lg font-bold text-navy">{s.title}</h2>
-              <span class="text-xs bg-navy/5 text-navy px-2 py-0.5">{s.duration}</span>
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Vertical line (desktop) -->
+      <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-200 -translate-x-1/2"></div>
+
+      {productionSteps.map((step, index) => (
+        <div class={`relative mb-12 lg:mb-20 ${index % 2 === 0 ? 'lg:pr-[55%]' : 'lg:pl-[55%] lg:text-right'}`}>
+          <!-- Step number badge -->
+          <div class="hidden lg:flex absolute left-1/2 top-0 -translate-x-1/2 w-14 h-14 bg-navy text-white rounded-full items-center justify-center font-bold text-lg z-10 shadow-md">
+            {step.step}
+          </div>
+
+          <!-- Content card -->
+          <div class={`card-hover p-6 md:p-8 rounded-lg ${index % 2 === 0 ? '' : 'lg:text-right'}`}>
+            <!-- Mobile step badge -->
+            <div class="lg:hidden flex items-center gap-3 mb-4">
+              <span class="w-10 h-10 bg-navy text-white rounded-full flex items-center justify-center font-bold text-sm">{step.step}</span>
+              <span class="text-xs text-accent font-medium uppercase tracking-wider">{step.duration}</span>
             </div>
-            <p class="text-sm text-stone leading-relaxed">{s.desc}</p>
+
+            <h3 class="text-xl md:text-2xl font-bold text-navy">{step.title}</h3>
+
+            <!-- Duration badge (desktop) -->
+            <span class="hidden lg:inline-block mt-2 text-xs text-accent font-medium uppercase tracking-wider bg-accent/10 px-3 py-1 rounded">{step.duration}</span>
+
+            <p class="text-stone mt-4 leading-relaxed">{step.desc}</p>
+
+            <!-- Step image -->
+            <div class="mt-6 aspect-[3/2] rounded-lg overflow-hidden border border-gray-100 shadow-sm">
+              <img src={`/factory/images/step-${step.step}.webp`} alt={step.title} class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
           </div>
         </div>
       ))}
     </div>
 
-    <!-- Timeline Summary -->
-    <div class="mt-16 p-8 bg-cream border border-gray-200">
-      <h3 class="text-xl font-bold text-navy mb-4">Total Lead Time</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-        <div class="p-4 bg-white">
-          <div class="text-3xl font-bold text-accent">7-10</div>
-          <div class="text-xs text-stone uppercase tracking-wider mt-1">Sample Days</div>
-        </div>
-        <div class="p-4 bg-white">
-          <div class="text-3xl font-bold text-accent">30-45</div>
-          <div class="text-xs text-stone uppercase tracking-wider mt-1">Bulk Production Days</div>
-        </div>
-        <div class="p-4 bg-white">
-          <div class="text-3xl font-bold text-accent">5-7</div>
-          <div class="text-xs text-stone uppercase tracking-wider mt-1">Shipping Days</div>
-        </div>
-      </div>
+    <!-- Total timeline summary -->
+    <div class="bg-navy text-white rounded-lg p-8 mt-8 text-center">
+      <p class="text-lg font-semibold">Total estimated timeline: <span class="text-accent-light">35-50 days</span> from sample approval to shipment</p>
+      <p class="text-sm text-white/60 mt-2">Accelerated timelines available for repeat orders and bulk production runs.</p>
     </div>
 
     <!-- CTA -->
-    <CallToAction
-      title="Start Your Production Journey"
-      subtitle="Send us your designs and we'll handle the rest."
-      callToAction={{
-        text: 'Get Started →',
-        href: '/contact',
-        variant: 'primary',
-        class: 'btn-accent',
-      }}
-    />
+    <div class="flex flex-wrap gap-4 justify-center mt-12">
+      <a href="/contact" class="btn-primary text-base px-8 py-4">📩 Start Your Project</a>
+      <a href="/faq" class="btn-outline text-base px-8 py-4">OEM/ODM FAQ →</a>
+    </div>
   </div>
-</PageLayout>
+</FactoryLayout>

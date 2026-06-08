@@ -1,0 +1,124 @@
+---
+import FactoryLayout from '../../layouts/FactoryLayout.astro';
+import { productCategories } from '../../data/products-b2b.js';
+const cat = productCategories.find(c => c.id === 'sleepwear');
+const title = "Custom Sleepwear Manufacturer | OEM Pajamas & Loungewear China";
+const description = "Custom sleepwear OEM manufacturer. Nightgowns, chemises, robes. Full pattern development. MOQ 300 pcs per design.";
+---
+<FactoryLayout title={title} description={description}>
+  <div class="container-site py-12">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/products">Products</a><span>/</span>
+      <span class="text-navy font-medium">{cat.name}</span>
+    </nav>
+
+    <!-- Custom Development Banner -->
+    <div class="bg-accent text-white rounded-lg p-8 mb-12 text-center">
+      <span class="inline-block bg-white/20 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded mb-4">Custom Development Only</span>
+      <h2 class="text-2xl md:text-3xl font-bold">This is a <span class="underline underline-offset-4 decoration-white/40">custom development</span> category</h2>
+      <p class="text-white/80 mt-3 max-w-2xl mx-auto">We do not carry stock or ready-made sleepwear. Every order starts with pattern making and sample development. Full OEM/ODM service from design to delivery.</p>
+      <div class="flex flex-wrap justify-center gap-4 mt-6">
+        <span class="bg-white/15 text-white px-4 py-2 rounded text-sm font-medium">MOQ: 300 pcs per design</span>
+        <span class="bg-white/15 text-white px-4 py-2 rounded text-sm font-medium">Lead Time: 35-50 Days</span>
+        <span class="bg-white/15 text-white px-4 py-2 rounded text-sm font-medium">Custom Pattern Making</span>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <span class="section-label">Category</span>
+        <h1 class="section-title text-balance">{cat.name}</h1>
+        <p class="section-desc max-w-xl">{cat.description}</p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="badge-navy">OEM/ODM</span>
+          <span class="badge-accent">Custom Development</span>
+          <span class="badge-navy">MOQ 300 pcs</span>
+          <span class="badge-accent">Pattern · Sample · Production</span>
+        </div>
+        <div class="flex flex-wrap gap-3 mt-8">
+          <a href="/contact" class="btn-primary">Start Development</a>
+          <a href="https://viomisha.com" target="_blank" class="btn-outline">📦 Small Batch Sample → Viomisha</a>
+        </div>
+      </div>
+      <div class="relative rounded-lg h-80 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-navy/5 to-accent/5">
+          <div class="absolute inset-0 opacity-[0.08]" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0,0,0,0.1) 20px, rgba(0,0,0,0.1) 21px)"></div>
+        </div>
+        <div class="relative h-full flex items-center justify-center">
+          <svg class="w-20 h-20 text-navy/10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="12" cy="12" r="8"/><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Development Process -->
+    <section class="mb-16">
+      <span class="section-label">Workflow</span>
+      <h2 class="section-title text-2xl md:text-3xl">How Custom Development Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+        <div class="card-hover p-6 rounded-lg text-center">
+          <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">1</div>
+          <h3 class="text-lg font-semibold text-navy mb-2">Tech Pack & Design</h3>
+          <p class="text-sm text-stone">Send us your tech pack, reference sample, or design sketch. We review and provide feedback within 48 hours.</p>
+        </div>
+        <div class="card-hover p-6 rounded-lg text-center">
+          <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">2</div>
+          <h3 class="text-lg font-semibold text-navy mb-2">Sample Development</h3>
+          <p class="text-sm text-stone">Pattern making, first sample, fit approval. Revisions included until you approve.</p>
+        </div>
+        <div class="card-hover p-6 rounded-lg text-center">
+          <div class="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">3</div>
+          <h3 class="text-lg font-semibold text-navy mb-2">Bulk Production</h3>
+          <p class="text-sm text-stone">Once sample is approved, we move to bulk production with grade-A QC at every stage.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="mb-16">
+      <span class="section-label">Specifications</span>
+      <h2 class="section-title text-2xl md:text-3xl">Production Details</h2>
+      <div class="card p-6 mt-8 rounded-lg max-w-xl">
+        <ul class="spec-list">
+          {cat.specs.map(spec => (
+            <li class="spec-item">
+              <span class="spec-value">✓ {spec}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <!-- Order info -->
+    <section class="bg-cream rounded-lg p-8 mb-16">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-sm font-semibold text-navy uppercase tracking-wider">MOQ</h3>
+          <p class="text-2xl font-bold text-accent mt-1">300 pcs</p>
+          <p class="text-xs text-stone mt-1">Per design. Custom development</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-navy uppercase tracking-wider">Lead Time</h3>
+          <p class="text-2xl font-bold text-accent mt-1">35-50 Days</p>
+          <p class="text-xs text-stone mt-1">Incl. pattern & sample development</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-navy uppercase tracking-wider">Payment</h3>
+          <p class="text-2xl font-bold text-accent mt-1">T/T, L/C</p>
+          <p class="text-xs text-stone mt-1">30% deposit + 70% before shipment</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTAs -->
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="/contact" class="btn-primary text-base px-8 py-4">📩 Start Your Custom Project</a>
+      <a href="https://viomisha.com" target="_blank" class="btn-outline text-base px-8 py-4">📦 Small Batch Sample → Viomisha</a>
+      <a href="/faq" class="btn-ghost text-base">FAQ →</a>
+    </div>
+  </div>
+</FactoryLayout>

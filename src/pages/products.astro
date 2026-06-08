@@ -1,0 +1,59 @@
+---
+// src/pages/products.astro — B2B Product Catalog Index
+import FactoryLayout from '../layouts/FactoryLayout.astro';
+import { productCategories } from '../data/products-b2b.js';
+---
+<FactoryLayout
+  title="Intimate Apparel Products | OEM Lingerie Catalog"
+  description="Browse our complete product catalog: bra sets, bras, plus size bras, panties, silicone bras, shapewear, and custom sleepwear. MOQ 200-300 pcs. OEM/ODM available."
+>
+  <div class="container-site py-12">
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <span class="text-navy font-medium">Products</span>
+    </nav>
+
+    <div class="max-w-3xl mb-12">
+      <span class="section-label">Product Catalog</span>
+      <h1 class="section-title">Full Range of Intimate Apparel</h1>
+      <p class="section-desc">
+        Explore our 7 product categories. All available for OEM/ODM production.
+        Small batch sampling available through our brand partner Viomisha.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {productCategories.map(cat => (
+        <a href={`/products/${cat.slug}`} class="card-hover group">
+          <div class="aspect-[16/10] bg-cream-dark overflow-hidden">
+            <div class="w-full h-full bg-gradient-to-br from-navy/[0.03] to-accent/[0.06] group-hover:scale-105 transition-transform duration-500"></div>
+          </div>
+          <div class="p-6">
+            <h2 class="font-semibold text-navy text-lg group-hover:text-accent transition-colors">{cat.name}</h2>
+            <p class="text-sm text-stone mt-2 leading-relaxed">{cat.description}</p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              {cat.subCategories.map(sc => (
+                <span class="text-[11px] px-2.5 py-1 bg-navy/5 text-navy/70 font-medium">{sc}</span>
+              ))}
+            </div>
+            {cat.id === 'sleepwear' && (
+              <div class="mt-4 pt-3 border-t border-accent/20">
+                <span class="text-xs text-accent font-semibold uppercase tracking-wider">Custom Development Only · MOQ 300 pcs</span>
+              </div>
+            )}
+          </div>
+        </a>
+      ))}
+    </div>
+
+    <!-- Small batch CTA -->
+    <div class="mt-16 bg-cream p-8 md:p-12 text-center">
+      <h2 class="text-xl font-bold text-navy">Need Small Quantities for Testing?</h2>
+      <p class="text-stone mt-3 max-w-lg mx-auto text-sm">Visit Viomisha.com for small batch sampling and retail purchases.</p>
+      <a href="https://viomisha.com" target="_blank" class="btn-accent mt-6 inline-flex gap-2">
+        📦 Shop Small Batch →
+      </a>
+    </div>
+  </div>
+</FactoryLayout>

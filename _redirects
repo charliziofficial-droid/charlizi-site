@@ -1,0 +1,13 @@
+# Charlizi — China Region Blocking (Cloudflare)
+# This file is used when deploying on Cloudflare Pages
+# It blocks traffic from mainland China while allowing all other regions
+
+[[rules]]
+action = "block"
+priority = 1
+description = "Block mainland China traffic"
+
+[[rules.expression]]
+field = "ip.src.country"
+operator = "eq"
+value = "CN"

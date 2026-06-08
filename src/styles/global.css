@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@theme {
+  /* Brand — 沉稳商务色系 */
+  --color-navy: #1a2540;
+  --color-navy-light: #2a3a5c;
+  --color-navy-dark: #0f1729;
+  --color-slate: #475569;
+  --color-stone: #78716c;
+  --color-cream: #faf7f3;
+  --color-cream-dark: #f0e8dd;
+  --color-charcoal: #1c1917;
+  --color-warm-gray: #8a7f7a;
+  --color-accent: #b8865c;
+  --color-accent-light: #d4a574;
+  --color-accent-dark: #8b6f47;
+
+  /* Fonts */
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-charcoal);
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-navy text-white px-6 py-3 font-medium text-sm
+           hover:bg-navy-light transition-colors duration-200;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center border-2 border-navy text-navy px-6 py-3 font-medium text-sm
+           hover:bg-navy hover:text-white transition-all duration-200;
+  }
+  .btn-accent {
+    @apply inline-flex items-center justify-center bg-accent text-white px-6 py-3 font-medium text-sm
+           hover:bg-accent-dark transition-colors duration-200;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center text-navy px-4 py-2 font-medium text-sm
+           hover:text-accent transition-colors duration-200;
+  }
+  .section-padding {
+    @apply py-16 md:py-20;
+  }
+  .product-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+  }
+  .badge {
+    @apply inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase;
+  }
+  .badge-accent {
+    @apply badge bg-accent/10 text-accent;
+  }
+  .badge-navy {
+    @apply badge bg-navy/10 text-navy;
+  }
+  .badge-slate {
+    @apply badge bg-slate/10 text-slate;
+  }
+  .card {
+    @apply bg-white border border-gray-200/80;
+  }
+  .card-hover {
+    @apply card hover:border-accent/30 hover:shadow-sm transition-all duration-200;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    @apply flex items-center gap-2 text-sm text-slate/70 mb-8;
+  }
+  .breadcrumb a {
+    @apply hover:text-navy transition-colors;
+  }
+
+  /* Section title */
+  .section-label {
+    @apply text-xs uppercase tracking-[0.15em] text-accent font-medium;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-display font-bold text-navy mt-2;
+  }
+  .section-desc {
+    @apply text-stone mt-4 max-w-2xl leading-relaxed;
+  }
+
+  /* B2B product spec list */
+  .spec-list {
+    @apply space-y-2 text-sm;
+  }
+  .spec-item {
+    @apply flex justify-between py-2 border-b border-gray-100 last:border-b-0;
+  }
+  .spec-label {
+    @apply text-slate;
+  }
+  .spec-value {
+    @apply text-charcoal font-medium;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

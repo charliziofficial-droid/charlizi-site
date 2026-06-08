@@ -1,78 +1,123 @@
 ---
-import PageLayout from '~/layouts/PageLayout.astro';
-import Content from '~/components/widgets/Content.astro';
-import { factoryStats, certifications, teamRoles } from '~/data/b2b';
+// src/pages/about.astro
+import FactoryLayout from '../layouts/FactoryLayout.astro';
+import { factoryStats, certifications } from '../data/products-b2b.js';
 ---
-<PageLayout
-  metadata={{
-    title: 'About Charlizi Factory | Lingerie OEM Manufacturer',
-    description: 'Learn about Charlizi Factory — 5,000㎡ intimate apparel manufacturing facility. 200+ workers, BSCI/OEKO-TEX certified. Custom OEM/ODM with pattern development.',
-  }}
+<FactoryLayout
+  title="About Charlizi Factory | Lingerie OEM Manufacturer"
+  description="Learn about Charlizi Factory — 5,000㎡ intimate apparel manufacturing facility. 200+ workers, BSCI/OEKO-TEX certified. Custom OEM/ODM with pattern development."
 >
   <div class="container-site py-12">
-    <nav class="text-xs text-stone/60 mb-8">
-      <a href="/" class="hover:text-accent">Home</a>
-      <span> / </span>
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
       <span class="text-navy font-medium">About</span>
     </nav>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+    <div class="max-w-3xl mb-16">
+      <span class="section-label">About Us</span>
+      <h1 class="section-title">Your Partner in Intimate Apparel Manufacturing</h1>
+      <p class="section-desc">
+        Charlizi Factory was founded in {factoryStats.founded} with a mission to provide 
+        global brands with high-quality, ethically produced intimate apparel at competitive prices.
+      </p>
+    </div>
+
+    <!-- Overview -->
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
       <div>
-        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-accent">About Us</span>
-        <h1 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-6">
-          {factoryStats.workers} Workers · {factoryStats.area} Facility · Established {factoryStats.founded}
-        </h1>
-        <p class="text-stone leading-relaxed mb-4">
-          Charlizi Intimate Apparel Co., Ltd. is a professional OEM/ODM manufacturer specializing in intimate apparel — bras, panties, shapewear, silicone bras, sleepwear, and matching sets. We serve fashion brands, DTC startups, retailers, and wholesalers worldwide.
+        <h2 class="text-2xl font-bold text-navy">Factory Overview</h2>
+        <p class="text-stone mt-4 leading-relaxed">
+          Located in Shenzhen, Guangdong — the heart of China's apparel manufacturing industry — 
+          our {factoryStats.area} facility houses {factoryStats.workers} skilled workers 
+          producing over {factoryStats.annualOutput} garments annually.
         </p>
-        <p class="text-stone leading-relaxed mb-4">
-          Our {factoryStats.area} facility houses {factoryStats.workers} skilled workers across dedicated production lines, each specialized in different garment types. With an annual output of over {factoryStats.annualOutput} pieces and {factoryStats.monthlyContainers} containers shipped monthly, we have the capacity to handle both standard and complex OEM/ODM projects.
+        <p class="text-stone mt-4 leading-relaxed">
+          We specialize in bras, bra sets, panties, plus size lingerie, silicone bras, shapewear, 
+          and custom sleepwear development. Our clients range from emerging DTC brands to 
+          established retailers across North America, Europe, the Middle East, and Southeast Asia.
         </p>
-        <p class="text-stone leading-relaxed">
-          We are BSCI, OEKO-TEX Standard 100, ISO 9001, and FAMA certified — meeting international compliance requirements for global brands.
-        </p>
+        <div class="grid grid-cols-3 gap-6 mt-8">
+          <div><div class="text-2xl font-bold text-navy">{factoryStats.area}</div><div class="text-xs text-slate mt-1">Workshop</div></div>
+          <div><div class="text-2xl font-bold text-navy">{factoryStats.workers}</div><div class="text-xs text-slate mt-1">Staff</div></div>
+          <div><div class="text-2xl font-bold text-navy">{factoryStats.annualOutput}</div><div class="text-xs text-slate mt-1">Annual Output</div></div>
+        </div>
       </div>
-      <div class="bg-cream p-8 border border-gray-200">
-        <h3 class="text-xl font-bold text-navy mb-6">Our Team</h3>
-        <div class="space-y-4">
-          {teamRoles.map(role => (
-            <div class="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
-              <div>
-                <div class="text-2xl font-bold text-accent">{role.count}</div>
-                <div class="text-xs text-stone uppercase tracking-wider">{role.role}</div>
-              </div>
-              <div class="text-xs text-stone/60 text-right max-w-[200px]">{role.desc}</div>
-            </div>
-          ))}
+      <div class="aspect-[4/3] overflow-hidden rounded-lg shadow-md">
+        <img src="/factory/images/factory-placeholder.jpg" alt="Factory Overview" class="w-full h-full object-cover" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="mb-20">
+      <h2 class="text-2xl font-bold text-navy mb-2">Our Team</h2>
+      <p class="text-stone mb-8 max-w-2xl">
+        From pattern engineers to quality inspectors, every team member plays a role 
+        in delivering consistent, high-quality products.
+      </p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { role: 'Pattern Engineers', desc: 'CAD pattern making & grading', count: '8' },
+          { role: 'Sample Makers', desc: 'First samples & fit approval', count: '12' },
+          { role: 'Production Workers', desc: 'Dedicated sewing lines', count: '150+' },
+          { role: 'QC Inspectors', desc: '3-stage quality control', count: '15' },
+        ].map(t => (
+          <div class="card p-6">
+            <div class="text-2xl font-bold text-accent">{t.count}</div>
+            <h3 class="font-semibold text-navy mt-2">{t.role}</h3>
+            <p class="text-xs text-stone mt-1">{t.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Custom Sampling -->
+    <div class="mb-20 bg-cream p-8 md:p-12">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl font-bold text-navy">Custom Sampling & Development</h2>
+          <p class="text-stone mt-4 leading-relaxed">
+            Have a design in mind? We handle the full development cycle:
+          </p>
+          <ul class="mt-6 space-y-3 text-sm text-stone">
+            <li class="flex gap-3">
+              <span class="text-accent font-bold">→</span>
+              <span><strong class="text-navy">Tech Pack Review</strong> — We review your spec sheet and suggest material & cost optimizations</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent font-bold">→</span>
+              <span><strong class="text-navy">Pattern Making</strong> — Digital pattern creation with graded size sets</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent font-bold">→</span>
+              <span><strong class="text-navy">Sample Development</strong> — First sample in 7-10 days, revisions included</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent font-bold">→</span>
+              <span><strong class="text-navy">Bulk Production</strong> — Once approved, full production with QC tracking</span>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <p class="text-navy/50 text-sm">Need a quick sample run?</p>
+          <a href="https://viomisha.com" target="_blank" class="btn-accent mt-4 inline-flex gap-2">
+            📦 Shop Samples on Viomisha
+          </a>
         </div>
       </div>
     </div>
 
-    <!-- Certifications Detail -->
-    <Content
-      title="Certifications & Compliance"
-      tagline="Quality Standards"
-    >
-      <div slot="content" class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+    <!-- Certifications -->
+    <div>
+      <h2 class="text-2xl font-bold text-navy mb-8">Certifications</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
         {certifications.map(cert => (
-          <div class="flex gap-4 items-start p-5 bg-white border border-gray-100">
-            <div class="w-12 h-12 bg-navy/5 rounded-full flex items-center justify-center shrink-0">
-              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-            </div>
-            <div>
-              <h3 class="text-lg font-bold text-navy">{cert.name}</h3>
-              <p class="text-sm text-stone mt-1" set:html={cert.desc} />
-            </div>
+          <div class="card p-5 text-center">
+            <div class="text-lg font-bold text-navy">{cert.name}</div>
+            <div class="text-xs text-slate mt-2">{cert.desc}</div>
           </div>
         ))}
       </div>
-    </Content>
-
-    <!-- CTA -->
-    <div class="text-center mt-16 p-12 bg-cream border border-gray-200">
-      <h2 class="text-2xl font-bold text-navy mb-4">Interested in Working with Us?</h2>
-      <p class="text-stone mb-8 max-w-xl mx-auto">Send us your product requirements, and we'll get back to you within 24 hours with a quote.</p>
-      <a href="/contact" class="inline-block bg-accent text-white px-8 py-4 font-semibold hover:bg-accent-light transition-colors">Contact Us</a>
     </div>
   </div>
-</PageLayout>
+</FactoryLayout>

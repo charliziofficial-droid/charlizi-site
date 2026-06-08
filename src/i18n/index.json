@@ -1,0 +1,8 @@
+{
+  "en": { "name": "English", "dir": "ltr", "flag": "🇺🇸", "markets": "North America, UK, Australia" },
+  "es": { "name": "Español", "dir": "ltr", "flag": "🇪🇸", "markets": "Spain, Latin America" },
+  "fr": { "name": "Français", "dir": "ltr", "flag": "🇫🇷", "markets": "France, Canada, Africa" },
+  "de": { "name": "Deutsch", "dir": "ltr", "flag": "🇩🇪", "markets": "Germany, Austria, Switzerland" },
+  "ar": { "name": "العربية", "dir": "rtl", "flag": "🇸🇦", "markets": "Middle East, North Africa" },
+  "th": { "name": "ไทย", "dir": "ltr", "flag": "🇹🇭", "markets": "Thailand" }
+}
