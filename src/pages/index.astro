@@ -1,0 +1,102 @@
+---
+// src/pages/index.astro — B2B Factory Homepage (CMS-driven)
+import PageLayout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Brands from '~/components/widgets/Brands.astro';
+import Content from '~/components/widgets/Content.astro';
+
+import { loadSiteContent, loadStats, loadImages, loadFAQs, loadCertifications, loadProductionSteps } from '~/data/loader';
+
+const siteContent = await loadSiteContent();
+const statsData = await loadStats();
+const images = await loadImages();
+const faqData = await loadFAQs();
+const certs = await loadCertifications();
+const steps = await loadProductionSteps();
+---
+<PageLayout
+  metadata={{
+    title: 'Intimate Apparel OEM Manufacturer | Lingerie Factory China',
+    description: siteContent.heroSubtitle,
+  }}
+>
+  <!-- Hero -->
+  <Hero
+    tagline={siteContent.heroTagline}
+    title={`Your Intimate Apparel <span class="text-accent">OEM/ODM Partner</span>`}
+    subtitle={siteContent.heroSubtitle}
+    actions={[
+      { text: 'Request a Quote', href: '/contact', variant: 'primary' },
+      { text: 'View Products', href: '/products/bra-sets', variant: 'secondary' },
+    ]}
+  >
+    <div slot="content" class="mt-8">
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-stone">
+        <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>MOQ 200 pcs</span>
+        <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>30-45 Day Lead Time</span>
+        <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Worldwide Shipping</span>
+        <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>BSCI & OEKO-TEX Certified</span>
+      </div>
+    </div>
+  </Hero>
+
+  <!-- Stats -->
+  <Stats
+    tagline={statsData.tagline}
+    title={statsData.title}
+    stats={statsData.stats}
+  />
+
+  <!-- Certifications / Trust Badges -->
+  <Content
+    tagline="Certified Quality"
+    title={certs.title}
+    content={`
+      <div class="grid md:grid-cols-5 gap-4 mt-8 max-w-4xl mx-auto">
+        ${certs.certifications.map(c => `
+          <div class="text-center p-4 border border-stone/20 rounded-lg">
+            <div class="w-12 h-12 mx-auto mb-2 bg-navy rounded-full flex items-center justify-center">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="font-bold text-navy text-sm">${c.name}</h3>
+            <p class="text-xs text-stone mt-1">${c.desc}</p>
+          </div>
+        `).join('')}
+      </div>
+    `}
+  />
+
+  <!-- Production Steps -->
+  <Steps
+    tagline="How We Work"
+    title={steps.title}
+    items={steps.steps}
+  />
+
+  <!-- CTA -->
+  <CallToAction
+    title="Ready to Start Your Production?"
+    subtitle="Send us your tech pack or design reference. We'll get back within 24 hours with a quotation and lead time estimate."
+    actions={[
+      { text: 'Request a Quote', href: '/contact', variant: 'primary' },
+      { text: 'View All Products', href: '/products/bra-sets', variant: 'secondary' },
+    ]}
+  />
+
+  <!-- Brands -->
+  <Brands
+    tagline="Trusted By"
+    title="Brands We Work With"
+  />
+
+  <!-- FAQ -->
+  <FAQs
+    tagline="Got Questions?"
+    title={faqData.title}
+    items={faqData.items}
+  />
+</PageLayout>

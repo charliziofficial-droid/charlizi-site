@@ -1,0 +1,39 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import { blogPosts } from '~/data/b2b';
+---
+<PageLayout
+  metadata={{
+    title: 'Blog | Lingerie Sourcing & Manufacturing Insights',
+    description: 'Industry insights on intimate apparel manufacturing, OEM/ODM sourcing strategies, compliance certifications, and supply chain best practices.',
+  }}
+>
+  <div class="container-site py-12">
+    <nav class="text-xs text-stone/60 mb-8">
+      <a href="/" class="hover:text-accent">Home</a>
+      <span> / </span>
+      <span class="text-navy font-medium">Blog</span>
+    </nav>
+
+    <div class="max-w-2xl mb-10">
+      <span class="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Blog</span>
+      <h1 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-4">Manufacturing Insights</h1>
+      <p class="text-stone leading-relaxed">Articles on sourcing strategies, manufacturing quality, compliance certifications, and tips for building your intimate apparel brand.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {blogPosts.map(post => (
+        <article class="bg-white border border-gray-200 hover:border-accent/30 transition-all duration-300">
+          <div class="p-6">
+            <div class="text-xs text-stone/60 mb-2">{post.date}</div>
+            <h2 class="text-lg font-bold text-navy mb-3 leading-snug">
+              <a href={`/blog/${post.slug}`} class="hover:text-accent transition-colors">{post.title}</a>
+            </h2>
+            <p class="text-sm text-stone leading-relaxed">{post.desc}</p>
+            <a href={`/blog/${post.slug}`} class="inline-block mt-4 text-sm font-semibold text-accent hover:underline">Read More →</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</PageLayout>

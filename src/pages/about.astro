@@ -1,0 +1,78 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import Content from '~/components/widgets/Content.astro';
+import { factoryStats, certifications, teamRoles } from '~/data/b2b';
+---
+<PageLayout
+  metadata={{
+    title: 'About Charlizi Factory | Lingerie OEM Manufacturer',
+    description: 'Learn about Charlizi Factory — 5,000㎡ intimate apparel manufacturing facility. 200+ workers, BSCI/OEKO-TEX certified. Custom OEM/ODM with pattern development.',
+  }}
+>
+  <div class="container-site py-12">
+    <nav class="text-xs text-stone/60 mb-8">
+      <a href="/" class="hover:text-accent">Home</a>
+      <span> / </span>
+      <span class="text-navy font-medium">About</span>
+    </nav>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-accent">About Us</span>
+        <h1 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-6">
+          {factoryStats.workers} Workers · {factoryStats.area} Facility · Established {factoryStats.founded}
+        </h1>
+        <p class="text-stone leading-relaxed mb-4">
+          Charlizi Intimate Apparel Co., Ltd. is a professional OEM/ODM manufacturer specializing in intimate apparel — bras, panties, shapewear, silicone bras, sleepwear, and matching sets. We serve fashion brands, DTC startups, retailers, and wholesalers worldwide.
+        </p>
+        <p class="text-stone leading-relaxed mb-4">
+          Our {factoryStats.area} facility houses {factoryStats.workers} skilled workers across dedicated production lines, each specialized in different garment types. With an annual output of over {factoryStats.annualOutput} pieces and {factoryStats.monthlyContainers} containers shipped monthly, we have the capacity to handle both standard and complex OEM/ODM projects.
+        </p>
+        <p class="text-stone leading-relaxed">
+          We are BSCI, OEKO-TEX Standard 100, ISO 9001, and FAMA certified — meeting international compliance requirements for global brands.
+        </p>
+      </div>
+      <div class="bg-cream p-8 border border-gray-200">
+        <h3 class="text-xl font-bold text-navy mb-6">Our Team</h3>
+        <div class="space-y-4">
+          {teamRoles.map(role => (
+            <div class="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
+              <div>
+                <div class="text-2xl font-bold text-accent">{role.count}</div>
+                <div class="text-xs text-stone uppercase tracking-wider">{role.role}</div>
+              </div>
+              <div class="text-xs text-stone/60 text-right max-w-[200px]">{role.desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications Detail -->
+    <Content
+      title="Certifications & Compliance"
+      tagline="Quality Standards"
+    >
+      <div slot="content" class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+        {certifications.map(cert => (
+          <div class="flex gap-4 items-start p-5 bg-white border border-gray-100">
+            <div class="w-12 h-12 bg-navy/5 rounded-full flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-navy">{cert.name}</h3>
+              <p class="text-sm text-stone mt-1" set:html={cert.desc} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </Content>
+
+    <!-- CTA -->
+    <div class="text-center mt-16 p-12 bg-cream border border-gray-200">
+      <h2 class="text-2xl font-bold text-navy mb-4">Interested in Working with Us?</h2>
+      <p class="text-stone mb-8 max-w-xl mx-auto">Send us your product requirements, and we'll get back to you within 24 hours with a quote.</p>
+      <a href="/contact" class="inline-block bg-accent text-white px-8 py-4 font-semibold hover:bg-accent-light transition-colors">Contact Us</a>
+    </div>
+  </div>
+</PageLayout>

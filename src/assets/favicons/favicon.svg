@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
+  <rect x="20" y="36" width="88" height="64" rx="4" fill="#1a2540"/>
+  <rect x="32" y="28" width="64" height="16" rx="3" fill="#b8865c"/>
+  <rect x="36" y="36" width="12" height="48" rx="1" fill="#d4a574"/>
+  <rect x="52" y="36" width="12" height="48" rx="1" fill="#d4a574"/>
+  <rect x="68" y="36" width="12" height="48" rx="1" fill="#d4a574"/>
+  <rect x="84" y="36" width="12" height="48" rx="1" fill="#d4a574"/>
+  <path d="M44 20l20-8 20 8" stroke="#1a2540" stroke-width="3" stroke-linecap="round"/>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      rect[fill="#1a2540"] { fill: #b8865c; }
+      rect[fill="#d4a574"] { fill: #8a6b44; }
+      path { stroke: #b8865c; }
+    }
+  </style>
+</svg>

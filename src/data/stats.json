@@ -1,0 +1,11 @@
+{
+  "title": "Factory Capacity at a Glance",
+  "tagline": "By the Numbers",
+  "stats": [
+    { "amount": "200+", "title": "Skilled Workers", "desc": "Production & QC specialists" },
+    { "amount": "5,000㎡", "title": "Modern Workshop", "desc": "Advanced manufacturing facility" },
+    { "amount": "5M+", "title": "Annual Output", "desc": "Garments produced yearly" },
+    { "amount": "40+", "title": "Monthly Shipments", "desc": "Containers to global brands" },
+    { "amount": "200-300", "title": "MOQ", "desc": "Minimum order per design" }
+  ]
+}

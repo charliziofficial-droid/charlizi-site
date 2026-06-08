@@ -1,0 +1,75 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import { productionSteps } from '~/data/b2b';
+---
+<PageLayout
+  metadata={{
+    title: 'Lingerie Production Process | From Design to Delivery',
+    description: 'Our 7-step production process: pattern making, sample, fabric sourcing, cutting, sewing, QC, packaging. OEM/ODM intimate apparel manufacturing.',
+  }}
+>
+  <div class="container-site py-12">
+    <nav class="text-xs text-stone/60 mb-8">
+      <a href="/" class="hover:text-accent">Home</a>
+      <span> / </span>
+      <span class="text-navy font-medium">Production Process</span>
+    </nav>
+
+    <div class="max-w-2xl mb-12">
+      <span class="text-xs font-semibold tracking-[0.2em] uppercase text-accent">Process</span>
+      <h1 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-4">How We Make Your Products</h1>
+      <p class="text-stone leading-relaxed">
+        From your tech pack to finished shipment — our 7-step production process ensures quality at every stage. Each step is managed by trained specialists with years of intimate apparel experience.
+      </p>
+    </div>
+
+    <!-- Full Production Timeline -->
+    <div class="relative space-y-8 before:absolute before:left-[23px] before:top-8 before:bottom-0 before:w-[2px] before:bg-accent/20">
+      {productionSteps.map((s, i) => (
+        <div class="flex gap-6 items-start relative" key={s.step}>
+          <div class="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm shrink-0 z-10">{s.step}</div>
+          <div class="flex-1 pt-2">
+            <div class="flex items-center gap-3 mb-2">
+              <h2 class="text-lg font-bold text-navy">{s.title}</h2>
+              <span class="text-xs bg-navy/5 text-navy px-2 py-0.5">{s.duration}</span>
+            </div>
+            <p class="text-sm text-stone leading-relaxed">{s.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Timeline Summary -->
+    <div class="mt-16 p-8 bg-cream border border-gray-200">
+      <h3 class="text-xl font-bold text-navy mb-4">Total Lead Time</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="p-4 bg-white">
+          <div class="text-3xl font-bold text-accent">7-10</div>
+          <div class="text-xs text-stone uppercase tracking-wider mt-1">Sample Days</div>
+        </div>
+        <div class="p-4 bg-white">
+          <div class="text-3xl font-bold text-accent">30-45</div>
+          <div class="text-xs text-stone uppercase tracking-wider mt-1">Bulk Production Days</div>
+        </div>
+        <div class="p-4 bg-white">
+          <div class="text-3xl font-bold text-accent">5-7</div>
+          <div class="text-xs text-stone uppercase tracking-wider mt-1">Shipping Days</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <CallToAction
+      title="Start Your Production Journey"
+      subtitle="Send us your designs and we'll handle the rest."
+      callToAction={{
+        text: 'Get Started →',
+        href: '/contact',
+        variant: 'primary',
+        class: 'btn-accent',
+      }}
+    />
+  </div>
+</PageLayout>

@@ -1,0 +1,12 @@
+{
+  "title": "From Design to Delivery",
+  "steps": [
+    { "step": "01", "title": "Pattern Making & Grading", "duration": "3-5 days", "desc": "Using Gerber/Gerber AccuMark CAD system. We digitize your tech pack, create first patterns, and grade across your required size range. In-house pattern engineers with 10+ years of intimate apparel experience." },
+    { "step": "02", "title": "Sample Development", "duration": "5-7 days", "desc": "Construction of first sample using specified fabric, trim, and hardware. Fit assessment on live models or dress forms. Photographs taken for your approval before proceeding to corrections." },
+    { "step": "03", "title": "Fabric & Trim Sourcing", "duration": "5-10 days", "desc": "We source fabric from our network of GOTS/OCS/OEKO-TEX certified mills. Custom dyeing (Pantone matched), lace and embroidery development, and hardware selection all coordinated in parallel." },
+    { "step": "04", "title": "Bulk Cutting", "duration": "3-5 days", "desc": "Automated laser cutting or die-cutting for consistent pieces. Fabric is laid in multiple layers (up to 100 ply) and cut precisely. Each bundle labeled with style, size, and color for traceability." },
+    { "step": "05", "title": "Sewing & Assembly", "duration": "10-20 days", "desc": "Specialized sewing lines dedicated to intimate apparel. Each operator trained on specific construction steps. In-line quality checks at critical sewing stations every 30 minutes." },
+    { "step": "06", "title": "Quality Control (3-Stage)", "duration": "3-5 days", "desc": "Stage 1: In-line inspection during sewing. Stage 2: Final inspection per AQL 2.5 standard. Stage 3: Random pre-shipment inspection. Dimensional checks, seam strength, zipper/closure function, and color fastness testing." },
+    { "step": "07", "title": "Packing & Shipment", "duration": "5-7 days", "desc": "Professional packing per your specifications — polybag, hang tag, barcode sticker, retail box, or display-ready. FCL or LCL shipping. Full documentation: packing list, invoice, certs, test reports." }
+  ]
+}

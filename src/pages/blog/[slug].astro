@@ -1,0 +1,32 @@
+---
+import PageLayout from '~/layouts/PageLayout.astro';
+import { blogPosts } from '~/data/b2b';
+
+export async function getStaticPaths() {
+  return blogPosts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+---
+<PageLayout>
+  <div class="container-site py-12">
+    <nav class="text-xs text-stone/60 mb-8">
+      <a href="/" class="hover:text-accent">Home</a>
+      <span> / </span>
+      <a href="/blog" class="hover:text-accent">Blog</a>
+      <span> / </span>
+      <span class="text-navy font-medium">{post.title}</span>
+    </nav>
+    <article class="max-w-3xl mx-auto">
+      <div class="text-xs text-stone/60 mb-2">{post.date}</div>
+      <h1 class="text-3xl font-bold text-navy mb-6">{post.title}</h1>
+      <p class="text-stone leading-relaxed mb-6">{post.desc}</p>
+      <div class="prose prose-sm max-w-none prose-headings:text-navy prose-a:text-accent">
+        <p>This article is being developed. For immediate inquiries about {post.title.toLowerCase()}, please <a href="/contact">contact our team</a>.</p>
+      </div>
+    </article>
+  </div>
+</PageLayout>
