@@ -45,6 +45,11 @@ const description = "Our 7-step production process: pattern making, sample, fabr
             <span class="hidden lg:inline-block mt-2 text-xs text-accent font-medium uppercase tracking-wider bg-accent/10 px-3 py-1 rounded">{step.duration}</span>
 
             <p class="text-stone mt-4 leading-relaxed">{step.desc}</p>
+
+            <!-- Step image -->
+            <div class="mt-6 aspect-[3/2] rounded-lg overflow-hidden border border-gray-100 shadow-sm">
+              <img src={`/factory/images/step-${step.step}.webp`} alt={step.title} class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+            </div>
           </div>
         </div>
       ))}
