@@ -12,168 +12,98 @@
   <style>
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; background: #0f1729; color: white; }
     .loading { text-align: center; }
-    .loading h2 { font-weight: 400; color: rgba(255,255,255,0.6); }
-    .spinner { width: 40px; height: 40px; margin: 20px auto; border: 3px solid rgba(255,255,255,0.1); border-top-color: #b8865c; border-radius: 50%; animation: spin 0.8s linear infinite; }
+    .loading h2 { font-weight: 500; font-size: 1.25rem; margin-top: 1rem; }
+    .spinner { width: 40px; height: 40px; border: 3px solid rgba(255,255,255,0.1); border-top-color: #b8865c; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto; }
     @keyframes spin { to { transform: rotate(360deg); } }
   </style>
+  <script src="https://unpkg.com/decap-cms@3.13.0/dist/decap-cms.js"></script>
 </head>
 <body>
-  <div class="loading">
+  <div class="loading" id="loading">
     <div class="spinner"></div>
     <h2>Loading Admin Panel...</h2>
   </div>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script>
-    // ⚠️ IMPORTANT: Replace with your GitHub username after pushing
-    const GITHUB_REPO = 'charliziofficial-droid/charlizi-site';
-
-    CMS.init({
-      config: {
-        backend: {
-          name: 'github',
-          repo: GITHUB_REPO,
-          branch: 'main',
-          base_url: 'https://charlizi.com',
-          auth_endpoint: '/admin/auth',
-          // Cloudflare Pages Functions handle OAuth at /admin/auth
-        },
-        media_folder: 'public/factory/images',
-        public_folder: '/factory/images',
-        collections: [
-          // ─── Products (7 categories) ───
-          {
-            name: 'products',
-            label: 'Products',
-            label_singular: 'Product',
-            create: false,
-            delete: false,
-            files: [
-              { name: 'bra-sets', label: 'Bra Sets', file: 'src/data/products-b2b.js',
-                fields: [
-                  { name: 'productCategories.0.name', label: 'Category Name', widget: 'string' },
-                  { name: 'productCategories.0.description', label: 'Description', widget: 'text' },
-                  { name: 'productCategories.0.moq', label: 'MOQ', widget: 'string' },
-                ]
-              },
-              { name: 'bras', label: 'Bras', file: 'src/data/products-b2b.js',
-                fields: [
-                  { name: 'productCategories.1.name', label: 'Category Name', widget: 'string' },
-                  { name: 'productCategories.1.description', label: 'Description', widget: 'text' },
-                  { name: 'productCategories.1.moq', label: 'MOQ', widget: 'string' },
-                ]
-              },
-              { name: 'plus-size-bras', label: 'Plus Size Bras', file: 'src/data/products-b2b.js',
-                fields: [
-                  { name: 'productCategories.2.name', label: 'Category Name', widget: 'string' },
-                  { name: 'productCategories.2.description', label: 'Description', widget: 'text' },
-                ]
-              },
-              { name: 'panties', label: 'Panties', file: 'src/data/products-b2b.js',
-                fields: [
-                  { name: 'productCategories.3.name', label: 'Category Name', widget: 'string' },
-                  { name: 'productCategories.3.description', label: 'Description', widget: 'text' },
-                ]
-              },
-              { name: 'silicone-bras', label: 'Silicone Bras', file: 'src/data/products-b2b.js',
-                fields: [
-                  { name: 'productCategories.4.name', label: 'Category Name', widget: 'string' },
-                  { name: 'productCategories.4.description', label: 'Description', widget: 'text' },
-                ]
-              },
-              { name: 'shapewear', label: 'Shapewear', file: 'src/data/products-b2b.js',
-                fields: [
-                  { name: 'productCategories.5.name', label: 'Category Name', widget: 'string' },
-                  { name: 'productCategories.5.description', label: 'Description', widget: 'text' },
-                ]
-              },
-              { name: 'sleepwear', label: 'Sleepwear (Custom)', file: 'src/data/products-b2b.js',
-                fields: [
-                  { name: 'productCategories.6.name', label: 'Category Name', widget: 'string' },
-                  { name: 'productCategories.6.description', label: 'Description', widget: 'text' },
-                ]
-              },
-            ]
-          },
-          // ─── Translations ───
-          {
-            name: 'translations',
-            label: 'Translations',
-            create: false,
-            delete: false,
-            files: [
-              { name: 'spanish', label: 'Español', file: 'src/i18n/es.js',
-                fields: [
-                  { name: 'hero.heading', label: 'Hero Title', widget: 'string' },
-                  { name: 'hero.sub', label: 'Hero Subtitle', widget: 'text' },
-                  { name: 'nav.home', label: 'Nav: Home', widget: 'string' },
-                  { name: 'nav.products', label: 'Nav: Products', widget: 'string' },
-                  { name: 'nav.contact', label: 'Nav: Contact', widget: 'string' },
-                  { name: 'cta.title', label: 'CTA Title', widget: 'string' },
-                ]
-              },
-              { name: 'french', label: 'Français', file: 'src/i18n/fr.js',
-                fields: [
-                  { name: 'hero.heading', label: 'Hero Title', widget: 'string' },
-                  { name: 'hero.sub', label: 'Hero Subtitle', widget: 'text' },
-                  { name: 'nav.home', label: 'Nav: Home', widget: 'string' },
-                  { name: 'nav.products', label: 'Nav: Products', widget: 'string' },
-                  { name: 'nav.contact', label: 'Nav: Contact', widget: 'string' },
-                  { name: 'cta.title', label: 'CTA Title', widget: 'string' },
-                ]
-              },
-              { name: 'german', label: 'Deutsch', file: 'src/i18n/de.js',
-                fields: [
-                  { name: 'hero.heading', label: 'Hero Title', widget: 'string' },
-                  { name: 'hero.sub', label: 'Hero Subtitle', widget: 'text' },
-                  { name: 'nav.home', label: 'Nav: Home', widget: 'string' },
-                  { name: 'nav.products', label: 'Nav: Products', widget: 'string' },
-                  { name: 'nav.contact', label: 'Nav: Contact', widget: 'string' },
-                  { name: 'cta.title', label: 'CTA Title', widget: 'string' },
-                ]
-              },
-              { name: 'arabic', label: 'العربية', file: 'src/i18n/ar.js',
-                fields: [
-                  { name: 'hero.heading', label: 'Hero Title', widget: 'string' },
-                  { name: 'hero.sub', label: 'Hero Subtitle', widget: 'text' },
-                  { name: 'nav.home', label: 'Nav: Home', widget: 'string' },
-                  { name: 'nav.products', label: 'Nav: Products', widget: 'string' },
-                  { name: 'nav.contact', label: 'Nav: Contact', widget: 'string' },
-                  { name: 'cta.title', label: 'CTA Title', widget: 'string' },
-                ]
-              },
-              { name: 'thai', label: 'ไทย', file: 'src/i18n/th.js',
-                fields: [
-                  { name: 'hero.heading', label: 'Hero Title', widget: 'string' },
-                  { name: 'hero.sub', label: 'Hero Subtitle', widget: 'text' },
-                  { name: 'nav.home', label: 'Nav: Home', widget: 'string' },
-                  { name: 'nav.products', label: 'Nav: Products', widget: 'string' },
-                  { name: 'nav.contact', label: 'Nav: Contact', widget: 'string' },
-                  { name: 'cta.title', label: 'CTA Title', widget: 'string' },
-                ]
-              },
-            ]
-          },
-          // ─── FAQ ───
-          {
-            name: 'faq',
-            label: 'FAQ',
-            create: false,
-            delete: false,
-            files: [{
-              name: 'faq-items', label: 'FAQ Items', file: 'src/data/products-b2b.js',
-              fields: [
-                { name: 'faqItems.0.question', label: 'Q1: Question', widget: 'string' },
-                { name: 'faqItems.0.answer', label: 'Q1: Answer', widget: 'text' },
-                { name: 'faqItems.1.question', label: 'Q2: Question', widget: 'string' },
-                { name: 'faqItems.1.answer', label: 'Q2: Answer', widget: 'text' },
-                { name: 'faqItems.2.question', label: 'Q3: Question', widget: 'string' },
-                { name: 'faqItems.2.answer', label: 'Q3: Answer', widget: 'text' },
-              ]
-            }]
-          },
-        ]
-      }
+    // Hide loading once CMS has loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      var check = setInterval(function() {
+        if (window.CMS && document.querySelector('.nc-app')) {
+          document.getElementById('loading').style.display = 'none';
+          clearInterval(check);
+        }
+      }, 500);
+      // Timeout fallback
+      setTimeout(function() { document.getElementById('loading').style.display = 'none'; }, 8000);
     });
+  </script>
+  <script>
+    // Decap CMS config inline
+    window.CMS_MANUAL_INIT = true;
+    window.initCMS = function() {
+      CMS.init({
+        config: {
+          backend: {
+            name: 'github',
+            repo: 'charliziofficial-droid/charlizi-site',
+            branch: 'main',
+            base_url: 'https://charlizi-site.pages.dev',
+            auth_endpoint: '/admin/auth',
+            site_domain: 'charlizi-site.pages.dev'
+          },
+          media_folder: 'public/uploads',
+          public_folder: '/uploads',
+          slug: {
+            encoding: 'ascii',
+            clean_accents: true
+          },
+          collections: [
+            {
+              name: 'blog',
+              label: 'Blog Posts',
+              folder: 'src/pages/blog',
+              create: true,
+              extension: 'astro',
+              format: 'frontmatter',
+              slug: '{{slug}}',
+              fields: [
+                { label: 'Title', name: 'title', widget: 'string' },
+                { label: 'Description', name: 'description', widget: 'string' },
+                { label: 'Publish Date', name: 'date', widget: 'datetime' },
+                { label: 'Body', name: 'body', widget: 'markdown' }
+              ]
+            },
+            {
+              name: 'products',
+              label: 'Product Categories',
+              files: [
+                {
+                  label: 'Product Data',
+                  name: 'products',
+                  file: 'src/data/products-b2b.js',
+                  fields: [
+                    { label: 'Categories (edit in source file)', name: 'note', widget: 'string' }
+                  ]
+                }
+              ]
+            },
+            {
+              name: 'pages',
+              label: 'Pages',
+              files: [
+                {
+                  label: 'FAQ',
+                  name: 'faq',
+                  file: 'src/data/products-b2b.js',
+                  fields: [
+                    { label: 'FAQ Data (edit in source)', name: 'note', widget: 'string' }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      });
+    };
   </script>
 </body>
 </html>
