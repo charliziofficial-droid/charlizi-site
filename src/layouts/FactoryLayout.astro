@@ -11,6 +11,7 @@ export interface Props {
 const { title, description, ogImage = '/images/og-factory-default.jpg', noindex = false, canonical } = Astro.props;
 const fullTitle = `${title} | Charlizi Factory`;
 import { factoryStats } from '../data/products-b2b.js';
+import '../styles/global.css';
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +54,6 @@ import { factoryStats } from '../data/products-b2b.js';
 
   <title>{fullTitle}</title>
 
-  <link rel="stylesheet" href="/src/styles/global.css" />
 </head>
 <body class="bg-white text-charcoal antialiased">
   <!-- IP Blocking via URL param only (safe, no third-party API) -->

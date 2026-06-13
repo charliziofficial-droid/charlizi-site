@@ -124,30 +124,32 @@ export const productionSteps = [
 
 export const faqItems = [
   {
+    id: 'moq',
     q: 'What is your minimum order quantity (MOQ)?',
     a: 'Our standard MOQ is 200-300 pcs per design, per size, per color. For sleepwear and dresses, the MOQ is 300 pcs per design. Small batch sampling is available through Viomisha.com.',
   },
   {
+    id: 'sampling',
     q: 'Can I order a small quantity for sampling?',
     a: 'Yes! Visit Viomisha.com to purchase small quantities for sampling, inventory testing, or personal use. This is the fastest way to evaluate our quality before placing a bulk order.',
   },
   {
+    id: 'leadtime',
     q: 'What is the typical lead time?',
     a: 'Sample making: 7-15 days. Bulk production: 30-45 days depending on order quantity and style complexity. Custom sleepwear development: 35-50 days.',
   },
   {
-    q: 'Can you custom develop products from my design?',
-    a: 'Yes, full OEM/ODM service is available. Send us your tech pack, reference sample, or design sketch. We create patterns, develop samples, and handle bulk production.',
-  },
-  {
+    id: 'payment',
     q: 'What payment methods do you accept?',
     a: 'We accept T/T (wire transfer), L/C, and PayPal for sample orders. Standard payment terms: 30% deposit, 70% before shipment.',
   },
   {
+    id: 'certification',
     q: 'Do you have quality certifications?',
     a: 'Yes, we are BSCI and OEKO-TEX Standard 100 certified. ISO 9001 and Disney FAMA are also available. Full certification documents provided upon request.',
   },
   {
+    id: 'shipping',
     q: 'Can I mix different styles in one container?',
     a: 'Absolutely. We support mixed container shipping (FCL/LCL). You can combine different styles, sizes, and colors in a single shipment to optimize logistics costs.',
   },

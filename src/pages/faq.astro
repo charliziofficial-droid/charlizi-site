@@ -47,7 +47,7 @@ const faqSchema = {
     <!-- FAQ Accordion -->
     <div class="max-w-3xl mx-auto">
       {faqItems.map((item, index) => (
-        <details class="group border-b border-gray-200 py-4 open:pb-6">
+        <details id={item.id} class="group border-b border-gray-200 py-4 open:pb-6">
           <summary class="flex items-center justify-between cursor-pointer list-none text-navy font-medium text-base md:text-lg hover:text-accent transition-colors">
             <span>{item.q}</span>
             <svg class="w-5 h-5 text-slate/50 group-open:rotate-180 transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

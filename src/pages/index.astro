@@ -7,6 +7,19 @@ import { factoryStats, certifications, productCategories } from '../data/product
   title="Intimate Apparel OEM Manufacturer | Lingerie Factory China"
   description="Charlizi Factory — professional lingerie & intimate apparel OEM/ODM manufacturer. BSCI & OEKO-TEX certified. 200+ workers, 5,000㎡ facility. Bras, shapewear, panties, silicone bras & custom sleepwear. MOQ 200 pcs. Small batch sample available."
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Charlizi Factory",
+    "description": "Professional intimate apparel OEM/ODM manufacturer since 2018.",
+    "url": "https://charlizi.com",
+    "sameAs": ["https://viomisha.com"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CN"
+    },
+    "knowsAbout": ["Lingerie manufacturing", "Bra OEM/ODM", "Intimate apparel production", "Shapewear manufacturing"]
+  })}></script>
   <!-- Hero -->
   <section class="relative bg-navy overflow-hidden min-h-[80vh] flex items-center">
     <div class="absolute inset-0">
