@@ -1,19 +1,34 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #1a2540;
+  --color-navy-light: #2a3a5c;
+  --color-navy-dark: #0f1729;
+  --color-slate: #475569;
+  --color-stone: #78716c;
+  --color-cream: #faf7f3;
+  --color-cream-dark: #f0e8dd;
+  --color-charcoal: #1c1917;
+  --color-warm-gray: #8a7f7a;
+  --color-accent: #b8865c;
+  --color-accent-light: #d4a574;
+  --color-accent-dark: #8b6f47;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Inter', system-ui, sans-serif;
+}
 
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'Inter', system-ui, sans-serif;
-    color: #1c1917;
+    font-family: var(--font-sans);
+    color: var(--color-charcoal);
     background-color: white;
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: var(--font-display);
     font-weight: 600;
     letter-spacing: -0.02em;
   }
@@ -21,85 +36,205 @@
 
 @layer components {
   .container-site {
-    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-site {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-site {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center bg-navy text-white px-6 py-3 font-medium text-sm
-           hover:bg-navy-light transition-colors duration-200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-navy);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: background-color 0.2s;
+  }
+  .btn-primary:hover {
+    background-color: var(--color-navy-light);
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center border-2 border-navy text-navy px-6 py-3 font-medium text-sm
-           hover:bg-navy hover:text-white transition-all duration-200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-navy);
+    color: var(--color-navy);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: all 0.2s;
+  }
+  .btn-outline:hover {
+    background-color: var(--color-navy);
+    color: white;
   }
   .btn-accent {
-    @apply inline-flex items-center justify-center bg-accent text-white px-6 py-3 font-medium text-sm
-           hover:bg-accent-dark transition-colors duration-200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: background-color 0.2s;
+  }
+  .btn-accent:hover {
+    background-color: var(--color-accent-dark);
   }
   .btn-ghost {
-    @apply inline-flex items-center justify-center text-navy px-4 py-2 font-medium text-sm
-           hover:text-accent transition-colors duration-200;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-navy);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+  }
+  .btn-ghost:hover {
+    color: var(--color-accent);
   }
   .section-padding {
-    @apply py-16 md:py-20;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
   }
   .product-grid {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+  @media (min-width: 640px) {
+    .product-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1280px) {
+    .product-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
   }
   .badge {
-    @apply inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
   .badge-accent {
-    @apply bg-accent/10 text-accent;
+    background-color: color-mix(in srgb, var(--color-accent) 10%, transparent);
+    color: var(--color-accent);
   }
   .badge-navy {
-    @apply bg-navy/10 text-navy;
+    background-color: color-mix(in srgb, var(--color-navy) 10%, transparent);
+    color: var(--color-navy);
   }
   .badge-slate {
-    @apply bg-slate/10 text-slate;
+    background-color: color-mix(in srgb, var(--color-slate) 10%, transparent);
+    color: var(--color-slate);
   }
   .card {
-    @apply bg-white border border-gray-200/80;
+    background-color: white;
+    border: 1px solid color-mix(in srgb, #e5e7eb 80%, transparent);
   }
   .card-hover {
-    @apply border border-gray-200/80 hover:border-accent/30 hover:shadow-sm transition-all duration-200;
+    border: 1px solid color-mix(in srgb, #e5e7eb 80%, transparent);
+    transition: all 0.2s;
   }
-
-  /* Breadcrumb */
+  .card-hover:hover {
+    border-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  }
   .breadcrumb {
-    @apply flex items-center gap-2 text-sm text-slate/70 mb-8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: color-mix(in srgb, var(--color-slate) 70%, transparent);
+    margin-bottom: 2rem;
   }
-  .breadcrumb a {
-    @apply hover:text-navy transition-colors;
+  .breadcrumb a:hover {
+    color: var(--color-navy);
+    transition: color 0.2s;
   }
-
-  /* Section title */
   .section-label {
-    @apply text-xs uppercase tracking-[0.15em] text-accent font-medium;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--color-accent);
+    font-weight: 500;
   }
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-navy mt-2;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-navy);
+    margin-top: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 2.25rem;
+    }
   }
   .section-desc {
-    @apply text-stone mt-4 max-w-2xl leading-relaxed;
+    color: var(--color-stone);
+    margin-top: 1rem;
+    max-width: 42rem;
+    line-height: 1.625;
   }
-
-  /* B2B product spec list */
   .spec-list {
-    @apply space-y-2 text-sm;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.875rem;
   }
   .spec-item {
-    @apply flex justify-between py-2 border-b border-gray-100 last:border-b-0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  .spec-item:last-child {
+    border-bottom: none;
   }
   .spec-label {
-    @apply text-slate;
+    color: var(--color-slate);
   }
   .spec-value {
-    @apply text-charcoal font-medium;
+    color: var(--color-charcoal);
+    font-weight: 500;
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@utility text-balance {
+  text-wrap: balance;
 }
