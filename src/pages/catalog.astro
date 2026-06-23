@@ -1,150 +1,130 @@
 ---
-// src/pages/catalog.astro — Full Product Catalog / 图册
+// src/pages/catalog.astro — Product Catalog Browsing Page
 import FactoryLayout from '../layouts/FactoryLayout.astro';
 import { productCategories } from '../data/products-b2b.js';
+
+const allProducts = productCategories.map(cat => ({
+  ...cat,
+  image: `/factory/images/${cat.slug}.svg`,
+  specs: getCategorySpecs(cat.slug)
+}));
+
+function getCategorySpecs(slug) {
+  const specs = {
+    'bra-sets': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Fabrics: Lace, Mesh, Microfiber', 'Sizes: S-XXL, Custom', 'Packaging: Polybag + Hang Tag'],
+    'bras': ['MOQ: 200 pcs/style', 'Lead Time: 20-30 days', 'Fabrics: Cotton, Nylon, Spandex', 'Sizes: 32A-38DD', 'Closures: 2/3 hook & eye'],
+    'plus-size-bras': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Fabrics: Cotton, Nylon, Spandex, Lace', 'Sizes: 36C-46DD', 'Wide Straps: ✦ Standard'],
+    'panties': ['MOQ: 300 pcs/style', 'Lead Time: 20-30 days', 'Styles: Bikini, Brief, Thong, Seamless', 'Sizes: XS-3XL', 'Fabric: Cotton, Modal, Nylon'],
+    'silicone-bras': ['MOQ: 500 pcs/style', 'Lead Time: 25-35 days', 'Adhesive: Medical-grade silicone', 'Sizes: A-DDD', 'Colors: Nude, Black, White, Custom'],
+    'shapewear': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Fabrics: Nylon/Spandex Power Mesh', 'Sizes: S-3XL', 'Compression: Light to Firm'],
+    'sleepwear': ['MOQ: 300 pcs/style (Custom)', 'Lead Time: 30-45 days', 'Fabrics: Silk, Satin, Modal, Cotton', 'Sizes: S-2XL', 'Patterns: Pajama, Chemise, Robe, Nightgown']
+  };
+  return specs[slug] || ['MOQ: Contact us', 'Custom sizes available'];
+}
 ---
 <FactoryLayout
-  title="Product Catalog | OEM Intimate Apparel Factory"
-  description="Full product catalog of Charlizi Factory: bra sets, bras, plus size bras, panties, silicone bras, shapewear & sleepwear. B2B OEM/ODM with complete specs."
+  title="Product Catalog | OEM Intimate Apparel Collection"
+  description="Browse our complete product catalog with specifications. 7 categories including bras, panties, shapewear, silicone bras & sleepwear. B2B wholesale with OEM/ODM available."
 >
-  <!-- Hero Banner -->
-  <section class="bg-navy relative overflow-hidden">
-    <div class="absolute inset-0 opacity-[0.08]" style="background-image: radial-gradient(circle at 25% 50%, white 1px, transparent 1px); background-size: 40px 40px;"></div>
-    <div class="container-site relative z-10 py-16 md:py-20">
-      <span class="section-label text-accent-light/80">Product Catalog</span>
-      <h1 class="text-3xl md:text-4xl font-bold text-white mt-2">Complete Product Catalog</h1>
-      <p class="text-white/60 mt-3 max-w-2xl text-sm md:text-base">Browse our full range of intimate apparel products. Each category includes detailed specifications, MOQ, lead times, and customization options. Download specs or request a quote.</p>
-      <!-- Filter tabs -->
-      <div class="flex flex-wrap gap-2 mt-8" id="catalog-tabs">
-        <button class="tab-btn active px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-accent text-white transition-colors" data-filter="all">All Categories</button>
-        {productCategories.map(cat => (
-          <button class="tab-btn px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors" data-filter={cat.slug}>{cat.name}</button>
-        ))}
-      </div>
-    </div>
-  </section>
+  <div class="container-site py-12">
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span>/</span>
+      <a href="/products">Products</a>
+      <span>/</span>
+      <span class="text-navy font-medium">Catalog</span>
+    </nav>
 
-  <!-- Catalog Grid -->
-  <section class="container-site py-12" id="catalog-grid">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      {productCategories.map(cat => (
-        <div class="catalog-item card-hover rounded-lg overflow-hidden bg-white" data-category={cat.slug}>
-          <div class="grid grid-cols-1 md:grid-cols-5 gap-0">
+    <div class="max-w-3xl mb-12">
+      <span class="section-label">Product Catalog</span>
+      <h1 class="section-title">Complete Product Collection</h1>
+      <p class="section-desc">
+        Browse our full product range with specifications. All categories available for
+        OEM/ODM production with custom branding, packaging, and fabric options.
+      </p>
+    </div>
+
+    <!-- Categories Grid -->
+    <div class="space-y-16">
+      {allProducts.map((cat, idx) => (
+        <section id={cat.slug} class="scroll-mt-24">
+          <div class="flex items-center gap-3 mb-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-navy">{cat.name}</h2>
+            <span class="text-xs px-3 py-1 bg-accent/10 text-accent font-semibold rounded-full">
+              {cat.subCategories.length} styles
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 bg-cream rounded-xl p-6 md:p-8">
             <!-- Image -->
-            <div class="md:col-span-2 bg-cream-dark overflow-hidden h-56 md:h-auto relative">
-              <img src={cat.image} alt={cat.name} class="w-full h-full object-cover" />
-              <div class="absolute top-3 left-3">
-                <span class="badge badge-accent text-[10px]">{cat.subCategories.length} Variants</span>
-              </div>
+            <div class="lg:col-span-2 bg-white rounded-lg overflow-hidden shadow-sm">
+              <img
+                src={cat.image}
+                alt={cat.name}
+                class="w-full h-64 lg:h-80 object-contain p-4"
+                loading={idx === 0 ? 'eager' : 'lazy'}
+              />
             </div>
-            <!-- Details -->
-            <div class="md:col-span-3 p-6 flex flex-col">
-              <h2 class="text-xl font-bold text-navy">{cat.name}</h2>
-              <p class="text-sm text-stone mt-2 leading-relaxed line-clamp-3">{cat.description}</p>
-              
-              <!-- Specs Mini -->
-              <div class="mt-4 flex-1">
-                <div class="grid grid-cols-2 gap-3 text-xs">
-                  <div class="bg-cream rounded p-2.5">
-                    <span class="block text-slate uppercase tracking-wider text-[10px] font-semibold">Subcategories</span>
-                    <span class="block text-navy font-medium mt-0.5">{cat.subCategories.slice(0, 3).join(', ')}{cat.subCategories.length > 3 ? '...' : ''}</span>
-                  </div>
-                  <div class="bg-cream rounded p-2.5">
-                    <span class="block text-slate uppercase tracking-wider text-[10px] font-semibold">Specs</span>
-                    <span class="block text-navy font-medium mt-0.5">{cat.specs.length} key specs</span>
-                  </div>
-                  <div class="bg-cream rounded p-2.5">
-                    <span class="block text-slate uppercase tracking-wider text-[10px] font-semibold">MOQ</span>
-                    <span class="block text-accent font-bold mt-0.5">{cat.id === 'sleepwear' ? '300 pcs' : '200 pcs'}</span>
-                  </div>
-                  <div class="bg-cream rounded p-2.5">
-                    <span class="block text-slate uppercase tracking-wider text-[10px] font-semibold">Lead Time</span>
-                    <span class="block text-accent font-bold mt-0.5">30-45 days</span>
-                  </div>
+
+            <!-- Info + Specs -->
+            <div class="lg:col-span-3 space-y-5">
+              <p class="text-stone text-sm leading-relaxed">{cat.description}</p>
+
+              <!-- Sub-categories -->
+              <div>
+                <h3 class="text-xs font-semibold text-navy uppercase tracking-wider mb-2">Product Range</h3>
+                <div class="flex flex-wrap gap-2">
+                  {cat.subCategories.map(sc => (
+                    <span class="text-xs px-3 py-1.5 bg-navy/5 text-navy/80 font-medium rounded">{sc}</span>
+                  ))}
                 </div>
               </div>
 
-              <!-- Actions -->
-              <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-100">
-                <a href={`/products/${cat.slug}`} class="btn-outline text-xs py-2 px-4">View Details</a>
-                <a href={`/contact?product=${cat.slug}`} class="btn-accent text-xs py-2 px-4">📩 Request Quote</a>
+              <!-- Specs table -->
+              <div>
+                <h3 class="text-xs font-semibold text-navy uppercase tracking-wider mb-2">Specifications</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {cat.specs.map(spec => {
+                    const [key, ...valParts] = spec.split(': ');
+                    const val = valParts.join(': ');
+                    return (
+                      <div class="bg-white px-4 py-2.5 rounded text-sm flex items-center gap-2 shadow-sm">
+                        <span class="text-slate font-medium min-w-[70px]">{key}</span>
+                        <span class="text-navy">{val}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="flex flex-wrap gap-3 pt-2">
+                <a href={`/products/${cat.slug}`} class="btn-navy text-sm px-5 py-2.5">
+                  View Full Page →
+                </a>
+                <a href="/contact?product={cat.slug}" class="btn-outline text-sm px-5 py-2.5">
+                  Request Quote
+                </a>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       ))}
     </div>
-  </section>
 
-  <!-- Downloads Section -->
-  <section class="bg-cream section-padding">
-    <div class="container-site text-center">
-      <span class="section-label">Resources</span>
-      <h2 class="section-title">Download Product Information</h2>
-      <p class="section-desc mx-auto mb-10">Need detailed specifications for your sourcing evaluation? Download our product guides or request a full catalog.</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-        <div class="bg-white p-8 card-hover rounded-lg text-center">
-          <div class="w-14 h-14 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/><path d="M12 3v6a1 1 0 001 1h6"/><path d="M12 11v6"/><path d="M9 14l3 3 3-3"/></svg>
-          </div>
-          <h3 class="font-semibold text-navy">Product Catalog PDF</h3>
-          <p class="text-sm text-stone mt-2">Complete product range with specifications and pricing guide.</p>
-          <a href="/contact?download=catalog" class="btn-outline text-xs mt-6 w-full">Request Download</a>
-        </div>
-        <div class="bg-white p-8 card-hover rounded-lg text-center">
-          <div class="w-14 h-14 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          </div>
-          <h3 class="font-semibold text-navy">Certification Documents</h3>
-          <p class="text-sm text-stone mt-2">BSCI, OEKO-TEX, ISO 9001 certificates and compliance reports.</p>
-          <a href="/contact?download=certifications" class="btn-outline text-xs mt-6 w-full">Request Download</a>
-        </div>
-        <div class="bg-white p-8 card-hover rounded-lg text-center">
-          <div class="w-14 h-14 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          </div>
-          <h3 class="font-semibold text-navy">Get Expert Advice</h3>
-          <p class="text-sm text-stone mt-2">Talk to our team about your OEM/ODM project requirements.</p>
-          <a href="/contact" class="btn-accent text-xs mt-6 w-full">Contact Us</a>
-        </div>
+    <!-- Lead time note -->
+    <div class="mt-16 bg-navy p-8 md:p-10 rounded-xl text-center">
+      <h2 class="text-xl font-bold text-white">Ready to Start Your Project?</h2>
+      <p class="text-white/70 mt-3 max-w-xl mx-auto text-sm">
+        Send us your specifications, drawings, or samples for a customized quote.
+        Sampling available for all categories.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mt-6">
+        <a href="/contact" class="btn-accent text-sm px-8 py-3 font-semibold">Contact Sales</a>
+        <a href="mailto:sales@charlizi.com" class="inline-flex items-center text-white/80 text-sm hover:text-white transition-colors gap-1">
+          ✉ sales@charlizi.com
+        </a>
       </div>
     </div>
-  </section>
-
-  <!-- Sticky CTA -->
-  <div class="fixed bottom-0 left-0 right-0 bg-navy/95 backdrop-blur-sm z-40 border-t border-white/10 py-3 md:hidden">
-    <div class="container-site flex gap-3">
-      <a href="/contact" class="btn-accent text-xs flex-1 text-center py-3">📩 Request Quote</a>
-      <a href="https://viomisha.com" target="_blank" class="btn-outline text-xs flex-1 text-center py-3 border-white/30 text-white">📦 Small Batch</a>
-    </div>
   </div>
-
-  <!-- Filter Script -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const tabs = document.querySelectorAll('.tab-btn');
-      const items = document.querySelectorAll('.catalog-item');
-      
-      tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-          // Update active tab
-          tabs.forEach(t => {
-            t.classList.remove('active', 'bg-accent', 'text-white');
-            t.classList.add('bg-white/10', 'text-white/70');
-          });
-          this.classList.add('active', 'bg-accent', 'text-white');
-          this.classList.remove('bg-white/10', 'text-white/70');
-          
-          const filter = this.dataset.filter;
-          items.forEach(item => {
-            if (filter === 'all' || item.dataset.category === filter) {
-              item.style.display = '';
-            } else {
-              item.style.display = 'none';
-            }
-          });
-        });
-      });
-    });
-  </script>
 </FactoryLayout>
