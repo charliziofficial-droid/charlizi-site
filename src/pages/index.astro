@@ -1,11 +1,11 @@
 ---
-// src/pages/index.astro â€” B2B Factory Homepage
+// src/pages/index.astro â€?B2B Factory Homepage
 import FactoryLayout from '../layouts/FactoryLayout.astro';
 import { factoryStats, certifications, productCategories } from '../data/products-b2b.js';
 ---
 <FactoryLayout
   title="Intimate Apparel OEM Manufacturer | Lingerie Factory China"
-  description="Charlizi Factory â€” professional lingerie & intimate apparel OEM/ODM manufacturer. BSCI & OEKO-TEX certified. 200+ workers, 5,000ãŽ¡ facility. Bras, shapewear, panties, silicone bras & custom sleepwear. MOQ 200 pcs. Small batch sample available."
+  description="Charlizi Factory â€?professional lingerie & intimate apparel OEM/ODM manufacturer. BSCI & OEKO-TEX certified. 200+ workers, 5,000ãŽ?facility. Bras, shapewear, panties, silicone bras & custom sleepwear. MOQ 200 pcs. Small batch sample available."
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -42,7 +42,7 @@ import { factoryStats, certifications, productCategories } from '../data/product
           Manufacturing Partner
         </h1>
         <p class="text-white/70 text-base sm:text-lg mt-6 max-w-xl leading-relaxed">
-          Lingerie, shapewear, panties, and silicone bras â€” 
+          Lingerie, shapewear, panties, and silicone bras â€?
           from design to delivery. BSCI & OEKO-TEX certified quality.
         </p>
         <div class="flex flex-wrap gap-4 mt-10">
@@ -85,22 +85,7 @@ import { factoryStats, certifications, productCategories } from '../data/product
       {productCategories.map(cat => (
         <a href={`/products/${cat.slug}`} class="card-hover group p-6 border border-gray-100 hover:border-accent/20">
           <div class="aspect-[4/3] mb-4 overflow-hidden rounded-sm relative">
-            <div class="w-full h-full bg-gradient-to-br from-navy/5 to-accent/5 group-hover:scale-105 transition-transform duration-500">
-              <!-- Decorative pattern overlay -->
-              <div class="absolute inset-0 opacity-[0.08]" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0,0,0,0.1) 20px, rgba(0,0,0,0.1) 21px)"></div>
-              <!-- Category icons area -->
-              <div class="absolute inset-0 flex items-center justify-center">
-                <svg class="w-12 h-12 text-navy/10 group-hover:text-accent/20 group-hover:scale-110 transition-all duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                  {cat.id === 'bra-sets' && <><circle cx="12" cy="12" r="8"/><path d="M8 12q4-3 8 0"/></>}
-                  {cat.id === 'bras' && <><path d="M6 14c0-4 12-4 12 0"/><circle cx="12" cy="8" r="2"/><path d="M4 14h16"/></>}
-                  {cat.id === 'plus-size-bras' && <><path d="M4 16c0-6 16-6 16 0"/><circle cx="12" cy="7" r="2.5"/></>}
-                  {cat.id === 'panties' && <><path d="M6 16c2-4 10-4 12 0"/><path d="M8 18c-2 0-2-2 0-2"/><path d="M16 18c2 0 2-2 0-2"/></>}
-                  {cat.id === 'silicone-bras' && <><circle cx="12" cy="14" r="6"/><circle cx="12" cy="10" r="3"/></>}
-                  {cat.id === 'shapewear' && <><path d="M8 6h8c1 0 2 1 2 2v10c0 1-1 2-2 2H8c-1 0-2-1-2-2V8c0-1 1-2 2-2z"/><path d="M10 4h4v2h-4z"/></>}
-                  {cat.id === 'sleepwear' && <><path d="M6 20c0-8 12-8 12 0"/><path d="M8 16c2-4 6-4 8 0"/></>}
-                </svg>
-              </div>
-            </div>
+            <img src="/factory/images/product-sample.webp" alt={cat.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <h3 class="font-semibold text-navy group-hover:text-accent transition-colors text-sm">{cat.name}</h3>
           <p class="text-xs text-slate mt-2 line-clamp-2">{cat.description}</p>
@@ -116,7 +101,7 @@ import { factoryStats, certifications, productCategories } from '../data/product
       ))}
     </div>
     <div class="text-center mt-10">
-      <a href="/products" class="btn-outline">View All Products â†’</a>
+      <a href="/products" class="btn-outline">View All Products â†?/a>
     </div>
   </section>
 
@@ -184,10 +169,10 @@ import { factoryStats, certifications, productCategories } from '../data/product
         </ul>
       </div>
       <div class="relative aspect-[4/5] overflow-hidden rounded-lg shadow-lg">
-        <img src="/factory/images/factory-placeholder.jpg" alt="5,000ãŽ¡ Modern Workshop" class="w-full h-full object-cover" />
+        <img src="/factory/images/factory-placeholder.jpg" alt="5,000ãŽ?Modern Workshop" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent"></div>
         <div class="absolute bottom-4 left-4 right-4">
-          <p class="text-white font-semibold text-sm">5,000ãŽ¡ Modern Workshop</p>
+          <p class="text-white font-semibold text-sm">5,000ãŽ?Modern Workshop</p>
           <p class="text-white/70 text-xs mt-1">Equipped with advanced manufacturing facilities</p>
         </div>
       </div>
@@ -202,7 +187,7 @@ import { factoryStats, certifications, productCategories } from '../data/product
       <div class="flex flex-wrap justify-center gap-4 mt-8">
         <a href="/contact" class="btn-accent px-8 py-4 font-semibold">Send Inquiry</a>
         <a href="https://viomisha.com" target="_blank" class="inline-flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 text-sm hover:bg-white/10 transition-colors">
-          ðŸ“¦ Try Small Batch â†’ Viomisha
+          ðŸ“¦ Try Small Batch â†?Viomisha
         </a>
       </div>
     </div>
