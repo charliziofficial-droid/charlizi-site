@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f6f3" />
+      <stop offset="100%" style="stop-color:#ede8e0" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:0.04" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="400" cy="290" r="200" fill="url(#accent)"/>
+  <ellipse cx="400" cy="280" rx="80" ry="110" fill="white" opacity="0.5" stroke="#EC489930" stroke-width="1"/>
+  <path d="M340 230 Q370 190 400 220 Q430 190 460 230 L470 370 Q400 380 330 370 Z" fill="white" stroke="#EC489950" stroke-width="1.5" opacity="0.8"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#1a1a2e">Bras</text>
+  <text x="400" y="500" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#8b8b8b">OEM / ODM Manufacturer</text>
+  <text x="400" y="550" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#ccc" letter-spacing="4">CHARLIZI FACTORY</text>
+</svg>

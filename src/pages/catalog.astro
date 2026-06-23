@@ -1,0 +1,150 @@
+---
+// src/pages/catalog.astro — Full Product Catalog / 图册
+import FactoryLayout from '../layouts/FactoryLayout.astro';
+import { productCategories } from '../data/products-b2b.js';
+---
+<FactoryLayout
+  title="Product Catalog | OEM Intimate Apparel Factory"
+  description="Full product catalog of Charlizi Factory: bra sets, bras, plus size bras, panties, silicone bras, shapewear & sleepwear. B2B OEM/ODM with complete specs."
+>
+  <!-- Hero Banner -->
+  <section class="bg-navy relative overflow-hidden">
+    <div class="absolute inset-0 opacity-[0.08]" style="background-image: radial-gradient(circle at 25% 50%, white 1px, transparent 1px); background-size: 40px 40px;"></div>
+    <div class="container-site relative z-10 py-16 md:py-20">
+      <span class="section-label text-accent-light/80">Product Catalog</span>
+      <h1 class="text-3xl md:text-4xl font-bold text-white mt-2">Complete Product Catalog</h1>
+      <p class="text-white/60 mt-3 max-w-2xl text-sm md:text-base">Browse our full range of intimate apparel products. Each category includes detailed specifications, MOQ, lead times, and customization options. Download specs or request a quote.</p>
+      <!-- Filter tabs -->
+      <div class="flex flex-wrap gap-2 mt-8" id="catalog-tabs">
+        <button class="tab-btn active px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-accent text-white transition-colors" data-filter="all">All Categories</button>
+        {productCategories.map(cat => (
+          <button class="tab-btn px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-colors" data-filter={cat.slug}>{cat.name}</button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Grid -->
+  <section class="container-site py-12" id="catalog-grid">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      {productCategories.map(cat => (
+        <div class="catalog-item card-hover rounded-lg overflow-hidden bg-white" data-category={cat.slug}>
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-0">
+            <!-- Image -->
+            <div class="md:col-span-2 bg-cream-dark overflow-hidden h-56 md:h-auto relative">
+              <img src={cat.image} alt={cat.name} class="w-full h-full object-cover" />
+              <div class="absolute top-3 left-3">
+                <span class="badge badge-accent text-[10px]">{cat.subCategories.length} Variants</span>
+              </div>
+            </div>
+            <!-- Details -->
+            <div class="md:col-span-3 p-6 flex flex-col">
+              <h2 class="text-xl font-bold text-navy">{cat.name}</h2>
+              <p class="text-sm text-stone mt-2 leading-relaxed line-clamp-3">{cat.description}</p>
+              
+              <!-- Specs Mini -->
+              <div class="mt-4 flex-1">
+                <div class="grid grid-cols-2 gap-3 text-xs">
+                  <div class="bg-cream rounded p-2.5">
+                    <span class="block text-slate uppercase tracking-wider text-[10px] font-semibold">Subcategories</span>
+                    <span class="block text-navy font-medium mt-0.5">{cat.subCategories.slice(0, 3).join(', ')}{cat.subCategories.length > 3 ? '...' : ''}</span>
+                  </div>
+                  <div class="bg-cream rounded p-2.5">
+                    <span class="block text-slate uppercase tracking-wider text-[10px] font-semibold">Specs</span>
+                    <span class="block text-navy font-medium mt-0.5">{cat.specs.length} key specs</span>
+                  </div>
+                  <div class="bg-cream rounded p-2.5">
+                    <span class="block text-slate uppercase tracking-wider text-[10px] font-semibold">MOQ</span>
+                    <span class="block text-accent font-bold mt-0.5">{cat.id === 'sleepwear' ? '300 pcs' : '200 pcs'}</span>
+                  </div>
+                  <div class="bg-cream rounded p-2.5">
+                    <span class="block text-slate uppercase tracking-wider text-[10px] font-semibold">Lead Time</span>
+                    <span class="block text-accent font-bold mt-0.5">30-45 days</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Actions -->
+              <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-100">
+                <a href={`/products/${cat.slug}`} class="btn-outline text-xs py-2 px-4">View Details</a>
+                <a href={`/contact?product=${cat.slug}`} class="btn-accent text-xs py-2 px-4">📩 Request Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Downloads Section -->
+  <section class="bg-cream section-padding">
+    <div class="container-site text-center">
+      <span class="section-label">Resources</span>
+      <h2 class="section-title">Download Product Information</h2>
+      <p class="section-desc mx-auto mb-10">Need detailed specifications for your sourcing evaluation? Download our product guides or request a full catalog.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-8 card-hover rounded-lg text-center">
+          <div class="w-14 h-14 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/><path d="M12 3v6a1 1 0 001 1h6"/><path d="M12 11v6"/><path d="M9 14l3 3 3-3"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy">Product Catalog PDF</h3>
+          <p class="text-sm text-stone mt-2">Complete product range with specifications and pricing guide.</p>
+          <a href="/contact?download=catalog" class="btn-outline text-xs mt-6 w-full">Request Download</a>
+        </div>
+        <div class="bg-white p-8 card-hover rounded-lg text-center">
+          <div class="w-14 h-14 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy">Certification Documents</h3>
+          <p class="text-sm text-stone mt-2">BSCI, OEKO-TEX, ISO 9001 certificates and compliance reports.</p>
+          <a href="/contact?download=certifications" class="btn-outline text-xs mt-6 w-full">Request Download</a>
+        </div>
+        <div class="bg-white p-8 card-hover rounded-lg text-center">
+          <div class="w-14 h-14 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="font-semibold text-navy">Get Expert Advice</h3>
+          <p class="text-sm text-stone mt-2">Talk to our team about your OEM/ODM project requirements.</p>
+          <a href="/contact" class="btn-accent text-xs mt-6 w-full">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky CTA -->
+  <div class="fixed bottom-0 left-0 right-0 bg-navy/95 backdrop-blur-sm z-40 border-t border-white/10 py-3 md:hidden">
+    <div class="container-site flex gap-3">
+      <a href="/contact" class="btn-accent text-xs flex-1 text-center py-3">📩 Request Quote</a>
+      <a href="https://viomisha.com" target="_blank" class="btn-outline text-xs flex-1 text-center py-3 border-white/30 text-white">📦 Small Batch</a>
+    </div>
+  </div>
+
+  <!-- Filter Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.tab-btn');
+      const items = document.querySelectorAll('.catalog-item');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Update active tab
+          tabs.forEach(t => {
+            t.classList.remove('active', 'bg-accent', 'text-white');
+            t.classList.add('bg-white/10', 'text-white/70');
+          });
+          this.classList.add('active', 'bg-accent', 'text-white');
+          this.classList.remove('bg-white/10', 'text-white/70');
+          
+          const filter = this.dataset.filter;
+          items.forEach(item => {
+            if (filter === 'all' || item.dataset.category === filter) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</FactoryLayout>

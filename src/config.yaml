@@ -1,6 +1,6 @@
 site:
   name: Charlizi Factory
-  site: 'https://charlizi-site.pages.dev'
+  site: 'https://charlizi.com'
   base: '/'
   trailingSlash: false
 

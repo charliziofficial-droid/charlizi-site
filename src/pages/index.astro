@@ -1,11 +1,11 @@
 ---
-// src/pages/index.astro â€?B2B Factory Homepage
+// src/pages/index.astro ï¿½?B2B Factory Homepage
 import FactoryLayout from '../layouts/FactoryLayout.astro';
 import { factoryStats, certifications, productCategories } from '../data/products-b2b.js';
 ---
 <FactoryLayout
   title="Intimate Apparel OEM Manufacturer | Lingerie Factory China"
-  description="Charlizi Factory â€?professional lingerie & intimate apparel OEM/ODM manufacturer. BSCI & OEKO-TEX certified. 200+ workers, 5,000ãŽ?facility. Bras, shapewear, panties, silicone bras & custom sleepwear. MOQ 200 pcs. Small batch sample available."
+  description="Charlizi Factory ï¿½?professional lingerie & intimate apparel OEM/ODM manufacturer. BSCI & OEKO-TEX certified. 200+ workers, 5,000ï¿½?facility. Bras, shapewear, panties, silicone bras & custom sleepwear. MOQ 200 pcs. Small batch sample available."
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -42,7 +42,7 @@ import { factoryStats, certifications, productCategories } from '../data/product
           Manufacturing Partner
         </h1>
         <p class="text-white/70 text-base sm:text-lg mt-6 max-w-xl leading-relaxed">
-          Lingerie, shapewear, panties, and silicone bras â€?
+          Lingerie, shapewear, panties, and silicone bras ï¿½?
           from design to delivery. BSCI & OEKO-TEX certified quality.
         </p>
         <div class="flex flex-wrap gap-4 mt-10">
@@ -85,7 +85,7 @@ import { factoryStats, certifications, productCategories } from '../data/product
       {productCategories.map(cat => (
         <a href={`/products/${cat.slug}`} class="card-hover group p-6 border border-gray-100 hover:border-accent/20">
           <div class="aspect-[4/3] mb-4 overflow-hidden rounded-sm relative">
-            <img src="/factory/images/product-sample.webp" alt={cat.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src={cat.image} alt={cat.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <h3 class="font-semibold text-navy group-hover:text-accent transition-colors text-sm">{cat.name}</h3>
           <p class="text-xs text-slate mt-2 line-clamp-2">{cat.description}</p>
@@ -101,7 +101,7 @@ import { factoryStats, certifications, productCategories } from '../data/product
       ))}
     </div>
     <div class="text-center mt-10">
-      <a href="/products" class="btn-outline">View All Products â†?/a>
+      <a href="/products" class="btn-outline">View All Products ï¿½?/a>
     </div>
   </section>
 
@@ -169,10 +169,10 @@ import { factoryStats, certifications, productCategories } from '../data/product
         </ul>
       </div>
       <div class="relative aspect-[4/5] overflow-hidden rounded-lg shadow-lg">
-        <img src="/factory/images/factory-placeholder.jpg" alt="5,000ãŽ?Modern Workshop" class="w-full h-full object-cover" />
+        <img src="/factory/images/factory-placeholder.jpg" alt="5,000ï¿½?Modern Workshop" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent"></div>
         <div class="absolute bottom-4 left-4 right-4">
-          <p class="text-white font-semibold text-sm">5,000ãŽ?Modern Workshop</p>
+          <p class="text-white font-semibold text-sm">5,000ï¿½?Modern Workshop</p>
           <p class="text-white/70 text-xs mt-1">Equipped with advanced manufacturing facilities</p>
         </div>
       </div>
@@ -187,7 +187,7 @@ import { factoryStats, certifications, productCategories } from '../data/product
       <div class="flex flex-wrap justify-center gap-4 mt-8">
         <a href="/contact" class="btn-accent px-8 py-4 font-semibold">Send Inquiry</a>
         <a href="https://viomisha.com" target="_blank" class="inline-flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 text-sm hover:bg-white/10 transition-colors">
-          ðŸ“¦ Try Small Batch â†?Viomisha
+          ðŸ“¦ Try Small Batch ï¿½?Viomisha
         </a>
       </div>
     </div>

@@ -27,7 +27,7 @@ import { productCategories } from '../data/products-b2b.js';
       {productCategories.map(cat => (
         <a href={`/products/${cat.slug}`} class="card-hover group">
           <div class="aspect-[16/10] bg-cream-dark overflow-hidden">
-            <div class="w-full h-full bg-gradient-to-br from-navy/[0.03] to-accent/[0.06] group-hover:scale-105 transition-transform duration-500"></div>
+            <img src={cat.image} alt={cat.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div class="p-6">
             <h2 class="font-semibold text-navy text-lg group-hover:text-accent transition-colors">{cat.name}</h2>

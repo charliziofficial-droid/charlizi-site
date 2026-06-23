@@ -23,7 +23,7 @@ const postsWithLinks = blogPosts.map(p => ({ ...p, href: `/blog/${p.slug}` }));
       {postsWithLinks.map(post => (
         <a href={post.href} class="card-hover group">
           <div class="aspect-[16/10] bg-cream-dark overflow-hidden">
-            <img src="/factory/images/product-sample.webp" alt={post.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <img src="/factory/images/category-showcase.webp" alt={post.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div class="p-6">
             <time class="text-xs text-slate">{post.date}</time>
