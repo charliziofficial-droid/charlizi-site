@@ -1,11 +1,13 @@
 ---
 // src/pages/admin.astro — Self-hosted Admin Panel (no OAuth, no external CMS)
+const buildVer = new Date().getTime().toString(36);
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- v=BUILD_VER -->
   <title>Admin — Charlizi Factory</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <style>
@@ -168,6 +170,7 @@
   <div id="app"></div>
   <script>
     // ====== APP STATE ======
+    const BUILD_VER = 'BUILD_VER';
     const S = {
       page: 'login',
       token: localStorage.getItem('cf_admin_token') || '',
