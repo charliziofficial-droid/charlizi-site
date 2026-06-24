@@ -1,6 +1,7 @@
 ---
 import FactoryLayout from '../layouts/FactoryLayout.astro';
 import { productionSteps } from '../data/products-b2b.js';
+import Picture from '../components/Picture.astro';
 const title = "Lingerie Production Process | From Design to Delivery";
 const description = "Our 7-step production process: pattern making, sample, fabric sourcing, cutting, sewing, QC, packaging. OEM/ODM intimate apparel manufacturing.";
 ---
@@ -48,23 +49,11 @@ const description = "Our 7-step production process: pattern making, sample, fabr
 
             <!-- Step image -->
             <div class="mt-6 aspect-[3/2] rounded-lg overflow-hidden border border-gray-100 shadow-sm">
-              <img src={`/factory/images/step-${step.step}.webp`} alt={step.title} class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <Picture src={`step-${step.step}.webp`} alt={step.title} cls="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
       ))}
-    </div>
-
-    <!-- Total timeline summary -->
-    <div class="bg-navy text-white rounded-lg p-8 mt-8 text-center">
-      <p class="text-lg font-semibold">Total estimated timeline: <span class="text-accent-light">35-50 days</span> from sample approval to shipment</p>
-      <p class="text-sm text-white/60 mt-2">Accelerated timelines available for repeat orders and bulk production runs.</p>
-    </div>
-
-    <!-- CTA -->
-    <div class="flex flex-wrap gap-4 justify-center mt-12">
-      <a href="/contact" class="btn-primary text-base px-8 py-4">📩 Start Your Project</a>
-      <a href="/faq" class="btn-outline text-base px-8 py-4">OEM/ODM FAQ →</a>
     </div>
   </div>
 </FactoryLayout>

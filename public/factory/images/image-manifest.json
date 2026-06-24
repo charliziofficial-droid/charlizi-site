@@ -1,0 +1,254 @@
+{
+  "hero": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/hero@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/hero@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/hero@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/hero@1920.webp"
+      }
+    ],
+    "fallback": "hero.webp"
+  },
+  "factory-overview": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/factory-overview@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/factory-overview@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/factory-overview@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/factory-overview@1920.webp"
+      }
+    ],
+    "fallback": "factory-overview.webp"
+  },
+  "factory-placeholder": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/factory-placeholder@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/factory-placeholder@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/factory-placeholder@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/factory-placeholder@1920.webp"
+      }
+    ],
+    "fallback": "factory-placeholder.jpg"
+  },
+  "category-showcase": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/category-showcase@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/category-showcase@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/category-showcase@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/category-showcase@1920.webp"
+      }
+    ],
+    "fallback": "category-showcase.webp"
+  },
+  "gallery-grid": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/gallery-grid@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/gallery-grid@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/gallery-grid@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/gallery-grid@1920.webp"
+      }
+    ],
+    "fallback": "gallery-grid.webp"
+  },
+  "step-01": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/step-01@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/step-01@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/step-01@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/step-01@1920.webp"
+      }
+    ],
+    "fallback": "step-01.webp"
+  },
+  "step-02": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/step-02@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/step-02@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/step-02@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/step-02@1920.webp"
+      }
+    ],
+    "fallback": "step-02.webp"
+  },
+  "step-03": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/step-03@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/step-03@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/step-03@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/step-03@1920.webp"
+      }
+    ],
+    "fallback": "step-03.webp"
+  },
+  "step-04": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/step-04@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/step-04@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/step-04@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/step-04@1920.webp"
+      }
+    ],
+    "fallback": "step-04.webp"
+  },
+  "step-05": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/step-05@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/step-05@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/step-05@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/step-05@1920.webp"
+      }
+    ],
+    "fallback": "step-05.webp"
+  },
+  "step-06": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/step-06@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/step-06@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/step-06@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/step-06@1920.webp"
+      }
+    ],
+    "fallback": "step-06.webp"
+  },
+  "step-07": {
+    "webp": [
+      {
+        "width": 480,
+        "path": "/factory/images/responsive/step-07@480.webp"
+      },
+      {
+        "width": 768,
+        "path": "/factory/images/responsive/step-07@768.webp"
+      },
+      {
+        "width": 1024,
+        "path": "/factory/images/responsive/step-07@1024.webp"
+      },
+      {
+        "width": 1920,
+        "path": "/factory/images/responsive/step-07@1920.webp"
+      }
+    ],
+    "fallback": "step-07.webp"
+  }
+}

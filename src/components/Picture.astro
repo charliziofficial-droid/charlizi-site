@@ -1,0 +1,26 @@
+---
+// src/components/Picture.astro — Responsive WebP with srcset + PNG/JPEG fallback
+const { src, alt, cls = '', loading = 'lazy', sizes, priority } = Astro.props;
+
+const isSvg = (src || '').endsWith('.svg');
+const isPng = (src || '').endsWith('.png');
+const name = (src || '').replace(/\.[^.]+$/, '');
+const sizesAttr = sizes || '(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 50vw, 100vw';
+---
+{ isSvg ? (
+  <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} />
+) : isPng ? (
+  <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} />
+) : (
+  <picture>
+    <source type="image/webp"
+      srcset={[
+        `/factory/images/responsive/${name}@480.webp 480w`,
+        `/factory/images/responsive/${name}@768.webp 768w`,
+        `/factory/images/responsive/${name}@1024.webp 1024w`,
+        `/factory/images/responsive/${name}@1920.webp 1920w`
+      ].join(', ')}
+      sizes={sizesAttr} />
+    <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} decoding="async" />
+  </picture>
+)}

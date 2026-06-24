@@ -2,6 +2,7 @@
 // src/pages/blog.astro
 import FactoryLayout from '../layouts/FactoryLayout.astro';
 import { blogPosts } from '../data/blog-posts.js';
+import Picture from '../components/Picture.astro';
 
 const postsWithLinks = blogPosts.map(p => ({ ...p, href: `/blog/${p.slug}` }));
 ---
@@ -23,12 +24,13 @@ const postsWithLinks = blogPosts.map(p => ({ ...p, href: `/blog/${p.slug}` }));
       {postsWithLinks.map(post => (
         <a href={post.href} class="card-hover group">
           <div class="aspect-[16/10] bg-cream-dark overflow-hidden">
-            <img src="/factory/images/category-showcase.webp" alt={post.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <Picture src="category-showcase.webp" alt={post.title} cls="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
           </div>
           <div class="p-6">
             <time class="text-xs text-slate">{post.date}</time>
             <h2 class="font-semibold text-navy mt-2 group-hover:text-accent transition-colors">{post.title}</h2>
-            <p class="text-sm text-stone mt-2 leading-relaxed">{post.desc}</p>
+            <p class="text-xs text-stone mt-2 line-clamp-3">{post.excerpt}</p>
+            <span class="inline-block mt-4 text-xs text-accent font-medium hover:text-accent-dark transition-colors">Read More</span>
           </div>
         </a>
       ))}

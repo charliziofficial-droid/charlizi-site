@@ -2,10 +2,11 @@
 // src/pages/about.astro
 import FactoryLayout from '../layouts/FactoryLayout.astro';
 import { factoryStats, certifications } from '../data/products-b2b.js';
+import Picture from '../components/Picture.astro';
 ---
 <FactoryLayout
   title="About Charlizi Factory | Lingerie OEM Manufacturer"
-  description="Learn about Charlizi Factory â€?5,000ãŽ?intimate apparel manufacturing facility. 200+ workers, BSCI/OEKO-TEX certified. Custom OEM/ODM with pattern development."
+  description="Learn about Charlizi Factory - 5,000sqm intimate apparel manufacturing facility. 200+ workers, BSCI/OEKO-TEX certified. Custom OEM/ODM with pattern development."
 >
   <div class="container-site py-12">
     <nav class="breadcrumb">
@@ -18,7 +19,7 @@ import { factoryStats, certifications } from '../data/products-b2b.js';
       <span class="section-label">About Us</span>
       <h1 class="section-title">Your Partner in Intimate Apparel Manufacturing</h1>
       <p class="section-desc">
-        Charlizi Factory was founded in {factoryStats.founded} with a mission to provide 
+        Charlizi Factory was founded in {factoryStats.founded} with a mission to provide
         global brands with high-quality, ethically produced intimate apparel at competitive prices.
       </p>
     </div>
@@ -28,13 +29,13 @@ import { factoryStats, certifications } from '../data/products-b2b.js';
       <div>
         <h2 class="text-2xl font-bold text-navy">Factory Overview</h2>
         <p class="text-stone mt-4 leading-relaxed">
-          Located in Shenzhen, Guangdong â€?the heart of China's apparel manufacturing industry â€?
-          our {factoryStats.area} facility houses {factoryStats.workers} skilled workers 
+          Located in Shenzhen, Guangdong - the heart of China's apparel manufacturing industry -
+          our {factoryStats.area} facility houses {factoryStats.workers} skilled workers
           producing over {factoryStats.annualOutput} garments annually.
         </p>
         <p class="text-stone mt-4 leading-relaxed">
-          We specialize in bras, bra sets, panties, plus size lingerie, silicone bras, shapewear, 
-          and custom sleepwear development. Our clients range from emerging DTC brands to 
+          We specialize in bras, bra sets, panties, plus size lingerie, silicone bras, shapewear,
+          and custom sleepwear development. Our clients range from emerging DTC brands to
           established retailers across North America, Europe, the Middle East, and Southeast Asia.
         </p>
         <div class="grid grid-cols-3 gap-6 mt-8">
@@ -44,7 +45,7 @@ import { factoryStats, certifications } from '../data/products-b2b.js';
         </div>
       </div>
       <div class="aspect-[4/3] overflow-hidden rounded-lg shadow-md">
-        <img src="/factory/images/factory-overview.webp" alt="5,000sqm Charlizi Factory Workshop - 200+ skilled workers" loading="lazy" class="w-full h-full object-cover" loading="lazy" />
+        <Picture src="factory-overview.webp" alt="5,000sqm Charlizi Factory Workshop" cls="w-full h-full object-cover" />
       </div>
     </div>
 
@@ -52,13 +53,13 @@ import { factoryStats, certifications } from '../data/products-b2b.js';
     <div class="mb-20">
       <h2 class="text-2xl font-bold text-navy mb-2">Our Team</h2>
       <p class="text-stone mb-8 max-w-2xl">
-        From pattern engineers to quality inspectors, every team member plays a role 
+        From pattern engineers to quality inspectors, every team member plays a role
         in delivering consistent, high-quality products.
       </p>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
-          { role: 'Pattern Engineers', desc: 'CAD pattern making & grading', count: '8' },
-          { role: 'Sample Makers', desc: 'First samples & fit approval', count: '12' },
+          { role: 'Pattern Engineers', desc: 'CAD pattern making and grading', count: '8' },
+          { role: 'Sample Makers', desc: 'First samples and fit approval', count: '12' },
           { role: 'Production Workers', desc: 'Dedicated sewing lines', count: '150+' },
           { role: 'QC Inspectors', desc: '3-stage quality control', count: '15' },
         ].map(t => (
@@ -75,34 +76,32 @@ import { factoryStats, certifications } from '../data/products-b2b.js';
     <div class="mb-20 bg-cream p-8 md:p-12">
       <div class="grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 class="text-2xl font-bold text-navy">Custom Sampling & Development</h2>
+          <h2 class="text-2xl font-bold text-navy">Custom Sampling and Development</h2>
           <p class="text-stone mt-4 leading-relaxed">
             Have a design in mind? We handle the full development cycle:
           </p>
           <ul class="mt-6 space-y-3 text-sm text-stone">
             <li class="flex gap-3">
-              <span class="text-accent font-bold">â†?/span>
-              <span><strong class="text-navy">Tech Pack Review</strong> â€?We review your spec sheet and suggest material & cost optimizations</span>
+              <span class="text-accent font-bold">01</span>
+              <span><strong class="text-navy">Tech Pack Review</strong> - We review your spec sheet and suggest material and cost optimizations</span>
             </li>
             <li class="flex gap-3">
-              <span class="text-accent font-bold">â†?/span>
-              <span><strong class="text-navy">Pattern Making</strong> â€?Digital pattern creation with graded size sets</span>
+              <span class="text-accent font-bold">02</span>
+              <span><strong class="text-navy">Pattern Making</strong> - Digital pattern creation with graded size sets</span>
             </li>
             <li class="flex gap-3">
-              <span class="text-accent font-bold">â†?/span>
-              <span><strong class="text-navy">Sample Development</strong> â€?First sample in 7-10 days, revisions included</span>
+              <span class="text-accent font-bold">03</span>
+              <span><strong class="text-navy">Sample Development</strong> - First sample in 7-10 days, revisions included</span>
             </li>
             <li class="flex gap-3">
-              <span class="text-accent font-bold">â†?/span>
-              <span><strong class="text-navy">Bulk Production</strong> â€?Once approved, full production with QC tracking</span>
+              <span class="text-accent font-bold">04</span>
+              <span><strong class="text-navy">Bulk Production</strong> - Once approved, full production with QC tracking</span>
             </li>
           </ul>
         </div>
         <div class="text-center">
           <p class="text-navy/50 text-sm">Need a quick sample run?</p>
-          <a href="https://viomisha.com" target="_blank" class="btn-accent mt-4 inline-flex gap-2">
-            ðŸ“¦ Shop Samples on Viomisha
-          </a>
+          <a href="https://viomisha.com" target="_blank" class="btn-accent mt-4 inline-flex gap-2">Shop Samples on Viomisha</a>
         </div>
       </div>
     </div>
