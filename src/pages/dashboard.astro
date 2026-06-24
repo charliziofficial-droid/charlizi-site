@@ -400,7 +400,7 @@ const buildVer = new Date().getTime().toString(36);
     const REPO = 'charliziofficial-droid/charlizi-site';
     function fetchGH(path, opts={}) {
       return fetch(GH + path, {
-        headers: { 'Authorization': 'token ' + S.token, 'Accept': 'application/vnd.github.v3+json', ...opts.headers },
+        headers: { 'Authorization': 'Bearer ' + S.token, 'Accept': 'application/vnd.github.v3+json', ...opts.headers },
         ...opts
       }).then(r => r.json());
     }
