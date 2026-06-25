@@ -407,7 +407,7 @@ const buildVer = new Date().getTime().toString(36);
     async function getFile(path) {
       try {
         const r = await fetchGH('/repos/'+REPO+'/contents/'+path);
-        return { content: atob(r.content), sha: r.sha, exists: true };
+        return { content: decodeURIComponent(escape(atob(r.content))), sha: r.sha, exists: true };
       } catch(e) { return { content: null, sha: null, exists: false }; }
     }
     async function putFile(path, content, sha, commitMsg) {
