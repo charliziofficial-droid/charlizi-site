@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- v=1782264441 -->
+  <title>Admin â€?Charlizi Factory</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    :root {
+      --navy: #1a1a2e;
+      --accent: #b8865c;
+      --cream: #f8f6f3;
+      --stone: #6b6b6b;
+      --slate: #4a5568;
+      --danger: #dc2626;
+      --success: #16a34a;
+      --border: #e5e0d8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--cream);
+      color: var(--navy);
+      min-height: 100vh;
+    }
+    .app { display: flex; min-height: 100vh; }
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: var(--navy);
+      color: white;
+      padding: 24px 0;
+      position: fixed;
+      top: 0; left: 0; bottom: 0;
+      overflow-y: auto;
+    }
+    .sidebar-header {
+      padding: 0 20px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 16px;
+    }
+    .sidebar-header h3 { font-size: 16px; font-weight: 600; }
+    .sidebar-header span { font-size: 11px; color: var(--accent); }
+    .sidebar a {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 20px;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: none;
+      background: none;
+      width: 100%;
+      text-align: left;
+    }
+    .sidebar a:hover, .sidebar a.active {
+      background: rgba(255,255,255,0.08);
+      color: white;
+    }
+    .sidebar a .icon { font-size: 16px; width: 22px; text-align: center; }
+    /* Main */
+    .main { margin-left: 220px; flex: 1; padding: 32px 40px; }
+    .main h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+    .main .subtitle { color: var(--stone); font-size: 13px; margin-bottom: 32px; }
+    /* Cards */
+    .card {
+      background: white;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .card h2 { font-size: 16px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    /* Form */
+    .form-group { margin-bottom: 14px; }
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--slate);
+      margin-bottom: 6px;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 14px;
+      font-family: inherit;
+      color: var(--navy);
+      background: white;
+      transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(184,134,92,0.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; }
+    /* Buttons */
+    .btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 14px; font-weight: 600; cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+    .btn-primary { background: var(--navy); color: white; }
+    .btn-primary:hover { background: #2d2d4a; }
+    .btn-accent { background: var(--accent); color: white; }
+    .btn-accent:hover { background: #a07048; }
+    .btn-outline { border-color: var(--border); color: var(--navy); }
+    .btn-outline:hover { border-color: var(--accent); }
+    .btn-danger { background: var(--danger); color: white; }
+    .btn-sm { padding: 6px 14px; font-size: 12px; }
+    .btn-group { display: flex; gap: 10px; margin-top: 20px; }
+    /* Status */
+    .status { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; padding: 4px 10px; border-radius: 20px; }
+    .status-success { background: #dcfce7; color: var(--success); }
+    .status-error { background: #fef2f2; color: var(--danger); }
+    .status-info { background: #dbeafe; color: #2563eb; }
+    .toast {
+      position: fixed; bottom: 24px; right: 24px;
+      padding: 12px 20px; border-radius: 8px;
+      color: white; font-size: 13px; font-weight: 500;
+      z-index: 1000; animation: slideUp 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    @keyframes slideUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    .toast-success { background: var(--success); }
+    .toast-error { background: var(--danger); }
+    /* Login */
+    .login-box {
+      max-width: 400px; margin: 80px auto;
+      background: white; border-radius: 12px;
+      border: 1px solid var(--border); padding: 32px;
+      text-align: center;
+    }
+    .login-box h2 { margin-bottom: 8px; }
+    .login-box p { color: var(--stone); font-size: 13px; margin-bottom: 24px; }
+    /* Table */
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+    th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--slate); }
+    tr:hover { background: var(--cream); }
+    /* Hidden */
+    .hidden { display: none !important; }
+    /* Image upload */
+    .img-preview { max-width: 200px; max-height: 120px; border-radius: 6px; border: 1px solid var(--border); object-fit: contain; }
+    .img-drop {
+      border: 2px dashed var(--border); border-radius: 8px;
+      padding: 24px; text-align: center; cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .img-drop:hover { border-color: var(--accent); }
+    .img-drop p { color: var(--stone); font-size: 12px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script is:inline>
+    // ====== APP STATE ======
+    const BUILD_VER = '1782350853';
+    const S = {
+      page: 'login',
+      token: localStorage.getItem('cf_admin_token') || '',
+      siteContent: null,
+      faq: [],
+      products: [],
+      toast: null,
+    };
+
+    // ====== RENDER ======
+    function render() {
+      const app = document.getElementById('app');
+      if (S.page === 'login' && !S.token) { app.innerHTML = loginUI(); return; }
+      app.innerHTML = `
+        <div class="app">
+          <nav class="sidebar">
+            <div class="sidebar-header">
+              <h3>Charlizi Factory</h3>
+              <span>Admin Panel</span>
+            </div>
+            <a class="${S.page==='site'?'active':''}" onclick="nav('site')"><span class="icon">ðŸ­</span> Site Content</a>
+            <a class="${S.page==='products'?'active':''}" onclick="nav('products')"><span class="icon">ðŸ“¦</span> Products</a>
+            <a class="${S.page==='blog'?'active':''}" onclick="nav('blog')"><span class="icon">âœï¸</span> Blog Posts</a>
+            <a class="${S.page==='images'?'active':''}" onclick="nav('images')"><span class="icon">ðŸ–¼ï¸?/span> Images</a>
+            <a class="${S.page==='faq'?'active':''}" onclick="nav('faq')"><span class="icon">â?/span> FAQ</a>
+            <a onclick="logout()"><span class="icon">â†©ï¸</span> Logout</a>
+          </nav>
+          <div class="main" id="content"></div>
+        </div>
+        ${S.toast ? `<div class="toast toast-${S.toast.type}">${S.toast.msg}</div>` : ''}
+      `;
+      const content = document.getElementById('content');
+      if (!content) return;
+      switch (S.page) {
+        case 'site': content.innerHTML = siteUI(); break;
+        case 'products': content.innerHTML = productsUI(); break;
+        case 'blog': content.innerHTML = blogUI(); break;
+        case 'images': content.innerHTML = imagesUI(); break;
+        case 'faq': content.innerHTML = faqUI(); break;
+        default: content.innerHTML = `<h1>Select a section from the sidebar</h1><p class="subtitle">Manage your factory website content</p>`;
+      }
+    }
+
+    function loginUI() {
+      return `<div class="login-box">
+        <h2>ðŸ­ Charlizi Admin</h2>
+        <p>Enter your GitHub Personal Access Token to manage the website. The token needs <b>repo</b> scope.</p>
+        <div class="form-group">
+          <label>GitHub Token</label>
+          <input type="password" id="tokenInput" placeholder="ghp_..." style="font-family:monospace;font-size:12px" onkeydown="if(event.key==='Enter')login()">
+        </div>
+        <p style="font-size:11px;color:var(--stone);margin-bottom:16px">
+          Create a token at: <a href="https://github.com/settings/tokens" target="_blank" style="color:var(--accent)">github.com/settings/tokens</a> â†?Generate new token (classic) â†?check "repo"
+        </p>
+        <button class="btn btn-accent" onclick="login()" style="width:100%;justify-content:center">ðŸ”‘ Login</button>
+      </div>`;
+    }
+
+    // ====== PAGES ======
+    function siteUI() {
+      if (!S.siteContent) return '<p>Loading...</p>';
+      const d = S.siteContent;
+      return `<h1>ðŸ­ Site Content</h1>
+        <p class="subtitle">Edit factory info, hero section, and company details</p>
+        <div class="card">
+          <h2>Company Information</h2>
+          <div class="form-row">
+            ${field('brandName','Brand Name',d.brandName)}
+            ${field('brandTagline','Tagline',d.brandTagline)}
+            ${field('workers','Workers',d.workers)}
+            ${field('area','Facility Area',d.area)}
+            ${field('annualOutput','Annual Output',d.annualOutput)}
+            ${field('monthlyContainers','Monthly Containers',d.monthlyContainers)}
+            ${field('founded','Founded Year',d.founded)}
+          </div>
+        </div>
+        <div class="card">
+          <h2>Hero Section</h2>
+          ${field('heroTitle','Hero Title',d.heroTitle,'text')}
+          ${field('heroSubtitle','Hero Subtitle',d.heroSubtitle,'text')}
+          ${field('heroTagline','Hero Tagline',d.heroTagline)}
+        </div>
+        <div class="btn-group">
+          <button class="btn btn-accent" onclick="saveSite()">ðŸ’¾ Save Changes</button>
+          <span id="saveStatus"></span>
+        </div>`;
+    }
+
+    function productsUI() {
+      return `<h1>ðŸ“¦ Products Management</h1>
+        <p class="subtitle">Edit product categories, specs, images, and descriptions</p>
+        <div class="card">
+          <h2>Product Categories</h2>
+          <p style="font-size:13px;color:var(--stone);margin-bottom:16px">
+            Product data is stored in <code>src/data/products-b2b.js</code> and managed through Git.
+            Click below to edit the data file directly, then commit changes.
+          </p>
+          <button class="btn btn-accent" onclick="window.open('https://github.com/charliziofficial-droid/charlizi-site/edit/main/src/data/products-b2b.js','_blank')">
+            âœï¸ Edit Products Data (GitHub)
+          </button>
+        </div>
+        <div class="card">
+          <h2>Replace Product Images</h2>
+          <p style="font-size:13px;color:var(--stone);margin-bottom:16px">
+            Upload real product photos to replace SVG placeholders. Files will be saved to <code>public/factory/images/</code>
+          </p>
+          ${['bra-sets','bras','plus-size-bras','panties','silicone-bras','shapewear','sleepwear'].map(s => `
+            <div style="display:flex;align-items:center;gap:16px;padding:10px 0;border-bottom:1px solid var(--border)">
+              <img src="/factory/images/${s}.svg" alt="${s}" class="img-preview" style="width:80px;height:60px" />
+              <div style="flex:1">
+                <strong style="font-size:14px">${s}</strong>
+                <span style="font-size:11px;color:var(--stone);margin-left:8px">â†?current: ${s}.svg</span>
+              </div>
+              <button class="btn btn-sm btn-outline" onclick="nav('images')">Replace</button>
+            </div>
+          `).join('')}
+        </div>`;
+    }
+
+    function blogUI() {
+      return `<h1>âœï¸ Blog Management</h1>
+        <p class="subtitle">Create, edit, and manage blog posts</p>
+        <div class="card">
+          <h2>Blog Posts</h2>
+          <p style="font-size:13px;color:var(--stone);margin-bottom:16px">
+            Blog posts are stored as <code>.astro</code> files in <code>src/pages/blog/</code>.
+            Edit them directly on GitHub.
+          </p>
+          <button class="btn btn-accent" onclick="window.open('https://github.com/charliziofficial-droid/charlizi-site/tree/main/src/pages/blog','_blank')">
+            ðŸ“ Manage Blog Posts on GitHub
+          </button>
+          <div style="margin-top:16px">
+            <p style="font-size:13px;color:var(--stone);margin-bottom:8px">Or create a new post:</p>
+            <div class="form-group"><label>Post Title</label><input id="newPostTitle" placeholder="e.g. OEM Bra Manufacturing Guide"></div>
+            <div class="form-group"><label>Post Slug</label><input id="newPostSlug" placeholder="oem-bra-manufacturing-guide"></div>
+            <div class="form-group"><label>Description</label><input id="newPostDesc" placeholder="SEO description"></div>
+            <div class="form-group"><label>Content (Markdown)</label><textarea id="newPostBody" rows="8" placeholder="## Introduction&#10;&#10;Write your blog content here...&#10;## Specifications&#10;&#10;..."></textarea></div>
+            <button class="btn btn-primary" onclick="createBlogPost()">Create & Push to GitHub</button>
+            <span id="blogStatus"></span>
+          </div>
+        </div>`;
+    }
+
+    function imagesUI() {
+      return `<h1>ðŸ–¼ï¸?Image Manager</h1>
+        <p class="subtitle">Upload and manage product images, hero images, and factory photos</p>
+        <div class="card">
+          <h2>Upload Image</h2>
+          <div class="form-group"><label>Image Name (e.g. bra-sets.webp or product-hero.jpg)</label><input id="imgName" placeholder="filename.webp"></div>
+          <div class="form-group"><label>Select File</label><input type="file" id="imgFile" accept="image/*" onchange="previewImage(event)"></div>
+          <div id="imgPreview" style="margin:12px 0"></div>
+          <button class="btn btn-accent" onclick="uploadImage()">ðŸ“¤ Upload & Commit</button>
+          <span id="imgStatus"></span>
+        </div>
+        <div class="card">
+          <h2>Image Reference Guide</h2>
+          <p style="font-size:13px;color:var(--stone)">Use these filenames to replace placeholder images:</p>
+          <table style="margin-top:12px">
+            <tr><th>Location</th><th>File</th><th>Size</th><th>Format</th></tr>
+            <tr><td>Product Category Hero</td><td>public/factory/images/{category}.svg</td><td>800Ã—600</td><td>â†?webp</td></tr>
+            <tr><td>Homepage Hero</td><td>public/factory/images/hero.webp</td><td>1920Ã—1080</td><td>webp</td></tr>
+            <tr><td>About Page</td><td>public/factory/images/category-showcase.webp</td><td>800Ã—600</td><td>webp</td></tr>
+            <tr><td>Factory Gallery</td><td>public/factory/images/gallery-*.webp</td><td>800Ã—600</td><td>webp</td></tr>
+          </table>
+        </div>`;
+    }
+
+    function faqUI() {
+      if (!S.faq) return '<p>Loading...</p>';
+      return `<h1>â?FAQ Management</h1>
+        <p class="subtitle">Edit frequently asked questions</p>
+        <div class="card" id="faqList">
+          ${(S.faq||[]).map((faq,i) => `
+            <div style="margin-bottom:20px;padding:16px;background:var(--cream);border-radius:8px">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <strong>FAQ #${i+1}</strong>
+                <button class="btn btn-sm btn-danger" onclick="removeFaq(${i})">Remove</button>
+              </div>
+              <div class="form-group"><label>Question</label><input value="${escapeHtml(faq.q||'')}" data-idx="${i}" data-field="q"></div>
+              <div class="form-group"><label>Answer</label><textarea data-idx="${i}" data-field="a">${escapeHtml(faq.a||'')}</textarea></div>
+            </div>
+          `).join('')}
+          <button class="btn btn-sm btn-outline" onclick="addFaq()">âž?Add FAQ</button>
+          <div class="btn-group">
+            <button class="btn btn-accent" onclick="saveFaq()">ðŸ’¾ Save FAQ</button>
+          </div>
+        </div>`;
+    }
+
+    // ====== HELPERS ======
+    function field(name, label, value, type='input') {
+      const tag = type==='textarea' ? `<textarea id="f_${name}">${escapeHtml(value||'')}</textarea>` : `<input id="f_${name}" value="${escapeHtml(value||'')}">`;
+      return `<div class="form-group"><label>${label}</label>${tag}</div>`;
+    }
+    function escapeHtml(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+    function toast(msg, type='success') { S.toast={msg,type}; render(); setTimeout(()=>{S.toast=null;render()},3000); }
+
+    // ====== NAVIGATION ======
+    function nav(page) { S.page = page;
+      if (page === 'site') loadSiteContent();
+      if (page === 'faq') loadFaq();
+      render();
+    }
+    function logout() { localStorage.removeItem('cf_admin_token'); S.token = ''; S.page = 'login'; render(); }
+
+    // ====== LOGIN ======
+    function login() {
+      S.token = document.getElementById('tokenInput').value.trim();
+      if (!S.token) return toast('Please enter a GitHub token', 'error');
+      // Verify token by fetching user info
+      fetchGH('/user').then(r => {
+        if (r.login) {
+          localStorage.setItem('cf_admin_token', S.token);
+          S.page = 'site';
+          loadSiteContent();
+          loadFaq();
+          render();
+          toast('Logged in as ' + r.login);
+        } else {
+          toast('Invalid token. Please check and try again.', 'error');
+        }
+      }).catch(() => toast('Invalid token or network error', 'error'));
+    }
+
+    // ====== GITHUB API ======
+    const GH = 'https://api.github.com';
+    const REPO = 'charliziofficial-droid/charlizi-site';
+    function fetchGH(path, opts={}) {
+      return fetch(GH + path, {
+        headers: { 'Authorization': 'Bearer ' + S.token, 'Accept': 'application/vnd.github.v3+json', ...opts.headers },
+        ...opts
+      }).then(r => r.json());
+    }
+    async function getFile(path) {
+      try {
+        const r = await fetchGH('/repos/'+REPO+'/contents/'+path);
+        return { content: decodeURIComponent(escape(atob(r.content))), sha: r.sha, exists: true };
+      } catch(e) { return { content: null, sha: null, exists: false }; }
+    }
+    async function putFile(path, content, sha, commitMsg) {
+      return fetchGH('/repos/'+REPO+'/contents/'+path, {
+        method: 'PUT',
+        body: JSON.stringify({
+          message: commitMsg || 'Admin: update ' + path,
+          content: btoa(unescape(encodeURIComponent(content))),
+          sha: sha,
+          branch: 'main'
+        })
+      });
+    }
+    async function putBinary(path, base64, sha, commitMsg) {
+      return fetchGH('/repos/'+REPO+'/contents/'+path, {
+        method: 'PUT',
+        body: JSON.stringify({
+          message: commitMsg || 'Admin: upload ' + path,
+          content: base64,
+          sha: sha,
+          branch: 'main'
+        })
+      });
+    }
+
+    // ====== LOAD DATA ======
+    function loadSiteContent() {
+      getFile('src/data/site-content.json').then(r => {
+        if (r.content) S.siteContent = JSON.parse(r.content);
+        S.siteContentSha = r.sha;
+        render();
+      });
+    }
+    function loadFaq() {
+      getFile('src/data/faq.json').then(r => {
+        if (r.content) S.faq = JSON.parse(r.content);
+        else S.faq = [];
+        S.faqSha = r.sha;
+        render();
+      });
+    }
+
+    // ====== SAVE ======
+    async function saveSite() {
+      const data = { ...S.siteContent };
+      const keys = ['brandName','brandTagline','workers','area','annualOutput','monthlyContainers','founded','heroTitle','heroSubtitle','heroTagline'];
+      keys.forEach(k => {
+        const el = document.getElementById('f_'+k);
+        if (el) data[k] = el.value;
+      });
+      const json = JSON.stringify(data, null, 2);
+      const r = await putFile('src/data/site-content.json', json, S.siteContentSha, 'Admin: update site content');
+      document.getElementById('saveStatus').innerHTML = r.content
+        ? '<span class="status status-success">âœ?Saved & pushed to GitHub</span>'
+        : '<span class="status status-error">â?Error: ' + (r.message||'Unknown') + '</span>';
+      if (r.content) { S.siteContent = data; S.siteContentSha = r.content.sha; }
+    }
+
+    async function saveFaq() {
+      const faqs = [];
+      document.querySelectorAll('#faqList [data-idx]').forEach(el => {
+        const idx = parseInt(el.dataset.idx);
+        if (!faqs[idx]) faqs[idx] = {};
+        faqs[idx][el.dataset.field] = el.value;
+      });
+      const json = JSON.stringify(faqs.filter(Boolean), null, 2);
+      const r = await putFile('src/data/faq.json', json, S.faqSha, 'Admin: update FAQ');
+      toast(r.content ? 'FAQ saved!' : 'Error: ' + (r.message||'Unknown'), r.content?'success':'error');
+      if (r.content) { S.faq = faqs.filter(Boolean); S.faqSha = r.content.sha; }
+    }
+
+    function addFaq() {
+      S.faq = [...(S.faq||[]), {q:'New question', a:'New answer'}];
+      render();
+    }
+    function removeFaq(i) {
+      S.faq = S.faq.filter((_,idx) => idx !== i);
+      render();
+    }
+
+    // ====== BLOG ======
+    async function createBlogPost() {
+      const title = document.getElementById('newPostTitle').value;
+      const slug = document.getElementById('newPostSlug').value;
+      const desc = document.getElementById('newPostDesc').value;
+      const body = document.getElementById('newPostBody').value;
+      if (!title || !slug || !body) return toast('Please fill all fields', 'error');
+
+      const frontmatter = `---\ntitle: "${title}"\ndescription: "${desc}"\ndate: ${new Date().toISOString().split('T')[0]}\n---`;
+      const content = frontmatter + '\n\n' + body;
+      const path = 'src/pages/blog/' + slug + '.astro';
+
+      const r = await putFile(path, content, null, 'Admin: create blog post - ' + title);
+      document.getElementById('blogStatus').innerHTML = r.content
+        ? '<span class="status status-success" style="margin-left:10px">âœ?Created & pushed!</span>'
+        : '<span class="status status-error" style="margin-left:10px">â?' + (r.message||'Error') + '</span>';
+    }
+
+    // ====== IMAGES ======
+    function previewImage(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(ev) {
+        document.getElementById('imgPreview').innerHTML = `<img src="${ev.target.result}" class="img-preview" style="max-width:300px;max-height:200px">`;
+      };
+      reader.readAsDataURL(file);
+    }
+    async function uploadImage() {
+      const name = document.getElementById('imgName').value.trim();
+      const fileInput = document.getElementById('imgFile');
+      const file = fileInput.files[0];
+      if (!name || !file) return toast('Enter filename and select an image', 'error');
+      if (file.size > 5*1024*1024) return toast('File too large (max 5MB)', 'error');
+
+      const reader = new FileReader();
+      reader.onload = async function(ev) {
+        const base64 = ev.target.result.split(',')[1];
+        const path = 'public/factory/images/' + name;
+        const existing = await getFile(path);
+        const r = await putBinary(path, base64, existing.sha, 'Admin: upload image ' + name);
+        document.getElementById('imgStatus').innerHTML = r.content
+          ? '<span class="status status-success" style="margin-left:10px">âœ?Uploaded & committed! Deploying...</span>'
+          : '<span class="status status-error" style="margin-left:10px">â?' + (r.message||'Error') + '</span>';
+        if (r.content) toast('Image uploaded! Vercel will auto-deploy in ~30s');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    // ====== BOOT ======
+    if (S.token) { nav('site'); } else { render(); }
+  </script>
+</body>
+</html>
