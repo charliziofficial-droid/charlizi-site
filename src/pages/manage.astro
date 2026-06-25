@@ -170,7 +170,7 @@ const buildVer = new Date().getTime().toString(36);
   <div id="app"></div>
   <script is:inline>
     // ====== APP STATE ======
-    const BUILD_VER = '1782350853';
+    const BUILD_VER = '1782365029';
     const S = {
       page: 'login',
       token: localStorage.getItem('cf_admin_token') || '',
@@ -204,6 +204,7 @@ const buildVer = new Date().getTime().toString(36);
       `;
       const content = document.getElementById('content');
       if (!content) return;
+      try {
       switch (S.page) {
         case 'site': content.innerHTML = siteUI(); break;
         case 'products': content.innerHTML = productsUI(); break;
@@ -212,6 +213,7 @@ const buildVer = new Date().getTime().toString(36);
         case 'faq': content.innerHTML = faqUI(); break;
         default: content.innerHTML = `<h1>Select a section from the sidebar</h1><p class="subtitle">Manage your factory website content</p>`;
       }
+    } catch(e) { content.innerHTML = '<div class="card"><h2>Error</h2><p class="status-error" style="font-size:14px">' + escapeHtml(e.message) + '</p></div>'; console.error('Render error:', e); }
     }
 
     function loginUI() {
@@ -436,14 +438,14 @@ const buildVer = new Date().getTime().toString(36);
     // ====== LOAD DATA ======
     function loadSiteContent() {
       getFile('src/data/site-content.json').then(r => {
-        if (r.content) S.siteContent = JSON.parse(r.content);
+        if (r.content) { try { S.siteContent = JSON.parse(r.content); } catch(e) { toast('Site content parse error: ' + e.message, 'error'); } }
         S.siteContentSha = r.sha;
         render();
       });
     }
     function loadFaq() {
       getFile('src/data/faq.json').then(r => {
-        if (r.content) S.faq = JSON.parse(r.content);
+        if (r.content) { try { const p = JSON.parse(r.content); S.faq = (p.items || p) instanceof Array ? (p.items || p) : []; } catch(e) { S.faq = []; toast('FAQ data parse error: ' + e.message, 'error'); } }
         else S.faq = [];
         S.faqSha = r.sha;
         render();
@@ -473,7 +475,7 @@ const buildVer = new Date().getTime().toString(36);
         if (!faqs[idx]) faqs[idx] = {};
         faqs[idx][el.dataset.field] = el.value;
       });
-      const json = JSON.stringify(faqs.filter(Boolean), null, 2);
+      const json = JSON.stringify({title: 'Frequently Asked Questions', items: faqs.filter(Boolean)}, null, 2);
       const r = await putFile('src/data/faq.json', json, S.faqSha, 'Admin: update FAQ');
       toast(r.content ? 'FAQ saved!' : 'Error: ' + (r.message||'Unknown'), r.content?'success':'error');
       if (r.content) { S.faq = faqs.filter(Boolean); S.faqSha = r.content.sha; }
