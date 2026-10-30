@@ -64,7 +64,7 @@ import Picture from '../components/Picture.astro';
       {productCategories.map(cat => (
         <a href={`/products/${cat.slug}`} class="card-hover group;">
           <div class="aspect-[4/5] mb-4 overflow-hidden rounded-sm relative bg-cream-dark">
-            <img src={cat.image} alt={cat.name} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="900" height="1125" />
+            <img src={cat.image} alt={cat.name} class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="900" height="1125" />
           </div>
           <h3 class="font-semibold text-navy group-hover:text-accent transition-colors text-sm">{cat.name}</h3>
           <p class="text-xs text-slate mt-2 line-clamp-2">{cat.description}</p>
