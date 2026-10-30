@@ -5,8 +5,8 @@ import ProductGallery from '../../components/widgets/ProductGallery.astro';
 import { getGallery } from '../../data/product-gallery';
 const cat = productCategories.find(c => c.id === 'shapewear');
 const styles = getGallery('shapewear');
-const title = "Shapewear Manufacturer China | Waist Trainer OEM Factory";
-const description = "Shapewear OEM manufacturer. Full body shapers, waist trainers, tummy control. Power mesh & latex. MOQ 200 pcs.";
+const title = "Shapewear & Bodysuit Manufacturer China | OEM Shaping Bodysuits";
+const description = "Shapewear and bodysuit OEM manufacturer. Shaping bodysuits, tummy control, waist definition. Lace, mesh & power mesh. MOQ 200 pcs.";
 ---
 <FactoryLayout title={title} description={description}>
   <div class="container-site py-12">
@@ -25,17 +25,17 @@ const description = "Shapewear OEM manufacturer. Full body shapers, waist traine
         <p class="section-desc max-w-xl">{cat.description}</p>
         <div class="flex flex-wrap gap-2 mt-6">
           <span class="badge-navy">OEM/ODM</span>
-          <span class="badge-accent">Power Mesh & Latex</span>
+          <span class="badge-accent">Lace · Mesh · Power Mesh</span>
           <span class="badge-navy">MOQ 200 pcs</span>
-          <span class="badge-accent">Tummy · Waist · Back · Thighs</span>
+          <span class="badge-accent">Tummy · Waist · Back</span>
         </div>
         <div class="flex flex-wrap gap-3 mt-8">
           <a href="/contact" class="btn-primary">Send Inquiry</a>
           <a href="https://viomisha.com" target="_blank" class="btn-outline">📦 Small Batch Sample �?Viomisha</a>
         </div>
       </div>
-      <div class="relative rounded-lg h-80 overflow-hidden bg-cream-dark">
-        <img src={cat.image} alt={cat.name + " product sample"} class="w-full h-full object-cover" />
+      <div class="relative rounded-lg aspect-[4/5] max-h-[520px] overflow-hidden bg-cream-dark">
+        <img src={cat.image} alt={cat.name + " product sample"} width="900" height="1125" class="w-full h-full object-cover" loading="eager" decoding="async" />
       </div>
     </div>
 

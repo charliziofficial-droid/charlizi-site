@@ -1,4 +1,4 @@
----
+﻿---
 // src/layouts/FactoryLayout.astro
 export interface Props {
   title: string;
@@ -106,7 +106,7 @@ import '../styles/global.css';
   <link rel="alternate" hreflang="en" href={Astro.url.href} />
   <link rel="alternate" hreflang="x-default" href={Astro.url.href} />
 
-  <!-- Google Fonts — Inter only for B2B -->
+  <!-- Google Fonts 鈥?Inter only for B2B -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -123,7 +123,7 @@ import '../styles/global.css';
     try {
       var _c = (new URLSearchParams(window.location.search)).get('country');
       if (_c === 'CN') {
-        document.body.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;min-height:100vh;padding:2rem;font-family:sans-serif"><p style="max-width:500px;text-align:center;color:#666">This website is not available in your region. / 该网站在您所在地区不可用。</p></div>';
+        document.body.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;min-height:100vh;padding:2rem;font-family:sans-serif"><p style="max-width:500px;text-align:center;color:#666">This website is not available in your region. / 璇ョ綉绔欏湪鎮ㄦ墍鍦ㄥ湴鍖轰笉鍙敤銆?/p></div>';
       }
     } catch(e) {}
   </script>
@@ -133,7 +133,7 @@ import '../styles/global.css';
     <nav class="container-site flex items-center justify-between h-16 md:h-20">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-2">
-        <img src="/factory/images/logo.png" alt="Charlizi Factory" class="h-8 md:h-9 w-auto" />
+        <img src="/factory/images/logo.png" alt="Charlizi Factory" width="640" height="640" class="h-8 md:h-9 w-auto" decoding="async" />
         <span class="hidden sm:inline text-xs text-accent font-medium tracking-widest uppercase border-l border-gray-300 pl-2">Factory</span>
       </a>
 
@@ -168,7 +168,7 @@ import '../styles/global.css';
     <!-- Mobile menu -->
     <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-white">
       <div class="container-site flex justify-between items-center h-16">
-        <img src="/factory/images/logo.png" alt="Charlizi" class="h-8 w-auto" />
+        <img src="/factory/images/logo.png" alt="Charlizi" width="640" height="640" class="h-8 w-auto" decoding="async" />
         <button id="close-btn" class="p-2" aria-label="Close">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -270,3 +270,4 @@ import '../styles/global.css';
   </script>
 </body>
 </html>
+

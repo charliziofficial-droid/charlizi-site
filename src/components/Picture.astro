@@ -2,7 +2,9 @@
 // src/components/Picture.astro — Responsive WebP with srcset + fallback
 // Only reference variant widths that actually exist on disk, so a missing
 // @1920 (or any other) derivative can never produce a broken <source>.
-import { existsSync } from 'node:fs';
+// v2 (2026-10-30): emit intrinsic width/height from the source file to prevent
+// cumulative layout shift (CLS). Falls back silently when size cannot be read.
+import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 const { src, alt, cls = '', loading = 'lazy', sizes, priority } = Astro.props;
 
@@ -11,11 +13,10 @@ const isPng = (src || '').endsWith('.png');
 const name = (src || '').replace(/\.[^.]+$/, '');
 const sizesAttr = sizes || '(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 50vw, 100vw';
 
-const RESPO_DIR = join(process.cwd(), 'public', 'factory', 'images', 'responsive');
+const IMG_DIR = join(process.cwd(), 'public', 'factory', 'images');
+const RESPO_DIR = join(IMG_DIR, 'responsive');
 const CANDIDATE_WIDTHS = [480, 768, 800, 1024, 1880, 1920];
 
-// Collect only widths whose file exists; the largest original-size derivative
-// (e.g. @1880) is picked up automatically through the widest existing entry.
 const availableWidths = CANDIDATE_WIDTHS.filter((w) =>
   existsSync(join(RESPO_DIR, `${name}@${w}.webp`))
 );
@@ -25,13 +26,68 @@ const srcset = availableWidths
   .join(', ');
 
 const hasResponsive = availableWidths.length > 0;
+
+// --- intrinsic size -------------------------------------------------------
+const widthsForSize = [...availableWidths].sort((a, b) => a - b);
+const sizeCandidates = widthsForSize.length
+  ? widthsForSize.map((w) => join(RESPO_DIR, `${name}@${w}.webp`))
+  : [];
+sizeCandidates.push(join(IMG_DIR, src || ''));
+
+function readSize(file: string): { w: number; h: number } | null {
+  // WebP (VP8 / VP8L / VP8X) or PNG; returns null if unsupported/unreadable.
+  try {
+    if (!existsSync(file)) return null;
+    const b = readFileSync(file);
+    if (b.length < 32) return null;
+
+    // PNG
+    if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) {
+      return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+    }
+
+    // RIFF....WEBP
+    if (b.toString('ascii', 0, 4) === 'RIFF' && b.toString('ascii', 8, 12) === 'WEBP') {
+      const fourcc = b.toString('ascii', 12, 16);
+      if (fourcc === 'VP8X') {
+        const w = 1 + b.readUIntLE(24, 3);
+        const h = 1 + b.readUIntLE(27, 3);
+        return { w, h };
+      }
+      if (fourcc === 'VP8 ') {
+        const w = b.readUInt16LE(26) & 0x3fff;
+        const h = b.readUInt16LE(28) & 0x3fff;
+        return { w, h };
+      }
+      if (fourcc === 'VP8L') {
+        const bits = b.readUInt32LE(21);
+        const w = (bits & 0x3fff) + 1;
+        const h = ((bits >> 14) & 0x3fff) + 1;
+        return { w, h };
+      }
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+let intrinsic: { w: number; h: number } | null = null;
+for (const f of sizeCandidates) {
+  intrinsic = readSize(f);
+  if (intrinsic) break;
+}
+
+const sizeAttrs = intrinsic
+  ? { width: String(intrinsic.w), height: String(intrinsic.h) }
+  : {};
 ---
 
 { isSvg || isPng || !hasResponsive ? (
-  <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} />
+  <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} decoding="async" {...sizeAttrs} />
 ) : (
   <picture>
     <source type="image/webp" srcset={srcset} sizes={sizesAttr} />
-    <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} decoding="async" />
+    <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} decoding="async" {...sizeAttrs} />
   </picture>
 )}

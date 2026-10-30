@@ -2,9 +2,11 @@
 // src/pages/catalog.astro — Product Catalog Browsing Page
 import FactoryLayout from '../layouts/FactoryLayout.astro';
 import { productCategories } from '../data/products-b2b.js';
+import { getGallery } from '../data/product-gallery';
 
 const allProducts = productCategories.map(cat => ({
   ...cat,
+  styles: getGallery(cat.slug).length,
   specs: getCategorySpecs(cat.slug)
 }));
 
@@ -12,10 +14,10 @@ function getCategorySpecs(slug) {
   const specs = {
     'bra-sets': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Fabrics: Lace, Mesh, Microfiber', 'Sizes: S-XXL, Custom', 'Packaging: Polybag + Hang Tag'],
     'bras': ['MOQ: 200 pcs/style', 'Lead Time: 20-30 days', 'Fabrics: Cotton, Nylon, Spandex', 'Sizes: 32A-38DD', 'Closures: 2/3 hook & eye'],
-    'plus-size-bras': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Fabrics: Cotton, Nylon, Spandex, Lace', 'Sizes: 36C-46DD', 'Wide Straps: ✦ Standard'],
-    'panties': ['MOQ: 300 pcs/style', 'Lead Time: 20-30 days', 'Styles: Bikini, Brief, Thong, Seamless', 'Sizes: XS-3XL', 'Fabric: Cotton, Modal, Nylon'],
-    'silicone-bras': ['MOQ: 500 pcs/style', 'Lead Time: 25-35 days', 'Adhesive: Medical-grade silicone', 'Sizes: A-DDD', 'Colors: Nude, Black, White, Custom'],
-    'shapewear': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Fabrics: Nylon/Spandex Power Mesh', 'Sizes: S-3XL', 'Compression: Light to Firm'],
+    'plus-size-bras': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Fabrics: Cotton, Nylon, Spandex, Lace', 'Sizes: 36C-46G', 'Wide Straps: ✦ Standard'],
+    'panties': ['MOQ: 300 pcs/style', 'Lead Time: 20-30 days', 'Styles: Bikini, Brief, Thong, Seamless, High Waist', 'Sizes: XS-5XL', 'Fabric: Cotton, Modal, Nylon'],
+    'silicone-bras': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Adhesive: Medical-grade silicone', 'Sizes: A-DDD', 'Colors: Nude, Black, White, Custom'],
+    'shapewear': ['MOQ: 200 pcs/style', 'Lead Time: 25-35 days', 'Fabrics: Lace, Mesh, Nylon/Spandex', 'Sizes: S-3XL', 'Styles: Bodysuit, Shaping One-Piece'],
     'sleepwear': ['MOQ: 300 pcs/style (Custom)', 'Lead Time: 30-45 days', 'Fabrics: Silk, Satin, Modal, Cotton', 'Sizes: S-2XL', 'Patterns: Pajama, Chemise, Robe, Nightgown']
   };
   return specs[slug] || ['MOQ: Contact us', 'Custom sizes available'];
@@ -50,7 +52,7 @@ function getCategorySpecs(slug) {
           <div class="flex items-center gap-3 mb-6">
             <h2 class="text-2xl md:text-3xl font-bold text-navy">{cat.name}</h2>
             <span class="text-xs px-3 py-1 bg-accent/10 text-accent font-semibold rounded-full">
-              {cat.subCategories.length} styles
+              {cat.styles} {cat.styles === 1 ? 'style' : 'styles'}
             </span>
           </div>
 

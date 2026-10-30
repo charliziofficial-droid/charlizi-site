@@ -60,8 +60,9 @@ import Picture from '../components/Picture.astro';
         {[
           { role: 'Pattern Engineers', desc: 'CAD pattern making and grading', count: '8' },
           { role: 'Sample Makers', desc: 'First samples and fit approval', count: '12' },
-          { role: 'Production Workers', desc: 'Dedicated sewing lines', count: '150+' },
+          { role: 'Production Workers', desc: 'Dedicated sewing lines', count: '160+' },
           { role: 'QC Inspectors', desc: '3-stage quality control', count: '15' },
+          { role: 'Merchandising & Logistics', desc: 'Order follow-up and export docs', count: '12' },
         ].map(t => (
           <div class="card p-6">
             <div class="text-2xl font-bold text-accent">{t.count}</div>
@@ -70,6 +71,7 @@ import Picture from '../components/Picture.astro';
           </div>
         ))}
       </div>
+      <p class="text-xs text-slate mt-4">Team headcount across pattern, sampling, production, QC and merchandising totals 200+.</p>
     </div>
 
     <!-- Custom Sampling -->

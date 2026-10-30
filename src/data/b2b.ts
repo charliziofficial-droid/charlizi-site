@@ -130,7 +130,7 @@ export const productionSteps = [
 
 // FAQ Items
 export const faqItems = [
-  { q: 'What is your MOQ?', a: 'Our standard MOQ is 200 pieces per design for most categories. Sleepwear and custom print items require 300 pieces minimum. Silicone bras require 500 pieces minimum. Lower MOQ available through our small batch partner Viomisha for sampling purposes.' },
+  { q: 'What is your MOQ?', a: 'Our standard MOQ is 200 pieces per design for most categories. Panties and sleepwear require 300 pieces minimum. Lower MOQ is available through our small batch partner Viomisha for sampling purposes.' },
   { q: 'What is your lead time?', a: 'Typical lead times: 7-10 days for samples (1-2 rounds of revision included), and 30-45 days for bulk production from sample approval. Timeline depends on fabric availability and production line capacity at time of order.' },
   { q: 'What certifications do you hold?', a: 'We are BSCI, OEKO-TEX Standard 100, ISO 9001, FAMA certified, and Sedex SMETA audited. We can provide copies of current certificates upon request.' },
   { q: 'Can you work with my design/tech pack?', a: 'Absolutely. We accept tech packs, reference designs, sketches, or even inspiration images. Our pattern engineers will interpret your requirements and develop samples for approval.' },
@@ -157,7 +157,7 @@ export const teamStats = [
   { count: '5,000㎡', role: 'Modern Workshop', desc: 'Advanced manufacturing facility' },
   { count: '5M+', role: 'Annual Output', desc: 'Garments produced yearly' },
   { count: '40+', role: 'Monthly Shipments', desc: 'Containers to global brands' },
-  { count: '200-300', role: 'MOQ', desc: 'Minimum order per design' },
+  { count: '200-300', role: 'MOQ', desc: '200 pcs most categories, 300 panties & sleepwear' },
 ];
 
 // Team roles for about page

@@ -68,16 +68,16 @@ export const productCategories = [
   },
   {
     id: 'shapewear',
-    name: 'Shapewear',
+    name: 'Shapewear & Bodysuits',
     slug: 'shapewear',
-    description: 'Full body shapers and waist cinchers. Tummy control, back smoothing, and body sculpting solutions.',
+    description: 'Slimming bodysuits and shaping one-pieces. Tummy control, waist definition and body sculpting, in lace, mesh and compression fabrics.',
     image: '/factory/images/products-cards/shapewear/black-mesh-deep-v-bodysuit-front.webp',
-    metaTitle: 'Shapewear Manufacturer China | Waist Trainer OEM Factory',
-    metaDesc: 'Shapewear OEM manufacturer. Full body shapers, waist trainers, tummy control. Power mesh & latex options. MOQ 200 pcs.',
-    subCategories: ['Full Body Shapewear', 'Waist Cinchers / Trainers'],
-    specs: ['Full body shapers (open bust & full coverage)',
-            'Waist cinchers & trainers', 'Power mesh & latex fabric options',
-            'Hook & eye / zipper closure', 'Targets: tummy, waist, back, thighs'],
+    metaTitle: 'Shapewear & Bodysuit Manufacturer China | OEM Shaping Bodysuits',
+    metaDesc: 'Shapewear and bodysuit OEM manufacturer. Shaping bodysuits, tummy control, waist definition. Lace, mesh & power mesh. MOQ 200 pcs.',
+    subCategories: ['Shaping Bodysuits', 'Tummy Control / Waist'],
+    specs: ['Shaping bodysuits (thong & full coverage)',
+            'Tummy control & waist definition', 'Lace, mesh & power mesh fabric options',
+            'Hook & eye / snap gusset closure', 'Targets: tummy, waist, back, thighs'],
   },
   {
     id: 'sleepwear',
@@ -126,7 +126,7 @@ export const faqItems = [
   {
     id: 'moq',
     q: 'What is your minimum order quantity (MOQ)?',
-    a: 'Our standard MOQ is 200-300 pcs per design, per size, per color. For sleepwear and dresses, the MOQ is 300 pcs per design. Small batch sampling is available through Viomisha.com.',
+    a: 'Our standard MOQ is 200 pcs per design for bras, bra sets, plus size bras, silicone bras and shapewear. Panties and sleepwear require 300 pcs per design. Small batch sampling is available through Viomisha.com.',
   },
   {
     id: 'sampling',
