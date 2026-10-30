@@ -75,8 +75,10 @@ const description = "Plus size bra manufacturer. Sizes up to 44G+. Underwire & w
                     {style.images.map((img) => (
                       <img
                         src={img.file}
-                        alt={img.alt}
+                        alt={`${style.title} - ${img.view} view thumbnail`}
                         class="w-10 h-12 object-contain border border-gray-200 bg-white"
+                        width="120"
+                        height="150"
                         loading="lazy"
                       />
                     ))}

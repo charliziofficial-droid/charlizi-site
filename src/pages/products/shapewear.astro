@@ -69,8 +69,10 @@ const description = "Shapewear and bodysuit OEM manufacturer. Shaping bodysuits,
                     {style.images.map((img) => (
                       <img
                         src={img.file}
-                        alt={img.alt}
+                        alt={`${style.title} - ${img.view} view thumbnail`}
                         class="w-10 h-12 object-contain border border-gray-200 bg-white"
+                        width="120"
+                        height="150"
                         loading="lazy"
                       />
                     ))}
