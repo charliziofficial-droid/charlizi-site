@@ -13,7 +13,7 @@
   <circle cx="400" cy="290" r="200" fill="url(#accent)"/>
   <ellipse cx="400" cy="280" rx="80" ry="110" fill="white" opacity="0.5" stroke="#3B82F630" stroke-width="1"/>
   <path d="M340 230 Q370 190 400 220 Q430 190 460 230 L470 370 Q400 380 330 370 Z" fill="white" stroke="#3B82F650" stroke-width="1.5" opacity="0.8"/>
-  <text x="400" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#1a1a2e">Sleepwear & Dresses</text>
+  <text x="400" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#1a1a2e">Sleepwear &amp; Dresses</text>
   <text x="400" y="500" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#8b8b8b">OEM / ODM Manufacturer</text>
   <text x="400" y="550" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#ccc" letter-spacing="4">CHARLIZI FACTORY</text>
 </svg>
