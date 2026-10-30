@@ -6321,6 +6321,138 @@ export const styleContent: Record<string, StyleContent> =
       }
     ]
   },
+  "panties/womens-panties-shorts-undershorts-woman": {
+    "slug": "womens-panties-shorts-undershorts-woman",
+    "title": "Women's Seamless Safety Shorts (4-Pack)",
+    "baseTitle": "Women's Seamless Safety Shorts (4-Pack)",
+    "category": "panties",
+    "categoryName": "Panties",
+    "h1": "Women's Seamless Safety Shorts (4-Pack) — OEM Wholesale Manufacturer",
+    "seoTitle": "Women's Seamless Safety Shorts 4-Pack OEM Wholesale",
+    "seoDescription": "OEM/ODM manufacturer of women's seamless safety shorts (4-pack) — custom fabric, colour and sizing. BSCI & OEKO-TEX certified. MOQ 300 pcs per design. Request a quote today.",
+    "intro": "Women's Seamless Safety Shorts (4-Pack) produced in our Guangdong factory for brands, wholesalers and private-label buyers. High-stretch seamless knit with bonded edges that stay flat under dresses and skirts. Mid-thigh length for anti-chafing comfort through a full day of wear. Multi-pack format that lowers per-unit landed cost. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
+    "features": [
+      "High-stretch seamless knit with bonded flat edges",
+      "Mid-thigh length for anti-chafing, stay-put comfort",
+      "Breathable lightweight handfeel for all-day wear",
+      "Multi-pack format that lowers per-unit landed cost",
+      "Custom sizing from XS to 5XL, graded to your spec sheet",
+      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+    ],
+    "specs": [
+      {
+        "label": "Style",
+        "value": "Women's Seamless Safety Shorts (4-Pack)"
+      },
+      {
+        "label": "Fabric",
+        "value": "seamless stretch knit"
+      },
+      {
+        "label": "Construction",
+        "value": "seamless, bonded edges"
+      },
+      {
+        "label": "Length",
+        "value": "mid-thigh"
+      },
+      {
+        "label": "Pack",
+        "value": "4-pack"
+      },
+      {
+        "label": "MOQ",
+        "value": "300 pcs"
+      },
+      {
+        "label": "Lead time",
+        "value": "30-45 days after sample approval"
+      },
+      {
+        "label": "Sampling",
+        "value": "7-15 days"
+      },
+      {
+        "label": "Size range",
+        "value": "XS - 5XL (custom grading available)"
+      },
+      {
+        "label": "Customization",
+        "value": "Fabric, colour, trim, label, packaging"
+      },
+      {
+        "label": "Certification",
+        "value": "BSCI, OEKO-TEX Standard 100"
+      },
+      {
+        "label": "Payment",
+        "value": "T/T or L/C, 30% deposit + 70% before shipment"
+      },
+      {
+        "label": "Origin",
+        "value": "Guangdong, China"
+      }
+    ],
+    "useCases": [
+      "Multi-pack retail programs",
+      "Under-dress and shapewear layering",
+      "Private-label basics",
+      "Subscription and value packs"
+    ],
+    "faq": [
+      {
+        "q": "What is the MOQ for the Women's Seamless Safety Shorts (4-Pack)?",
+        "a": "Our MOQ is 300 pcs per design. We can quote lower volumes for sample orders through our small-batch channel if you are still testing the market."
+      },
+      {
+        "q": "Can the shorts be customized with our brand?",
+        "a": "Yes. We support full private label: your woven label, printed care label, hangtag and custom polybag or gift box. Fabric, colour, gusset construction and trim can be changed to match your range."
+      },
+      {
+        "q": "How long does sampling and production take?",
+        "a": "Sampling takes 7-15 days once the tech pack and reference sample are confirmed. Bulk production runs 30-45 days after you approve the sample."
+      },
+      {
+        "q": "Do you provide certification documents?",
+        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+      },
+      {
+        "q": "Can I visit the factory before ordering?",
+        "a": "Yes, factory visits are welcome by appointment. We are in Puning, Guangdong, about 40 minutes by high-speed rail from Shenzhen."
+      }
+    ],
+    "images": [
+      {
+        "file": "/factory/images/products-cards/panties/womens-panties-shorts-undershorts-woman-front.webp",
+        "view": "front",
+        "alt": "Women's seamless safety shorts 4-pack, front view"
+      },
+      {
+        "file": "/factory/images/products-cards/panties/womens-panties-shorts-undershorts-woman-back.webp",
+        "view": "back",
+        "alt": "Women's seamless safety shorts 4-pack, back view"
+      }
+    ],
+    "attrs": [
+      "seamless",
+      "shorts",
+      "pack"
+    ],
+    "related": [
+      {
+        "slug": "lace-high-waist-panties-3-pack",
+        "title": "Lace High Waist Panties — 3 Pack"
+      },
+      {
+        "slug": "cotton-high-waist-panties-5-pack",
+        "title": "Cotton High Waist Panties — 5 Pack"
+      },
+      {
+        "slug": "viomisha-womens-underwear-sexy-lace",
+        "title": "Plus Size Lace Panties Multipack"
+      }
+    ]
+  },
   "silicone-bras/adhesive-strapless-bra-black-nude": {
     "slug": "adhesive-strapless-bra-black-nude",
     "title": "Adhesive Strapless Silicone Bra (Black / Nude)",
