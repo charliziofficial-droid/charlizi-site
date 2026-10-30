@@ -11,6 +11,10 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),
+      filter: (page) =>
+        !['/admin', '/dashboard', '/manage', '/decapcms'].some((p) =>
+          page.startsWith(`https://charlizi.com${p}`)
+        ),
     }),
     icon(),
     mdx(),

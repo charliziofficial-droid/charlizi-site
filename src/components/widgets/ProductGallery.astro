@@ -1,0 +1,268 @@
+---
+// src/components/widgets/ProductGallery.astro
+// 产品图片区：主图 + 缩略图切换
+// 纯 CSS + 原生 JS，无框架依赖
+import type { GalleryImage } from '~/data/product-gallery';
+
+interface Props {
+  images: GalleryImage[];
+  title?: string;
+  category?: string;
+}
+
+const { images = [], title = 'Product', category = '' } = Astro.props;
+const hasImages = images.length > 0;
+const mainImage = images[0];
+---
+
+{hasImages && (
+  <div class="product-gallery" data-gallery>
+    {/* 主图 */}
+    <div class="gallery-main">
+      <img
+        src={mainImage.file}
+        alt={mainImage.alt}
+        class="gallery-main-img"
+        data-main
+        width="900"
+        height="1125"
+        loading="eager"
+        fetchpriority="high"
+      />
+      {/* 放大提示 */}
+      <div class="gallery-zoom-hint" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7" /><path d="M21 21l-4.35-4.35M11 8v6M8 11h6" />
+        </svg>
+      </div>
+      {mainImage.view === 'front' && (
+        <span class="gallery-view-badge" data-view-badge>Front</span>
+      )}
+    </div>
+
+    {/* 缩略图 */}
+    {images.length > 1 && (
+      <div class="gallery-thumbs" role="tablist" aria-label={`${title} images`}>
+        {images.map((img, i) => (
+          <button
+            type="button"
+            class={`gallery-thumb${i === 0 ? ' is-active' : ''}`}
+            data-thumb
+            data-src={img.file}
+            data-alt={img.alt}
+            data-view={img.view}
+            role="tab"
+            aria-selected={i === 0 ? 'true' : 'false'}
+            aria-label={`${img.view === 'front' ? 'Front' : 'Back'} view`}
+          >
+            <img src={img.file} alt="" loading="lazy" width="120" height="150" />
+            <span class="gallery-thumb-label">
+              {img.view === 'front' ? 'Front' : 'Back'}
+            </span>
+          </button>
+        ))}
+      </div>
+    )}
+  </div>
+)}
+
+{!hasImages && (
+  <div class="gallery-empty">
+    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+      <rect x="3" y="3" width="18" height="18" rx="2" />
+      <circle cx="8.5" cy="8.5" r="1.5" />
+      <path d="M21 15l-5-5L5 21" />
+    </svg>
+    <p>Product images coming soon</p>
+    <a href="/contact">Request photos &amp; samples →</a>
+  </div>
+)}
+
+<style>
+  .product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .gallery-main {
+    position: relative;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+  }
+
+  .gallery-main-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: contain;
+    background: #fff;
+    transition: opacity 0.25s ease;
+  }
+
+  .gallery-main-img.is-swapping {
+    opacity: 0;
+  }
+
+  .gallery-view-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #1f2a44;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 1px solid rgba(31, 42, 68, 0.12);
+    pointer-events: none;
+  }
+
+  .gallery-zoom-hint {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.92);
+    color: #6b7280;
+    border: 1px solid rgba(31, 42, 68, 0.1);
+    pointer-events: none;
+  }
+
+  .gallery-thumbs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .gallery-thumb {
+    position: relative;
+    width: 88px;
+    height: 110px;
+    padding: 0;
+    background: #fff;
+    border: 2px solid #e5e7eb;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border-color 0.18s ease, transform 0.18s ease;
+  }
+
+  .gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: #fff;
+  }
+
+  .gallery-thumb:hover {
+    border-color: #b8865c;
+    transform: translateY(-2px);
+  }
+
+  .gallery-thumb.is-active {
+    border-color: #b8865c;
+    box-shadow: 0 0 0 1px #b8865c;
+  }
+
+  .gallery-thumb-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(31, 42, 68, 0.72);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 0;
+  }
+
+  .gallery-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    aspect-ratio: 4 / 5;
+    background: #faf7f3;
+    border: 1px dashed #d1d5db;
+    color: #9ca3af;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .gallery-empty p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .gallery-empty a {
+    font-size: 12px;
+    color: #b8865c;
+    font-weight: 600;
+  }
+
+  @media (max-width: 640px) {
+    .gallery-thumb {
+      width: 72px;
+      height: 90px;
+    }
+  }
+</style>
+
+<script>
+  function initGallery(root: HTMLElement) {
+    const main = root.querySelector<HTMLImageElement>('[data-main]');
+    const badge = root.querySelector<HTMLElement>('[data-view-badge]');
+    const thumbs = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-thumb]'));
+    if (!main || thumbs.length < 2) return;
+
+    thumbs.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const src = btn.dataset.src;
+        const alt = btn.dataset.alt || '';
+        const view = btn.dataset.view;
+        if (!src || main.src.endsWith(src)) return;
+
+        // 淡出 → 换图 → 淡入
+        main.classList.add('is-swapping');
+        const swap = () => {
+          main.src = src;
+          main.alt = alt;
+          main.classList.remove('is-swapping');
+        };
+        // 预加载，避免闪白
+        const pre = new Image();
+        pre.onload = () => setTimeout(swap, 60);
+        pre.onerror = swap;
+        pre.src = src;
+
+        thumbs.forEach((b) => {
+          b.classList.toggle('is-active', b === btn);
+          b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+        });
+
+        if (badge) {
+          if (view === 'front' || view === 'back') {
+            badge.textContent = view === 'front' ? 'Front' : 'Back';
+            badge.style.display = '';
+          } else {
+            badge.style.display = 'none';
+          }
+        }
+      });
+    });
+  }
+
+  document.querySelectorAll<HTMLElement>('[data-gallery]').forEach(initGallery);
+</script>

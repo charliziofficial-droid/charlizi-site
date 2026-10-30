@@ -128,7 +128,7 @@ export default {
       "success": "Vielen Dank! Wir antworten innerhalb von 24 Stunden."
     },
     "infoTitle": "Kontaktinformationen",
-    "address": "Shenzhen, Guangdong, China",
+    "address": "Puning, Guangdong, China",
     "sampleTitle": "Lieber mit Mustern beginnen?",
     "sampleSub": "Besuchen Sie unsere Markenpartnerin Viomisha.com für Kleinmengen-Käufe.",
     "sampleBtn": "📦 Viomisha.com besuchen →"

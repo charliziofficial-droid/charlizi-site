@@ -1,7 +1,10 @@
 ---
 import FactoryLayout from '../../layouts/FactoryLayout.astro';
 import { productCategories } from '../../data/products-b2b.js';
+import ProductGallery from '../../components/widgets/ProductGallery.astro';
+import { getGallery } from '../../data/product-gallery';
 const cat = productCategories.find(c => c.id === 'plus-size-bras');
+const styles = getGallery('plus-size-bras');
 const title = "Plus Size Bra Manufacturer | Full Bust Bra OEM China";
 const description = "Plus size bra manufacturer. Sizes up to 44G+. Underwire & wirefree. Reinforced construction. MOQ 200 pcs.";
 ---
@@ -41,6 +44,55 @@ const description = "Plus size bra manufacturer. Sizes up to 44G+. Underwire & w
       <p class="text-lg font-semibold">Engineered for full-bust support �?sizes up to <span class="text-accent-light">US 44G+</span></p>
       <p class="text-sm text-white/60 mt-2">Reinforced side panels, wide adjustable straps, and multi-row back closures for maximum comfort and durability.</p>
     </div>
+
+    <!-- Product Gallery -->
+    {styles.length > 0 && (
+      <section class="mb-16">
+        <span class="section-label">Product Range</span>
+        <h2 class="section-title text-2xl md:text-3xl">Our {cat.name} Collection</h2>
+        <p class="section-desc max-w-2xl mt-2">
+          {styles.length} ready-to-develop styles. Every style can be customized for fabric, color,
+          trim, sizing and private label packaging. MOQ 200 pcs per design.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          {styles.map((style) => (
+            <article class="relative card-hover rounded-lg overflow-hidden bg-white border border-gray-200">
+              <a href={`/products/${cat.id}/${style.slug}`} class="absolute inset-0 z-10" aria-label={style.title}></a>
+              <div class="aspect-[4/5] bg-white overflow-hidden">
+                <img
+                  src={style.images.find((i) => i.view === 'front')?.file ?? style.images[0].file}
+                  alt={style.images.find((i) => i.view === 'front')?.alt ?? style.title}
+                  class="w-full h-full object-contain"
+                  width="900"
+                  height="1125"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-5">
+                <h3 class="text-sm font-semibold text-navy leading-snug">{style.title}</h3>
+                {style.images.length > 1 && (
+                  <div class="flex gap-2 mt-3">
+                    {style.images.map((img) => (
+                      <img
+                        src={img.file}
+                        alt={img.alt}
+                        class="w-10 h-12 object-contain border border-gray-200 bg-white"
+                        loading="lazy"
+                      />
+                    ))}
+                  </div>
+                )}
+                <p class="text-xs text-stone mt-3">Custom fabric · Custom color · OEM/ODM</p>
+                <p class="text-xs text-accent font-medium mt-2">View details →</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div class="mt-8 text-center">
+          <a href="/contact" class="btn-outline">Request full catalog &amp; pricing →</a>
+        </div>
+      </section>
+    )}
 
     <!-- Variants -->
     <section class="mb-16">

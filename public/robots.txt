@@ -1,3 +1,43 @@
+# Charlizi Factory — robots.txt
+
+# All crawlers (including AI search engines) welcome
 User-agent: *
 Allow: /
+
+# Explicitly allow AI / generative-engine crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Internal / non-indexable areas
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /manage
+Disallow: /decapcms
+
 Sitemap: https://charlizi.com/sitemap-index.xml
+# LLM-friendly site summary
+# https://charlizi.com/llms.txt

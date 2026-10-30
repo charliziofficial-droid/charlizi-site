@@ -27,6 +27,68 @@ import '../styles/global.css';
     <link rel="canonical" href={Astro.url.href} />
   )}
 
+  <!-- JSON-LD: Organization / Manufacturer (GEO/SEO) -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': ['Organization', 'Manufacturer'],
+      '@id': 'https://charlizi.com/#organization',
+      name: 'Charlizi Factory',
+      url: 'https://charlizi.com',
+      logo: 'https://charlizi.com/factory/images/logo.png',
+      image: 'https://charlizi.com/images/og-factory-default.jpg',
+      description:
+        'Professional intimate apparel OEM/ODM manufacturer in Guangdong, China. BSCI & OEKO-TEX certified. Bras, panties, shapewear, and sleepwear for brands worldwide.',
+      foundingDate: '2018',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Puning',
+        addressRegion: 'Guangdong',
+        addressCountry: 'CN',
+      },
+      numberOfEmployees: { '@type': 'QuantitativeValue', value: 200 },
+      knowsAbout: [
+        'lingerie manufacturing',
+        'bra OEM',
+        'intimate apparel ODM',
+        'shapewear production',
+        'private label lingerie',
+      ],
+      makesOffer: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'OEM Manufacturing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ODM Custom Development' } },
+      ],
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', name: 'BSCI' },
+        { '@type': 'EducationalOccupationalCredential', name: 'OEKO-TEX' },
+        { '@type': 'EducationalOccupationalCredential', name: 'ISO 9001' },
+        { '@type': 'EducationalOccupationalCredential', name: 'FAMA' },
+      ],
+      areaServed: ['North America', 'Europe', 'Middle East', 'Southeast Asia'],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        url: 'https://charlizi.com/contact',
+        availableLanguage: ['English', 'Chinese'],
+      },
+    })}
+  />
+
+  <!-- JSON-LD: WebSite -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': 'https://charlizi.com/#website',
+      url: 'https://charlizi.com',
+      name: 'Charlizi Factory',
+      publisher: { '@id': 'https://charlizi.com/#organization' },
+      inLanguage: 'en',
+    })}
+  />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content={Astro.url.href} />

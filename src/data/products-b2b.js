@@ -155,7 +155,7 @@ export const faqItems = [
   },
   {
     q: 'Can I visit your factory?',
-    a: 'Factory visits are welcome. We are located in Shenzhen, Guangdong, China — a major apparel manufacturing hub. Contact us to schedule a visit.',
+    a: 'Factory visits are welcome. We are located in Puning, Guangdong, China — a major apparel manufacturing hub. Contact us to schedule a visit.',
   },
   {
     q: 'Do you offer custom packaging and branding?',

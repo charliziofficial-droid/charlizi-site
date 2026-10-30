@@ -63,7 +63,7 @@ export default {
     "title": "Your Partner in Intimate Apparel Manufacturing",
     "sub": "Charlizi Factory was founded in 2018 with a mission to provide global brands with high-quality, ethically produced intimate apparel at competitive prices.",
     "overviewTitle": "Factory Overview",
-    "overviewP1": "Located in Shenzhen, Guangdong — the heart of China's apparel manufacturing industry — our 5,000㎡ facility houses 200+ skilled workers producing over 5,000,000 garments annually.",
+    "overviewP1": "Located in Puning, Guangdong — the heart of China's apparel manufacturing industry — our 5,000㎡ facility houses 200+ skilled workers producing over 5,000,000 garments annually.",
     "overviewP2": "We specialize in bras, bra sets, panties, plus size lingerie, silicone bras, shapewear, and custom sleepwear development. Our clients range from emerging DTC brands to established retailers across North America, Europe, the Middle East, and Southeast Asia.",
     "teamTitle": "Our Team",
     "teamDesc": "From pattern engineers to quality inspectors, every team member plays a role in delivering consistent, high-quality products.",
@@ -128,7 +128,7 @@ export default {
       "success": "Thank you! We'll respond within 24 hours."
     },
     "infoTitle": "Contact Information",
-    "address": "Shenzhen, Guangdong, China",
+    "address": "Puning, Guangdong, China",
     "sampleTitle": "Prefer to start with samples?",
     "sampleSub": "Visit our brand partner Viomisha.com for small batch purchases.",
     "sampleBtn": "📦 Visit Viomisha.com →"

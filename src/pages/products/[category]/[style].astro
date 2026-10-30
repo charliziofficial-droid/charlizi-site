@@ -1,0 +1,214 @@
+---
+// src/pages/products/[category]/[style].astro
+// 独立产品详情页（每款一个 SEO 落地页）
+// URL: /products/<category>/<style-slug>
+import FactoryLayout from '../../../layouts/FactoryLayout.astro';
+import { styleContent } from '../../../data/product-style-content';
+import { CONTACT } from '../../../data/contact';
+
+export function getStaticPaths() {
+  return Object.values(styleContent).map((s) => ({
+    params: { category: s.category, style: s.slug },
+    props: { s },
+  }));
+}
+
+const { s } = Astro.props;
+const front = s.images.find((i) => i.view === 'front') ?? s.images[0];
+const backs = s.images.filter((i) => i !== front);
+const related = s.related;
+
+const canonical = `https://charlizi.com/products/${s.category}/${s.slug}/`;
+
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: s.baseTitle,
+  description: s.seoDescription,
+  image: s.images.map((i) => `https://charlizi.com${i.file}`),
+  brand: { '@type': 'Brand', name: 'Charlizi' },
+  manufacturer: {
+    '@type': 'Organization',
+    name: CONTACT.company,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: CONTACT.address.line1,
+      addressLocality: CONTACT.address.locality,
+      addressRegion: CONTACT.address.region,
+      addressCountry: 'CN',
+    },
+  },
+  category: s.categoryName,
+  offers: {
+    '@type': 'Offer',
+    availability: 'https://schema.org/InStock',
+    priceCurrency: 'USD',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      valueAddedTaxIncluded: false,
+    },
+    seller: { '@type': 'Organization', name: CONTACT.company },
+  },
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://charlizi.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://charlizi.com/products/' },
+    { '@type': 'ListItem', position: 3, name: s.categoryName, item: `https://charlizi.com/products/${s.category}/` },
+    { '@type': 'ListItem', position: 4, name: s.baseTitle, item: canonical },
+  ],
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: s.faq.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<FactoryLayout title={s.seoTitle} description={s.seoDescription} canonical={canonical}>
+  <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <div class="container-site py-12">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/products">Products</a><span>/</span>
+      <a href={`/products/${s.category}`}>{s.categoryName}</a><span>/</span>
+      <span class="text-navy font-medium">{s.baseTitle}</span>
+    </nav>
+
+    <!-- Hero: gallery + key info -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+      <div>
+        <div class="rounded-lg overflow-hidden bg-white border border-gray-200">
+          <img
+            src={front.file}
+            alt={front.alt}
+            class="w-full h-auto object-contain aspect-[4/5]"
+            width="900"
+            height="1125"
+          />
+        </div>
+        {backs.length > 0 && (
+          <div class="grid grid-cols-4 gap-3 mt-3">
+            {s.images.map((img) => (
+              <div class="rounded border border-gray-200 overflow-hidden bg-white">
+                <img src={img.file} alt={img.alt} class="w-full h-auto object-contain aspect-[4/5]" loading="lazy" width="900" height="1125" />
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="badge-navy badge">OEM/ODM</span>
+          <span class="badge-accent badge">BSCI &amp; OEKO-TEX</span>
+        </div>
+        <h1 class="text-3xl md:text-4xl font-bold text-navy mb-4 text-balance">{s.h1}</h1>
+        <p class="text-stone leading-relaxed mb-6">{s.intro}</p>
+
+        <ul class="spec-list mb-8">
+          {s.features.map((f) => (
+            <li class="spec-item"><span class="spec-value">✓ {f}</span></li>
+          ))}
+        </ul>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="/contact" class="btn-primary">Request Quote &amp; Sample</a>
+          <a
+            href={`https://wa.me/${CONTACT.phoneTel.replace('+', '')}?text=${encodeURIComponent(`Hi, I'm interested in the ${s.baseTitle}. Please send pricing and MOQ.`)}`}
+            target="_blank"
+            rel="noopener"
+            class="btn-outline"
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
+        <p class="text-xs text-stone mt-4">
+          Reply within 24 hours · MOQ {s.specs.find((x) => x.label === 'MOQ')?.value ?? '200 pcs'}
+        </p>
+      </div>
+    </div>
+
+    <!-- Specifications -->
+    <section class="mb-16">
+      <span class="section-label">Specifications</span>
+      <h2 class="section-title text-2xl md:text-3xl">{s.baseTitle} Details</h2>
+      <div class="card p-6 mt-8 rounded-lg max-w-2xl">
+        <dl class="divide-y divide-gray-200">
+          {s.specs.map((sp) => (
+            <div class="flex justify-between gap-6 py-3">
+              <dt class="text-sm text-stone">{sp.label}</dt>
+              <dd class="text-sm font-medium text-navy text-right">{sp.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="bg-cream rounded-lg p-8 mb-16">
+      <span class="section-label">Applications</span>
+      <h2 class="section-title text-2xl md:text-3xl mb-6">Where This Style Sells</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {s.useCases.map((u) => (
+          <div class="bg-white rounded-lg p-5 border border-gray-200">
+            <p class="text-sm font-medium text-navy">{u}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-16">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title text-2xl md:text-3xl">Ordering &amp; Customization</h2>
+      <div class="mt-8 space-y-3 max-w-3xl">
+        {s.faq.map((f) => (
+          <details class="card p-5 rounded-lg">
+            <summary class="font-semibold text-navy cursor-pointer">{f.q}</summary>
+            <p class="text-sm text-stone mt-3 leading-relaxed">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+
+    <!-- Related styles -->
+    {related.length > 0 && (
+      <section class="mb-16">
+        <span class="section-label">More {s.categoryName}</span>
+        <h2 class="section-title text-2xl md:text-3xl">Related Styles</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+          {related.map((r) => (
+            <a
+              href={`/products/${s.category}/${r.slug}`}
+              class="card-hover rounded-lg p-5 border border-gray-200 bg-white block"
+            >
+              <p class="text-sm font-semibold text-navy leading-snug">{r.title}</p>
+              <p class="text-xs text-accent mt-2">View style →</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- CTA -->
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="/contact" class="btn-primary text-base px-8 py-4">Send Inquiry</a>
+      <a href={`/products/${s.category}`} class="btn-outline text-base px-8 py-4">
+        All {s.categoryName} →
+      </a>
+    </div>
+  </div>
+</FactoryLayout>

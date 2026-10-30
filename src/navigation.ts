@@ -1,4 +1,5 @@
 import { getPermalink } from './utils/permalinks';
+import { CONTACT, CONTACT_LINKS } from './data/contact';
 
 export const headerData = {
   links: [
@@ -91,11 +92,7 @@ export const footerData = {
     },
     {
       title: 'Contact',
-      links: [
-        { text: 'WhatsApp: +86 136 3285 6817', href: 'https://wa.me/8613632856817' },
-        { text: 'Email: sales@charlizi.com', href: 'mailto:sales@charlizi.com' },
-        { text: 'WeChat: charlizi_factory', href: '#' },
-      ],
+      links: CONTACT_LINKS,
     },
   ],
   secondaryLinks: [
@@ -103,8 +100,8 @@ export const footerData = {
     { text: 'Terms of Service', href: getPermalink('/terms') },
   ],
   socialLinks: [
-    { ariaLabel: 'WhatsApp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/8613632856817' },
-    { ariaLabel: 'Email', icon: 'tabler:mail', href: 'mailto:sales@charlizi.com' },
+    { ariaLabel: 'WhatsApp', icon: 'tabler:brand-whatsapp', href: CONTACT.whatsapp },
+    { ariaLabel: 'Email', icon: 'tabler:mail', href: `mailto:${CONTACT.email}` },
   ],
   footNote: `
     &copy; ${new Date().getFullYear()} Charlizi Intimate Apparel Co., Ltd. All rights reserved.
