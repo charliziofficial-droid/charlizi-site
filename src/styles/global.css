@@ -310,7 +310,7 @@
 }
 @media (min-width: 768px) {
   .factory-strip { grid-template-columns: repeat(6, 1fr); }
-  .factory-strip .strip-cell { aspect-ratio: auto; height: 200px; }
+  .factory-strip .strip-cell { aspect-ratio: auto; height: 240px; }
   .factory-strip .strip-cap { font-size: 0.6rem; }
 }
 @media (min-width: 1024px) {

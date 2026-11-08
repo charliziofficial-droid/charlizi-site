@@ -17,7 +17,7 @@ const sizesAttr = sizes || '100vw';
 
 const IMG_DIR = join(process.cwd(), 'public', 'factory', 'images');
 const RESPO_DIR = join(IMG_DIR, 'responsive');
-const CANDIDATE_WIDTHS = [480, 768, 800, 1024, 1280, 1600, 1880, 1920];
+const CANDIDATE_WIDTHS = [480, 640, 768, 800, 1024, 1280, 1600, 1880, 1920];
 
 const availableWidths = CANDIDATE_WIDTHS.filter((w) =>
   existsSync(join(RESPO_DIR, `${name}@${w}.webp`))
