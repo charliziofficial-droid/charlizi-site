@@ -13,3 +13,7 @@ dist
 # Local image backups (not for deployment)
 public/factory/images/.backup_*
 
+
+# local image backups (keep out of repo and build)
+.backup_*/
+.backup_public_images_*/
