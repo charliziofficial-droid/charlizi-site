@@ -239,7 +239,10 @@
   text-wrap: balance;
 }
 
-/* Factory capability strip — full-bleed, 6 production stages across */
+/* Factory capability montage - 3x2 grid, full-bleed.
+   Mobile: 2 columns x 3 rows (each tile keeps a usable size on a narrow
+   screen). Tablet/desktop: 3 columns x 2 rows, taller tiles so the detail in
+   each photo is actually legible instead of a row of thumbnails. */
 .factory-strip {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -277,11 +280,12 @@
   color: #fff;
   background: linear-gradient(
     to top,
-    rgba(8, 12, 20, 0.92) 0%,
-    rgba(8, 12, 20, 0.55) 55%,
+    rgba(6, 9, 16, 0.95) 0%,
+    rgba(6, 9, 16, 0.72) 45%,
+    rgba(6, 9, 16, 0.28) 72%,
     transparent 100%
   );
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
   padding-bottom: 0.55rem;
 }
 .strip-note {
@@ -309,10 +313,19 @@
   .strip-note { padding: 0 1.5rem; }
 }
 @media (min-width: 768px) {
-  .factory-strip { grid-template-columns: repeat(6, 1fr); }
-  .factory-strip .strip-cell { aspect-ratio: auto; height: 240px; }
-  .factory-strip .strip-cap { font-size: 0.6rem; }
+  /* 3 columns x 2 rows. Height is tuned so every tile stays above 1.0 pixel
+     density at devicePixelRatio 2 (tallest source cell is 596px -> a 340 CSS
+     px tile needs 680 device px, so use the 360px tier only from 768px up
+     where the source and the grid both allow it). */
+  .factory-strip { grid-template-columns: repeat(3, 1fr); gap: 4px; }
+  .factory-strip .strip-cell { aspect-ratio: auto; height: 300px; }
+  .factory-strip .strip-cap { font-size: 0.65rem; padding: 1.4rem 0.85rem 0.7rem; }
 }
 @media (min-width: 1024px) {
   .strip-note { padding: 0 2rem; }
+  .factory-strip .strip-cell { height: 360px; }
+  .factory-strip .strip-cap { font-size: 0.7rem; }
+}
+@media (min-width: 1440px) {
+  .factory-strip .strip-cell { height: 400px; }
 }

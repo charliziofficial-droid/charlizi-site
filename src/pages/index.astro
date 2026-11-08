@@ -60,12 +60,12 @@ import Picture from '../components/Picture.astro';
     <div class="factory-strip">
       {[['factory-building', 'Facility'], ['factory-cutting', 'Cutting'], ['factory-sewing', 'Sewing'], ['factory-assembly', 'Assembly'], ['factory-warehouse', 'Warehouse'], ['factory-showroom', 'Showroom']].map(([img, label]) => (
         <a href="/about" class="strip-cell" aria-label={`${label} - see our factory`}>
-          <Picture src={`${img}.webp`} alt={`${label} at our Puning, Guangdong factory`} sizes="(max-width: 767px) 50vw, 17vw" cls="w-full h-full object-cover" />
+          <Picture src={`${img}.webp`} alt={`${label} at our Puning, Guangdong factory`} sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 33vw" cls="w-full h-full object-cover" />
           <span class="strip-cap">{label}</span>
         </a>
       ))}
     </div>
-    <p class="strip-note">Cutting, sewing, assembly, QC and packing &mdash; every stage in-house at our 5,000 m&sup2; facility in Puning, Guangdong. <a href="/about">Tour the factory &rarr;</a></p>
+    <p class="strip-note">From our own building to cutting, sewing and assembly, then warehousing and the buyer showroom &mdash; the whole chain sits under one roof at our 5,000 m&sup2; facility in Puning, Guangdong. <a href="/about">Tour the factory &rarr;</a></p>
     </div>
 
     <div class="container-site">

@@ -1,0 +1,68 @@
+{
+ "factory-building": {
+  "cell": "r1c1_building_exterior",
+  "w": 842,
+  "h": 596,
+  "kb": 119,
+  "variants": [
+   480,
+   640,
+   768,
+   800
+  ]
+ },
+ "factory-cutting": {
+  "cell": "r2c2_fabric_table",
+  "w": 651,
+  "h": 464,
+  "kb": 58,
+  "variants": [
+   480,
+   640
+  ]
+ },
+ "factory-sewing": {
+  "cell": "r0c1_sewing_aisle",
+  "w": 848,
+  "h": 522,
+  "kb": 104,
+  "variants": [
+   480,
+   640,
+   768,
+   800
+  ]
+ },
+ "factory-assembly": {
+  "cell": "r0c2_assembly_line",
+  "w": 665,
+  "h": 530,
+  "kb": 80,
+  "variants": [
+   480,
+   640
+  ]
+ },
+ "factory-warehouse": {
+  "cell": "r2c1_warehouse",
+  "w": 843,
+  "h": 499,
+  "kb": 110,
+  "variants": [
+   480,
+   640,
+   768,
+   800
+  ]
+ },
+ "factory-showroom": {
+  "cell": "r2c0_showroom",
+  "w": 683,
+  "h": 420,
+  "kb": 87,
+  "variants": [
+   480,
+   640
+  ]
+ }
+}
