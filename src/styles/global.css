@@ -20,12 +20,19 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Nothing should ever be able to scroll the page sideways on a phone.
+       Individual overflowing children are fixed at source, this is the net. */
+    overflow-x: hidden;
   }
   body {
     font-family: var(--font-sans);
     color: var(--color-charcoal);
     background-color: white;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    /* Long unbroken strings (units like 5,000 ㎡, emails, URLs) must wrap
+       rather than widen the layout. */
+    overflow-wrap: break-word;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
@@ -308,6 +315,9 @@
   color: #b8860b;
   font-weight: 600;
   white-space: nowrap;
+  /* inline link, but give it a finger-sized hit area on touch screens */
+  display: inline-block;
+  padding: 0.35rem 0.15rem;
 }
 @media (min-width: 640px) {
   .strip-note { padding: 0 1.5rem; }

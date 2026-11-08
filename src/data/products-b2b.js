@@ -45,7 +45,7 @@ export const productCategories = [
     name: 'Panties',
     slug: 'panties',
     description: 'Diverse panty styles — bikini, thong, seamless, high waist, mid rise. Bulk production for global brands.',
-    image: '/factory/images/products-cards/panties/c312-front.webp',
+    image: '/factory/images/products-cards/panties/black-green-lace-high-waist-panties-front.webp',
     metaTitle: 'Panty Manufacturer China | Seamless Thong High Waist OEM',
     metaDesc: 'Panties wholesale manufacturer. Bikini, thong, seamless, high waist, mid rise. Custom fabric & trim. MOQ 300 pcs.',
     subCategories: ['Bikini / Brief', 'Thong / G-String', 'Seamless', 'High Waist', 'Mid Rise'],

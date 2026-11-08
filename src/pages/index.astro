@@ -11,13 +11,13 @@ import Picture from '../components/Picture.astro';
   <!-- JSON-LD Organization/WebSite 已在 FactoryLayout 全局注入 -->
 
   <!-- Hero -->
-  <section class="relative bg-navy overflow-hidden min-h-[80vh] flex items-center">
+  <section class="relative bg-navy overflow-hidden flex items-center min-h-[70vh] sm:min-h-[75vh] md:min-h-[80vh]">
     <div class="absolute inset-0">
-      <Picture src="hero.webp" alt="Charlizi intimate apparel factory in Guangdong, China" sizes="100vw" cls="w-full h-full object-cover" />
+      <Picture src="hero.webp" alt="Charlizi intimate apparel factory in Guangdong, China" sizes="100vw" objectPosition="62% 32%" cls="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/75 to-navy/25"></div>
       <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-navy/30"></div>
     </div>
-    <div class="container-site relative z-10 py-20 md:py-28">
+    <div class="container-site relative z-10 py-14 sm:py-20 md:py-28">
       <div class="max-w-3xl">
         <span class="section-label text-accent/80 text-white/80">OEM/ODM MANUFACTURER SINCE 2018</span>
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-4 leading-[1.1] tracking-tight">
@@ -74,7 +74,7 @@ import Picture from '../components/Picture.astro';
       <h2 class="section-title">Full Range of Intimate Apparel</h2>
       <p class="section-desc mx-auto">7 product lines covering bras, panties, shapewear, and more. Custom OEM/ODM development available.</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
       {productCategories.map(cat => (
         <a href={`/products/${cat.slug}`} class="card-hover group;">
           <div class="aspect-[4/5] mb-4 overflow-hidden rounded-sm relative bg-cream-dark">

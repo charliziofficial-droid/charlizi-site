@@ -104,18 +104,18 @@ import Picture from '../components/Picture.astro';
           </p>
         </div>
 
-        <dl class="grid grid-cols-3 md:grid-cols-1 gap-4 self-start md:border-l md:border-gray-200 md:pl-8">
-          <div>
+        <dl class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4 self-start md:border-l md:border-gray-200 md:pl-8">
+          <div class="min-w-0">
             <dt class="text-xs text-slate uppercase tracking-wider">Workshop</dt>
-            <dd class="text-2xl font-bold text-navy mt-1">{factoryStats.area}</dd>
+            <dd class="text-xl sm:text-2xl font-bold text-navy mt-1 break-words">{factoryStats.area}</dd>
           </div>
-          <div>
+          <div class="min-w-0">
             <dt class="text-xs text-slate uppercase tracking-wider">Staff</dt>
-            <dd class="text-2xl font-bold text-navy mt-1">{factoryStats.workers}</dd>
+            <dd class="text-xl sm:text-2xl font-bold text-navy mt-1 break-words">{factoryStats.workers}</dd>
           </div>
-          <div>
+          <div class="min-w-0">
             <dt class="text-xs text-slate uppercase tracking-wider">Annual Output</dt>
-            <dd class="text-2xl font-bold text-navy mt-1">{factoryStats.annualOutput}</dd>
+            <dd class="text-xl sm:text-2xl font-bold text-navy mt-1 break-words">{factoryStats.annualOutput}</dd>
           </div>
         </dl>
       </div>
