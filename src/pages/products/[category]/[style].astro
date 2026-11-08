@@ -3,11 +3,15 @@
 // 独立产品详情页（每款一个 SEO 落地页）
 // URL: /products/<category>/<style-slug>
 import FactoryLayout from '../../../layouts/FactoryLayout.astro';
-import { styleContent } from '../../../data/product-style-content';
+import { styleContent, type StyleContent } from '../../../data/product-style-content';
+import { styleExtra } from '../../../data/product-style-content-extra';
 import { CONTACT } from '../../../data/contact';
 
+// 注意：Astro 会把 getStaticPaths 提升到模块级执行，它无法访问同文件里的
+// 任何模块级变量，所以这里的 import 必须直接在函数体内部引用。
 export function getStaticPaths() {
-  return Object.values(styleContent).map((s) => ({
+  const merged: Record<string, StyleContent> = { ...styleContent, ...styleExtra };
+  return Object.values(merged).map((s) => ({
     params: { category: s.category, style: s.slug },
     props: { s },
   }));
