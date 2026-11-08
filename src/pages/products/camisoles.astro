@@ -1,0 +1,150 @@
+---
+import FactoryLayout from '../../layouts/FactoryLayout.astro';
+import { productCategories } from '../../data/products-b2b.js';
+import ProductGallery from '../../components/widgets/ProductGallery.astro';
+import { getGallery } from '../../data/product-gallery';
+const cat = productCategories.find(c => c.id === 'camisoles');
+const styles = getGallery('camisoles');
+const title = "Camisole Set Manufacturer China | OEM Custom Camis & Tank Sets";
+const description = "Custom camisole and tank set OEM manufacturer. Strappy camis, matching two-piece lounge sets. Lace, mesh & cotton jersey. MOQ 200 pcs.";
+---
+<FactoryLayout title={title} description={description}>
+  <div class="container-site py-12">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/products">Products</a><span>/</span>
+      <span class="text-navy font-medium">{cat.name}</span>
+    </nav>
+
+    <!-- Hero -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+      <div>
+        <span class="section-label">Category</span>
+        <h1 class="section-title text-balance">{cat.name}</h1>
+        <p class="section-desc max-w-xl">{cat.description}</p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="badge-navy">OEM/ODM</span>
+          <span class="badge-accent">Lace · Mesh · Power Mesh</span>
+          <span class="badge-navy">MOQ 200 pcs</span>
+          <span class="badge-accent">Tummy · Waist · Back</span>
+        </div>
+        <div class="flex flex-wrap gap-3 mt-8">
+          <a href="/contact" class="btn-primary">Send Inquiry</a>
+          <a href="https://viomisha.com" target="_blank" class="btn-outline">📦 Small Batch Sample �?Viomisha</a>
+        </div>
+      </div>
+      <div class="relative rounded-lg aspect-[4/5] max-h-[520px] overflow-hidden bg-cream-dark">
+        <img src={cat.image} alt={cat.name + " product sample"} width="900" height="1125" class="w-full h-full object-contain" loading="eager" decoding="async" />
+      </div>
+    </div>
+
+    <!-- Product Gallery -->
+    {styles.length > 0 && (
+      <section class="mb-16">
+        <span class="section-label">Product Range</span>
+        <h2 class="section-title text-2xl md:text-3xl">Our {cat.name} Collection</h2>
+        <p class="section-desc max-w-2xl mt-2">
+          {styles.length} ready-to-develop styles. Every style can be customized for fabric, color,
+          trim, sizing and private label packaging. MOQ 200 pcs per design.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          {styles.map((style) => (
+            <article class="relative card-hover rounded-lg overflow-hidden bg-white border border-gray-200">
+              <a href={`/products/${cat.id}/${style.slug}`} class="absolute inset-0 z-10" aria-label={style.title}></a>
+              <div class="aspect-[4/5] bg-white overflow-hidden">
+                <img
+                  src={style.images.find((i) => i.view === 'front')?.file ?? style.images[0].file}
+                  alt={style.images.find((i) => i.view === 'front')?.alt ?? style.title}
+                  class="w-full h-full object-contain"
+                  width="900"
+                  height="1125"
+                  loading="lazy"
+                />
+              </div>
+              <div class="p-5">
+                <h3 class="text-sm font-semibold text-navy leading-snug">{style.title}</h3>
+                {style.images.length > 1 && (
+                  <div class="flex gap-2 mt-3">
+                    {style.images.map((img) => (
+                      <img
+                        src={img.file}
+                        alt={`${style.title} - ${img.view} view thumbnail`}
+                        class="w-10 h-12 object-contain border border-gray-200 bg-white"
+                        width="120"
+                        height="150"
+                        loading="lazy"
+                      />
+                    ))}
+                  </div>
+                )}
+                <p class="text-xs text-stone mt-3">Custom fabric · Custom color · OEM/ODM</p>
+                <p class="text-xs text-accent font-medium mt-2">View details →</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <div class="mt-8 text-center">
+          <a href="/contact" class="btn-outline">Request full catalog &amp; pricing →</a>
+        </div>
+      </section>
+    )}
+
+    <!-- Variants -->
+    <section class="mb-16">
+      <span class="section-label">Variants</span>
+      <h2 class="section-title text-2xl md:text-3xl">Available Styles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        {cat.subCategories.map(variant => (
+          <div class="card-hover p-6 rounded-lg">
+            <h3 class="text-lg font-semibold text-navy mb-2">{variant}</h3>
+            <p class="text-sm text-stone">Engineered for firm compression and all-day comfort. Multiple closure options available.</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="mb-16">
+      <span class="section-label">Specifications</span>
+      <h2 class="section-title text-2xl md:text-3xl">Product Details</h2>
+      <div class="card p-6 mt-8 rounded-lg max-w-xl">
+        <ul class="spec-list">
+          {cat.specs.map(spec => (
+            <li class="spec-item">
+              <span class="spec-value">�?{spec}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <!-- Order info -->
+    <section class="bg-cream rounded-lg p-8 mb-16">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div>
+          <h3 class="text-sm font-semibold text-navy uppercase tracking-wider">MOQ</h3>
+          <p class="text-2xl font-bold text-accent mt-1">200 pcs</p>
+          <p class="text-xs text-stone mt-1">Per design, per size, per color</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-navy uppercase tracking-wider">Lead Time</h3>
+          <p class="text-2xl font-bold text-accent mt-1">30-45 Days</p>
+          <p class="text-xs text-stone mt-1">Sample: 7-15 days</p>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-navy uppercase tracking-wider">Payment</h3>
+          <p class="text-2xl font-bold text-accent mt-1">T/T, L/C</p>
+          <p class="text-xs text-stone mt-1">30% deposit + 70% before shipment</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTAs -->
+    <div class="flex flex-wrap gap-4 justify-center">
+      <a href="/contact" class="btn-primary text-base px-8 py-4">📩 Send Inquiry</a>
+      <a href="https://viomisha.com" target="_blank" class="btn-outline text-base px-8 py-4">📦 Small Batch Sample �?Viomisha</a>
+      <a href="/faq" class="btn-ghost text-base">FAQ �?/a>
+    </div>
+  </div>
+</FactoryLayout>

@@ -9,6 +9,7 @@
 //  - 图片为本地实体文件，不依赖 Shopify CDN
 
 import { supplementByCategory } from './product-gallery-supplement';
+import { dDriveByCategory } from './product-gallery-d-drive';
 
 export interface GalleryImage {
   file: string;   // /factory/images/products-cards/<cat>/<name>.webp
@@ -310,13 +311,21 @@ export const galleryByCategory: Record<string, GalleryStyle[]> = {
   ],
 };
 
-/** 取某分类的款式清单（基础款式 + 2026-10-30 新增款式） */
+/** 取某分类的款式清单（基础 + 2026-10-30 新增 + 2026-11-08 D盘新增） */
 export function getGallery(categoryId: string): GalleryStyle[] {
   const base = galleryByCategory[categoryId] ?? [];
   const extra = supplementByCategory[categoryId] ?? [];
-  if (extra.length === 0) return base;
-  const seen = new Set(base.map(s => s.slug));
-  return [...base, ...extra.filter(s => !seen.has(s.slug))];
+  const dDrive = dDriveByCategory[categoryId] ?? [];
+  const seen = new Set(base.map((s) => s.slug));
+  const merged = [...base];
+  for (const list of [extra, dDrive]) {
+    for (const s of list) {
+      if (seen.has(s.slug)) continue;
+      seen.add(s.slug);
+      merged.push(s);
+    }
+  }
+  return merged;
 }
 
 /** 取某分类的首图（用于分类卡片展示） */

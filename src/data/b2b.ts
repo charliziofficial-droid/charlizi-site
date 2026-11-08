@@ -104,6 +104,18 @@ export const productCategories: ProductCategory[] = [
     badge2: 'Firm Control',
   },
   {
+    id: 'camisoles',
+    name: 'Camisole Sets',
+    slug: 'camisoles',
+    description: 'Custom camisole and tank sets, strappy tops, matching two-piece lounge sets. Soft stretch fabrics with lace and mesh trims.',
+    subCategories: ['Cami & Shorts Set', 'Cami & Pants Set', 'Strappy Tank Top', 'Lace Trim Cami', 'Two-Piece Lounge Set'],
+    specs: ['Fabric: Cotton/Spandex jersey, Modal, Satin, Mesh', 'Trim: Lace, Ribbon, Scalloped edge', 'Straps: Adjustable, Spaghetti, Wide', 'Closure: Pullover, Hook &amp; eye', 'Sizes: S–XXXL, Plus size available'],
+    moq: '200',
+    leadTime: '30-45',
+    badge1: 'New Category',
+    badge2: 'Custom Print Available',
+  },
+  {
     id: 'sleepwear',
     name: 'Sleepwear',
     slug: 'sleepwear',
