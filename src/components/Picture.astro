@@ -6,16 +6,18 @@
 // cumulative layout shift (CLS). Falls back silently when size cannot be read.
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-const { src, alt, cls = '', loading = 'lazy', sizes, priority } = Astro.props;
+const { src, alt, cls = '', loading = 'lazy', sizes, priority, objectPosition } = Astro.props;
 
 const isSvg = (src || '').endsWith('.svg');
 const isPng = (src || '').endsWith('.png');
 const name = (src || '').replace(/\.[^.]+$/, '');
-const sizesAttr = sizes || '(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 50vw, 100vw';
+// Default matches a full-width single-column image. Callers that render narrower
+// (grids, sidebars) must pass `sizes` so the browser picks the right variant.
+const sizesAttr = sizes || '100vw';
 
 const IMG_DIR = join(process.cwd(), 'public', 'factory', 'images');
 const RESPO_DIR = join(IMG_DIR, 'responsive');
-const CANDIDATE_WIDTHS = [480, 768, 800, 1024, 1880, 1920];
+const CANDIDATE_WIDTHS = [480, 768, 800, 1024, 1280, 1600, 1880, 1920];
 
 const availableWidths = CANDIDATE_WIDTHS.filter((w) =>
   existsSync(join(RESPO_DIR, `${name}@${w}.webp`))
@@ -73,7 +75,10 @@ function readSize(file: string): { w: number; h: number } | null {
 }
 
 let intrinsic: { w: number; h: number } | null = null;
-for (const f of sizeCandidates) {
+// Prefer the largest source (full-resolution) for intrinsic dimensions so the
+// emitted width/height match the real asset, not a downscaled derivative.
+const intrinsicCandidates = [join(IMG_DIR, src || ''), ...sizeCandidates];
+for (const f of intrinsicCandidates) {
   intrinsic = readSize(f);
   if (intrinsic) break;
 }
@@ -81,13 +86,15 @@ for (const f of sizeCandidates) {
 const sizeAttrs = intrinsic
   ? { width: String(intrinsic.w), height: String(intrinsic.h) }
   : {};
+
+const imgStyle = objectPosition ? `object-position:${objectPosition}` : null;
 ---
 
 { isSvg || isPng || !hasResponsive ? (
-  <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} decoding="async" {...sizeAttrs} />
+  <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} decoding="async" style={imgStyle} {...sizeAttrs} />
 ) : (
   <picture>
     <source type="image/webp" srcset={srcset} sizes={sizesAttr} />
-    <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} decoding="async" {...sizeAttrs} />
+    <img src={`/factory/images/${src}`} alt={alt} class={cls} loading={loading} decoding="async" style={imgStyle} {...sizeAttrs} />
   </picture>
 )}

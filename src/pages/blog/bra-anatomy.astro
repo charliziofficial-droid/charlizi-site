@@ -14,8 +14,8 @@ import Picture from '../../components/Picture.astro';
       <span class="text-navy font-medium">Bra Anatomy</span>
     </nav>
 
-    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
-      <Picture src="blog-bra-anatomy-hero.webp" alt="Front view of an underwire lace bra showing cup, band and strap construction" cls="w-full h-full object-cover" priority />
+    <div class="aspect-[16/10] overflow-hidden rounded-xl bg-cream-dark mb-8">
+      <Picture src="blog-bra-anatomy-hero.webp" alt="Front view of an underwire lace bra showing cup, band and strap construction" cls="w-full h-full object-cover" priority sizes="(max-width: 768px) calc(100vw - 2rem), 704px" />
     </div>
 
     <time class="text-sm text-slate">November 8, 2026</time>
@@ -120,8 +120,8 @@ import Picture from '../../components/Picture.astro';
       </p>
 
       <figure class="my-8">
-        <div class="aspect-[16/10] overflow-hidden bg-cream-dark">
-          <Picture src="blog-bra-anatomy-detail.webp" alt="Close-up of a lace bra cup showing seam lines and edge finishing" cls="w-full h-full object-cover" />
+        <div class="aspect-[16/10] overflow-hidden rounded-xl bg-cream-dark">
+          <Picture src="blog-bra-anatomy-detail.webp" alt="Close-up of a lace bra cup showing seam lines and edge finishing" cls="w-full h-full object-cover" sizes="(max-width: 768px) calc(100vw - 2rem), 704px" />
         </div>
         <figcaption class="text-xs text-slate mt-2">Seam placement and edge finishing are where cut-and-sew bras are won or lost.</figcaption>
       </figure>

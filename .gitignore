@@ -9,3 +9,7 @@ dist
 .vercel/
 .vercel
 .env*
+
+# Local image backups (not for deployment)
+public/factory/images/.backup_*
+
