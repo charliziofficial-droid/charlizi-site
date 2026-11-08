@@ -49,7 +49,7 @@ const description = "Our 7-step production process: pattern making, sample, fabr
 
             <!-- Step image -->
             <div class="mt-6 aspect-[3/2] rounded-lg overflow-hidden border border-gray-100 shadow-sm">
-              <Picture src={`step-${step.step}.webp`} alt={step.title} cls="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              <Picture src={`step-${step.step}.webp`} alt={step.title} sizes="(max-width: 768px) calc(100vw - 2rem), 768px" cls="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           </div>
         </div>
