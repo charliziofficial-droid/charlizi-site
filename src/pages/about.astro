@@ -24,17 +24,69 @@ import Picture from '../components/Picture.astro';
       </p>
     </div>
 
-    <!-- Overview: full-width photo, copy underneath -->
+    <!-- Overview: facility grid, copy underneath -->
     <div class="mb-20">
-      <figure class="overflow-hidden rounded-xl shadow-md">
-        <Picture
-          src="charlizi-factory.webp"
-          alt="Charlizi Factory workshop floor in Puning, Guangdong, with sewing lines producing intimate apparel"
-          sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(100vw - 3rem), 1216px"
-          cls="w-full h-auto"
-          loading="eager"
-          priority
-        />
+      <figure class="mb-3">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <div class="aspect-[4/3] overflow-hidden rounded-lg bg-cream-dark">
+            <Picture
+              src="factory-building.webp"
+              alt="Charlizi Factory building in Puning, Guangdong"
+              sizes="(max-width: 768px) calc(50vw - 1.5rem), 394px"
+              cls="w-full h-full object-cover"
+              loading="eager"
+              priority
+            />
+          </div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg bg-cream-dark">
+            <Picture
+              src="factory-cutting.webp"
+              alt="Automated CNC fabric cutting machine"
+              sizes="(max-width: 768px) calc(50vw - 1.5rem), 394px"
+              cls="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg bg-cream-dark">
+            <Picture
+              src="factory-sewing.webp"
+              alt="Sewing line producing intimate apparel"
+              sizes="(max-width: 768px) calc(50vw - 1.5rem), 394px"
+              cls="w-full h-full object-cover"
+              loading="eager"
+            />
+          </div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg bg-cream-dark">
+            <Picture
+              src="factory-assembly.webp"
+              alt="Conveyor assembly line on the production floor"
+              sizes="(max-width: 768px) calc(50vw - 1.5rem), 394px"
+              cls="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg bg-cream-dark">
+            <Picture
+              src="factory-warehouse.webp"
+              alt="Fabric and component warehouse with racking"
+              sizes="(max-width: 768px) calc(50vw - 1.5rem), 394px"
+              cls="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="aspect-[4/3] overflow-hidden rounded-lg bg-cream-dark">
+            <Picture
+              src="factory-showroom.webp"
+              alt="Sample showroom displaying finished garments"
+              sizes="(max-width: 768px) calc(50vw - 1.5rem), 394px"
+              cls="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <figcaption class="text-xs text-slate mt-3">
+          Building, automated cutting, sewing floors, assembly, warehouse and showroom &mdash; all in-house in Puning, Guangdong.
+        </figcaption>
       </figure>
 
       <div class="mt-10 grid md:grid-cols-3 gap-10">
