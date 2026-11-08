@@ -25,8 +25,20 @@ import Picture from '../components/Picture.astro';
     </div>
 
     <!-- Overview -->
-    <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
-      <div>
+    <!-- Overview: full-width photo, copy underneath -->
+    <div class="mb-20">
+      <figure class="overflow-hidden rounded-xl shadow-md">
+        <Picture
+          src="charlizi-factory.webp"
+          alt="Charlizi Factory workshop floor in Puning, Guangdong, with sewing lines producing intimate apparel"
+          sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(100vw - 3rem), 1216px"
+          cls="w-full h-auto"
+          loading="eager"
+          priority
+        />
+      </figure>
+
+      <div class="mt-8 max-w-3xl">
         <h2 class="text-2xl font-bold text-navy">Factory Overview</h2>
         <p class="text-stone mt-4 leading-relaxed">
           Located in Puning, Guangdong - the heart of China's apparel manufacturing industry -
@@ -38,14 +50,12 @@ import Picture from '../components/Picture.astro';
           and custom sleepwear development. Our clients range from emerging DTC brands to
           established retailers across North America, Europe, the Middle East, and Southeast Asia.
         </p>
-        <div class="grid grid-cols-3 gap-6 mt-8">
-          <div><div class="text-2xl font-bold text-navy">{factoryStats.area}</div><div class="text-xs text-slate mt-1">Workshop</div></div>
-          <div><div class="text-2xl font-bold text-navy">{factoryStats.workers}</div><div class="text-xs text-slate mt-1">Staff</div></div>
-          <div><div class="text-2xl font-bold text-navy">{factoryStats.annualOutput}</div><div class="text-xs text-slate mt-1">Annual Output</div></div>
-        </div>
       </div>
-      <div class="aspect-[4/3] overflow-hidden rounded-lg shadow-md">
-        <Picture src="charlizi-factory.webp" alt="Charlizi Factory workshop floor in Puning, Guangdong, with sewing lines producing intimate apparel" sizes="(max-width: 768px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3.5rem), 584px" cls="w-full h-full object-cover" />
+
+      <div class="mt-8 grid grid-cols-3 gap-6 max-w-lg">
+        <div><div class="text-2xl font-bold text-navy">{factoryStats.area}</div><div class="text-xs text-slate mt-1">Workshop</div></div>
+        <div><div class="text-2xl font-bold text-navy">{factoryStats.workers}</div><div class="text-xs text-slate mt-1">Staff</div></div>
+        <div><div class="text-2xl font-bold text-navy">{factoryStats.annualOutput}</div><div class="text-xs text-slate mt-1">Annual Output</div></div>
       </div>
     </div>
 
