@@ -24,7 +24,6 @@ import Picture from '../components/Picture.astro';
       </p>
     </div>
 
-    <!-- Overview -->
     <!-- Overview: full-width photo, copy underneath -->
     <div class="mb-20">
       <figure class="overflow-hidden rounded-xl shadow-md">
@@ -38,24 +37,35 @@ import Picture from '../components/Picture.astro';
         />
       </figure>
 
-      <div class="mt-8 max-w-3xl">
-        <h2 class="text-2xl font-bold text-navy">Factory Overview</h2>
-        <p class="text-stone mt-4 leading-relaxed">
-          Located in Puning, Guangdong - the heart of China's apparel manufacturing industry -
-          our {factoryStats.area} facility houses {factoryStats.workers} skilled workers
-          producing over {factoryStats.annualOutput} garments annually.
-        </p>
-        <p class="text-stone mt-4 leading-relaxed">
-          We specialize in bras, bra sets, panties, plus size lingerie, silicone bras, shapewear,
-          and custom sleepwear development. Our clients range from emerging DTC brands to
-          established retailers across North America, Europe, the Middle East, and Southeast Asia.
-        </p>
-      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-10">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold text-navy">Factory Overview</h2>
+          <p class="text-stone mt-4 leading-relaxed">
+            Located in Puning, Guangdong - the heart of China's apparel manufacturing industry -
+            our {factoryStats.area} facility houses {factoryStats.workers} skilled workers
+            producing over {factoryStats.annualOutput} garments annually.
+          </p>
+          <p class="text-stone mt-4 leading-relaxed">
+            We specialize in bras, bra sets, panties, plus size lingerie, silicone bras, shapewear,
+            and custom sleepwear development. Our clients range from emerging DTC brands to
+            established retailers across North America, Europe, the Middle East, and Southeast Asia.
+          </p>
+        </div>
 
-      <div class="mt-8 grid grid-cols-3 gap-6 max-w-lg">
-        <div><div class="text-2xl font-bold text-navy">{factoryStats.area}</div><div class="text-xs text-slate mt-1">Workshop</div></div>
-        <div><div class="text-2xl font-bold text-navy">{factoryStats.workers}</div><div class="text-xs text-slate mt-1">Staff</div></div>
-        <div><div class="text-2xl font-bold text-navy">{factoryStats.annualOutput}</div><div class="text-xs text-slate mt-1">Annual Output</div></div>
+        <dl class="grid grid-cols-3 md:grid-cols-1 gap-4 self-start md:border-l md:border-gray-200 md:pl-8">
+          <div>
+            <dt class="text-xs text-slate uppercase tracking-wider">Workshop</dt>
+            <dd class="text-2xl font-bold text-navy mt-1">{factoryStats.area}</dd>
+          </div>
+          <div>
+            <dt class="text-xs text-slate uppercase tracking-wider">Staff</dt>
+            <dd class="text-2xl font-bold text-navy mt-1">{factoryStats.workers}</dd>
+          </div>
+          <div>
+            <dt class="text-xs text-slate uppercase tracking-wider">Annual Output</dt>
+            <dd class="text-2xl font-bold text-navy mt-1">{factoryStats.annualOutput}</dd>
+          </div>
+        </dl>
       </div>
     </div>
 

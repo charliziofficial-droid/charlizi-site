@@ -112,68 +112,54 @@ import Picture from '../components/Picture.astro';
 
   <!-- Why Choose Us -->
   <section class="container-site section-padding">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <span class="section-label">Why Choose Us</span>
-        <h2 class="section-title">End-to-End Manufacturing<br />Under One Roof</h2>
-        <ul class="mt-8 space-y-5">
-          <li class="flex gap-4">
-            <span class="text-accent font-bold text-lg mt-0.5">01</span>
-            <div>
-              <h3 class="font-semibold text-navy">Full OEM/ODM Service</h3>
-              <p class="text-sm text-stone mt-1">From tech pack to bulk production. Pattern making, sample development, size grading.</p>
-            </div>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-accent font-bold text-lg mt-0.5">02</span>
-            <div>
-              <h3 class="font-semibold text-navy">Certified Quality</h3>
-              <p class="text-sm text-stone mt-1">BSCI and OEKO-TEX certified factory. Three-stage QC process (AQL 2.5).</p>
-            </div>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-accent font-bold text-lg mt-0.5">03</span>
-            <div>
-              <h3 class="font-semibold text-navy">Small Batch Available</h3>
-              <p class="text-sm text-stone mt-1">Sampling through Viomisha.com. Evaluate quality before committing to bulk.</p>
-            </div>
-          </li>
-          <li class="flex gap-4">
-            <span class="text-accent font-bold text-lg mt-0.5">04</span>
-            <div>
-              <h3 class="font-semibold text-navy">Global Export Experience</h3>
-              <p class="text-sm text-stone mt-1">Shipping to North America, Europe, Middle East and Southeast Asia. FCL/LCL.</p>
-            </div>
-          </li>
-        </ul>
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title">End-to-End Manufacturing<br />Under One Roof</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-x-10 gap-y-8 mb-14">
+      <div class="flex gap-4">
+        <span class="text-accent font-bold text-lg mt-0.5">01</span>
+        <div>
+          <h3 class="font-semibold text-navy">Full OEM/ODM Service</h3>
+          <p class="text-sm text-stone mt-1 leading-relaxed">From tech pack to bulk production. Pattern making, sample development, size grading.</p>
+        </div>
       </div>
-      <div class="relative aspect-[1880/720] max-h-[420px] overflow-hidden rounded-lg shadow-lg bg-cream-dark">
-        <Picture src="factory-placeholder.webp" alt="Charlizi 5,000 square metre intimate apparel workshop floor" sizes="100vw" cls="w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-gradient-to-t from-navy/65 via-navy/10 to-transparent"></div>
-        <div class="absolute bottom-4 left-4 right-4">
-          <p class="text-white font-semibold text-sm">5,000㎡ Modern Workshop</p>
-          <p class="text-white/80 text-xs mt-1">Production floor, Puning, Guangdong</p>
+      <div class="flex gap-4">
+        <span class="text-accent font-bold text-lg mt-0.5">02</span>
+        <div>
+          <h3 class="font-semibold text-navy">Certified Quality</h3>
+          <p class="text-sm text-stone mt-1 leading-relaxed">BSCI and OEKO-TEX certified factory. Three-stage QC process (AQL 2.5).</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <span class="text-accent font-bold text-lg mt-0.5">03</span>
+        <div>
+          <h3 class="font-semibold text-navy">Small Batch Available</h3>
+          <p class="text-sm text-stone mt-1 leading-relaxed">Sampling through Viomisha.com. Evaluate quality before committing to bulk.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <span class="text-accent font-bold text-lg mt-0.5">04</span>
+        <div>
+          <h3 class="font-semibold text-navy">Global Export Experience</h3>
+          <p class="text-sm text-stone mt-1 leading-relaxed">Shipping to North America, Europe, Middle East and Southeast Asia. FCL/LCL.</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Factory Showcase -->
-  <section class="container-site section-padding">
-    <div class="text-center max-w-3xl mx-auto mb-10">
-      <span class="section-label">Inside Our Factory</span>
-      <h2 class="section-title">From Cutting Floor to Final QC</h2>
-      <p class="section-desc mx-auto">Our 5,000&#13217; facility in Guangdong runs the complete production chain in-house &mdash; pattern making, cutting, sewing, inspection and packing.</p>
-    </div>
-    <figure class="overflow-hidden rounded-lg shadow-lg border border-gray-200">
+    <figure class="overflow-hidden rounded-xl shadow-lg bg-cream-dark">
       <img
         src="/factory/images/factory-showcase-home.jpg"
-        alt="Charlizi factory floor: warehouse, production line, cutting, QC and packing"
-        class="w-full h-auto object-cover"
+        alt="Charlizi factory workflow: fabric warehouse, sewing lines, cutting tables, quality control and packing stations"
+        class="w-full h-auto"
         width="1200"
         height="400"
         loading="lazy"
+        decoding="async"
       />
+      <figcaption class="text-xs text-slate px-4 py-3 bg-white border-t border-gray-100">
+        Warehouse, sewing lines, cutting, QC and packing &mdash; 5,000&#13217; in Puning, Guangdong.
+      </figcaption>
     </figure>
   </section>
 
