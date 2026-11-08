@@ -1,13 +1,17 @@
 ---
 // src/pages/blog/[slug].astro — Blog post detail pages
 import FactoryLayout from '~/layouts/FactoryLayout.astro';
-import { blogPosts } from '../../data/blog-posts.js';
+import { blogPosts, handBuiltSlugs } from '../../data/blog-posts.js';
 
 export async function getStaticPaths() {
-  return blogPosts.map(post => ({
-    params: { slug: post.slug },
-    props: { post },
-  }));
+  // Skip posts that already have a dedicated .astro page — otherwise Astro emits
+  // the generic placeholder over the richer hand-written one.
+  return blogPosts
+    .filter((post) => !handBuiltSlugs.has(post.slug))
+    .map((post) => ({
+      params: { slug: post.slug },
+      props: { post },
+    }));
 }
 
 const { post } = Astro.props;

@@ -1,6 +1,7 @@
 ---
 // src/pages/blog/oeko-tex-certification.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
 ---
 <BlogLayout
   title="Understanding OEKO-TEX Certification in Intimate Apparel"
@@ -12,6 +13,10 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
       <a href="/blog">Blog</a><span>/</span>
       <span class="text-navy font-medium">OEKO-TEX Certification</span>
     </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-oeko-tex.webp" alt="Close-up of tested fabric and adhesive detail on certified intimate apparel material" cls="w-full h-full object-cover" priority />
+    </div>
 
     <time class="text-sm text-slate">May 25, 2026</time>
     <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Understanding OEKO-TEX Certification in Intimate Apparel</h1>

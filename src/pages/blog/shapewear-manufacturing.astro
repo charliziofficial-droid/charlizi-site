@@ -1,0 +1,130 @@
+---
+// src/pages/blog/shapewear-manufacturing.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+---
+<BlogLayout
+  title="Shapewear Manufacturing: Compression, Bonding and the Hard Parts"
+  description="How compression levels are engineered, why bonded seams fail, and what to specify so shapewear holds its shape — from a factory that builds it."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Shapewear Manufacturing</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-shapewear-hero.webp" alt="Full body shaper in black compression fabric" cls="w-full h-full object-cover" priority />
+    </div>
+
+    <time class="text-sm text-slate">November 8, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Shapewear Manufacturing: Compression, Bonding and the Hard Parts</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        Shapewear is the most technically demanding category we produce, and the least forgiving of
+        shortcuts. A bra can hide a cheap component inside a cup. Shapewear cannot hide anything — the
+        garment either compresses evenly and recovers, or it rolls, digs and loses its hold. And because
+        the whole product promise is "this will hold you", a failure is not a minor annoyance, it is the
+        entire product failing.
+      </p>
+
+      <h2>Compression is a number, and it should be specified</h2>
+      <p>
+        "Medium control", "firm control" and "extra firm" are marketing terms. What they correspond to in
+        production is a compression value measured in mmHg at defined body points, and the difference
+        between good and bad shapewear is whether the factory is engineering to a number or to a feel.
+      </p>
+      <p>
+        Rough industry bands look like this:
+      </p>
+      <ul>
+        <li><strong>Light / smoothing:</strong> roughly 8–15 mmHg — visually smooths, no real shaping.</li>
+        <li><strong>Medium control:</strong> roughly 15–25 mmHg — the bulk of the commercial market.</li>
+        <li><strong>Firm control:</strong> roughly 25–35 mmHg — visibly shaping; comfort window is narrow.</li>
+        <li><strong>Post-surgical / medical:</strong> 35 mmHg and above — a different regulatory category in most markets, and not something to drift into accidentally.</li>
+      </ul>
+      <p>
+        Compression is achieved through three levers that have to be balanced together: fabric elastane
+        content, the pattern's negative ease, and the number and placement of seams or bonded panels.
+        Push any one of them too hard to hit a lower cost and the garment stops behaving.
+      </p>
+
+      <h2>Why bonded seams fail</h2>
+      <p>
+        Modern shapewear is largely bonded rather than sewn, because a bonded seam is flat and invisible
+        under clothing — which is exactly what the customer wants. It is also the most common point of
+        failure, and the failures follow a pattern:
+      </p>
+      <ul>
+        <li><strong>Insufficient bonding temperature or dwell time</strong> to hit production speed. The seam looks correct at inspection and delaminates after a few washes.</li>
+        <li><strong>Contamination on the fabric surface</strong> — silicone finish, softener, or oil from handling. Adhesive cannot bond to a contaminated surface, and the contamination is invisible.</li>
+        <li><strong>Incompatible adhesive for the elastane content.</strong> High-stretch fabric needs an adhesive that stretches with it; a rigid bond on a stretch fabric will crack along the seam line.</li>
+        <li><strong>Bonding across a high-stress zone.</strong> Under the bust, at the waist, at the leg — these need reinforcement or a different construction, not just a bond.</li>
+      </ul>
+      <p>
+        This is why we run a pull test on bonded seams from every production batch rather than only at
+        sample stage. The sample was made carefully. The production run is where the bonding parameters
+        drift.
+      </p>
+
+      <figure class="my-8">
+        <div class="aspect-[16/10] overflow-hidden bg-cream-dark">
+          <Picture src="blog-shapewear-detail.webp" alt="Black mesh shaping bodysuit showing panel construction and bonded edges" cls="w-full h-full object-cover" />
+        </div>
+        <figcaption class="text-xs text-slate mt-2">Panel placement does the shaping; the bonded edges only hold it together.</figcaption>
+      </figure>
+
+      <h2>Panel geometry is the actual product</h2>
+      <p>
+        People assume shapewear works because of the fabric. Mostly it works because of panel placement.
+        A well-designed shaper uses different compression zones in one garment — firmer across the lower
+        abdomen, softer at the waist where the body needs to move, graduated at the edges so the garment
+        does not create a visible line where it ends.
+      </p>
+      <p>
+        Two practical consequences for a buyer. First, a shaper is not one fabric — it is usually two or
+        three different fabrics or two or three different panel tensions in one garment, and a quote that
+        assumes one fabric throughout is not quoting the same product. Second, the edge treatment is
+        where most "it rolls down" complaints originate. A raw-cut edge with a light silicone grip band
+        behaves very differently from a folded-and-stitched edge, and the cost difference is real.
+      </p>
+
+      <h2>The comfort window</h2>
+      <p>
+        There is a hard trade-off in shapewear between compression and wearability, and it is narrower
+        than most product briefs assume. Above roughly medium-firm, three things become necessary to keep
+        the garment wearable: moisture management in the fabric, breathability through the front panel,
+        and a closure system (hook-and-eye, or a well-designed pull-on with adequate stretch at the
+        opening) that does not defeat the compression.
+      </p>
+      <p>
+        Where brands get this wrong is by specifying a compression target without specifying the comfort
+        requirements alongside it. The factory hits the number, the garment is unwearable for more than
+        two hours, and the reviews say so.
+      </p>
+
+      <h2>What we specify on every shapewear development</h2>
+      <ul>
+        <li>Target compression in mmHg, per zone, not per garment</li>
+        <li>Fabric composition and elastane percentage per panel</li>
+        <li>Negative ease per body zone</li>
+        <li>Bonding adhesive type, and pull-test acceptance threshold</li>
+        <li>Edge treatment per opening, with anti-roll specification where relevant</li>
+        <li>Recovery tolerance after a defined number of wash cycles</li>
+        <li>Breathability requirement for the front panel</li>
+      </ul>
+      <p>
+        Shapewear is the category where a spec sheet most clearly pays for itself. The products that
+        generate the "it didn't do anything" reviews are almost never badly made — they are made to a
+        vague brief. Given a measurable one, the same factory produces a product that works.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Developing shapewear?</p>
+      <p class="text-sm text-stone mt-1">We engineer compression per zone and pull-test every bonded batch. <a href="/contact" class="text-accent hover:underline">Send your compression target</a> or see our <a href="/products/shapewear" class="text-accent hover:underline">shapewear range</a>.</p>
+    </div>
+  </article>
+</BlogLayout>

@@ -1,0 +1,123 @@
+---
+// src/pages/blog/size-grading.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+---
+<BlogLayout
+  title="Size Grading for Full-Bust Bras: Where Ranges Break"
+  description="Why scaling a 34B pattern to a 42F does not work, how grading increments should change above a D cup, and what to specify so your full-bust sizes actually fit."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Full-Bust Grading</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-size-grading-hero.webp" alt="Full-bust lace bra with wider band and deeper cup construction" cls="w-full h-full object-cover" priority />
+    </div>
+
+    <time class="text-sm text-slate">November 8, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Size Grading for Full-Bust Bras: Where Ranges Break</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        Almost every bad full-bust bra we have been asked to fix had the same origin story: someone took
+        a 34B block that fitted beautifully, ran it through a grading table, and extended it to 42F. The
+        34B still fits. The 42F is a disaster. This is not a workmanship problem — it is that grading a
+        bra is not linear, and the assumption that it is has a specific point where it fails.
+      </p>
+
+      <h2>What grading actually does</h2>
+      <p>
+        Grading takes a base size pattern and applies an increment per size step — for example, +5cm
+        underbust circumference and +2.5cm across the cup depth per step. Done well, this works
+        acceptably across a contiguous band of sizes. Done blindly, it silently assumes that the
+        <em>relationship</em> between components stays constant. It does not.
+      </p>
+
+      <h2>The D-cup boundary</h2>
+      <p>
+        In our experience the practical break point is around a D cup, and it breaks in several ways at
+        once:
+      </p>
+      <ul>
+        <li><strong>Cup weight grows faster than cup volume.</strong> A larger cup holds more fabric mass, which means the same wire gauge and the same strap width are now under-spec for the load.</li>
+        <li><strong>The wire needs to change shape, not just scale.</strong> A scaled-up small wire gets taller and wider but is still the wrong curve — a full bust typically needs a deeper, more rounded wire rather than a proportionally enlarged one.</li>
+        <li><strong>The band must carry more.</strong> Support has to move from the straps back to the band, which means a wider elastic and often a third hook.</li>
+        <li><strong>Strap placement shifts.</strong> Scaling keeps the apex position proportional, but a full bust needs the apex lower and the strap attachment further inboard or the cup tips forward.</li>
+      </ul>
+      <p>
+        If you specify nothing else for a full-bust range, specify these four. They are the difference
+        between a range that fits at the top end and one that only photographs well.
+      </p>
+
+      <h2>The grading table is not the product</h2>
+      <p>
+        There is a second, subtler failure mode: brands buy a grading table off the shelf — a standard
+        increment set used across the industry — and treat it as a specification. A grading table is a
+        starting point calibrated to a particular block, on a particular last, for a particular market.
+        Applied to a different block it produces sizes that are internally consistent and externally
+        wrong.
+      </p>
+      <p>
+        The test is simple and cheap: get a fit model in your target top size and your target bottom size,
+        not just the middle. Grading errors are almost invisible at the base size and glaring two steps
+        away from it.
+      </p>
+
+      <h2>What a proper full-bust spec contains</h2>
+      <p>
+        When we develop a full-bust range, the specification carries more than measurements:
+      </p>
+      <ul>
+        <li><strong>Wire spec per size band</strong> — not one wire scaled, but two or three wire geometries across the range.</li>
+        <li><strong>Band elastic width per size band</strong> — commonly stepping up at the DD and again at the G boundary.</li>
+        <li><strong>Hook count per size band</strong> — 2-hook at the bottom of the range, 3-hook from DD upward.</li>
+        <li><strong>Strap width and stretch grade per size band</strong> — a 12mm strap on a 40F is a customer complaint waiting to happen.</li>
+        <li><strong>Cup construction changes</strong> — a cup that is cut-and-sew at 34B may need a stabilised side panel or a different seam layout at 40G.</li>
+      </ul>
+      <p>
+        This is why full-bust development costs more. It is not arbitrary; it is genuinely more pattern
+        work, and the factories that quote it as if it is the same job as a core-size range are either
+        planning to skip the work or have not done it before.
+      </p>
+
+      <h2>Testing that catches grading errors before production</h2>
+      <p>
+        Three checks we run that catch most problems at sample stage rather than at the customer:
+      </p>
+      <p>
+        <strong>Fit on the boundary sizes, on a body.</strong> Not a mannequin. A dress form will hold a
+        bad fit quietly; a fit model will not. Test the smallest and largest size in the range, and test
+        the size where you switched wire geometry.
+      </p>
+      <p>
+        <strong>Strap load test.</strong> Hang a weighted form from the straps for 24 hours and measure
+        elastic recovery. Straps that are under-spec for a full-bust cup fail this before they fail on a
+        customer.
+      </p>
+      <p>
+        <strong>Band recovery after wash cycles.</strong> Ten cycles is usually enough to separate
+        adequate elastic from inadequate. Measure the band length before and after; anything beyond
+        roughly 3% permanent stretch is a problem that will grow.
+      </p>
+
+      <h2>The commercial reality</h2>
+      <p>
+        Full-bust is one of the few genuinely underserved segments in intimate apparel, and it is
+        underserved specifically because it is hard to make well. That is an opportunity, but only for
+        brands willing to fund the pattern work properly. If the budget is not there for a real full-bust
+        development, the better commercial decision is usually to cap the range at a DD and do the small
+        sizes excellently — rather than extend to a G and be quietly returned by every customer above a
+        D.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Building a full-bust range?</p>
+      <p class="text-sm text-stone mt-1">We develop full-bust grading with per-size-band wire and elastic specs, not a scaled core block. <a href="/contact" class="text-accent hover:underline">Send us your size range</a> or see our <a href="/products/plus-size-bras" class="text-accent hover:underline">plus size bras</a>.</p>
+    </div>
+  </article>
+</BlogLayout>

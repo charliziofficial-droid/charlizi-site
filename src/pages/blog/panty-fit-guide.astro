@@ -1,0 +1,138 @@
+---
+// src/pages/blog/panty-fit-guide.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+---
+<BlogLayout
+  title="Panties Are Where Fit Goes Wrong: A Manufacturing Guide"
+  description="Rise, gusset construction, leg elastic and fabric recovery — the four production decisions that decide whether a panty fits, rides up, or gets returned."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Panty Fit</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-panty-fit-hero.webp" alt="Lace panty front view showing rise and leg opening construction" cls="w-full h-full object-cover" priority />
+    </div>
+
+    <time class="text-sm text-slate">November 8, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Panties Are Where Fit Goes Wrong: A Manufacturing Guide</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        Bra development gets all the attention and all the budget. Panties get treated as the easy
+        companion piece — a few panels of fabric, an elastic waistband, done. In our experience the
+        return rates say the opposite. A bra that is slightly off gets worn anyway; a panty that rides
+        up, digs in at the leg or shows through becomes an immediate return and a one-star review.
+      </p>
+      <p>
+        Four production decisions cause almost all of it.
+      </p>
+
+      <h2>1. Rise is a specification, not a style label</h2>
+      <p>
+        "Low rise", "mid rise" and "high rise" are treated as marketing language, but they are production
+        measurements and they need to be specified in centimetres on the pattern. The measurement that
+        matters is the front rise — from the crotch seam to the top of the waistband at centre front.
+      </p>
+      <p>
+        The failure mode is subtle: a rise that is 2cm too short sits on the hip instead of over it, and
+        the product photographs identically. It only shows up when worn, which is when it becomes a
+        return. Since the customer cannot see the difference before buying, this is the single easiest
+        place to lose trust.
+      </p>
+      <p>
+        Practical rule: if you are producing one silhouette across a size range, the rise increment per
+        size step matters as much as the waist measurement. Under-grading the rise is very common and is
+        why larger sizes so often feel like they are cut for a smaller frame.
+      </p>
+
+      <h2>2. The gusset is the quality signal</h2>
+      <p>
+        The gusset — the lined panel at the base — is where a customer judges whether a panty is worth
+        its price, because it is the part they feel. Three specifications decide it:
+      </p>
+      <ul>
+        <li><strong>Lining fabric.</strong> A cotton or cotton-rich lining is the expectation. A synthetic lining reads as cheap instantly and is a genuine comfort issue.</li>
+        <li><strong>Stitch construction.</strong> A flatlock or coverstitch over a raw overlock edge. The overlock edge on a gusset is a common cost cut and a common complaint.</li>
+        <li><strong>Attachment method.</strong> Fully enclosed (clean-finished inside) versus overlocked in place. Enclosed costs more per unit in labour and is worth it.</li>
+      </ul>
+      <p>
+        This is a component where we never advise cost-down. It is the part of the garment in contact
+        with the customer, and it is the part they will inspect.
+      </p>
+
+      <figure class="my-8">
+        <div class="aspect-[16/10] overflow-hidden bg-cream-dark">
+          <Picture src="blog-panty-fit-detail.webp" alt="Black and red lace panty showing leg opening elastic finishing" cls="w-full h-full object-cover" />
+        </div>
+        <figcaption class="text-xs text-slate mt-2">Leg opening elastic tension and finishing decide whether a panty stays put.</figcaption>
+      </figure>
+
+      <h2>3. Leg elastic tension is the ride-up culprit</h2>
+      <p>
+        Riding up is almost never a sizing problem — it is leg elastic tension. Too loose and the fabric
+        migrates upward with movement; too tight and it digs into the crease at the leg. The window is
+        narrower than most people assume, and it has to be specified as a tension at a given extension
+        rather than as "soft elastic".
+      </p>
+      <p>
+        Two production factors move it. First, elastic quality: a cheap elastic loses recovery within
+        tens of washes and the leg opening relaxes — so a panty that was correct in QC becomes a panty
+        that rides up in month two. Second, application tension: the same elastic sewn at different
+        tensions gives different fits, which is why panty leg elastic should be specified with a target
+        stretched length rather than left to the operator's feel.
+      </p>
+
+      <h2>4. Fabric recovery, especially on seamless</h2>
+      <p>
+        On a seamless or bonded panty, there is no elastic at the leg — the fabric itself is the elastic.
+        That makes the fabric specification the entire fit specification. Two-way stretch with high
+        recovery (elastane in the 15–20% range) behaves completely differently from a basic knit at the
+        same price point after ten washes.
+      </p>
+      <p>
+        The standard test is simple and worth insisting on: cut a fixed length, stretch it to a fixed
+        extension, hold, release, and measure permanent deformation after repeated cycles. Fabric that
+        grows more than a few percent permanently in that test will grow in the customer's drawer.
+      </p>
+
+      <h2>The one-piece vs cut-and-sew decision</h2>
+      <p>
+        This is the structural choice that frames everything above. A seamless circular-knit panty is
+        cheaper per unit at volume and has no side seams to feel, but the fit is locked into the knit and
+        cannot be adjusted per style — you change the fit by changing the machine programme, which is a
+        tooling cost. A cut-and-sew panty costs more in labour but gives you per-style control over rise,
+        gusset and leg opening, and lets you run small runs of many styles.
+      </p>
+      <p>
+        For a core basic line at volume, seamless is the efficient answer. For a fashion line with
+        frequent style turnover, cut-and-sew is the only practical option. Trying to build a
+        fast-turnover fashion line on seamless machines is a mismatch that usually surfaces as an
+        inability to react to trends quickly enough.
+      </p>
+
+      <h2>What to put in the spec sheet</h2>
+      <ul>
+        <li>Front rise and back rise in centimetres, per size</li>
+        <li>Gusset lining fabric composition and attachment method</li>
+        <li>Leg elastic: type, width, target stretched length at application</li>
+        <li>Fabric stretch and recovery grade, with wash-cycle recovery tolerance</li>
+        <li>Waistband elastic recovery tolerance</li>
+      </ul>
+      <p>
+        None of this is exotic. It is simply the difference between specifying a panty and ordering one.
+        The brands with the lowest returns in this category almost always turn out to have a spec sheet
+        with numbers on it rather than adjectives.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Producing a panty line?</p>
+      <p class="text-sm text-stone mt-1">We spec rise, gusset and leg elastic numerically on every style, and run recovery tests before bulk. <a href="/contact" class="text-accent hover:underline">Send your spec</a> or see our <a href="/products/panties" class="text-accent hover:underline">panty range</a>.</p>
+    </div>
+  </article>
+</BlogLayout>

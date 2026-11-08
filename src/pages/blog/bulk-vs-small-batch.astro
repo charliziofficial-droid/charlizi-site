@@ -1,6 +1,7 @@
 ---
 // src/pages/blog/bulk-vs-small-batch.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
 ---
 <BlogLayout
   title="Bulk vs Small Batch: Sourcing Strategy for Apparel Brands"
@@ -12,6 +13,10 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
       <a href="/blog">Blog</a><span>/</span>
       <span class="text-navy font-medium">Bulk vs Small Batch</span>
     </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-bulk-vs-small.webp" alt="Intimate apparel worn across different occasions and markets" cls="w-full h-full object-cover" priority />
+    </div>
 
     <time class="text-sm text-slate">May 18, 2026</time>
     <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Bulk vs Small Batch: Sourcing Strategy for Apparel Brands</h1>

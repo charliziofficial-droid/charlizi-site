@@ -1,6 +1,7 @@
 ---
 // src/pages/blog/choosing-bra-manufacturer.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
 ---
 <BlogLayout
   title="How to Choose the Right Bra Manufacturer for Your Brand"
@@ -12,6 +13,10 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
       <a href="/blog">Blog</a><span>/</span>
       <span class="text-navy font-medium">Choosing a Bra Manufacturer</span>
     </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-choosing-manufacturer.webp" alt="Range of intimate apparel styles a brand sources from an OEM manufacturer" cls="w-full h-full object-cover" priority />
+    </div>
 
     <time class="text-sm text-slate">June 1, 2026</time>
     <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">How to Choose the Right Bra Manufacturer for Your Brand</h1>

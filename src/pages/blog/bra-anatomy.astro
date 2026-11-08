@@ -1,0 +1,148 @@
+---
+// src/pages/blog/bra-anatomy.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+---
+<BlogLayout
+  title="Bra Anatomy: The 12 Components That Decide Cost and Fit"
+  description="A factory-side breakdown of every component in a bra — cup, wire, wing, band, hook, slider — and how each one moves your unit cost and fit quality."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Bra Anatomy</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-bra-anatomy-hero.webp" alt="Front view of an underwire lace bra showing cup, band and strap construction" cls="w-full h-full object-cover" priority />
+    </div>
+
+    <time class="text-sm text-slate">November 8, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Bra Anatomy: The 12 Components That Decide Cost and Fit</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        Most sourcing conversations about bras start with price. That is backwards. A bra is not one
+        product — it is roughly twelve components assembled through a dozen sewing operations, and every
+        single one of those components has a price floor and a fit consequence. When a quote comes in
+        lower than everyone else, the difference almost never comes from labour efficiency. It comes
+        from somebody quietly swapping a component.
+      </p>
+      <p>
+        This is the breakdown we walk buyers through on factory visits, written down so you can use it
+        in your next supplier call.
+      </p>
+
+      <h2>1. The cup — four construction types, four price tiers</h2>
+      <p>
+        Cup construction is the single biggest cost driver in a bra, and the differences are not
+        cosmetic. In ascending order of cost:
+      </p>
+      <ul>
+        <li><strong>Unmoulded cut-and-sew.</strong> Fabric pieces cut to shape and stitched together. Cheapest to tool, most flexible for lace, but the hardest to get consistent — the fit is entirely in the pattern-making skill.</li>
+        <li><strong>Moulded single-layer.</strong> Fabric heat-formed over a cup-shaped die. Consistent shape every time, but limited to simpler silhouettes.</li>
+        <li><strong>Moulded double-layer (spacer).</strong> Two layers of spacer foam bonded. Gives opacity and support with breathability. Roughly 1.5–2× the cost of single-layer.</li>
+        <li><strong>Contour / graduated push-up.</strong> Moulded cup with graduated thickness and often a gel or foam insert at the base. The highest tooling cost, and the one where cheap versions show themselves fastest — the padding collapses after a few dozen washes.</li>
+      </ul>
+      <p>
+        A buyer looking at two quotes that differ by 30% should first ask: which cup construction is
+        each quoting? It is very often the entire answer.
+      </p>
+
+      <h2>2. The underwire</h2>
+      <p>
+        Wire is where a lot of hidden cost sits, because you cannot see it on a finished sample. Quality
+        wire is nickel-free stainless, coated, with consistent gauge end to end. Budget wire is a thinner
+        coated steel with variable gauge — it feels fine in the hand, then pokes through the channel after
+        a season of wear. Ask specifically for the wire spec and whether it is nickel-free, because that
+        is also a compliance question in the EU.
+      </p>
+
+      <h2>3. The wing</h2>
+      <p>
+        The wing is the side panel under the arm. In a wirefree bra it does the entire support job, so
+        the fabric choice matters more than people expect. Two-way stretch power mesh gives more hold
+        than a basic single jersey at a modest cost increase. If you have ever bought a wirefree bra that
+        rolled up at the underarm within a month, that was a wing fabric decision.
+      </p>
+
+      <h2>4. The band and its elastic</h2>
+      <p>
+        Around 80% of a bra's support comes from the band, not the straps. Band elastic is graded by
+        width and by how many cycles it survives before losing recovery — commonly described as
+        "wash-cycle" grading. Cheaper elastic relaxes visibly after 20–30 home washes; better elastic
+        holds past 60. On a B2B spec sheet this is worth pinning down in writing.
+      </p>
+
+      <h2>5. Straps and sliders</h2>
+      <p>
+        Three common constructions: rigid woven strap (cheapest, no give), plush-backed elastic
+        (most comfortable), and fully adjustable elastic with metal or nylon hardware. Hardware is a
+        quiet cost lever — nylon sliders cost a fraction of metal ones and are perfectly serviceable,
+        but they read as cheaper to a customer handling the product.
+      </p>
+
+      <h2>6. The hook-and-eye closure</h2>
+      <p>
+        Standard is 2-hook or 3-hook. The cost difference is small; the fit difference is not. A 3-hook
+        closure on a full-bust size distributes band tension noticeably better. Specifying 2-hook across
+        an entire size range to save cost is a common mistake that shows up in your return rate rather
+        than your invoice.
+      </p>
+
+      <h2>7. The ring and apex detail</h2>
+      <p>
+        Where the strap meets the cup. Plastic rings, metal rings, or a stitched fabric loop. This is a
+        pure cost component with no fit consequence — a legitimate place to save money if your price
+        point needs it.
+      </p>
+
+      <h2>8. The channel</h2>
+      <p>
+        The fabric tube the wire sits in. Cheap channel is a single-fold knit that the wire works its way
+        out of. Better channel is a densely woven casing with reinforced ends. Again, invisible at
+        sampling, obvious at month six.
+      </p>
+
+      <h2>9. The bridge and 10. the gore</h2>
+      <p>
+        The piece between the cups. On a plunge or low-gore style this is deliberately short, which is
+        exactly why plunge bras are harder to grade — less bridge means less stability and the wire has
+        to do more work. If you are developing a deep-plunge, budget extra pattern iterations.
+      </p>
+
+      <h2>11. Trim and 12. thread</h2>
+      <p>
+        Bows, charms, lace edges, and — the one everybody forgets — thread. Cheap thread snaps under the
+        tension of a stretch seam. It is a rounding-error cost line that can create a genuine quality
+        problem, and it is the first thing a cost-down exercise reaches for. Push back on it.
+      </p>
+
+      <figure class="my-8">
+        <div class="aspect-[16/10] overflow-hidden bg-cream-dark">
+          <Picture src="blog-bra-anatomy-detail.webp" alt="Close-up of a lace bra cup showing seam lines and edge finishing" cls="w-full h-full object-cover" />
+        </div>
+        <figcaption class="text-xs text-slate mt-2">Seam placement and edge finishing are where cut-and-sew bras are won or lost.</figcaption>
+      </figure>
+
+      <h2>How to use this in a supplier conversation</h2>
+      <p>
+        Do not ask "what is your price". Ask for a component-level bill of materials on one style and
+        compare it line by line against a second supplier. In our experience, two factories quoting what
+        sounds like the same bra will differ on cup type, wire spec, band elastic grade, or hook count —
+        and nine times out of ten, once those four are aligned, the quotes converge to within 10% of each
+        other.
+      </p>
+      <p>
+        If they converge and one is still dramatically cheaper, that is not efficiency. That is a
+        component you have not found yet.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Need a component-level quote?</p>
+      <p class="text-sm text-stone mt-1">We will send a line-by-line BOM for any style in our range — cup construction, wire spec, elastic grade, all of it. <a href="/contact" class="text-accent hover:underline">Request a BOM</a> or browse our <a href="/products/bras" class="text-accent hover:underline">bra range</a>.</p>
+    </div>
+  </article>
+</BlogLayout>

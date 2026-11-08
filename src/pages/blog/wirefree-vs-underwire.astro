@@ -1,0 +1,130 @@
+---
+// src/pages/blog/wirefree-vs-underwire.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+---
+<BlogLayout
+  title="Wirefree vs Underwire Bras: What Actually Changes in Production"
+  description="The real manufacturing differences between wirefree and underwire bras — pattern complexity, support structures, grading costs and how to choose for your product line."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Wirefree vs Underwire</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-wirefree-underwire-hero.webp" alt="Wirefree seamless bra shown in leopard print, worn without an underwire" cls="w-full h-full object-cover" priority />
+    </div>
+
+    <time class="text-sm text-slate">November 8, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Wirefree vs Underwire: What Actually Changes in Production</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        A brand deciding between wirefree and underwire usually frames it as a customer preference
+        question. It is not — or at least, not only. It is a decision that changes your pattern
+        development budget, your grading cost, your size range ceiling, and your defect rate. Here is
+        what actually shifts on the factory floor when you pick one over the other.
+      </p>
+
+      <h2>The honest summary up front</h2>
+      <p>
+        Underwire is cheaper to develop and much easier to grade into large sizes. Wirefree is cheaper
+        per unit at high volume and far harder to get right — but it is also where the growth is, because
+        comfort-led buying has moved a lot of the market. If your line is basic and price-driven, wirefree
+        in a seamless knit is the efficient answer. If your line needs a full-bust range that actually
+        supports, underwire remains the practical choice.
+      </p>
+
+      <h2>Why underwire is the developer's easy option</h2>
+      <p>
+        An underwire bra carries its structure in the wire. That sounds trivial, but it means the fabric
+        around it does not have to do structural work — it just has to look good and sit comfortably.
+        The practical consequences:
+      </p>
+      <ul>
+        <li>The wire defines the cup shape, so pattern iterations are fewer.</li>
+        <li>Grading up to a D, DD or F cup is mostly a matter of scaling the wire and the cup depth on a known curve.</li>
+        <li>Fabric choice is wide open — lace, mesh, satin, mesh-lined, all work over a wire.</li>
+        <li>Fit problems are more diagnosable: if it does not fit, you can usually see whether the wire is too narrow or the cup too shallow.</li>
+      </ul>
+      <p>
+        That diagnosability is underrated. With underwire, the factory and the brand can argue about a
+        concrete geometry. With wirefree, you are often arguing about whether a fabric "feels supportive"
+        enough, which is much harder to resolve in a sample review.
+      </p>
+
+      <h2>Why wirefree is harder than it looks</h2>
+      <p>
+        Remove the wire and every bit of support has to come from three places: the band, the wing, and
+        the cup's own moulded geometry. That means:
+      </p>
+      <ul>
+        <li><strong>The band must be stronger.</strong> Typically wider elastic, often with a bonded or double-layer construction.</li>
+        <li><strong>The wing fabric becomes structural.</strong> Two-way stretch power mesh instead of basic jersey. This is the single most common corner cut in cheap wirefree bras.</li>
+        <li><strong>The cup needs real engineering.</strong> Either a bonded moulded cup with defined edges or a seamless circular-knit tube that is cut and finished — both require tooling that carries a fixed cost.</li>
+        <li><strong>Grading is genuinely hard.</strong> A wirefree structure that supports a 34B does not automatically support a 38DD. Past roughly a D cup, the structure has to change rather than scale, which means separate development work for the larger sizes.</li>
+      </ul>
+
+      <figure class="my-8">
+        <div class="aspect-[16/10] overflow-hidden bg-cream-dark">
+          <Picture src="blog-wirefree-underwire-compare.webp" alt="Wirefree bra construction showing wide band and seamless moulded cup" cls="w-full h-full object-cover" />
+        </div>
+        <figcaption class="text-xs text-slate mt-2">A wirefree bra moves the support burden into a wider band and a structural wing panel.</figcaption>
+      </figure>
+
+      <h2>The number that decides it: MOQ and tooling</h2>
+      <p>
+        Wirefree moulded cups need a die per size. If you are running five sizes, that is five dies, and
+        the die cost has to be absorbed across your order. At 300 pieces per size the amortised tooling
+        cost is unpleasant. At 3,000 pieces per size it is negligible.
+      </p>
+      <p>
+        Underwire has no equivalent fixed cost — wire is bought by the metre or the piece in a standard
+        size range. This is why new brands with small runs so often start with underwire even when they
+        intend to move wirefree later. It is not a preference; it is the tooling maths.
+      </p>
+      <p>
+        The practical advice: if your first order is under 1,000 units per colourway, do not open with a
+        wirefree moulded style unless you are prepared to treat the tooling as an investment in the
+        product line rather than a per-order cost.
+      </p>
+
+      <h2>Defect rates differ, and not in the direction people expect</h2>
+      <p>
+        Buyers assume wirefree has fewer defects because there is no wire to poke through. In practice,
+        the defect profiles are just different:
+      </p>
+      <ul>
+        <li><strong>Underwire failures</strong> cluster around the channel ends and the wire tips — a known, contained, inspectable problem.</li>
+        <li><strong>Wirefree failures</strong> cluster around the bonded cup edges delaminating and the band losing recovery. These are harder to catch at final inspection because they develop in use.</li>
+      </ul>
+      <p>
+        So the inspection protocol has to change too. For wirefree, we run adhesion pull tests on bonded
+        cup edges and wash-cycle the band elastic on a sample basis — checks that are largely unnecessary
+        on underwire.
+      </p>
+
+      <h2>What we usually recommend</h2>
+      <p>
+        For a brand building a first range with limited capital: start underwire, in a lace or mesh body.
+        Develop the pattern once, grade it across your size range, and keep the tooling cost at zero. Use
+        the margin to fund a wirefree development properly the following season, with enough volume
+        behind it to absorb the dies.
+      </p>
+      <p>
+        For an established brand with volume and a comfort-led positioning: wirefree in seamless knit is
+        where the category is going, and the tooling cost is a one-time entry fee. Just do not try to
+        push a single wirefree construction across a full-bust range. Split the range, use different
+        constructions above and below the D cup boundary, and be honest with your customer about it.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Developing a bra range?</p>
+      <p class="text-sm text-stone mt-1">We produce both wirefree and underwire constructions in-house, and we will tell you which one your volume actually supports. <a href="/contact" class="text-accent hover:underline">Talk to us</a> or see our <a href="/products/bras" class="text-accent hover:underline">bra range</a>.</p>
+    </div>
+  </article>
+</BlogLayout>

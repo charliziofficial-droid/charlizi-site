@@ -1,0 +1,135 @@
+---
+// src/pages/blog/bra-set-development.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+---
+<BlogLayout
+  title="Developing a Bra and Panty Set That Actually Matches"
+  description="Matching a bra and panty set is harder than making either piece alone — fabric dye lots, elastic colour, trim continuity and the grading mismatch nobody warns you about."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Bra &amp; Panty Sets</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden bg-cream-dark mb-8">
+      <Picture src="blog-bra-set-hero.webp" alt="Matching lace bra and panty set shown in coordinated fabric" cls="w-full h-full object-cover" priority />
+    </div>
+
+    <time class="text-sm text-slate">November 8, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Developing a Bra and Panty Set That Actually Matches</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        A bra and panty set looks like two products sold together. In production it is one product with
+        two different manufacturing logics bolted together, and the places where they disagree are where
+        sets go wrong. Buyers notice mismatches immediately — a slightly different black, a lace that
+        does not quite line up, a panty that reads as a cheaper product than the bra it ships with.
+      </p>
+      <p>
+        Here is what actually causes that, and how to specify around it.
+      </p>
+
+      <h2>The dye lot problem is real and it is unavoidable</h2>
+      <p>
+        Bra cups and panty bodies are often cut from different rolls, sometimes from different dye lots,
+        and very often the cup is a moulded or bonded component while the panty is cut-and-sew from
+        flat fabric. Moulding changes the surface appearance of a fabric — a lace that reads matte flat
+        takes on a slight sheen once moulded, and next to a flat-cut panty panel the difference is
+        visible.
+      </p>
+      <p>
+        Three ways this gets handled, in ascending order of reliability:
+      </p>
+      <ul>
+        <li><strong>Same roll, same lot, cut together.</strong> The only genuinely reliable method, and it requires the factory to reserve and cut both components from a single lot. Ask for it explicitly; it is not the default.</li>
+        <li><strong>Lab-dip matching across lots.</strong> Reliable if the tolerance is specified. Unreliable if "matches" means "looks close under factory lighting".</li>
+        <li><strong>Independent sourcing per component.</strong> Cheapest, and the reason so many sets have a bra and panty that are visibly not the same colour.</li>
+      </ul>
+
+      <h2>Elastic is where most mismatches are visible</h2>
+      <p>
+        Almost nobody specifies elastic colour matching, and it is the most visible mismatch in a finished
+        set. Bra band elastic, strap elastic, panty waistband elastic and panty leg elastic are frequently
+        four separate purchases from separate suppliers. "Black" from four suppliers is four different
+        blacks, and against a lace body the difference shows.
+      </p>
+      <p>
+        The fix is unglamorous: consolidate elastic sourcing per colourway, and where that is not
+        possible, require a physical elastic swatch card approved against the lace before production.
+        Digital photos will not catch this. Physical swatches will.
+      </p>
+
+      <h2>The grading mismatch nobody mentions</h2>
+      <p>
+        Bras and panties grade on completely different curves. A bra size steps on underbust and cup
+        volume; a panty size steps on waist, hip and rise. Sell them as a set and you are implicitly
+        telling the customer that a 36C pairs with a Medium — which is a marketing convention, not a
+        fit fact.
+      </p>
+      <p>
+        This creates two production problems. First, your set has a size range defined by its narrowest
+        component: if the bra runs S–XL and the panty runs XS–3XL, the set effectively runs S–XL and you
+        are carrying inventory on the panty sizes you cannot pair. Second, the pairing chart has to be
+        specified deliberately and printed honestly, because a customer who buys a set that arrives
+        mis-matched in size will blame the fit, not the chart.
+      </p>
+
+      <figure class="my-8">
+        <div class="aspect-[16/10] overflow-hidden bg-cream-dark">
+          <Picture src="blog-bra-set-detail.webp" alt="Lace bra set detail showing trim and trim continuity across the set" cls="w-full h-full object-cover" />
+        </div>
+        <figcaption class="text-xs text-slate mt-2">Trim continuity — the same bow, the same lace edge — is what makes a set read as one product.</figcaption>
+      </figure>
+
+      <h2>Trim continuity sells the set</h2>
+      <p>
+        What makes a bra and panty read as a set rather than two items that happen to be the same colour
+        is trim continuity: the same bow, the same picot edge, the same hardware finish, often the same
+        stitch detail. It costs very little per unit and it is the difference between a set that sells at
+        a premium and two items that get bought separately.
+      </p>
+      <p>
+        Specify it as a list. Literally write down every trim component and require it to be shared
+        across both pieces, or the panty will quietly get a cheaper bow because panties are costed
+        tighter than bras.
+      </p>
+
+      <h2>Sizing the opportunity properly</h2>
+      <p>
+        Sets carry a meaningfully higher average order value than either piece alone, and they are the
+        natural attach point in this category. But the inventory maths is less forgiving — you are
+        carrying two SKUs per size per colourway, and the pairing ratios are never clean. A set in four
+        colours across five sizes is forty SKUs before you have considered that the bra and panty will
+        sell at different rates.
+      </p>
+      <p>
+        The brands that handle sets well usually do one of two things. Either they keep the set range
+        tight — two or three colourways in the core sizes — and treat additional colours as bra-only or
+        panty-only extensions. Or they commit to deep inventory on the set and accept the working capital
+        because the AOV justifies it. What they do not do is launch a wide set range shallowly, which is
+        how you end up with unmatched stock that has to be discounted.
+      </p>
+
+      <h2>What to put in the set spec</h2>
+      <ul>
+        <li>Single dye lot reserved for both components, stated in writing</li>
+        <li>Elastic consolidated per colourway, with a physical swatch card approved against the lace</li>
+        <li>Full trim list shared across both pieces, with no substitutions allowed without approval</li>
+        <li>Pairing chart defined explicitly, and the set size range set by the narrower component</li>
+        <li>Moulded-versus-flat surface appearance check on the actual approved fabric, not a stock photo</li>
+      </ul>
+      <p>
+        None of these are difficult. They are just rarely written down — and the result is that most
+        sets in the market are a bra and a panty that match on a screen and not in the hand.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Developing a set range?</p>
+      <p class="text-sm text-stone mt-1">We reserve single dye lots across both components and consolidate elastic per colourway. <a href="/contact" class="text-accent hover:underline">Talk to us about sets</a> or see our <a href="/products/bra-sets" class="text-accent hover:underline">bra set range</a>.</p>
+    </div>
+  </article>
+</BlogLayout>
