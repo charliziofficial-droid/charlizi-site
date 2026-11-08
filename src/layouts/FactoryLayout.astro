@@ -9,7 +9,19 @@ export interface Props {
 }
 
 const { title, description, ogImage = '/images/og-factory-default.jpg', noindex = false, canonical } = Astro.props;
-const fullTitle = `${title} | Charlizi Factory`;
+// Keep the rendered <title> within ~60 chars (Google truncates beyond that).
+// Page titles already end in "| Charlizi Factory" in some places, so avoid doubling the brand.
+const BRAND = 'Charlizi Factory';
+const fullTitle = (() => {
+  const t = (title || '').trim();
+  if (t.includes(BRAND)) return t;
+  const withBrand = `${t} | ${BRAND}`;
+  if (withBrand.length <= 60) return withBrand;
+  if (t.length <= 60) return t;
+  // Too long even without brand: trim the page part, then re-attach brand short form.
+  const cut = t.slice(0, 57).replace(/[\s|,-]+\S*$/, '');
+  return `${cut} | ${BRAND}`.length <= 60 ? `${cut} | ${BRAND}` : cut.slice(0, 60);
+})();
 import { factoryStats } from '../data/products-b2b.js';
 import '../styles/global.css';
 ---

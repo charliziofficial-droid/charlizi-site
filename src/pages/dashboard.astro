@@ -1,5 +1,5 @@
 ---
-// src/pages/admin.astro ‚Ä?Self-hosted Admin Panel (no OAuth, no external CMS)
+// src/pages/admin.astro ÔøΩ?Self-hosted Admin Panel (no OAuth, no external CMS)
 const buildVer = new Date().getTime().toString(36);
 ---
 <!doctype html>
@@ -7,8 +7,9 @@ const buildVer = new Date().getTime().toString(36);
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <!-- v=1782264441 -->
-  <title>Admin ‚Ä?Charlizi Factory</title>
+  <title>Admin ÔøΩ?Charlizi Factory</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <style>
     :root {
@@ -194,8 +195,8 @@ const buildVer = new Date().getTime().toString(36);
             <a class="${S.page==='site'?'active':''}" onclick="nav('site')"><span class="icon">üè≠</span> Site Content</a>
             <a class="${S.page==='products'?'active':''}" onclick="nav('products')"><span class="icon">üì¶</span> Products</a>
             <a class="${S.page==='blog'?'active':''}" onclick="nav('blog')"><span class="icon">‚úèÔ∏è</span> Blog Posts</a>
-            <a class="${S.page==='images'?'active':''}" onclick="nav('images')"><span class="icon">üñºÔ∏?/span> Images</a>
-            <a class="${S.page==='faq'?'active':''}" onclick="nav('faq')"><span class="icon">‚ù?/span> FAQ</a>
+            <a class="${S.page==='images'?'active':''}" onclick="nav('images')"><span class="icon">üñºÔøΩ?/span> Images</a>
+            <a class="${S.page==='faq'?'active':''}" onclick="nav('faq')"><span class="icon">ÔøΩ?/span> FAQ</a>
             <a onclick="logout()"><span class="icon">‚Ü©Ô∏è</span> Logout</a>
           </nav>
           <div class="main" id="content"></div>
@@ -223,7 +224,7 @@ const buildVer = new Date().getTime().toString(36);
           <input type="password" id="tokenInput" placeholder="ghp_..." style="font-family:monospace;font-size:12px" onkeydown="if(event.key==='Enter')login()">
         </div>
         <p style="font-size:11px;color:var(--stone);margin-bottom:16px">
-          Create a token at: <a href="https://github.com/settings/tokens" target="_blank" style="color:var(--accent)">github.com/settings/tokens</a> ‚Ü?Generate new token (classic) ‚Ü?check "repo"
+          Create a token at: <a href="https://github.com/settings/tokens" target="_blank" style="color:var(--accent)">github.com/settings/tokens</a> ÔøΩ?Generate new token (classic) ÔøΩ?check "repo"
         </p>
         <button class="btn btn-accent" onclick="login()" style="width:100%;justify-content:center">üîë Login</button>
       </div>`;
@@ -282,7 +283,7 @@ const buildVer = new Date().getTime().toString(36);
               <img src="/factory/images/${s}.svg" alt="${s}" class="img-preview" style="width:80px;height:60px" />
               <div style="flex:1">
                 <strong style="font-size:14px">${s}</strong>
-                <span style="font-size:11px;color:var(--stone);margin-left:8px">‚Ü?current: ${s}.svg</span>
+                <span style="font-size:11px;color:var(--stone);margin-left:8px">ÔøΩ?current: ${s}.svg</span>
               </div>
               <button class="btn btn-sm btn-outline" onclick="nav('images')">Replace</button>
             </div>
@@ -315,7 +316,7 @@ const buildVer = new Date().getTime().toString(36);
     }
 
     function imagesUI() {
-      return `<h1>üñºÔ∏?Image Manager</h1>
+      return `<h1>üñºÔøΩ?Image Manager</h1>
         <p class="subtitle">Upload and manage product images, hero images, and factory photos</p>
         <div class="card">
           <h2>Upload Image</h2>
@@ -330,7 +331,7 @@ const buildVer = new Date().getTime().toString(36);
           <p style="font-size:13px;color:var(--stone)">Use these filenames to replace placeholder images:</p>
           <table style="margin-top:12px">
             <tr><th>Location</th><th>File</th><th>Size</th><th>Format</th></tr>
-            <tr><td>Product Category Hero</td><td>public/factory/images/{category}.svg</td><td>800√ó600</td><td>‚Ü?webp</td></tr>
+            <tr><td>Product Category Hero</td><td>public/factory/images/{category}.svg</td><td>800√ó600</td><td>ÔøΩ?webp</td></tr>
             <tr><td>Homepage Hero</td><td>public/factory/images/hero.webp</td><td>1920√ó1080</td><td>webp</td></tr>
             <tr><td>About Page</td><td>public/factory/images/category-showcase.webp</td><td>800√ó600</td><td>webp</td></tr>
             <tr><td>Factory Gallery</td><td>public/factory/images/gallery-*.webp</td><td>800√ó600</td><td>webp</td></tr>
@@ -340,7 +341,7 @@ const buildVer = new Date().getTime().toString(36);
 
     function faqUI() {
       if (!S.faq) return '<p>Loading...</p>';
-      return `<h1>‚ù?FAQ Management</h1>
+      return `<h1>ÔøΩ?FAQ Management</h1>
         <p class="subtitle">Edit frequently asked questions</p>
         <div class="card" id="faqList">
           ${(S.faq||[]).map((faq,i) => `
@@ -353,7 +354,7 @@ const buildVer = new Date().getTime().toString(36);
               <div class="form-group"><label>Answer</label><textarea data-idx="${i}" data-field="a">${escapeHtml(faq.a||'')}</textarea></div>
             </div>
           `).join('')}
-          <button class="btn btn-sm btn-outline" onclick="addFaq()">‚û?Add FAQ</button>
+          <button class="btn btn-sm btn-outline" onclick="addFaq()">ÔøΩ?Add FAQ</button>
           <div class="btn-group">
             <button class="btn btn-accent" onclick="saveFaq()">üíæ Save FAQ</button>
           </div>
@@ -461,8 +462,8 @@ const buildVer = new Date().getTime().toString(36);
       const json = JSON.stringify(data, null, 2);
       const r = await putFile('src/data/site-content.json', json, S.siteContentSha, 'Admin: update site content');
       document.getElementById('saveStatus').innerHTML = r.content
-        ? '<span class="status status-success">‚ú?Saved & pushed to GitHub</span>'
-        : '<span class="status status-error">‚ù?Error: ' + (r.message||'Unknown') + '</span>';
+        ? '<span class="status status-success">ÔøΩ?Saved & pushed to GitHub</span>'
+        : '<span class="status status-error">ÔøΩ?Error: ' + (r.message||'Unknown') + '</span>';
       if (r.content) { S.siteContent = data; S.siteContentSha = r.content.sha; }
     }
 
@@ -502,8 +503,8 @@ const buildVer = new Date().getTime().toString(36);
 
       const r = await putFile(path, content, null, 'Admin: create blog post - ' + title);
       document.getElementById('blogStatus').innerHTML = r.content
-        ? '<span class="status status-success" style="margin-left:10px">‚ú?Created & pushed!</span>'
-        : '<span class="status status-error" style="margin-left:10px">‚ù?' + (r.message||'Error') + '</span>';
+        ? '<span class="status status-success" style="margin-left:10px">ÔøΩ?Created & pushed!</span>'
+        : '<span class="status status-error" style="margin-left:10px">ÔøΩ?' + (r.message||'Error') + '</span>';
     }
 
     // ====== IMAGES ======
@@ -530,8 +531,8 @@ const buildVer = new Date().getTime().toString(36);
         const existing = await getFile(path);
         const r = await putBinary(path, base64, existing.sha, 'Admin: upload image ' + name);
         document.getElementById('imgStatus').innerHTML = r.content
-          ? '<span class="status status-success" style="margin-left:10px">‚ú?Uploaded & committed! Deploying...</span>'
-          : '<span class="status status-error" style="margin-left:10px">‚ù?' + (r.message||'Error') + '</span>';
+          ? '<span class="status status-success" style="margin-left:10px">ÔøΩ?Uploaded & committed! Deploying...</span>'
+          : '<span class="status status-error" style="margin-left:10px">ÔøΩ?' + (r.message||'Error') + '</span>';
         if (r.content) toast('Image uploaded! Vercel will auto-deploy in ~30s');
       };
       reader.readAsDataURL(file);

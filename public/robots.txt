@@ -1,10 +1,13 @@
 # Charlizi Factory — robots.txt
+# Single, authoritative policy. Do NOT duplicate User-agent blocks:
+# crawlers honour the FIRST matching group, so a stray "Disallow" earlier
+# in the file silently overrides every "Allow" that follows it.
 
-# All crawlers (including AI search engines) welcome
 User-agent: *
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
-# Explicitly allow AI / generative-engine crawlers
+# ---- AI / generative-engine crawlers: explicitly ALLOWED (GEO) ----
 User-agent: GPTBot
 Allow: /
 
@@ -17,13 +20,28 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Perplexity-User
+Allow: /
+
 User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
@@ -32,11 +50,18 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-# Internal / non-indexable areas
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# ---- Internal / non-indexable areas ----
 Disallow: /admin
 Disallow: /dashboard
 Disallow: /manage
 Disallow: /decapcms
+Disallow: /cgi-bin
 
 Sitemap: https://charlizi.com/sitemap-index.xml
 # LLM-friendly site summary
