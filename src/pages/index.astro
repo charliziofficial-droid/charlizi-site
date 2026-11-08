@@ -54,7 +54,21 @@ import Picture from '../components/Picture.astro';
   </section>
 
   <!-- Product Categories -->
-  <section class="container-site section-padding">
+  <section class="section-padding">
+    <!-- Factory capability strip: full-bleed, 6 stages in production order -->
+    <div class="strip-block">
+    <div class="factory-strip">
+      {[['factory-building', 'Facility'], ['factory-cutting', 'Cutting'], ['factory-sewing', 'Sewing'], ['factory-assembly', 'Assembly'], ['factory-warehouse', 'Warehouse'], ['factory-showroom', 'Showroom']].map(([img, label]) => (
+        <a href="/about" class="strip-cell" aria-label={`${label} - see our factory`}>
+          <Picture src={`${img}.webp`} alt={`${label} at our Puning, Guangdong factory`} sizes="(max-width: 767px) 50vw, 17vw" cls="w-full h-full object-cover" />
+          <span class="strip-cap">{label}</span>
+        </a>
+      ))}
+    </div>
+    <p class="strip-note">Cutting, sewing, assembly, QC and packing &mdash; every stage in-house at our 5,000 m&sup2; facility in Puning, Guangdong. <a href="/about">Tour the factory &rarr;</a></p>
+    </div>
+
+    <div class="container-site">
     <div class="text-center mb-12">
       <span class="section-label">Product Categories</span>
       <h2 class="section-title">Full Range of Intimate Apparel</h2>
@@ -81,6 +95,7 @@ import Picture from '../components/Picture.astro';
     </div>
     <div class="text-center mt-10">
       <a href="/products" class="btn-outline">View All Products</a>
+    </div>
     </div>
   </section>
 
