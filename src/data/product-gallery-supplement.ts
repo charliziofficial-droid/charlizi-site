@@ -327,14 +327,6 @@ export const supplementByCategory: Record<string, GalleryStyle[]> = {
 
   'shapewear': [
     {
-      slug: 'deep-v-lace-bodysuit-multi-color',
-      title: 'Deep V Lace Bodysuit (Multi Color)',
-      category: 'shapewear',
-      images: [
-        { file: `${C}/shapewear/deep-v-lace-bodysuit-multi-color-front.webp`, view: 'front', alt: 'Deep V mesh bodysuit shown in black, red and off-white' },
-      ],
-    },
-    {
       slug: 'black-off-shoulder-bodysuit',
       title: 'Black Off Shoulder Bodysuit',
       category: 'shapewear',
