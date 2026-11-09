@@ -274,25 +274,6 @@
   },
   "external": [
     {
-      "file": "3409d7a7-d62e-4e53-a9ad-37e3b3ebee9b.__CR0,0,970,600_PT0_SX970_V1___.jpg",
-      "path": "D:\\文案图片素材\\3409d7a7-d62e-4e53-a9ad-37e3b3ebee9b.__CR0,0,970,600_PT0_SX970_V1___.jpg",
-      "bytes": 278414,
-      "product_line": "silicone-bras",
-      "usable": true,
-      "shot": "product-only",
-      "why": "兔耳款硅胶文胸产品图，含双色与结构标注，最佳头图素材",
-      "aspect": "16:9"
-    },
-    {
-      "file": "36.jpg",
-      "path": "D:\\文案图片素材\\36.jpg",
-      "bytes": 268680,
-      "product_line": "silicone-bras",
-      "usable": true,
-      "shot": "material-detail",
-      "why": "硅胶乳贴材质细节，可作工艺插图"
-    },
-    {
       "file": "37.jpg",
       "path": "D:\\文案图片素材\\37.jpg",
       "bytes": 233741,
@@ -402,6 +383,26 @@
       "usable": false,
       "shot": "lifestyle-collage",
       "why": "使用场景拼贴，非产品素材"
+    },
+    {
+      "file": "36.jpg",
+      "path": "D:\\文案图片素材\\36.jpg",
+      "bytes": 268680,
+      "product_line": "silicone-bras",
+      "usable": false,
+      "shot": "material-detail",
+      "why": "含 03/Biogel 标注与虚线指示，属说明书截图，有文字不可用",
+      "reviewed_at": "2026-11-09T13:21:40.271998+00:00"
+    },
+    {
+      "file": "3409d7a7-d62e-4e53-a9ad-37e3b3ebee9b.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+      "path": "D:\\文案图片素材\\3409d7a7-d62e-4e53-a9ad-37e3b3ebee9b.__CR0,0,970,600_PT0_SX970_V1___.jpg",
+      "bytes": 278414,
+      "product_line": "silicone-bras",
+      "usable": false,
+      "shot": "infographic",
+      "why": "四宫格营销拼贴，含 STRONG BREATHABILITY 等英文大字与卖点，B2B 头图不合格",
+      "reviewed_at": "2026-11-09T13:21:44.346917+00:00"
     }
   ],
   "generated": [],
