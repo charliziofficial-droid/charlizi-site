@@ -1,4 +1,4 @@
-﻿---
+---
 // src/layouts/FactoryLayout.astro
 export interface Props {
   title: string;
@@ -9,6 +9,17 @@ export interface Props {
 }
 
 const { title, description, ogImage = '/images/og-factory-default.jpg', noindex = false, canonical } = Astro.props;
+
+// Server-side region gate. Cloudflare exposes the real country on the request;
+// during local builds Astro.request.cf is undefined, so nothing is blocked.
+const blockedRegion = (() => {
+  try {
+    const cf = (Astro.request as any)?.cf;
+    return cf?.country === 'CN';
+  } catch {
+    return false;
+  }
+})();
 // Keep the rendered <title> within ~60 chars (Google truncates beyond that).
 // Page titles already end in "| Charlizi Factory" in some places, so avoid doubling the brand.
 const BRAND = 'Charlizi Factory';
@@ -135,14 +146,11 @@ import '../styles/global.css';
 
 </head>
 <body class="bg-white text-charcoal antialiased">
-  <!-- IP Blocking via URL param only (safe, no third-party API) -->
-  <script>
-    try {
-      var _c = (new URLSearchParams(window.location.search)).get('country');
-      if (_c === 'CN') {
-        document.body.innerHTML = '<div style="display:flex;justify-content:center;align-items:center;min-height:100vh;padding:2rem;font-family:sans-serif"><p style="max-width:500px;text-align:center;color:#666">This website is not available in your region. / 璇ョ綉绔欏湪鎮ㄦ墍鍦ㄥ湴鍖轰笉鍙敤銆?/p></div>';
-      }
-    } catch(e) {}
+  <!-- Region gate: computed from the visitor's real country, NOT from a URL
+       parameter. A URL parameter would let anyone deface the page simply by
+       sharing a crafted link. -->
+  <script is:inline define:vars={{ blocked: blockedRegion }}>
+    if (blocked) document.documentElement.setAttribute('data-region-blocked', '1');
   </script>
 
   <!-- Header -->

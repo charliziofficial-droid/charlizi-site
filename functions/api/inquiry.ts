@@ -15,9 +15,80 @@ interface Env {
   FEISHU_BITABLE_APP?: string;
   FEISHU_TABLE_ID?: string;
   BACKUP_KV?: KVNamespace;
+  INQUIRY_RATE_LIMIT?: KVNamespace;
+  TURNSTILE_SECRET?: string;
 }
 
 const ALLOWED_ORIGINS = ['https://charlizi.com', 'https://www.charlizi.com'];
+
+// --- Anti-abuse limits -------------------------------------------------------
+const MAX_BODY_BYTES = 32 * 1024; // 32 KB cap, blocks oversized payloads
+const RATE_WINDOW_SEC = 3600; // 1 hour
+const RATE_MAX_PER_IP = 5; // max submissions per IP per hour
+const RATE_MAX_PER_EMAIL = 3; // max submissions per email per hour
+const MIN_FILL_MS = 2500; // humans take >2.5s to fill the form
+
+function clientIp(request: Request): string {
+  return request.headers.get('CF-Connecting-IP') || '0.0.0.0';
+}
+
+async function sha256Hex(input: string): Promise<string> {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(input));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+/** Returns true when the caller is over the limit. Fails open on KV errors. */
+async function isRateLimited(
+  kv: KVNamespace | undefined,
+  ip: string,
+  email: string
+): Promise<boolean> {
+  if (!kv) return false;
+  try {
+    const ipKey = `rl:ip:${await sha256Hex(ip)}`;
+    const mailKey = `rl:em:${await sha256Hex(email.toLowerCase())}`;
+    const [ipRaw, mailRaw] = await Promise.all([kv.get(ipKey), kv.get(mailKey)]);
+    const ipCount = Number(ipRaw || 0);
+    const mailCount = Number(mailRaw || 0);
+    if (ipCount >= RATE_MAX_PER_IP || mailCount >= RATE_MAX_PER_EMAIL) return true;
+    await Promise.all([
+      kv.put(ipKey, String(ipCount + 1), { expirationTtl: RATE_WINDOW_SEC }),
+      kv.put(mailKey, String(mailCount + 1), { expirationTtl: RATE_WINDOW_SEC }),
+    ]);
+    return false;
+  } catch {
+    return false;
+  }
+}
+
+/** Optional Cloudflare Turnstile check; skipped when no secret is configured. */
+async function verifyTurnstile(
+  secret: string | undefined,
+  token: string,
+  ip: string
+): Promise<boolean> {
+  if (!secret) return true;
+  if (!token) return false;
+  try {
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ secret, response: token, remoteip: ip }),
+    });
+    const data: any = await res.json();
+    return data?.success === true;
+  } catch {
+    return false;
+  }
+}
+
+/** Strip control chars that could poison downstream systems. */
+function clean(v: unknown, max = 2000): string {
+  return String(v ?? '')
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, '')
+    .slice(0, max)
+    .trim();
+}
 
 function corsHeaders(origin: string | null) {
   const allow = origin && ALLOWED_ORIGINS.includes(origin) ? origin : ALLOWED_ORIGINS[0];
@@ -83,11 +154,26 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const origin = request.headers.get('Origin');
   const cors = corsHeaders(origin);
 
+  // --- 0. Origin allowlist: reject cross-site form posts ---
+  if (origin && !ALLOWED_ORIGINS.includes(origin)) {
+    return json({ ok: false, error: 'forbidden_origin' }, 403, cors);
+  }
+
+  // --- 1. Body size cap (cheap DoS / log-flood guard) ---
+  const declaredLen = Number(request.headers.get('Content-Length') || 0);
+  if (declaredLen > MAX_BODY_BYTES) {
+    return json({ ok: false, error: 'payload_too_large' }, 413, cors);
+  }
+
   let payload: Record<string, unknown>;
   try {
     const ct = request.headers.get('Content-Type') || '';
     if (ct.includes('application/json')) {
-      payload = await request.json();
+      const raw = await request.text();
+      if (raw.length > MAX_BODY_BYTES) {
+        return json({ ok: false, error: 'payload_too_large' }, 413, cors);
+      }
+      payload = JSON.parse(raw);
     } else {
       const fd = await request.formData();
       payload = Object.fromEntries(fd.entries());
@@ -96,15 +182,52 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     return json({ ok: false, error: 'invalid_payload' }, 400, cors);
   }
 
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) {
+    return json({ ok: false, error: 'invalid_payload' }, 400, cors);
+  }
+
+  const ip = clientIp(request);
+
+  // --- 2. Honeypot: bots fill hidden fields humans never see ---
+  const honeypot = clean(payload._hp ?? payload.website_url ?? '', 200);
+  if (honeypot) {
+    // Pretend success so the bot does not retry with a different strategy.
+    return json({ ok: true, id: Date.now() }, 200, cors);
+  }
+
+  // --- 3. Timing check: instant submits are scripted ---
+  const elapsed = Number(payload._t ?? 0);
+  if (elapsed > 0 && elapsed < MIN_FILL_MS) {
+    return json({ ok: true, id: Date.now() }, 200, cors);
+  }
+
+  // --- 4. Human challenge (only enforced when Turnstile is configured) ---
+  const turnstileToken = clean(payload.cf_turnstile_response ?? payload['cf-turnstile-response'] ?? '', 4000);
+  if (!(await verifyTurnstile(env.TURNSTILE_SECRET, turnstileToken, ip))) {
+    return json({ ok: false, error: 'challenge_failed' }, 403, cors);
+  }
+
   // 关键字段校验
-  const name = s(payload.name, 120);
-  const email = s(payload.email, 200);
-  const message = s(payload.message, 5000);
+  const name = clean(payload.name, 120);
+  const email = clean(payload.email, 200);
+  const message = clean(payload.message, 5000);
   if (!name || !email || !message) {
     return json({ ok: false, error: 'missing_required' }, 400, cors);
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
     return json({ ok: false, error: 'invalid_email' }, 400, cors);
+  }
+  // Reject header-injection attempts in single-line fields.
+  if (/\r|\n/.test(name) || /\r|\n/.test(email)) {
+    return json({ ok: false, error: 'invalid_input' }, 400, cors);
+  }
+
+  // --- 5. Rate limit per IP and per email ---
+  if (await isRateLimited(env.INQUIRY_RATE_LIMIT, ip, email)) {
+    return json({ ok: false, error: 'rate_limited' }, 429, {
+      ...cors,
+      'Retry-After': '3600',
+    });
   }
 
   const now = Date.now();
@@ -113,22 +236,22 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const CST_OFFSET_MS = 8 * 60 * 60 * 1000;
   const record = {
     name,
-    company: s(payload.company, 200),
+    company: clean(payload.company, 200),
     email,
-    whatsapp: s(payload.phone ?? payload.whatsapp, 60),
-    category: s(payload.category, 100),
-    quantity: s(payload.quantity, 60),
-    market: s(payload.market, 100),
-    payment_method: s(payload.payment_method, 100),
-    payment_method_detail: s(payload.payment_method_detail, 200),
-    source: s(payload.source, 100),
-    source_detail: s(payload.source_detail, 200),
+    whatsapp: clean(payload.phone ?? payload.whatsapp, 60),
+    category: clean(payload.category, 100),
+    quantity: clean(payload.quantity, 60),
+    market: clean(payload.market, 100),
+    payment_method: clean(payload.payment_method, 100),
+    payment_method_detail: clean(payload.payment_method_detail, 200),
+    source: clean(payload.source, 100),
+    source_detail: clean(payload.source_detail, 200),
     message,
-    ref_referrer: s(payload.ref_referrer, 500),
-    ref_landing: s(payload.ref_landing, 500),
-    ref_utm: s(payload.ref_utm, 500),
+    ref_referrer: clean(payload.ref_referrer, 500),
+    ref_landing: clean(payload.ref_landing, 500),
+    ref_utm: clean(payload.ref_utm, 500),
     submitted_at: now,
-    ip: request.headers.get('CF-Connecting-IP') || '',
+    ip,
     country: (request.cf as any)?.country || '',
   };
 
@@ -182,9 +305,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     }
   }
 
-  // 飞书写入失败时返回 502，前端提示“稍后重试”，避免客户以为没提交
+  // 飞书写入失败时返回 502，前端提示“稍后重试”，避免客户以为没提交。
+  // detail 仅供日志排查，不回传给浏览器（可能含上游内部信息）。
   if (!feishuOk) {
-    return json({ ok: false, error: 'storage_failed', detail: feishuError }, 502, cors);
+    console.error('[inquiry] storage failed:', feishuError);
+    return json({ ok: false, error: 'storage_failed' }, 502, cors);
   }
 
   return json({ ok: true, id: now }, 200, cors);

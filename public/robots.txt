@@ -3,24 +3,42 @@
 #
 # ⚠️ READ THIS BEFORE EDITING
 # Crawlers honour only the FIRST group that matches their user-agent, and they
-# stop reading that group at the first blank line. A `Disallow: /` placed above
-# a later `Allow: /` for the same bot silently wins.
+# stop reading that group at the FIRST blank line. A `Disallow: /` placed above
+# a later `Allow: /` for the same bot silently wins. A Disallow line that is
+# separated from its User-agent by a blank line belongs to NOBODY and is
+# silently ignored by every crawler.
+#
+# Therefore: every group below is kept tight (User-agent + directives, then one
+# blank line). Group-specific rules MUST sit inside their own group. Do not
+# append a stray `Disallow:` after a blank line — it will be dropped.
 #
 # This file targets the GEO / AI-answer-engine channel deliberately:
 # AI search bots must be ALLOWED so Charlizi content can be cited in
-# ChatGPT Search, Perplexity and Google AI Overviews. Only pure training
-# crawlers are left unrestricted-or-blocked at the Cloudflare layer, not here.
+# ChatGPT Search, Perplexity, Copilot, Gemini and Google AI Overviews.
+# Pure *training* crawlers are denied, matching Content-Signal ai-train=no.
 #
 # If the live response starts with "# BEGIN Cloudflare Managed content",
 # that block is injected by Cloudflare Bot Preference Sync and sits ABOVE this
-# file. Flip those bots to Allow in Cloudflare → AI Crawl Control → Crawlers,
-# or disable Bot Preference Sync. Editing this file cannot override it.
+# file, overriding everything below. Disable Bot Preference Sync to keep this
+# file authoritative.
 
+# ---------------------------------------------------------------------------
+# Group 1 — Everyone
+# ---------------------------------------------------------------------------
 User-agent: *
-Allow: /
 Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+# Internal / non-indexable areas — these MUST stay in this group.
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /manage
+Disallow: /decapcms
+Disallow: /cgi-bin
+Disallow: /api/
 
-# ---- AI / generative-engine crawlers: explicitly ALLOWED (GEO) ----
+# ---------------------------------------------------------------------------
+# Group 2 — AI search / answer engines: ALLOWED (GEO channel)
+# ---------------------------------------------------------------------------
 User-agent: GPTBot
 Allow: /
 
@@ -39,46 +57,81 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: anthropic-ai
-Allow: /
-
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Perplexity-User
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
 User-agent: GoogleOther
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: CCBot
-Allow: /
-
-User-agent: meta-externalagent
-Allow: /
-
-User-agent: cohere-ai
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-# ---- Internal / non-indexable areas ----
-Disallow: /admin
-Disallow: /dashboard
-Disallow: /manage
-Disallow: /decapcms
-Disallow: /cgi-bin
+User-agent: Applebot
+Allow: /
 
+# ---------------------------------------------------------------------------
+# Group 3 — AI TRAINING crawlers: DENIED (matches ai-train=no)
+# These do not power search citations; they only harvest content to train
+# models. Blocking them costs zero visibility but removes free reuse of our
+# copy. Search bots above are unaffected.
+# ---------------------------------------------------------------------------
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: PanguBot
+Disallow: /
+
+# ---------------------------------------------------------------------------
+# Group 4 — Aggressive SEO scrapers: DENIED (no traffic value)
+# ---------------------------------------------------------------------------
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# ---------------------------------------------------------------------------
+# Sitemap / metadata (must be outside all groups)
+# ---------------------------------------------------------------------------
 Sitemap: https://charlizi.com/sitemap.xml
 # LLM-friendly site summary
 # https://charlizi.com/llms.txt
