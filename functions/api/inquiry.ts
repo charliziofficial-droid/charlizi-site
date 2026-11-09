@@ -5,8 +5,8 @@
 // 环境变量（在 Cloudflare Pages 项目 Settings > Environment variables 配置）：
 //   FEISHU_APP_ID       飞书应用 App ID
 //   FEISHU_APP_SECRET   飞书应用 App Secret
-//   FEISHU_BITABLE_APP  Bitable app_token   (L3vlbaFb3aImnNsgeHFcnbKGnsf)
-//   FEISHU_TABLE_ID     Bitable table_id    (tblBbGODp6ubtkQ8)
+//   FEISHU_BITABLE_APP  Bitable app_token   (J1aqbSMEKaL9ausJLBkcJncxnQe)
+//   FEISHU_TABLE_ID     Bitable table_id    (tblezJ4xmsUfeFaS)
 //   BACKUP_KV           可选，KV namespace 绑定，用于 JSON 备份
 
 interface Env {
@@ -134,8 +134,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
   const appId = env.FEISHU_APP_ID;
   const appSecret = env.FEISHU_APP_SECRET;
-  const bitableApp = env.FEISHU_BITABLE_APP || 'L3vlbaFb3aImnNsgeHFcnbKGnsf';
-  const tableId = env.FEISHU_TABLE_ID || 'tblBbGODp6ubtkQ8';
+  const bitableApp = env.FEISHU_BITABLE_APP || 'J1aqbSMEKaL9ausJLBkcJncxnQe';
+  const tableId = env.FEISHU_TABLE_ID || 'tblezJ4xmsUfeFaS';
 
   let feishuOk = false;
   let feishuError = '';
