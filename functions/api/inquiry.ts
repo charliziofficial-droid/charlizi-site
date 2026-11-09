@@ -108,6 +108,9 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   }
 
   const now = Date.now();
+  // Feishu Bitable renders DateTime cells in UTC, so shift +8h to make the
+  // stored instant display as Beijing time (CST) in the table.
+  const CST_OFFSET_MS = 8 * 60 * 60 * 1000;
   const record = {
     name,
     company: s(payload.company, 200),
@@ -160,7 +163,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         '真实来源(referrer)': record.ref_referrer,
         UTM参数: record.ref_utm,
         邮件状态: '未发送',
-        提交时间: record.submitted_at,
+        提交时间: record.submitted_at + CST_OFFSET_MS,
       });
       feishuOk = true;
     } catch (e: any) {
