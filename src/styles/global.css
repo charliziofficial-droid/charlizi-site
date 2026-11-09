@@ -246,6 +246,198 @@
   text-wrap: balance;
 }
 
+/* Hero band ---------------------------------------------------------------
+   The banner asset is 2.09:1. On a phone the viewport is far taller than that,
+   so a full-height block forces object-fit:cover to discard ~70% of the photo,
+   which decapitates whoever is in frame.
+
+   The box therefore gets a height tied to the photo's own ratio rather than to
+   the viewport: the image is shown as close to 2.09:1 as the phone allows,
+   cropping only the sides needed to keep the headline readable. */
+.hero-band {
+  min-height: 62vh;
+}
+@media (min-width: 640px) {
+  .hero-band { min-height: 68vh; }
+}
+@media (min-width: 768px) {
+  .hero-band { min-height: 74vh; }
+}
+
+/* On phones the copy block is the tall element, not the photo. Cap how much
+   vertical room it takes so the image band does not balloon past the point
+   where cover has to crop aggressively. */
+@media (max-width: 639px) {
+  .hero-band > .container-site {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+}
+
+/* ==========================================================================
+   Mobile hero (<768px) - portrait photo + copy in its baked-in white strip.
+
+   The source (hero-mobile.webp, 4:5) already has a pure-white band occupying
+   its bottom 15.56% (measured: first fully-white row y=1140 of 1350). Instead
+   of overlaying text on photography, the copy is placed in normal document
+   flow inside that band, so:
+     - nothing is covered by a scrim,
+     - text never sits on a busy background,
+     - the seam between band and photo is the image's own edge.
+
+   The white band is 15.56% of the image height. Because the image spans the
+   full container width, its height is width x 1.25, so the band height is
+   calc(100vw * 1.25 * 0.1556). The copy block is pinned directly under the
+   photo and given exactly that much vertical room, then the seam is nudged
+   with a negative margin so the photo's own white edge and the section's
+   white background meet with no visible line at any width.
+
+   ========================================================================== */
+
+/* Desktop-only layers are the default; mobile hides them. */
+.hero-mobile-photo,
+.hero-mobile-copy {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  /* The band is no longer a viewport-height flex box on phones: it is sized
+     by its own content so the photo and its caption stay glued together. */
+  .hero-band {
+    display: block;
+    min-height: 0;
+    background-color: #ffffff;
+  }
+
+  .hero-desktop {
+    display: none;
+  }
+
+  /* Photo: fixed 4:5 box, top-aligned so the models' heads stay in frame.
+     No object-fit crop is needed because the box matches the source ratio. */
+  .hero-mobile-photo {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+  }
+  .hero-mobile-photo picture,
+  .hero-mobile-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Copy: lives in the white strip, which is 15.56% of the photo height.
+     Only the eyebrow and the two buttons fit on a 360px-wide phone, so the
+     block is allowed to grow downward past the strip -- the extra lines land
+     on matching white background and the seam stays invisible. */
+  .hero-mobile-copy {
+    display: block;
+    position: relative;
+    background: #ffffff;
+    /* pull up so the copy overlaps the photo's own white band.
+       The source fades to pure white by 80.15% of its height; the measured
+       band starts at 84.44%. Pulling up by only the band height keeps the
+       copy clear of the faded legs while sitting on genuinely white pixels. */
+    margin-top: calc(-100vw * 1.25 * 0.1556);
+    padding: 1rem 1.375rem 2.75rem;
+    text-align: center;
+  }
+
+  .hero-m-eyebrow {
+    display: block;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #8b6f47;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-m-title {
+    font-size: 1.4375rem;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #1a2540;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .hero-m-title span {
+    color: #b8865c;
+  }
+
+  .hero-m-sub {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #475569;
+    margin: 0.625rem auto 0;
+    max-width: 20rem;
+    text-wrap: balance;
+  }
+
+  /* Stacked, full-width CTAs. Side-by-side halves on a 360-390px phone leave
+     each button ~165px, which is cramped and puts the two tap targets 16px
+     apart -- easy to hit the wrong one. Stacking gives full-width targets and
+     a clear primary/secondary read. */
+  .hero-m-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    margin-top: 1.5rem;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-m-cta,
+  .hero-m-cta-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 48px;
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.15;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  }
+
+  .hero-m-cta {
+    background: #1a2540;
+    color: #ffffff;
+  }
+  .hero-m-cta:active {
+    background: #2a3a5c;
+  }
+
+  .hero-m-cta-ghost {
+    background: transparent;
+    color: #1a2540;
+    border: 1.5px solid rgba(26, 37, 64, 0.25);
+  }
+  .hero-m-cta-ghost:active {
+    background: rgba(26, 37, 64, 0.06);
+  }
+}
+
+/* Very small phones (320-359px): tighten type so the title never wraps to
+   four lines and pushes the buttons below the fold. */
+@media (max-width: 359px) {
+  .hero-m-title {
+    font-size: 1.1875rem;
+  }
+  .hero-m-sub {
+    font-size: 0.8125rem;
+  }
+}
+
+/* Phones in landscape and small tablets in portrait: 768-1023px keeps the
+   desktop composition, which reads fine at those widths. */
+
 /* Factory capability montage - 3x2 grid, full-bleed.
    Mobile: 2 columns x 3 rows (each tile keeps a usable size on a narrow
    screen). Tablet/desktop: 3 columns x 2 rows, taller tiles so the detail in
