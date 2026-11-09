@@ -207,19 +207,48 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
     return json({ ok: false, error: 'challenge_failed' }, 403, cors);
   }
 
-  // 关键字段校验
+  // 关键字段校验——与前端 required 保持一致
   const name = clean(payload.name, 120);
   const email = clean(payload.email, 200);
+  const company = clean(payload.company, 200);
+  const phone = clean(payload.phone ?? payload.whatsapp, 60);
+  const category = clean(payload.category, 100);
+  const quantity = clean(payload.quantity, 60);
+  const market = clean(payload.market, 100);
+  const paymentMethod = clean(payload.payment_method, 100);
+  const paymentDetail = clean(payload.payment_method_detail, 200);
+  const source = clean(payload.source, 100);
+  const sourceDetail = clean(payload.source_detail, 200);
   const message = clean(payload.message, 5000);
-  if (!name || !email || !message) {
-    return json({ ok: false, error: 'missing_required' }, 400, cors);
+
+  const missing: string[] = [];
+  if (!name) missing.push('name');
+  if (!company) missing.push('company');
+  if (!email) missing.push('email');
+  if (!phone) missing.push('phone');
+  if (!category) missing.push('category');
+  if (!quantity) missing.push('quantity');
+  if (!market) missing.push('market');
+  if (!paymentMethod) missing.push('payment_method');
+  if (!source) missing.push('source');
+  if (missing.length) {
+    return json({ ok: false, error: 'missing_required', fields: missing }, 400, cors);
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
     return json({ ok: false, error: 'invalid_email' }, 400, cors);
   }
+  // "Other" selected but no detail text supplied → reject so the table is never ambiguous
+  if (paymentMethod === 'Other' && !paymentDetail) {
+    return json({ ok: false, error: 'payment_method_detail_required' }, 400, cors);
+  }
+  if (source === 'Other' && !sourceDetail) {
+    return json({ ok: false, error: 'source_detail_required' }, 400, cors);
+  }
   // Reject header-injection attempts in single-line fields.
-  if (/\r|\n/.test(name) || /\r|\n/.test(email)) {
-    return json({ ok: false, error: 'invalid_input' }, 400, cors);
+  for (const [k, v] of Object.entries({ name, email, company, phone, category, quantity, market })) {
+    if (/[\r\n]/.test(String(v))) {
+      return json({ ok: false, error: 'invalid_input', field: k }, 400, cors);
+    }
   }
 
   // --- 5. Rate limit per IP and per email ---
@@ -236,16 +265,16 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
   const CST_OFFSET_MS = 8 * 60 * 60 * 1000;
   const record = {
     name,
-    company: clean(payload.company, 200),
+    company,
     email,
-    whatsapp: clean(payload.phone ?? payload.whatsapp, 60),
-    category: clean(payload.category, 100),
-    quantity: clean(payload.quantity, 60),
-    market: clean(payload.market, 100),
-    payment_method: clean(payload.payment_method, 100),
-    payment_method_detail: clean(payload.payment_method_detail, 200),
-    source: clean(payload.source, 100),
-    source_detail: clean(payload.source_detail, 200),
+    whatsapp: phone,
+    category,
+    quantity,
+    market,
+    payment_method: paymentMethod,
+    payment_method_detail: paymentDetail,
+    source,
+    source_detail: sourceDetail,
     message,
     ref_referrer: clean(payload.ref_referrer, 500),
     ref_landing: clean(payload.ref_landing, 500),

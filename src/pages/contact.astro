@@ -83,8 +83,8 @@ const sourceOptions = [
             </div>
             <!-- WhatsApp/Phone -->
             <div>
-              <label for="phone" class="block text-sm font-medium text-navy mb-1">WhatsApp / Phone</label>
-              <input type="tel" id="phone" name="phone"
+              <label for="phone" class="block text-sm font-medium text-navy mb-1">WhatsApp / Phone <span class="text-red-400">*</span></label>
+              <input type="tel" id="phone" name="phone" required
                 class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm" placeholder="Include country code" />
             </div>
             <!-- Product Category -->
@@ -111,8 +111,8 @@ const sourceOptions = [
             </div>
             <!-- Target Market -->
             <div>
-              <label for="market" class="block text-sm font-medium text-navy mb-1">Target Market</label>
-              <select id="market" name="market"
+              <label for="market" class="block text-sm font-medium text-navy mb-1">Target Market <span class="text-red-400">*</span></label>
+              <select id="market" name="market" required
                 class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
                 <option value="">Select market...</option>
                 {marketOptions.map(m => (
@@ -122,8 +122,8 @@ const sourceOptions = [
             </div>
             <!-- Preferred Payment Method -->
             <div>
-              <label for="payment_method" class="block text-sm font-medium text-navy mb-1">Preferred Payment Method <span class="text-stone/50 font-normal">(optional)</span></label>
-              <select id="payment_method" name="payment_method"
+              <label for="payment_method" class="block text-sm font-medium text-navy mb-1">Preferred Payment Method <span class="text-red-400">*</span></label>
+              <select id="payment_method" name="payment_method" required
                 class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
                 <option value="">Select payment method...</option>
                 {paymentOptions.map(p => (
@@ -138,8 +138,8 @@ const sourceOptions = [
             </div>
             <!-- Message -->
             <div class="md:col-span-2">
-              <label for="message" class="block text-sm font-medium text-navy mb-1">Message Details <span class="text-red-400">*</span></label>
-              <textarea id="message" name="message" rows="5" required
+              <label for="message" class="block text-sm font-medium text-navy mb-1">Message Details <span class="text-stone/50 font-normal">(optional)</span></label>
+              <textarea id="message" name="message" rows="5"
                 class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm resize-y"
                 placeholder="Describe your product requirements — style, fabric, size range, target price, or attach a tech pack..."></textarea>
             </div>
@@ -152,8 +152,8 @@ const sourceOptions = [
             </div>
             <!-- How Did You Find Us -->
             <div class="md:col-span-2">
-              <label for="source" class="block text-sm font-medium text-navy mb-1">How Did You Find Us? <span class="text-stone/50 font-normal">(optional)</span></label>
-              <select id="source" name="source"
+              <label for="source" class="block text-sm font-medium text-navy mb-1">How Did You Find Us? <span class="text-red-400">*</span></label>
+              <select id="source" name="source" required
                 class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
                 <option value="">Select an option...</option>
                 {sourceOptions.map(s => (
@@ -166,6 +166,13 @@ const sourceOptions = [
                   placeholder="Where did you hear about us?" />
               </div>
             </div>
+            <!-- Anti-spam honeypot: hidden from humans, bots fill it and get silently dropped -->
+            <div class="hidden" aria-hidden="true">
+              <label for="_hp">Website URL</label>
+              <input type="text" id="_hp" name="_hp" tabindex="-1" autocomplete="off" value="" />
+            </div>
+            <!-- Time-to-fill guard: milliseconds from page load to submit -->
+            <input type="hidden" id="_t" name="_t" value="0" />
             <!-- Auto-captured attribution (hidden) -->
             <input type="hidden" id="ref_referrer" name="ref_referrer" value="" />
             <input type="hidden" id="ref_landing" name="ref_landing" value="" />
@@ -274,6 +281,20 @@ const sourceOptions = [
     }
     bindOtherToggle('payment_method', 'payment_other_wrap', 'payment_other');
     bindOtherToggle('source', 'source_other_wrap', 'source_other');
+
+    // --- Fill-time guard: record ms elapsed since page load ---
+    (function stampFillTime() {
+      const t = document.getElementById('_t');
+      if (!t || !window.performance) return;
+      const stamp = () => {
+        t.value = String(Math.round(performance.now()));
+      };
+      stamp();
+      // refresh on every user interaction so a long dwell time is captured
+      ['input', 'change', 'click', 'keydown'].forEach((ev) =>
+        document.addEventListener(ev, stamp, { passive: true })
+      );
+    })();
 
     // --- Auto-capture attribution (referrer + UTM) ---
     (function captureAttribution() {
