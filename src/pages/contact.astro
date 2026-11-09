@@ -61,7 +61,7 @@ const sourceOptions = [
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
       <!-- Form -->
       <div class="lg:col-span-3">
-        <form id="inquiry-form" action="https://formspree.io/f/mqkgegvp" method="POST" class="card p-8 rounded-lg">
+        <form id="inquiry-form" action="/api/inquiry" method="POST" class="card p-8 rounded-lg">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Full Name -->
             <div>
@@ -177,6 +177,28 @@ const sourceOptions = [
           </button>
           <p class="text-xs text-stone/50 text-center mt-3">We respect your privacy. Your information will never be shared.</p>
         </form>
+
+        <!-- Success state -->
+        <div id="inquiry-success" class="hidden card p-8 rounded-lg text-center">
+          <div class="mx-auto w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mb-4">
+            <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-navy mb-2">Inquiry received</h3>
+          <p class="text-sm text-stone leading-relaxed max-w-md mx-auto">
+            Thank you — we've got your request and our team will reply to your email within 24 hours.
+            Need to add something? Just reply to our email or message us on WhatsApp.
+          </p>
+        </div>
+
+        <!-- Error state -->
+        <div id="inquiry-error" class="hidden card p-6 rounded-lg">
+          <p class="text-sm text-red-600">
+            Something went wrong while sending your inquiry. Please try again, or email us directly at
+            <a href="mailto:charlizi.official@gmail.com" class="underline font-medium">charlizi.official@gmail.com</a>.
+          </p>
+        </div>
       </div>
 
       <!-- Sidebar -->
@@ -286,6 +308,55 @@ const sourceOptions = [
         if (v) found.push(`${k}=${v}`);
       });
       utmEl.value = found.length ? found.join(' | ') : 'none';
+    })();
+
+    // --- AJAX submit: keep customer on page, show explicit success state ---
+    (function bindSubmit() {
+      const form = document.getElementById('inquiry-form');
+      const successEl = document.getElementById('inquiry-success');
+      const errorEl = document.getElementById('inquiry-error');
+      const btn = form ? form.querySelector('button[type="submit"]') : null;
+      if (!form || !successEl || !errorEl || !btn) return;
+
+      let sending = false;
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (sending) return;
+        sending = true;
+
+        const originalLabel = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = 'Sending...';
+        errorEl.classList.add('hidden');
+
+        try {
+          const body = new FormData(form);
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body,
+            headers: { Accept: 'application/json' },
+          });
+          let data = {};
+          try {
+            data = await res.json();
+          } catch {}
+
+          if (res.ok && data.ok) {
+            form.classList.add('hidden');
+            successEl.classList.remove('hidden');
+            successEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            throw new Error(data.error || 'submit_failed');
+          }
+        } catch (err) {
+          errorEl.classList.remove('hidden');
+          errorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          btn.disabled = false;
+          btn.innerHTML = originalLabel;
+        } finally {
+          sending = false;
+        }
+      });
     })();
   </script>
 </FactoryLayout>
