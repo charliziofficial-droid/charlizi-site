@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && python scripts/gen_sitemap.py",
+    "build:astro": "astro build",
+    "sitemap": "python scripts/gen_sitemap.py",
     "preview": "astro preview"
   },
   "dependencies": {

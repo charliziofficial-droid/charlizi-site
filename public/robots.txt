@@ -63,6 +63,6 @@ Disallow: /manage
 Disallow: /decapcms
 Disallow: /cgi-bin
 
-Sitemap: https://charlizi.com/sitemap-index.xml
+Sitemap: https://charlizi.com/sitemap.xml
 # LLM-friendly site summary
 # https://charlizi.com/llms.txt
