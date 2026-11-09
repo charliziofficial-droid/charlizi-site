@@ -23,7 +23,8 @@ SITE = "https://charlizi.com"
 # 永不收录
 BLOCK_PREFIX = ("/admin", "/dashboard", "/manage", "/decapcms", "/cgi-bin",
                 "/404", "/500", "/offline", "/_")
-BLOCK_EXACT = {"/sitemap.xml", "/sitemap-index.xml", "/robots.txt"}
+BLOCK_EXACT = {"/sitemap.xml", "/sitemap-index.xml", "/robots.txt",
+               "/404.html", "/500.html", "/offline.html"}
 
 
 def collect():
