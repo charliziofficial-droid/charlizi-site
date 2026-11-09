@@ -2,208 +2,208 @@
 > charlizi-site@1.0.0 build
 > astro build && python scripts/gen_sitemap.py
 
-[2m21:42:00[22m [34m[content][39m Syncing content
-[33m[1m21:42:00[22m [WARN] [glob-loader][39m No files found matching "*.md,*.mdx" in directory "src\data\post"
-[2m21:42:00[22m [34m[content][39m Synced content
-[2m21:42:00[22m [34m[types][39m Generated [2m580ms[22m
-[2m21:42:00[22m [34m[build][39m output: [34m"static"[39m
-[2m21:42:00[22m [34m[build][39m mode: [34m"static"[39m
-[2m21:42:00[22m [34m[build][39m directory: [34mC:\Users\Administrator\.openclaw\workspace\charlizi-new\dist\[39m
-[2m21:42:00[22m [34m[build][39m Collecting build info...
-[2m21:42:00[22m [34m[build][39m [32m✓ Completed in 623ms.[39m
-[2m21:42:01[22m [34m[build][39m Building static entrypoints...
-[2m21:42:03[22m [34m[vite][39m [32m✓ built in 2.05s[39m
-[2m21:42:03[22m [34m[vite][39m [32m✓ built in 540ms[39m
-[2m21:42:03[22m [34m[build][39m Rearranging server assets...
+[2m21:45:51[22m [34m[content][39m Syncing content
+[33m[1m21:45:51[22m [WARN] [glob-loader][39m No files found matching "*.md,*.mdx" in directory "src\data\post"
+[2m21:45:51[22m [34m[content][39m Synced content
+[2m21:45:51[22m [34m[types][39m Generated [2m532ms[22m
+[2m21:45:51[22m [34m[build][39m output: [34m"static"[39m
+[2m21:45:51[22m [34m[build][39m mode: [34m"static"[39m
+[2m21:45:51[22m [34m[build][39m directory: [34mC:\Users\Administrator\.openclaw\workspace\charlizi-new\dist\[39m
+[2m21:45:51[22m [34m[build][39m Collecting build info...
+[2m21:45:51[22m [34m[build][39m [32m✓ Completed in 575ms.[39m
+[2m21:45:51[22m [34m[build][39m Building static entrypoints...
+[2m21:45:53[22m [34m[vite][39m [32m✓ built in 2.01s[39m
+[2m21:45:54[22m [34m[vite][39m [32m✓ built in 480ms[39m
+[2m21:45:54[22m [34m[build][39m Rearranging server assets...
 
 [42m[30m generating static routes [39m[49m
-[33m[1m21:42:03[22m [WARN] [build][39m Could not render `/products/bra-sets` from route `/products/[slug]` as it conflicts with higher priority route `/products/bra-sets`.
-[33m[1m21:42:03[22m [WARN] [build][39m Could not render `/products/bras` from route `/products/[slug]` as it conflicts with higher priority route `/products/bras`.
-[33m[1m21:42:03[22m [WARN] [build][39m Could not render `/products/plus-size-bras` from route `/products/[slug]` as it conflicts with higher priority route `/products/plus-size-bras`.
-[33m[1m21:42:03[22m [WARN] [build][39m Could not render `/products/panties` from route `/products/[slug]` as it conflicts with higher priority route `/products/panties`.
-[33m[1m21:42:03[22m [WARN] [build][39m Could not render `/products/silicone-bras` from route `/products/[slug]` as it conflicts with higher priority route `/products/silicone-bras`.
-[33m[1m21:42:03[22m [WARN] [build][39m Could not render `/products/shapewear` from route `/products/[slug]` as it conflicts with higher priority route `/products/shapewear`.
-[33m[1m21:42:03[22m [WARN] [build][39m Could not render `/products/camisoles` from route `/products/[slug]` as it conflicts with higher priority route `/products/camisoles`.
-[33m[1m21:42:03[22m [WARN] [build][39m Could not render `/products/sleepwear` from route `/products/[slug]` as it conflicts with higher priority route `/products/sleepwear`.
-[2m21:42:03[22m   [34m├─[39m [2m/404.html[22m [2m(+11ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/about/index.html[22m [2m(+9ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/admin/index.html[22m [2m(+7ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/blog/adhesive-bra-spec-guide/index.html[22m [2m(+9ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/blog/bra-anatomy/index.html[22m [2m(+9ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/blog/bra-set-development/index.html[22m [2m(+4ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/blog/bulk-vs-small-batch/index.html[22m [2m(+4ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/blog/choosing-bra-manufacturer/index.html[22m [2m(+7ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/blog/oeko-tex-certification/index.html[22m [2m(+5ms)[22m 
-[2m21:42:03[22m   [34m├─[39m [2m/blog/panty-fit-guide/index.html[22m [2m(+10ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/blog/shapewear-manufacturing/index.html[22m [2m(+12ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/blog/silicone-bra-manufacturing/index.html[22m [2m(+14ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/blog/silicone-cup-moulding-process/index.html[22m [2m(+6ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/blog/size-grading/index.html[22m [2m(+6ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/blog/wirefree-vs-underwire/index.html[22m [2m(+5ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/blog/index.html[22m [2m(+12ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/catalog/index.html[22m [2m(+12ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/contact/index.html[22m [2m(+6ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/dashboard/index.html[22m [2m(+5ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/faq/index.html[22m [2m(+4ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/manage/index.html[22m [2m(+4ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/privacy/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/process/index.html[22m [2m(+8ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/index.html[22m [2m(+5ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/index.html[22m [2m(+4ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/camisoles/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/plus-size-bras/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/shapewear/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/wine-red-underwire-bra-thong-set/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/lace-bodysuit-for-women-comfortable-sexy-teddy-for-everyday-confidence/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/viomisha-1-set-women-sticky/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/viomisha-womens-transparent-bra-and-underwear-set-perspective-mesh-underwear-bra-underwear-lace-bras-set-2-piece-set-black/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/women-sexy-sheer-lace-bras-set-2099/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/viomisha-women-bra-panty-set/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/womens-deep-v-neck-front/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/viomisha-womens-sexy-lace-half/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/viomisah-sexy-lace-bras-for-women-full-coverage-unlined-underwire-bra-large-size-lifting-lace-bra/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/ess-mutiway-bra-underwired-invisible/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/viomisha-floral-lace-halter-bralette/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/womens-bras-underwire-push-up-bra/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/viomisha-lace-bralettes-women-sexy-bras-mr2641/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/underwire-black-deep-u-push-up-bra/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/womens-strapless-halter-bras-bandeau-underwear-backless-bra-top/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/plus-size-bras/viomisha-women-plus-size-bras/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/plus-size-bras/women-plus-size-wireless-sleep-bras/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/viomisha-womens-underwear-sexy-lace/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/viomisha-adhesive-bra-invisible-strapless-bra/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/sticky-bra-push-up-for-women-strapless-invisible-adhesive-bra-with/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/women-sticky-bra-backless-strapless-push-up/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/invisible-adhesive-bra-rabbit-nipple/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/viomisha-sticky-lace-bra-2/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/silicone-strapless-bra-stickers-fabric-one-piece-seamless-sticky-bra/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/viomisha-sticky-bra-strapless-backless-push-up-bra-for-women-invisible-lifting-silicone/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/women-slip-satin-sleepwear/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/silky-pajama-strappy-shorts-nightwear/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/women-pure-cotton-underwear-suspender-short-nightdress/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/floral-lace-halter-bra-red-black/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/grey-cotton-wirefree-bra/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/grey-underwire-bra-black-brief-set/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/cheetah-print-wirefree-bra/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/floral-print-wirefree-bra-black/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/plus-size-bras/white-floral-underwire-bra-plus-size/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/plus-size-bras/black-lace-deep-v-bra-plus-size/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/plus-size-bras/black-wirefree-bra-plus-size/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/plus-size-bras/beige-wirefree-bra-plus-size/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/plus-size-bras/pink-lace-halter-bra-panty-set-plus-size/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/leopard-lace-underwire-bra-set/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/black-white-print-cotton-bra-set/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/red-lace-bow-bra-thong-set/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/pink-lace-bra-panty-set/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/black-lace-deep-v-bra-set/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/grey-cotton-wirefree-bra-set/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/lace-panties-4-color-pack/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/black-red-lace-panties/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/black-green-lace-high-waist-panties/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/leopard-print-high-waist-panties-3-pack/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/cotton-high-waist-panties-5-pack/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/lace-high-waist-panties-3-pack/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/womens-panties-shorts-undershorts-woman/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/adhesive-strapless-bra-black-nude/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/adhesive-bra-push-up-nude/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/silicone-nipple-covers-black-nude/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/silicone-adhesive-front-clasp-bra/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/silicone-adhesive-bra-nude/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/silicone-adhesive-bra-black-nude-pair/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/silicone-strap-on-breast-petals/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/silicone-front-clasp-adhesive-bra/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/pink-floral-v-neck-nightdress/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/pink-floral-pajama-set/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/white-cotton-suspender-nightdress/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/black-leopard-sheer-cami-nightdress/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/leopard-print-slip/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/leopard-cotton-cami-slip/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/sleepwear/black-mesh-cami-slit-nightdress/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/shapewear/black-off-shoulder-bodysuit/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/shapewear/black-mesh-deep-v-bodysuit/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/1340/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/1500-7/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/a5032/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/a5034/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b1133/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b2019/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b2048/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b2049/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b269/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b6043/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b6103/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b6111/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b6113/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/b6134/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/c8820/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/r044/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/u03/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/u056/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/u06/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/u204/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/u210/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/ys03/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bras/ys04/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/10751/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a1112/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a1119/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a1130/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a1558/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a2099/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a2124/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a2138/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a3136/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/a4001/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/b2046/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/b2050/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/b6112/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/c2703/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/u092/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/bra-sets/u098/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/10761/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/71hhdj7wwbl-ac-sx679/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j1074/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j10741/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j10744/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j10749/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j10751/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j10765/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j10773/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j10782/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/j10794/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/ja1066/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/ja23372/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/ja2662/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/silicone-bras/jc2431/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/c209/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/c312/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/c3307/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/c390/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/c8591/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/c878/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/panties/c967/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/shapewear/a8168/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/shapewear/a8805/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/shapewear/a8808/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/shapewear/ys01/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/camisoles/b6051/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/camisoles/m001/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/camisoles/m002/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/camisoles/m13/index.html[22m [2m(+2ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/camisoles/u018/index.html[22m [2m(+1ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/products/index.html[22m [2m(+5ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/rss.xml[22m [2m(+42ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/terms/index.html[22m [2m(+3ms)[22m 
-[2m21:42:04[22m   [34m├─[39m [2m/index.html[22m [2m(+7ms)[22m 
-[2m21:42:04[22m [32m✓ Completed in 500ms.
+[33m[1m21:45:54[22m [WARN] [build][39m Could not render `/products/bra-sets` from route `/products/[slug]` as it conflicts with higher priority route `/products/bra-sets`.
+[33m[1m21:45:54[22m [WARN] [build][39m Could not render `/products/bras` from route `/products/[slug]` as it conflicts with higher priority route `/products/bras`.
+[33m[1m21:45:54[22m [WARN] [build][39m Could not render `/products/plus-size-bras` from route `/products/[slug]` as it conflicts with higher priority route `/products/plus-size-bras`.
+[33m[1m21:45:54[22m [WARN] [build][39m Could not render `/products/panties` from route `/products/[slug]` as it conflicts with higher priority route `/products/panties`.
+[33m[1m21:45:54[22m [WARN] [build][39m Could not render `/products/silicone-bras` from route `/products/[slug]` as it conflicts with higher priority route `/products/silicone-bras`.
+[33m[1m21:45:54[22m [WARN] [build][39m Could not render `/products/shapewear` from route `/products/[slug]` as it conflicts with higher priority route `/products/shapewear`.
+[33m[1m21:45:54[22m [WARN] [build][39m Could not render `/products/camisoles` from route `/products/[slug]` as it conflicts with higher priority route `/products/camisoles`.
+[33m[1m21:45:54[22m [WARN] [build][39m Could not render `/products/sleepwear` from route `/products/[slug]` as it conflicts with higher priority route `/products/sleepwear`.
+[2m21:45:54[22m   [34m├─[39m [2m/404.html[22m [2m(+13ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/about/index.html[22m [2m(+12ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/admin/index.html[22m [2m(+8ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/adhesive-bra-spec-guide/index.html[22m [2m(+10ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/bra-anatomy/index.html[22m [2m(+8ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/bra-set-development/index.html[22m [2m(+6ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/bulk-vs-small-batch/index.html[22m [2m(+5ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/choosing-bra-manufacturer/index.html[22m [2m(+4ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/oeko-tex-certification/index.html[22m [2m(+5ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/panty-fit-guide/index.html[22m [2m(+6ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/shapewear-manufacturing/index.html[22m [2m(+6ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/silicone-bra-manufacturing/index.html[22m [2m(+8ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/silicone-cup-moulding-process/index.html[22m [2m(+5ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/size-grading/index.html[22m [2m(+4ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/wirefree-vs-underwire/index.html[22m [2m(+5ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/blog/index.html[22m [2m(+9ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/catalog/index.html[22m [2m(+6ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/contact/index.html[22m [2m(+5ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/dashboard/index.html[22m [2m(+5ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/faq/index.html[22m [2m(+4ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/manage/index.html[22m [2m(+4ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/privacy/index.html[22m [2m(+3ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/process/index.html[22m [2m(+8ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/index.html[22m [2m(+6ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/index.html[22m [2m(+4ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/camisoles/index.html[22m [2m(+4ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/index.html[22m [2m(+3ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/plus-size-bras/index.html[22m [2m(+3ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/shapewear/index.html[22m [2m(+4ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/index.html[22m [2m(+5ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/index.html[22m [2m(+3ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/wine-red-underwire-bra-thong-set/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/lace-bodysuit-for-women-comfortable-sexy-teddy-for-everyday-confidence/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/viomisha-1-set-women-sticky/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/viomisha-womens-transparent-bra-and-underwear-set-perspective-mesh-underwear-bra-underwear-lace-bras-set-2-piece-set-black/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/women-sexy-sheer-lace-bras-set-2099/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/viomisha-women-bra-panty-set/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/womens-deep-v-neck-front/index.html[22m [2m(+3ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/viomisha-womens-sexy-lace-half/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/viomisah-sexy-lace-bras-for-women-full-coverage-unlined-underwire-bra-large-size-lifting-lace-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/ess-mutiway-bra-underwired-invisible/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/viomisha-floral-lace-halter-bralette/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/womens-bras-underwire-push-up-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/viomisha-lace-bralettes-women-sexy-bras-mr2641/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/underwire-black-deep-u-push-up-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/womens-strapless-halter-bras-bandeau-underwear-backless-bra-top/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/plus-size-bras/viomisha-women-plus-size-bras/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/plus-size-bras/women-plus-size-wireless-sleep-bras/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/viomisha-womens-underwear-sexy-lace/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/viomisha-adhesive-bra-invisible-strapless-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/sticky-bra-push-up-for-women-strapless-invisible-adhesive-bra-with/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/women-sticky-bra-backless-strapless-push-up/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/invisible-adhesive-bra-rabbit-nipple/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/viomisha-sticky-lace-bra-2/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/silicone-strapless-bra-stickers-fabric-one-piece-seamless-sticky-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/viomisha-sticky-bra-strapless-backless-push-up-bra-for-women-invisible-lifting-silicone/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/women-slip-satin-sleepwear/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/silky-pajama-strappy-shorts-nightwear/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/women-pure-cotton-underwear-suspender-short-nightdress/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/floral-lace-halter-bra-red-black/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/grey-cotton-wirefree-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/grey-underwire-bra-black-brief-set/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/cheetah-print-wirefree-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/floral-print-wirefree-bra-black/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/plus-size-bras/white-floral-underwire-bra-plus-size/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/plus-size-bras/black-lace-deep-v-bra-plus-size/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/plus-size-bras/black-wirefree-bra-plus-size/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/plus-size-bras/beige-wirefree-bra-plus-size/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/plus-size-bras/pink-lace-halter-bra-panty-set-plus-size/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/leopard-lace-underwire-bra-set/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/black-white-print-cotton-bra-set/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/red-lace-bow-bra-thong-set/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/pink-lace-bra-panty-set/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/black-lace-deep-v-bra-set/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/grey-cotton-wirefree-bra-set/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/lace-panties-4-color-pack/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/black-red-lace-panties/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/black-green-lace-high-waist-panties/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/leopard-print-high-waist-panties-3-pack/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/cotton-high-waist-panties-5-pack/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/lace-high-waist-panties-3-pack/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/womens-panties-shorts-undershorts-woman/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/adhesive-strapless-bra-black-nude/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/adhesive-bra-push-up-nude/index.html[22m [2m(+3ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/silicone-nipple-covers-black-nude/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/silicone-adhesive-front-clasp-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/silicone-adhesive-bra-nude/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/silicone-adhesive-bra-black-nude-pair/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/silicone-strap-on-breast-petals/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/silicone-front-clasp-adhesive-bra/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/pink-floral-v-neck-nightdress/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/pink-floral-pajama-set/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/white-cotton-suspender-nightdress/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/black-leopard-sheer-cami-nightdress/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/leopard-print-slip/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/leopard-cotton-cami-slip/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/sleepwear/black-mesh-cami-slit-nightdress/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/shapewear/black-off-shoulder-bodysuit/index.html[22m [2m(+3ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/shapewear/black-mesh-deep-v-bodysuit/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/1340/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/1500-7/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/a5032/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/a5034/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b1133/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b2019/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b2048/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b2049/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b269/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b6043/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b6103/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b6111/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b6113/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/b6134/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/c8820/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/r044/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/u03/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/u056/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/u06/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/u204/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/u210/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/ys03/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bras/ys04/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/10751/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a1112/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a1119/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a1130/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a1558/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a2099/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a2124/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a2138/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a3136/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/a4001/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/b2046/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/b2050/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/b6112/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/c2703/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/u092/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/bra-sets/u098/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/10761/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/71hhdj7wwbl-ac-sx679/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j1074/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j10741/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j10744/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j10749/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j10751/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j10765/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j10773/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j10782/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/j10794/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/ja1066/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/ja23372/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/ja2662/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/silicone-bras/jc2431/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/c209/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/c312/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/c3307/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/c390/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/c8591/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/c878/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/panties/c967/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/shapewear/a8168/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/shapewear/a8805/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/shapewear/a8808/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/shapewear/ys01/index.html[22m [2m(+4ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/camisoles/b6051/index.html[22m [2m(+2ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/camisoles/m001/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/camisoles/m002/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/camisoles/m13/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/camisoles/u018/index.html[22m [2m(+1ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/products/index.html[22m [2m(+3ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/rss.xml[22m [2m(+33ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/terms/index.html[22m [2m(+5ms)[22m 
+[2m21:45:54[22m   [34m├─[39m [2m/index.html[22m [2m(+10ms)[22m 
+[2m21:45:54[22m [32m✓ Completed in 475ms.
 [39m
-[2m21:42:04[22m [34m[build][39m [32m✓ Completed in 3.18s.[39m
-[2m21:42:04[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
-[2m21:42:04[22m [34m[build][39m 172 page(s) built in [1m4.11s[22m
-[2m21:42:04[22m [34m[build][39m [1mComplete![22m
+[2m21:45:54[22m [34m[build][39m [32m✓ Completed in 3.06s.[39m
+[2m21:45:54[22m [34m[@astrojs/sitemap][39m `sitemap-index.xml` created at `dist`
+[2m21:45:54[22m [34m[build][39m 172 page(s) built in [1m3.93s[22m
+[2m21:45:54[22m [34m[build][39m [1mComplete![22m
 sitemap.xml 生成完成：170 个 URL
 已排除 4 个（后台/错误页）: /404.html, /admin/, /dashboard/, /manage/
 自检通过：纯 XML，无 <html> 标签
