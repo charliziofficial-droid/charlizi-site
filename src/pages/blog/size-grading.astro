@@ -2,6 +2,10 @@
 // src/pages/blog/size-grading.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['size-grading'];
 ---
 <BlogLayout
   title="Size Grading for Full-Bust Bras: Where Ranges Break"
@@ -119,5 +123,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Building a full-bust range?</p>
       <p class="text-sm text-stone mt-1">We develop full-bust grading with per-size-band wire and elastic specs, not a scaled core block. <a href="/contact" class="text-accent hover:underline">Send us your size range</a> or see our <a href="/products/plus-size-bras" class="text-accent hover:underline">plus size bras</a>.</p>
     </div>
+    <BlogSchema slug="size-grading" entry={entry} />
+
   </article>
 </BlogLayout>

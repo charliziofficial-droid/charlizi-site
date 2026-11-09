@@ -2,6 +2,10 @@
 // src/pages/blog/choosing-bra-manufacturer.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['choosing-bra-manufacturer'];
 ---
 <BlogLayout
   title="How to Choose the Right Bra Manufacturer for Your Brand"
@@ -48,5 +52,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Looking for a bra manufacturer?</p>
       <p class="text-sm text-stone mt-1">Charlizi Factory is BSCI & OEKO-TEX certified with MOQ from 200 pcs. <a href="/contact" class="text-accent hover:underline">Send us your inquiry</a> or <a href="https://viomisha.com" target="_blank" class="text-accent hover:underline">try small batch samples on Viomisha</a>.</p>
     </div>
+    <BlogSchema slug="choosing-bra-manufacturer" entry={entry} />
+
   </article>
 </BlogLayout>

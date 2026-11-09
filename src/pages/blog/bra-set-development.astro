@@ -2,6 +2,10 @@
 // src/pages/blog/bra-set-development.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['bra-set-development'];
 ---
 <BlogLayout
   title="Developing a Bra and Panty Set That Actually Matches"
@@ -131,5 +135,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Developing a set range?</p>
       <p class="text-sm text-stone mt-1">We reserve single dye lots across both components and consolidate elastic per colourway. <a href="/contact" class="text-accent hover:underline">Talk to us about sets</a> or see our <a href="/products/bra-sets" class="text-accent hover:underline">bra set range</a>.</p>
     </div>
+    <BlogSchema slug="bra-set-development" entry={entry} />
+
   </article>
 </BlogLayout>

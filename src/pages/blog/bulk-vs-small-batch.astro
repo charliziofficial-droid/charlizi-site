@@ -2,6 +2,10 @@
 // src/pages/blog/bulk-vs-small-batch.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['bulk-vs-small-batch'];
 ---
 <BlogLayout
   title="Bulk vs Small Batch: Sourcing Strategy for Apparel Brands"
@@ -54,5 +58,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Ready to scale from sample to bulk?</p>
       <p class="text-sm text-stone mt-1">Try small batches on <a href="https://viomisha.com" target="_blank" class="text-accent hover:underline">Viomisha</a>, then scale with us for full production. <a href="/contact" class="text-accent hover:underline">Get a bulk quote</a>.</p>
     </div>
+    <BlogSchema slug="bulk-vs-small-batch" entry={entry} />
+
   </article>
 </BlogLayout>

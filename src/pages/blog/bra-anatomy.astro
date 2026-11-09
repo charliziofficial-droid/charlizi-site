@@ -2,6 +2,10 @@
 // src/pages/blog/bra-anatomy.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['bra-anatomy'];
 ---
 <BlogLayout
   title="Bra Anatomy: The 12 Components That Decide Cost and Fit"
@@ -144,5 +148,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Need a component-level quote?</p>
       <p class="text-sm text-stone mt-1">We will send a line-by-line BOM for any style in our range — cup construction, wire spec, elastic grade, all of it. <a href="/contact" class="text-accent hover:underline">Request a BOM</a> or browse our <a href="/products/bras" class="text-accent hover:underline">bra range</a>.</p>
     </div>
+    <BlogSchema slug="bra-anatomy" entry={entry} />
+
   </article>
 </BlogLayout>

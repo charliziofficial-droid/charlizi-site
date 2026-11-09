@@ -2,6 +2,10 @@
 // src/pages/blog/shapewear-manufacturing.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['shapewear-manufacturing'];
 ---
 <BlogLayout
   title="Shapewear Manufacturing: Compression, Bonding and the Hard Parts"
@@ -126,5 +130,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Developing shapewear?</p>
       <p class="text-sm text-stone mt-1">We engineer compression per zone and pull-test every bonded batch. <a href="/contact" class="text-accent hover:underline">Send your compression target</a> or see our <a href="/products/shapewear" class="text-accent hover:underline">shapewear range</a>.</p>
     </div>
+    <BlogSchema slug="shapewear-manufacturing" entry={entry} />
+
   </article>
 </BlogLayout>

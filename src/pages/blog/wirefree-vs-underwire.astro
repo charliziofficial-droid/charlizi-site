@@ -2,6 +2,10 @@
 // src/pages/blog/wirefree-vs-underwire.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['wirefree-vs-underwire'];
 ---
 <BlogLayout
   title="Wirefree vs Underwire Bras: What Actually Changes in Production"
@@ -126,5 +130,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Developing a bra range?</p>
       <p class="text-sm text-stone mt-1">We produce both wirefree and underwire constructions in-house, and we will tell you which one your volume actually supports. <a href="/contact" class="text-accent hover:underline">Talk to us</a> or see our <a href="/products/bras" class="text-accent hover:underline">bra range</a>.</p>
     </div>
+    <BlogSchema slug="wirefree-vs-underwire" entry={entry} />
+
   </article>
 </BlogLayout>

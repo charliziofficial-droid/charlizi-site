@@ -2,6 +2,10 @@
 // src/pages/blog/silicone-bra-manufacturing.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['silicone-bra-manufacturing'];
 ---
 <BlogLayout
   title="Adhesive Silicone Bras: What Separates a Good One From a Return"
@@ -132,5 +136,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Sourcing adhesive bras?</p>
       <p class="text-sm text-stone mt-1">We mould silicone cups in-house and test adhesive re-use and heat-ageing before shipping. <a href="/contact" class="text-accent hover:underline">Request the material spec</a> or see our <a href="/products/silicone-bras" class="text-accent hover:underline">silicone bra range</a>.</p>
     </div>
+    <BlogSchema slug="silicone-bra-manufacturing" entry={entry} />
+
   </article>
 </BlogLayout>

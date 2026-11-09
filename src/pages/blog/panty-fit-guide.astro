@@ -2,6 +2,10 @@
 // src/pages/blog/panty-fit-guide.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['panty-fit-guide'];
 ---
 <BlogLayout
   title="Panties Are Where Fit Goes Wrong: A Manufacturing Guide"
@@ -134,5 +138,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Producing a panty line?</p>
       <p class="text-sm text-stone mt-1">We spec rise, gusset and leg elastic numerically on every style, and run recovery tests before bulk. <a href="/contact" class="text-accent hover:underline">Send your spec</a> or see our <a href="/products/panties" class="text-accent hover:underline">panty range</a>.</p>
     </div>
+    <BlogSchema slug="panty-fit-guide" entry={entry} />
+
   </article>
 </BlogLayout>

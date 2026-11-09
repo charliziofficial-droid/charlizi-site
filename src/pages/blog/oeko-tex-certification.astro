@@ -2,6 +2,10 @@
 // src/pages/blog/oeko-tex-certification.astro
 import BlogLayout from '../../layouts/BlogLayout.astro';
 import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['oeko-tex-certification'];
 ---
 <BlogLayout
   title="Understanding OEKO-TEX Certification in Intimate Apparel"
@@ -49,5 +53,7 @@ import Picture from '../../components/Picture.astro';
       <p class="text-sm text-navy font-semibold">Need an OEKO-TEX certified manufacturer?</p>
       <p class="text-sm text-stone mt-1">Charlizi Factory holds BSCI, OEKO-TEX Standard 100, and ISO 9001 certifications. <a href="/contact" class="text-accent hover:underline">Contact us</a> for certification documents.</p>
     </div>
+    <BlogSchema slug="oeko-tex-certification" entry={entry} />
+
   </article>
 </BlogLayout>
