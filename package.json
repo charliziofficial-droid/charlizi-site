@@ -8,6 +8,8 @@
     "build": "astro build && python scripts/gen_sitemap.py",
     "build:astro": "astro build",
     "sitemap": "python scripts/gen_sitemap.py",
+    "indexnow": "python scripts/indexnow.py",
+    "submit": "python scripts/indexnow.py",
     "preview": "astro preview"
   },
   "dependencies": {
