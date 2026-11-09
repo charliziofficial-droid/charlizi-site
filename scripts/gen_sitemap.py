@@ -23,6 +23,10 @@ SITE = "https://charlizi.com"
 # 永不收录
 BLOCK_PREFIX = ("/admin", "/dashboard", "/manage", "/decapcms", "/cgi-bin",
                 "/404", "/500", "/offline", "/_")
+# 裸露的 .html 后台页：Cloudflare 的 /admin.html -> /admin 是 308，但
+# BLOCK_PREFIX 只匹配 "/admin" 和 "/admin/..."，不匹配 "/admin.html"，
+# 于是这两个页面曾被写进 sitemap。按扩展名统一拦掉。
+BLOCK_SUFFIX = (".html",)
 BLOCK_EXACT = {"/sitemap.xml", "/sitemap-index.xml", "/robots.txt",
                "/404.html", "/500.html", "/offline.html"}
 
@@ -47,6 +51,11 @@ def collect():
 
 def is_blocked(u):
     if u in BLOCK_EXACT:
+        return True
+    # 任何以 .html 结尾的路径都不该出现在 sitemap 里：站点用的是目录式
+    # 干净 URL（/contact/ 而不是 /contact.html），裸露的 .html 要么是重定向
+    # 源，要么是后台页。
+    if u.endswith(BLOCK_SUFFIX):
         return True
     return any(u == b or u.startswith(b + "/") for b in BLOCK_PREFIX)
 
