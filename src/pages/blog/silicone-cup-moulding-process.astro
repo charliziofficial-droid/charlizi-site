@@ -1,0 +1,218 @@
+---
+// src/pages/blog/silicone-cup-moulding-process.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['silicone-cup-moulding-process'];
+---
+<BlogLayout
+  title="Silicone Cup Moulding: The Full Process From Tool to Finished Bra"
+  description="Step by step through silicone cup moulding: tool making, compound choice, degassing, cure cycle, trimming and adhesive lamination - from the factory floor."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Silicone Cup Moulding</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden rounded-xl bg-cream-dark mb-8">
+      <Picture src="blog-silicone-moulding-hero.webp" alt="Production line staff handling moulded components on a conveyor at the Charlizi factory" cls="w-full h-full object-cover" priority sizes="(max-width: 768px) calc(100vw - 2rem), 704px" />
+    </div>
+
+    <time class="text-sm text-slate">November 17, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Silicone Cup Moulding: The Full Process From Tool to Finished Bra</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        A silicone bra looks like one piece of nothing. In production it is a seven-stage
+        sequence, and every stage can hand you a defect that only appears after the
+        customer has worn it four times.
+      </p>
+      <p>
+        This is the sequence we run, in order, with the failure mode attached to each
+        stage. If you are sourcing silicone cups, this is the list of questions to ask —
+        because the answers tell you whether the factory moulds cups or just buys shells
+        and glues clasps on.
+      </p>
+
+      <h2>Stage 1 — Tool making, where the fit is actually decided</h2>
+      <p>
+        Everything downstream inherits the tool. A cup cavity that is 0.3 mm too deep
+        produces a cup that looks fine on the bench and creases under a shirt.
+      </p>
+      <p>
+        Tools are cut from aluminium or steel billet on a CNC, then hand-polished. The
+        polish is not cosmetic: any tooling mark transfers to the moulded surface and
+        becomes a stress riser, and stress risers are where silicone tears first.
+      </p>
+      <ul>
+        <li><strong>Cavity count.</strong> A two-cavity tool makes sampling cheap and mass production slow. Most factories run 4–8 cavities per size; below that, unit cost climbs fast.</li>
+        <li><strong>Shrink allowance.</strong> Silicone shrinks roughly 2–3% on cure. If the tool was cut to nominal, every cup comes out undersized and the whole size run is scrap.</li>
+        <li><strong>Edge geometry.</strong> The taper to the 0.8–1.2 mm rim is cut into the tool, not trimmed after. This is the single most consequential number in the whole process.</li>
+      </ul>
+      <p>
+        Tool lead time runs 20–30 days and tooling cost is typically USD 1,500–4,000 per
+        size. That is why sampling a silicone bra costs more than sampling a cut-and-sew
+        bra — you are paying for metal, not fabric.
+      </p>
+
+      <h2>Stage 2 — Compound selection</h2>
+      <p>
+        "Silicone" is not one material. Two cups that look identical on a shelf can differ
+        in shore hardness, tear strength and how they age under body heat.
+      </p>
+      <ul>
+        <li><strong>Platinum-cure (addition-cure) silicone.</strong> Medical-grade purity, no by-products, excellent re-tack when used as an adhesive layer. Costs more and is sensitive to cure inhibition from sulphur, tin or certain adhesives on the tooling.</li>
+        <li><strong>Peroxide-cure silicone.</strong> Cheaper, more forgiving in the tool, but leaves residues and smells faintly of vinegar. Fine for a shell, wrong for anything that touches skin for ten hours.</li>
+        <li><strong>Shore hardness.</strong> We run 20–30 Shore A for the cup shell and 40–50 for the wing, because the wing has to hold the tension the cup does not.</li>
+      </ul>
+      <p>
+        Ask for the shore hardness <em>per component</em>, not one number for the whole
+        bra. A single-number spec is the tell that nobody has thought about it.
+      </p>
+
+      <h2>Stage 3 — Degassing, the stage buyers never see</h2>
+      <p>
+        Mixed silicone carries air. If it goes into the cavity with air in it, you get
+        micro-bubbles — invisible on the surface, visible as cloudy patches once the cup is
+        stretched.
+      </p>
+      <p>
+        Vacuum degassing pulls the mix below around −0.095 MPa for several minutes before
+        injection. Skipping it saves fifteen minutes per batch and costs you the batch.
+        You cannot detect it by looking at a finished cup; you detect it by squeezing one
+        against a light.
+      </p>
+      <p>
+        Practical check on a factory visit: ask to see the vacuum chamber and the gauge
+        reading, not a sample cup. Anyone moulding silicone seriously has one visible on
+        the floor.
+      </p>
+
+      <h2>Stage 4 — Cure cycle</h2>
+      <p>
+        Cure is time and temperature, and both are usually compromised for throughput. A
+        properly cured 3 mm cup runs 8–15 minutes in a heated press at 120–150 °C,
+        depending on wall thickness and compound.
+      </p>
+      <p>
+        Under-cure is the quiet defect. The cup comes out looking perfect, feels slightly
+        tacky, and then:
+      </p>
+      <ul>
+        <li>tack fails within five to eight wears instead of thirty,</li>
+        <li>the adhesive layer delaminates at the rim,</li>
+        <li>the cup takes a permanent crease after two washes.</li>
+      </ul>
+      <p>
+        This is why the wash-cycle clause in your purchase order matters more than the
+        colour card. A factory that cannot show cycle test data has no idea whether its
+        cure is right.
+      </p>
+
+      <h2>Stage 5 — Trimming and flash removal</h2>
+      <p>
+        After demoulding, every cup carries a flash line where the two tool halves met.
+        It gets removed by hand or by a punch die.
+      </p>
+      <p>
+        A punch die is fast but leaves a square, hard edge — and a hard edge is exactly
+        what you promised the customer you would not ship. Hand trimming is slower and
+        depends entirely on the operator, which means your quality is only as consistent
+        as your worst trimmer on a Friday afternoon.
+      </p>
+      <p>
+        The right answer is to mould the taper in and use trimming only to remove flash
+        outside the taper. If a factory describes "cutting the edge thin", they are
+        trimming the sealing surface and your edge will lift in the field.
+      </p>
+
+      <h2>Stage 6 — Adhesive lamination</h2>
+      <p>
+        The adhesive is a separate layer applied after the shell is cured, and the bond
+        between them decides whether the bra survives washing.
+      </p>
+      <ul>
+        <li><strong>Solvent-based acrylic.</strong> Cheap, strong initially, degrades under body heat. Ten-wear product.</li>
+        <li><strong>Silicone gel adhesive.</strong> Re-tacks after washing, comfortable, expensive. This is what makes a bra resell.</li>
+        <li><strong>Hybrid: silicone skin-contact layer over acrylic carrier.</strong> Our default. Cost sits between the two, and the failure mode is graceful — tack softens gradually instead of releasing suddenly.</li>
+      </ul>
+      <p>
+        Lamination is done in a controlled-humidity room because platinum-cure silicone
+        will not bond to a damp substrate. If the factory cannot tell you the humidity
+        spec, the bond is luck.
+      </p>
+
+      <h2>Stage 7 — End-of-line testing</h2>
+      <p>
+        What we actually test, per lot:
+      </p>
+      <ul>
+        <li><strong>Tack retention</strong> — measured before and after 20 hand-wash/air-dry cycles, with a pass threshold written into the order.</li>
+        <li><strong>Peel strength at the rim</strong> — a 180° pull on the adhesive layer, because that is how it fails in use.</li>
+        <li><strong>Tear propagation</strong> — nicked-edge test on the taper, to catch under-cure.</li>
+        <li><strong>Heat ageing</strong> — 48 hours at 50 °C, then re-test tack, simulating a summer warehouse.</li>
+        <li><strong>Colour fastness to sweat and water</strong> — relevant on nude and black, where migration shows first.</li>
+      </ul>
+      <p>
+        Each of those maps to a complaint category. If a supplier reports only dimensional
+        checks and visual inspection, they are testing the thing the customer never
+        complains about.
+      </p>
+
+      <h2>Where moulding programmes usually slip</h2>
+      <p>
+        Tool wear and compound lot variation account for most of the difference between a first article
+        sample and the thousandth piece. Two symptoms to watch for on a running order.
+      </p>
+      <ul>
+        <li><strong>Rim thickness drifting over the run.</strong> The tool is wearing at the edge, which is where the taper is finest. It shows up as increasing edge lift in the field before it shows up anywhere in QC.</li>
+        <li><strong>Colour shifting between compound lots.</strong> Silicone base batches vary slightly, and under-corrected they become visible on light colourways only. Ask for the colour to be checked against a retained first-article on every lot.</li>
+      </ul>
+      <p>
+        Both are cheap to monitor and expensive to discover in returns, which is why retention of a first
+        article approved sample is worth insisting on.
+      </p>
+
+      <h2>What it costs, roughly</h2>
+      <p>
+        Typical landed unit cost for a reusable adhesive bra at 500 pcs sits in the
+        USD 2.20–4.50 band. Where it lands depends on four levers, in order of impact:
+      </p>
+      <ul>
+        <li>adhesive chemistry — a hybrid layer adds roughly 15–25% over plain acrylic,</li>
+        <li>moulded versus trimmed edge — moulded taper adds tooling, not unit cost,</li>
+        <li>cavity count — drives cycle time per piece,</li>
+        <li>packaging — the plastic hanger and branded pouch often cost more than the cup.</li>
+      </ul>
+      <p>
+        A quote 40% under the band is not a bargain. It is a different adhesive, a trimmed
+        edge, or a tool that was cut to nominal and never adjusted for shrink.
+      </p>
+
+      <h2>The questions that separate a moulder from an assembler</h2>
+      <ul>
+        <li>How many cavities per size, and what is the shrink allowance?</li>
+        <li>Show me the vacuum gauge and the cure temperature log for last week.</li>
+        <li>Is the edge taper moulded or trimmed?</li>
+        <li>What is the shore hardness of the shell versus the wing, separately?</li>
+        <li>What is the tack retention number after 20 cycles, and what is the pass threshold?</li>
+        <li>Is lamination done in a humidity-controlled room, and what is the spec?</li>
+      </ul>
+      <p>
+        Six questions. A moulder answers them in five minutes with numbers. An assembler
+        answers them with adjectives.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Need silicone cups moulded to your spec?</p>
+      <p class="text-sm text-stone mt-1">We cut tools in-house, mould in 4–8 cavity aluminium, and test tack retention before shipping. MOQ 200–300 pcs per design and colourway. <a href="/contact" class="text-accent hover:underline">Request a tooling quote</a> or see our <a href="/products/silicone-bras" class="text-accent hover:underline">silicone bra range</a>.</p>
+    </div>
+  <BlogSchema slug="silicone-cup-moulding-process" entry={entry} />
+
+  </article>
+</BlogLayout>

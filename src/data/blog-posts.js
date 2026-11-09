@@ -13,9 +13,13 @@ export const handBuiltSlugs = new Set([
   'choosing-bra-manufacturer',
   'oeko-tex-certification',
   'bulk-vs-small-batch',
+  'adhesive-bra-spec-guide',
+  'silicone-cup-moulding-process',
 ]);
 
 export const blogPosts = [
+  { title: 'Silicone Cup Moulding: The Full Process From Tool to Finished Bra', slug: 'silicone-cup-moulding-process', date: '2026-11-17', image: 'blog-silicone-moulding-hero.webp', desc: 'Step by step through silicone cup moulding: tool making, compound choice, degassing, cure cycle, trimming and adhesive lamination.' },
+  { title: 'Adhesive Bra Manufacturing: What Buyers Get Wrong in the Spec', slug: 'adhesive-bra-spec-guide', date: '2026-11-10', image: 'blog-adhesive-spec-hero.webp', desc: 'Sticky bras fail for spec reasons, not user error - adhesive chemistry, edge thickness, cup moulding and wash survival.' },
   { title: 'Bra Anatomy: The 12 Components That Decide Cost and Fit', slug: 'bra-anatomy', date: '2026-11-08', image: 'blog-bra-anatomy-hero.webp', desc: 'A factory-side breakdown of every component in a bra - cup, wire, wing, band, hook, slider - and how each one moves your unit cost and fit quality.' },
   { title: 'Developing a Bra and Panty Set That Actually Matches', slug: 'bra-set-development', date: '2026-11-08', image: 'blog-bra-set-hero.webp', desc: 'Matching a bra and panty set is harder than making either piece alone - fabric dye lots, elastic colour, trim continuity and the grading mismatch nobody warns you about.' },
   { title: 'Panties Are Where Fit Goes Wrong: A Manufacturing Guide', slug: 'panty-fit-guide', date: '2026-11-08', image: 'blog-panty-fit-hero.webp', desc: 'Rise, gusset construction, leg elastic and fabric recovery - the four production decisions that decide whether a panty fits, rides up, or gets returned.' },

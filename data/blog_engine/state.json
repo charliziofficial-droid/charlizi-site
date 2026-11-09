@@ -186,15 +186,18 @@
   ],
   "topic_queue": [
     {
-      "slug": "silicone-bras-manufacturing-what-buyers-get-wrong-in-the-spe",
-      "keyword": "sticky bra",
-      "headline": "Silicone Bras Manufacturing: What Buyers Get Wrong in the Spec",
-      "angle": "ToB angle on silicone/adhesive construction, adhesive chemistry, edge thickness and wash survival",
+      "slug": "silicone-cup-moulding-process",
+      "keyword": "silicone bra moulding",
+      "headline": "Silicone Cup Moulding: The Full Process From Tool to Finished Bra",
+      "angle": "Process-level walkthrough of silicone cup moulding: tool making, compound selection, degassing, cure cycle, trimming, adhesive lamination and end-of-line testing",
       "product_line": "silicone-bras",
       "product_url": "/products/silicone-bras",
       "score": 50.92,
       "status": "queued",
-      "created": "2026-11-09T13:14:08.900174+00:00"
+      "created": "2026-11-09T13:14:08.900174+00:00",
+      "note": "原选题与已上线的 adhesive-bra-spec-guide 撞主题（都在讲黏胶文胸规格陷阱），主理人 2026-11-09 指令改为「硅胶杯模工艺全流程」",
+      "replaced_from": "silicone-bras-manufacturing-what-buyers-get-wrong-in-the-spe",
+      "updated": "2026-11-09T13:33:55.031176+00:00"
     },
     {
       "slug": "inside-bras-production-cup-construction-and-unit-cost",
@@ -253,6 +256,12 @@
     }
   ],
   "published": [],
-  "rejected": [],
-  "updated": "2026-11-09T13:17:51.765638+00:00"
+  "rejected": [
+    {
+      "slug": "silicone-bras-manufacturing-what-buyers-get-wrong-in-the-spe",
+      "reason": "duplicate of adhesive-bra-spec-guide",
+      "date": "2026-11-09T13:33:55.031176+00:00"
+    }
+  ],
+  "updated": "2026-11-09T13:33:55.031176+00:00"
 }

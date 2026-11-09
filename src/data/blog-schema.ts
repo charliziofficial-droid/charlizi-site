@@ -47,6 +47,52 @@ const AUTHOR = {
 } as const;
 
 export const blogSchema: BlogSchemaEntry[] = [
+  // ------------------------------------------------------------------ new 2
+  {
+    slug: 'silicone-cup-moulding-process',
+    headline: 'Silicone Cup Moulding: The Full Process From Tool to Finished Bra',
+    shortTitle: 'Silicone Cup Moulding: The Full Process',
+    description:
+      'Step by step through silicone cup moulding: tool making, compound choice, degassing, cure cycle, trimming and adhesive lamination.',
+    date: '2026-11-17',
+    image: '/factory/images/blog-silicone-moulding-hero.webp',
+    imageAlt: 'Production line staff handling moulded components on a conveyor at the Charlizi factory',
+    keywords: ['silicone bra moulding', 'silicone cup manufacturing', 'platinum cure silicone', 'adhesive bra OEM', 'silicone bra factory', 'moulded cup'],
+    section: 'Silicone Bra Manufacturing',
+    readMinutes: 11,
+    related: [
+      { label: 'Adhesive Bra Manufacturing: What Buyers Get Wrong', href: '/blog/adhesive-bra-spec-guide' },
+      { label: 'Bra Anatomy: 12 Components', href: '/blog/bra-anatomy' },
+      { label: 'Silicone Bras OEM/ODM', href: '/products/silicone-bras' },
+    ],
+    faq: [
+      {
+        q: 'How long does it take to make a silicone cup mould tool?',
+        a: 'Roughly 20-30 days from approved 3D drawing to a production tool. Tools are CNC-cut from aluminium or steel billet, then hand-polished, because tooling marks transfer to the moulded surface and become tear points in the finished cup.',
+      },
+      {
+        q: 'Why does silicone shrink during moulding?',
+        a: 'Silicone shrinks roughly 2-3% as it cures. If the tool is cut to nominal dimensions with no shrink allowance, every cup comes out undersized and the entire size run has to be scrapped. Shrink allowance is one of the first things to ask a supplier about.',
+      },
+      {
+        q: 'What is degassing and why does it matter?',
+        a: 'Mixed silicone carries entrained air. Vacuum degassing pulls the mix below about -0.095 MPa for several minutes before injection. Without it you get micro-bubbles that are invisible on the surface but show up as cloudy patches once the cup is stretched. You cannot detect skipped degassing by looking at a finished cup.',
+      },
+      {
+        q: 'What causes a silicone bra to fail after a few wears?',
+        a: 'Almost always under-cure at stage 4. The cup looks perfect coming out of the press, feels slightly tacky, and then loses tack within five to eight wears, delaminates at the rim, or takes a permanent crease after two washes. A proper 3 mm cup cures 8-15 minutes at 120-150 degrees C.',
+      },
+      {
+        q: 'Should the cup edge be moulded or trimmed?',
+        a: 'Moulded. The taper down to 0.8-1.2 mm at the rim should be cut into the tool. Punch-die or hand trimming leaves a square hard edge, and that hard edge is what lifts first in wear. Trimming should only remove flash outside the taper, never form the sealing surface.',
+      },
+      {
+        q: 'What is a realistic unit cost for silicone cups?',
+        a: 'Around USD 2.20-4.50 landed per reusable adhesive bra at 500 pcs. Adhesive chemistry is the biggest lever (a hybrid silicone layer adds 15-25% over plain acrylic), then cavity count, then packaging. A quote 40% under that band usually means a different adhesive or a trimmed edge.',
+      },
+    ],
+  },
+
   // ------------------------------------------------------------------ new 1
   {
     slug: 'adhesive-bra-spec-guide',

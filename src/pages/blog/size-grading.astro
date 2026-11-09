@@ -41,6 +41,23 @@ const entry = blogSchemaBySlug['size-grading'];
         <em>relationship</em> between components stays constant. It does not.
       </p>
 
+      <h2>Grading is a decision, not a calculation</h2>
+      <p>
+        Most brands assume grading is arithmetic: take the base size, apply an increment, done. In practice
+        every increment is a choice, and the choices compound across a size run until a finished size either
+        fits a real body or does not.
+      </p>
+      <p>
+        A bra grades on at least five independent variables, and they do not move together.
+      </p>
+      <ul>
+        <li><strong>Underbust</strong> - typically plus 5 cm per band size. Close to universal.</li>
+        <li><strong>Full bust</strong> - the increment changes as the cup letter rises. A 2.5 cm jump works at A to B and is wrong at DD to E, where the body changes faster.</li>
+        <li><strong>Cup depth</strong> - not the same thing as bust circumference. Depth is the volume the breast occupies, and it has to be graded on a different curve or the cup is wrong at both ends of the run.</li>
+        <li><strong>Wire length and shape</strong> - the wire follows the root of the breast. Scaling a wire linearly produces one that pokes at the underarm above a DD.</li>
+        <li><strong>Wing height and strap width</strong> - structural, not cosmetic. A wing that does not grow with the band cannot carry the load, and a 12 mm strap on a 40 band digs.</li>
+      </ul>
+
       <h2>The D-cup boundary</h2>
       <p>
         In our experience the practical break point is around a D cup, and it breaks in several ways at
@@ -71,6 +88,24 @@ const entry = blogSchemaBySlug['size-grading'];
         away from it.
       </p>
 
+      <h2>What a grade table should look like</h2>
+      <p>
+        A usable grade table is not a single increment column. It is a per-size row with the dimensions that
+        actually change shape, stated separately.
+      </p>
+      <ul>
+        <li>Underbust and full bust, as separate columns</li>
+        <li>Cup depth, as its own column rather than inferred from bust</li>
+        <li>Wire length and wire width, per size</li>
+        <li>Wing height at side seam</li>
+        <li>Strap width and strap length range</li>
+        <li>Centre front height, because the gore has to tack at every size or the bra is not finished</li>
+      </ul>
+      <p>
+        If a factory's grade table has one increment for everything, the grading was done by scaling, and the
+        failures will appear at the ends of the range where scaling diverges from anatomy.
+      </p>
+
       <h2>What a proper full-bust spec contains</h2>
       <p>
         When we develop a full-bust range, the specification carries more than measurements:
@@ -86,6 +121,33 @@ const entry = blogSchemaBySlug['size-grading'];
         This is why full-bust development costs more. It is not arbitrary; it is genuinely more pattern
         work, and the factories that quote it as if it is the same job as a core-size range are either
         planning to skip the work or have not done it before.
+      </p>
+
+      <h2>Where the grade actually breaks</h2>
+      <p>
+        Below a DD, a reasonably executed grade survives contact with real bodies. Above it, the geometry
+        stops forgiving accumulated error.
+      </p>
+      <ul>
+        <li>The bust-to-underbust differential grows faster than any linear increment accounts for.</li>
+        <li>The centre front has to rise, or the gore floats and the bra cannot tack against the sternum.</li>
+        <li>Wire becomes structural rather than shaping - it carries more load and needs a different gauge and alloy.</li>
+        <li>Fabric consumption rises non-linearly, so a grade that is fit-correct can still be commercially impossible.</li>
+      </ul>
+      <p>
+        This is why we develop plus-size lines from a plus-size base rather than grading down from a 34B.
+        Blocks built at the top of the range and graded down behave far better than blocks built at the
+        bottom and stretched upward.
+      </p>
+
+      <h2>Fit per size, not per grade</h2>
+      <p>
+        A common cost saving is to fit only the smallest, the base and the largest size. It saves three
+        samples and reliably misses the two sizes in the middle where the grade curve bends most.
+      </p>
+      <p>
+        Minimum viable fit set for a new block: the base size, one size either side, plus both extremes.
+        Above a DD, add the size at which the wire length changes category.
       </p>
 
       <h2>Testing that catches grading errors before production</h2>
