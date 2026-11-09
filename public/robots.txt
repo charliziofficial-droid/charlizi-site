@@ -1,7 +1,20 @@
 # Charlizi Factory — robots.txt
-# Single, authoritative policy. Do NOT duplicate User-agent blocks:
-# crawlers honour the FIRST matching group, so a stray "Disallow" earlier
-# in the file silently overrides every "Allow" that follows it.
+# Single, authoritative policy. Do NOT duplicate User-agent blocks.
+#
+# ⚠️ READ THIS BEFORE EDITING
+# Crawlers honour only the FIRST group that matches their user-agent, and they
+# stop reading that group at the first blank line. A `Disallow: /` placed above
+# a later `Allow: /` for the same bot silently wins.
+#
+# This file targets the GEO / AI-answer-engine channel deliberately:
+# AI search bots must be ALLOWED so Charlizi content can be cited in
+# ChatGPT Search, Perplexity and Google AI Overviews. Only pure training
+# crawlers are left unrestricted-or-blocked at the Cloudflare layer, not here.
+#
+# If the live response starts with "# BEGIN Cloudflare Managed content",
+# that block is injected by Cloudflare Bot Preference Sync and sits ABOVE this
+# file. Flip those bots to Allow in Cloudflare → AI Crawl Control → Crawlers,
+# or disable Bot Preference Sync. Editing this file cannot override it.
 
 User-agent: *
 Allow: /
@@ -23,7 +36,7 @@ Allow: /
 User-agent: Claude-User
 Allow: /
 
-User-agent: Claude-Web
+User-agent: Claude-SearchBot
 Allow: /
 
 User-agent: anthropic-ai
@@ -54,6 +67,9 @@ User-agent: meta-externalagent
 Allow: /
 
 User-agent: cohere-ai
+Allow: /
+
+User-agent: Bingbot
 Allow: /
 
 # ---- Internal / non-indexable areas ----
