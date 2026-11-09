@@ -47,6 +47,48 @@ const AUTHOR = {
 } as const;
 
 export const blogSchema: BlogSchemaEntry[] = [
+  // ------------------------------------------------------------------ new 1
+  {
+    slug: 'adhesive-bra-spec-guide',
+    headline: 'Adhesive Bra Manufacturing: What Buyers Get Wrong in the Spec',
+    shortTitle: 'Adhesive Bra Manufacturing: What Buyers Get Wrong in the Spec',
+    description:
+      'Sticky bras fail for spec reasons, not user error - adhesive chemistry, edge thickness, cup moulding and wash survival, from a factory that builds them.',
+    date: '2026-11-10',
+    image: '/factory/images/blog-adhesive-spec-hero.webp',
+    imageAlt: 'Rabbit-ear style adhesive silicone bra shown in two colourways with wing and clasp detail',
+    keywords: ['adhesive bra manufacturing', 'sticky bra', 'silicone bra OEM', 'adhesive chemistry', 'backless bra', 'strapless bra'],
+    section: 'Silicone Bra Manufacturing',
+    readMinutes: 7,
+    related: [
+      { label: 'Adhesive Silicone Bras: Good vs Return', href: '/blog/silicone-bra-manufacturing' },
+      { label: 'Bra Anatomy: 12 Components', href: '/blog/bra-anatomy' },
+      { label: 'Silicone Bras OEM/ODM', href: '/products/silicone-bras' },
+    ],
+    faq: [
+      {
+        q: 'What adhesive is used in a reusable sticky bra?',
+        a: 'Most sticky bras use one of three chemistries: acrylic pressure-sensitive adhesive (cheapest, tack drops within about ten wears because body heat and skin oil degrade it), silicone gel adhesive (higher cost, softer, re-tacks far better after washing), or a hybrid with a silicone skin-contact layer over an acrylic carrier. Hybrid is the balance most factories with low return rates now run.',
+      },
+      {
+        q: 'Why does the edge of an adhesive bra lift first?',
+        a: 'A thick edge creates a sharp step against the skin, and that step lifts as soon as the wearer moves. Once a small section lifts, the peel travels inward. The fix is a tapered, moulded edge — typically 0.8-1.2 mm at the outer rim. A trimmed edge is faster to produce and is the most common cause of edge-lift complaints.',
+      },
+      {
+        q: 'Should the push-up pad be glued in or encapsulated?',
+        a: 'Encapsulated during moulding. If the pad is bonded in afterwards it can migrate and the cup deforms in the wash. Pad thickness should also be specified per size band rather than as one uniform thickness across the whole range.',
+      },
+      {
+        q: 'How many wears should a reusable adhesive bra last?',
+        a: 'With silicone or hybrid adhesive and a proper moulded edge, roughly 20-30 wears is realistic. Anything under 10 usually means under-cured adhesive or an acrylic-only layer. Specify the wash cycle count and a tack-retention pass threshold in the purchase order rather than accepting the word reusable.',
+      },
+      {
+        q: 'What is the MOQ for custom adhesive bras?',
+        a: 'MOQ at Charlizi is 200-300 pcs per design and colourway, with sample development available before a bulk commitment.',
+      },
+    ],
+  },
+
   // ------------------------------------------------------------------ 1
   {
     slug: 'bra-anatomy',
@@ -95,7 +137,7 @@ export const blogSchema: BlogSchemaEntry[] = [
     headline: 'Developing a Bra and Panty Set That Actually Matches',
     shortTitle: 'Developing a Bra and Panty Set That Actually Matches',
     description:
-      'Matching a bra and panty set is harder than making either piece alone - fabric dye lots, elastic colour, trim continuity and the grading mismatch nobody warns you about.',
+      'Matching a bra and panty set is harder than making either alone - dye lots, elastic colour, trim continuity and the grading mismatch nobody warns you about.',
     date: '2026-11-08',
     image: '/factory/images/blog-bra-set-hero.webp',
     imageAlt: 'Matched lace bra and panty set produced as a single coordinated colourway',
@@ -285,7 +327,7 @@ export const blogSchema: BlogSchemaEntry[] = [
     headline: 'Wirefree vs Underwire Bras: What Actually Changes in Production',
     shortTitle: 'Wirefree vs Underwire Bras: What Actually Changes in Production',
     description:
-      'The real manufacturing differences between wirefree and underwire bras - pattern complexity, support structures, grading costs and how to choose for your product line.',
+      'Wirefree vs underwire bras: the real manufacturing differences - pattern complexity, support structures, grading costs and how to choose for your line.',
     date: '2026-11-08',
     image: '/factory/images/blog-wirefree-underwire-hero.webp',
     imageAlt: 'Wirefree seamless bra shown in leopard print, worn without an underwire',

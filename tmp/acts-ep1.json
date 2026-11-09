@@ -1,0 +1,7 @@
+[
+  { "sel": "input[name=\"traits.profile_registration.given_name\"]", "val": "Lin" },
+  { "sel": "input[name=\"traits.profile_registration.surname\"]", "val": "Chen" },
+  { "sel": "input[name=\"traits.email\"]", "val": "charlizi.official@gmail.com" },
+  { "sel": "input[name=\"password\"]", "val": "Char1izi@Factory2026" },
+  { "wait": 900 }
+]

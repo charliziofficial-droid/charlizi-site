@@ -1,0 +1,13 @@
+[
+  { "sel": "input[name=\"name\"]", "val": "Charlizi Factory" },
+  { "sel": "input[name=\"email\"]", "val": "charlizi.official@gmail.com" },
+  { "sel": "input[name=\"password\"]", "val": "Char1izi@Factory2026" },
+  { "sel": "input[name=\"password_confirmation\"]", "val": "Char1izi@Factory2026" },
+  {
+    "eval": "(function(){var c=document.querySelector('input[name=\"accept_terms\"]');if(c&&!c.checked){c.click();}return c?c.checked:'NOT_FOUND';})()"
+  },
+  {
+    "eval": "(function(){var b=[...document.querySelectorAll('button,input[type=submit]')].find(x=>/^Register$/i.test((x.innerText||x.value||'').trim()));if(!b)return 'BTN_NOT_FOUND';b.scrollIntoView({block:'center'});b.click();return 'CLICKED';})()"
+  },
+  { "wait": 8000 }
+]

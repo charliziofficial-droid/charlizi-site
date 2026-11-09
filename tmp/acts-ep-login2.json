@@ -1,0 +1,11 @@
+[
+  { "sel": "#identifier", "val": "charlizi.official@gmail.com" },
+  { "wait": 400 },
+  { "sel": "#password", "val": "Char1izi@Factory2026" },
+  { "wait": 400 },
+  {
+    "eval": "(function(){var b=[...document.querySelectorAll('button,input[type=submit]')].find(x=>/^Log in$/i.test((x.innerText||x.value||'').trim())&&x.offsetParent!==null);if(!b)return 'BTN_NOT_FOUND';b.click();return 'CLICKED';})()"
+  },
+  { "wait": 14000 },
+  { "eval": "JSON.stringify({url:location.href,title:document.title})" }
+]

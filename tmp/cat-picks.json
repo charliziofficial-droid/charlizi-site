@@ -1,0 +1,498 @@
+{
+  "bra-sets": [
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\bra-sets\\b2046-front.webp",
+      "file": "b2046-front.webp"
+    },
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\bra-sets\\b6112-front.webp",
+      "file": "b6112-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\bra-sets\\a1112-front.webp",
+      "file": "a1112-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\bra-sets\\a1119-front.webp",
+      "file": "a1119-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\bra-sets\\a1130-front.webp",
+      "file": "a1130-front.webp"
+    }
+  ],
+  "bras": [
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\bras\\b1133-front.webp",
+      "file": "b1133-front.webp"
+    },
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\bras\\b6111-front.webp",
+      "file": "b6111-front.webp"
+    },
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\bras\\cheetah-print-wirefree-bra-front.webp",
+      "file": "cheetah-print-wirefree-bra-front.webp"
+    },
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\bras\\u06-front.webp",
+      "file": "u06-front.webp"
+    },
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\bras\\ys04-front.webp",
+      "file": "ys04-front.webp"
+    }
+  ],
+  "camisoles": [
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\camisoles\\b6051-front.webp",
+      "file": "b6051-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\camisoles\\m001-front.webp",
+      "file": "m001-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\camisoles\\m002-front.webp",
+      "file": "m002-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\camisoles\\m13-front.webp",
+      "file": "m13-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\camisoles\\u018-front.webp",
+      "file": "u018-front.webp"
+    }
+  ],
+  "panties": [
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\panties\\c312-front.webp",
+      "file": "c312-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\panties\\c3307-front.webp",
+      "file": "c3307-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\panties\\c390-front.webp",
+      "file": "c390-front.webp"
+    },
+    {
+      "score": 98.13,
+      "w": 900,
+      "h": 1125,
+      "content": "844x1125",
+      "fill": 93.8,
+      "hcov": 100.0,
+      "wcov": 93.8,
+      "margin": "L28 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\panties\\c209-front.webp",
+      "file": "c209-front.webp"
+    },
+    {
+      "score": 98.13,
+      "w": 900,
+      "h": 1125,
+      "content": "844x1125",
+      "fill": 93.8,
+      "hcov": 100.0,
+      "wcov": 93.8,
+      "margin": "L28 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\panties\\c878-front.webp",
+      "file": "c878-front.webp"
+    }
+  ],
+  "plus-size-bras": [
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\plus-size-bras\\pink-lace-halter-bra-panty-set-plus-size-front.webp",
+      "file": "pink-lace-halter-bra-panty-set-plus-size-front.webp"
+    },
+    {
+      "score": 98.13,
+      "w": 900,
+      "h": 1125,
+      "content": "844x1125",
+      "fill": 93.8,
+      "hcov": 100.0,
+      "wcov": 93.8,
+      "margin": "L28 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\plus-size-bras\\black-lace-deep-v-bra-plus-size-front.webp",
+      "file": "black-lace-deep-v-bra-plus-size-front.webp"
+    },
+    {
+      "score": 85.99,
+      "w": 900,
+      "h": 1125,
+      "content": "900x900",
+      "fill": 80.0,
+      "hcov": 80.0,
+      "wcov": 100.0,
+      "margin": "L0 T112 R0 B113",
+      "path": "public/factory/images/products-cards\\plus-size-bras\\beige-wirefree-bra-plus-size-front.webp",
+      "file": "beige-wirefree-bra-plus-size-front.webp"
+    },
+    {
+      "score": 85.99,
+      "w": 900,
+      "h": 1125,
+      "content": "900x900",
+      "fill": 80.0,
+      "hcov": 80.0,
+      "wcov": 100.0,
+      "margin": "L0 T112 R0 B113",
+      "path": "public/factory/images/products-cards\\plus-size-bras\\white-floral-underwire-bra-plus-size-front.webp",
+      "file": "white-floral-underwire-bra-plus-size-front.webp"
+    },
+    {
+      "score": 75.26,
+      "w": 900,
+      "h": 1125,
+      "content": "774x774",
+      "fill": 59.2,
+      "hcov": 68.8,
+      "wcov": 86.0,
+      "margin": "L63 T176 R63 B175",
+      "path": "public/factory/images/products-cards\\plus-size-bras\\viomisha-women-plus-size-bras-front.webp",
+      "file": "viomisha-women-plus-size-bras-front.webp"
+    }
+  ],
+  "shapewear": [
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\shapewear\\a8168-front.webp",
+      "file": "a8168-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\shapewear\\a8805-front.webp",
+      "file": "a8805-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\shapewear\\a8808-front.webp",
+      "file": "a8808-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\shapewear\\ys01-front.webp",
+      "file": "ys01-front.webp"
+    },
+    {
+      "score": 98.13,
+      "w": 900,
+      "h": 1125,
+      "content": "844x1125",
+      "fill": 93.8,
+      "hcov": 100.0,
+      "wcov": 93.8,
+      "margin": "L28 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\shapewear\\black-mesh-deep-v-bodysuit-front.webp",
+      "file": "black-mesh-deep-v-bodysuit-front.webp"
+    }
+  ],
+  "silicone-bras": [
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\silicone-bras\\j1074-front.webp",
+      "file": "j1074-front.webp"
+    },
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\silicone-bras\\j10765-front.webp",
+      "file": "j10765-front.webp"
+    },
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\silicone-bras\\silicone-nipple-covers-black-nude-front.webp",
+      "file": "silicone-nipple-covers-black-nude-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\silicone-bras\\j10744-front.webp",
+      "file": "j10744-front.webp"
+    },
+    {
+      "score": 98.15,
+      "w": 900,
+      "h": 1125,
+      "content": "845x1125",
+      "fill": 93.9,
+      "hcov": 100.0,
+      "wcov": 93.9,
+      "margin": "L27 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\silicone-bras\\j10749-front.webp",
+      "file": "j10749-front.webp"
+    }
+  ],
+  "sleepwear": [
+    {
+      "score": 98.2,
+      "w": 900,
+      "h": 1125,
+      "content": "846x1125",
+      "fill": 94.0,
+      "hcov": 100.0,
+      "wcov": 94.0,
+      "margin": "L27 T0 R27 B0",
+      "path": "public/factory/images/products-cards\\sleepwear\\black-leopard-sheer-cami-nightdress-front.webp",
+      "file": "black-leopard-sheer-cami-nightdress-front.webp"
+    },
+    {
+      "score": 98.13,
+      "w": 900,
+      "h": 1125,
+      "content": "844x1125",
+      "fill": 93.8,
+      "hcov": 100.0,
+      "wcov": 93.8,
+      "margin": "L28 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\sleepwear\\black-mesh-cami-slit-nightdress-front.webp",
+      "file": "black-mesh-cami-slit-nightdress-front.webp"
+    },
+    {
+      "score": 98.13,
+      "w": 900,
+      "h": 1125,
+      "content": "844x1125",
+      "fill": 93.8,
+      "hcov": 100.0,
+      "wcov": 93.8,
+      "margin": "L28 T0 R28 B0",
+      "path": "public/factory/images/products-cards\\sleepwear\\white-cotton-suspender-nightdress-front.webp",
+      "file": "white-cotton-suspender-nightdress-front.webp"
+    },
+    {
+      "score": 98.09,
+      "w": 900,
+      "h": 1125,
+      "content": "843x1125",
+      "fill": 93.7,
+      "hcov": 100.0,
+      "wcov": 93.7,
+      "margin": "L28 T0 R29 B0",
+      "path": "public/factory/images/products-cards\\sleepwear\\leopard-print-slip-front.webp",
+      "file": "leopard-print-slip-front.webp"
+    },
+    {
+      "score": 98.07,
+      "w": 900,
+      "h": 1125,
+      "content": "842x1125",
+      "fill": 93.6,
+      "hcov": 100.0,
+      "wcov": 93.6,
+      "margin": "L29 T0 R29 B0",
+      "path": "public/factory/images/products-cards\\sleepwear\\pink-floral-pajama-set-front.webp",
+      "file": "pink-floral-pajama-set-front.webp"
+    }
+  ]
+}

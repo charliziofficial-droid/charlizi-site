@@ -1,0 +1,10 @@
+[
+  {
+    "eval": "(function(){var ins=[...document.querySelectorAll('input')].filter(e=>e.offsetParent!==null);var out=[];ins.forEach(function(e){var setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;var v = /password/i.test(e.type) ? 'Char1izi@Factory2026' : (e.type==='email'||/email/i.test(e.name+e.placeholder||'') ? 'charlizi.official@gmail.com' : null); if(v!==null){e.focus();setter.call(e,v);e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));out.push(e.type+':'+e.value);}});return JSON.stringify(out);})()"
+  },
+  { "wait": 800 },
+  {
+    "eval": "(function(){var b=[...document.querySelectorAll('button,input[type=submit]')].find(x=>/^Log in$/i.test((x.innerText||x.value||'').trim()));if(!b)return 'BTN_NOT_FOUND';b.click();return 'CLICKED';})()"
+  },
+  { "wait": 12000 }
+]

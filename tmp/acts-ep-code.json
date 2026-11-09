@@ -1,0 +1,10 @@
+[
+  {
+    "eval": "(function(){var ins=[...document.querySelectorAll('input[type=number]')].filter(e=>e.offsetParent!==null);var code='696199';ins.forEach(function(e,i){var setter=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;e.focus();setter.call(e,code[i]);e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new KeyboardEvent('keydown',{key:code[i],bubbles:true}));e.dispatchEvent(new KeyboardEvent('keyup',{key:code[i],bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}));});return JSON.stringify(ins.map(e=>e.value));})()"
+  },
+  { "wait": 1200 },
+  {
+    "eval": "(function(){var b=[...document.querySelectorAll('button')].find(x=>/^Verify code$/i.test(x.innerText.trim()));if(!b)return 'BTN_NOT_FOUND';b.click();return 'CLICKED';})()"
+  },
+  { "wait": 10000 }
+]

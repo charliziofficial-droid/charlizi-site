@@ -1,0 +1,121 @@
+{
+  "items": [
+    {
+      "keyword": "sticky bra",
+      "searches": 122112,
+      "purchaseRate": 0.0479,
+      "purchases": 5849,
+      "bid": 1.77,
+      "products": 3279532,
+      "spr": 487
+    },
+    {
+      "keyword": "strapless bra",
+      "searches": 110737,
+      "purchaseRate": 0.0282,
+      "purchases": 3122,
+      "bid": 1.3,
+      "products": 2549660,
+      "spr": 108
+    },
+    {
+      "keyword": "sticky bra push up",
+      "searches": 47094,
+      "purchaseRate": 0.057,
+      "purchases": 2684,
+      "bid": 2.26,
+      "products": 1096362,
+      "spr": 132
+    },
+    {
+      "keyword": "strapless bra push up",
+      "searches": 33651,
+      "purchaseRate": 0.034,
+      "purchases": 1144,
+      "bid": 1.21,
+      "products": 806670,
+      "spr": 15
+    },
+    {
+      "keyword": "push up sticky bra",
+      "searches": 22984,
+      "purchaseRate": 0.048,
+      "purchases": 1103,
+      "bid": 1.25,
+      "products": 539709,
+      "spr": 54
+    },
+    {
+      "keyword": "backless bra",
+      "searches": 12846,
+      "purchaseRate": 0.0147,
+      "purchases": 188,
+      "bid": 1.78,
+      "products": 372624,
+      "spr": 40
+    },
+    {
+      "keyword": "minimizer bra",
+      "searches": 12488,
+      "purchaseRate": 0.0026,
+      "purchases": 32,
+      "bid": 1.59,
+      "products": 362447,
+      "spr": 273
+    },
+    {
+      "keyword": "jelly bra",
+      "searches": 40989,
+      "purchaseRate": 0.0131,
+      "purchases": 536,
+      "bid": 1.5,
+      "products": 1027864,
+      "spr": 28
+    },
+    {
+      "keyword": "push up bra",
+      "searches": 70659,
+      "purchaseRate": 0.0058,
+      "purchases": 409,
+      "bid": 0.92,
+      "products": 1906057,
+      "spr": 5
+    },
+    {
+      "keyword": "balconette bra",
+      "searches": 27997,
+      "purchaseRate": 0.0059,
+      "purchases": 165,
+      "bid": 0.89,
+      "products": 664138,
+      "spr": 2
+    },
+    {
+      "keyword": "shapermint bra",
+      "searches": 21331,
+      "purchaseRate": 0.0325,
+      "purchases": 693,
+      "bid": 2.74,
+      "products": 574831,
+      "spr": 18
+    },
+    {
+      "keyword": "posture support bra",
+      "searches": 21060,
+      "purchaseRate": 0.0036,
+      "purchases": 75,
+      "bid": 0.79,
+      "products": 627065,
+      "spr": 11
+    },
+    {
+      "keyword": "boomba bra inserts",
+      "searches": 13159,
+      "purchaseRate": 0.0505,
+      "purchases": 664,
+      "bid": 1.27,
+      "products": 321010,
+      "spr": 60
+    }
+  ]
+}

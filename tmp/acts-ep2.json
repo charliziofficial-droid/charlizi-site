@@ -1,0 +1,6 @@
+[
+  {
+    "eval": "(function(){var b=[...document.querySelectorAll('button')].find(x=>/Start registration/i.test(x.innerText));if(!b)return 'BTN_NOT_FOUND';b.scrollIntoView({block:'center'});b.click();return 'CLICKED';})()"
+  },
+  { "wait": 9000 }
+]

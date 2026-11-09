@@ -1,0 +1,111 @@
+---
+// src/pages/blog/adhesive-bra-spec-guide.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['adhesive-bra-spec-guide'];
+---
+<BlogLayout
+  title="Adhesive Bra Manufacturing: What Buyers Get Wrong in the Spec"
+  description="Sticky bras fail for spec reasons, not user error - adhesive chemistry, edge thickness, cup moulding and wash survival, from a factory that builds them."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Adhesive Bra Spec Guide</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden rounded-xl bg-cream-dark mb-8">
+      <Picture src="blog-adhesive-spec-hero.webp" alt="Rabbit-ear style adhesive silicone bra shown in two colourways with wing and clasp detail" cls="w-full h-full object-cover" priority sizes="(max-width: 768px) calc(100vw - 2rem), 704px" />
+    </div>
+
+    <time class="text-sm text-slate">November 10, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Adhesive Bra Manufacturing: What Buyers Get Wrong in the Spec</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        Sticky bras have the worst return rate of any category we run. Not because the product is
+        difficult to make well, but because most spec sheets describe the wrong things. They list a
+        colour, a size range and a target price, then leave the four variables that actually decide
+        whether the bra holds on day three to the factory's default.
+      </p>
+      <p>
+        These are the four we now insist on writing down before a single cup goes into mould.
+      </p>
+
+      <h2>1. Adhesive chemistry, not "strong glue"</h2>
+      <p>
+        Every buyer asks for strong adhesive. Almost none specify which type, and the difference
+        between them is the difference between a 25-wear product and a 6-wear product.
+      </p>
+      <ul>
+        <li><strong>Acrylic pressure-sensitive.</strong> The default. Cheap, works immediately, releases cleanly. But it degrades with body heat and skin oil, so tack drops noticeably within ten wears.</li>
+        <li><strong>Silicone gel adhesive.</strong> Higher cost, softer hand-feel, and it re-tacks after washing far better than acrylic. This is what separates a reorder from a one-off purchase.</li>
+        <li><strong>Hybrid layered adhesive.</strong> A silicone skin-contact layer over an acrylic carrier. Best balance we run: comfortable on the skin, keeps the bond economics sane.</li>
+      </ul>
+      <p>
+        When a quote comes in 40% under another, the adhesive layer is usually the first thing that
+        changed. Ask which chemistry the quote assumes before comparing a single number.
+      </p>
+
+      <h2>2. Edge thickness — where every peel starts</h2>
+      <p>
+        The perimeter is the whole game. A thick edge gives you a sharp step against the skin, and
+        that step is what lifts first when the wearer moves. Once a 5 mm section lifts, the peel
+        travels inward and the bra is off.
+      </p>
+      <p>
+        Specify a tapered edge — we run ours down to roughly 0.8–1.2 mm at the outer rim — and specify
+        that the taper is moulded, not trimmed. Trimmed edges are faster and they are the single most
+        common source of edge lift complaints in feedback.
+      </p>
+
+      <h2>3. Cup moulding and the push-up insert</h2>
+      <p>
+        A push-up adhesive bra is two products pretending to be one: a moulded silicone shell and an
+        internal pad that provides the lift. If they are bonded as an afterthought, the pad migrates
+        and the cup deforms in the wash.
+      </p>
+      <ul>
+        <li>Ask whether the pad is <strong>encapsulated during moulding</strong> or glued in afterwards. Encapsulated, the pad cannot shift.</li>
+        <li>Specify pad thickness by size band. A uniform 8 mm pad across S–XL gives the small sizes a padded look and leaves the large sizes under-supported.</li>
+        <li>Ask for the shore hardness of the shell silicone. Softer conforms better; harder holds shape. Full-bust sizes need a firmer shell with a softer adhesive layer, not one uniform material.</li>
+      </ul>
+
+      <h2>4. Wash survival is a test, not an assumption</h2>
+      <p>
+        "Reusable" means nothing without a number. We test to a defined cycle count — hand wash, air
+        dry, re-apply — and record tack retention at each stage. A spec that says "reusable, 20+ wears"
+        and cannot show the test data behind it is a marketing claim, not a specification.
+      </p>
+      <p>
+        Write the test into the purchase order: cycle count, pass threshold (tack retention percentage),
+        and the failure definition. That single clause has done more for our return rate than any change
+        to the silicone itself.
+      </p>
+
+      <h2>What to put on the spec sheet</h2>
+      <ul>
+        <li>Adhesive chemistry type and target tack retention after 20 cycles</li>
+        <li>Edge taper thickness at the rim, moulded not trimmed</li>
+        <li>Pad encapsulation method and per-size pad thickness</li>
+        <li>Shell shore hardness, stated separately from the adhesive layer</li>
+        <li>Wash test method and pass/fail threshold written into the PO</li>
+      </ul>
+      <p>
+        None of that adds cost. It just moves the decision from the factory floor to the spec sheet,
+        where you can still control it.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Sourcing adhesive bras?</p>
+      <p class="text-sm text-stone mt-1">We mould silicone cups in-house and test adhesive re-use and heat-ageing before shipping. <a href="/contact" class="text-accent hover:underline">Request the material spec</a> or see our <a href="/products/silicone-bras" class="text-accent hover:underline">silicone bra range</a>.</p>
+    </div>
+  <BlogSchema slug="adhesive-bra-spec-guide" entry={entry} />
+
+  </article>
+</BlogLayout>
