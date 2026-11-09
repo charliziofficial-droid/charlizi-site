@@ -22,6 +22,26 @@ const marketOptions = [
   'Global / Multi-region',
 ];
 const categoryOptions = productCategories.map(c => c.name);
+// Preferred payment method (customer profile dimension)
+const paymentOptions = [
+  'T/T (Bank Transfer)',
+  'PayPal',
+  'Credit Card',
+  'Alibaba Trade Assurance',
+  'Western Union',
+  'Not Sure Yet',
+  'Other',
+];
+// How the customer found us — value => display label
+const sourceOptions = [
+  { value: 'Google Search', label: 'Google Search' },
+  { value: 'Alibaba / Made-in-China', label: 'Alibaba / Made-in-China' },
+  { value: 'Social Media', label: 'Social Media (Instagram / TikTok / Facebook…)' },
+  { value: 'Referral', label: 'Referral from a partner or customer' },
+  { value: 'Trade Show / Exhibition', label: 'Trade Show / Exhibition' },
+  { value: 'AI / ChatGPT', label: 'AI Chat (ChatGPT, Gemini, etc.)' },
+  { value: 'Other', label: 'Other' },
+];
 ---
 <FactoryLayout title={title} description={description}>
   <div class="container-site py-12">
@@ -41,7 +61,7 @@ const categoryOptions = productCategories.map(c => c.name);
     <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
       <!-- Form -->
       <div class="lg:col-span-3">
-        <form action="https://formspree.io/f/mqkgegvp" method="POST" class="card p-8 rounded-lg">
+        <form id="inquiry-form" action="https://formspree.io/f/mqkgegvp" method="POST" class="card p-8 rounded-lg">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Full Name -->
             <div>
@@ -90,7 +110,7 @@ const categoryOptions = productCategories.map(c => c.name);
               </select>
             </div>
             <!-- Target Market -->
-            <div class="md:col-span-2">
+            <div>
               <label for="market" class="block text-sm font-medium text-navy mb-1">Target Market</label>
               <select id="market" name="market"
                 class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
@@ -99,6 +119,22 @@ const categoryOptions = productCategories.map(c => c.name);
                   <option value={m}>{m}</option>
                 ))}
               </select>
+            </div>
+            <!-- Preferred Payment Method -->
+            <div>
+              <label for="payment_method" class="block text-sm font-medium text-navy mb-1">Preferred Payment Method <span class="text-stone/50 font-normal">(optional)</span></label>
+              <select id="payment_method" name="payment_method"
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
+                <option value="">Select payment method...</option>
+                {paymentOptions.map(p => (
+                  <option value={p}>{p}</option>
+                ))}
+              </select>
+              <div id="payment_other_wrap" class="hidden mt-2">
+                <input type="text" id="payment_other" name="payment_method_detail" maxlength="80"
+                  class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm"
+                  placeholder="Please specify your payment method" />
+              </div>
             </div>
             <!-- Message -->
             <div class="md:col-span-2">
@@ -114,6 +150,26 @@ const categoryOptions = productCategories.map(c => c.name);
                 Attach files (tech pack, sketches, reference images) — we'll follow up via email to receive attachments securely.
               </p>
             </div>
+            <!-- How Did You Find Us -->
+            <div class="md:col-span-2">
+              <label for="source" class="block text-sm font-medium text-navy mb-1">How Did You Find Us? <span class="text-stone/50 font-normal">(optional)</span></label>
+              <select id="source" name="source"
+                class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm bg-white">
+                <option value="">Select an option...</option>
+                {sourceOptions.map(s => (
+                  <option value={s.value}>{s.label}</option>
+                ))}
+              </select>
+              <div id="source_other_wrap" class="hidden mt-2">
+                <input type="text" id="source_other" name="source_detail" maxlength="80"
+                  class="w-full px-4 py-3 border border-gray-200 rounded focus:outline-none focus:border-accent transition-colors text-sm"
+                  placeholder="Where did you hear about us?" />
+              </div>
+            </div>
+            <!-- Auto-captured attribution (hidden) -->
+            <input type="hidden" id="ref_referrer" name="ref_referrer" value="" />
+            <input type="hidden" id="ref_landing" name="ref_landing" value="" />
+            <input type="hidden" id="ref_utm" name="ref_utm" value="" />
           </div>
 
           <button type="submit" class="btn-primary w-full mt-6 text-base py-4">
@@ -171,4 +227,65 @@ const categoryOptions = productCategories.map(c => c.name);
       </div>
     </div>
   </div>
+
+  <script>
+    // --- "Other" free-text reveal for Payment Method & Source ---
+    function bindOtherToggle(selectId, wrapId, inputId) {
+      const sel = document.getElementById(selectId);
+      const wrap = document.getElementById(wrapId);
+      const input = document.getElementById(inputId);
+      if (!sel || !wrap || !input) return;
+      const sync = () => {
+        const isOther = sel.value === 'Other';
+        wrap.classList.toggle('hidden', !isOther);
+        if (isOther) {
+          input.focus({ preventScroll: true });
+        } else {
+          input.value = '';
+        }
+      };
+      sel.addEventListener('change', sync);
+      sync();
+    }
+    bindOtherToggle('payment_method', 'payment_other_wrap', 'payment_other');
+    bindOtherToggle('source', 'source_other_wrap', 'source_other');
+
+    // --- Auto-capture attribution (referrer + UTM) ---
+    (function captureAttribution() {
+      const refEl = document.getElementById('ref_referrer');
+      const landEl = document.getElementById('ref_landing');
+      const utmEl = document.getElementById('ref_utm');
+      if (!refEl || !landEl || !utmEl) return;
+
+      // Remember the original landing page across internal navigation
+      let landing = '';
+      try {
+        landing = sessionStorage.getItem('cz_landing') || '';
+        if (!landing) {
+          landing = document.referrer || location.href;
+          sessionStorage.setItem('cz_landing', landing);
+        }
+      } catch (e) {
+        landing = document.referrer || location.href;
+      }
+      refEl.value = document.referrer || 'direct';
+      landEl.value = landing;
+
+      // Collect UTM / click-id params from this visit or the remembered landing URL
+      const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'msclkid'];
+      const params = new URLSearchParams(location.search);
+      let landingParams;
+      try {
+        landingParams = new URLSearchParams(new URL(landing).search);
+      } catch (e) {
+        landingParams = new URLSearchParams();
+      }
+      const found = [];
+      keys.forEach((k) => {
+        const v = params.get(k) || landingParams.get(k);
+        if (v) found.push(`${k}=${v}`);
+      });
+      utmEl.value = found.length ? found.join(' | ') : 'none';
+    })();
+  </script>
 </FactoryLayout>
