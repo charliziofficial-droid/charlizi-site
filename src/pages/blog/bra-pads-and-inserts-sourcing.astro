@@ -1,0 +1,182 @@
+---
+// src/pages/blog/bra-pads-and-inserts-sourcing.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['bra-pads-and-inserts-sourcing'];
+---
+<BlogLayout
+  title="Bra Pads and Inserts: Sourcing the Part That Decides Your Shape"
+  description="Foam grades, pad thickness by cup size, moulding versus die-cutting and how inserts move unit cost - a factory view of bra pad sourcing."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Bra Pads and Inserts</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden rounded-xl bg-cream-dark mb-8">
+      <Picture src="blog-bra-anatomy-hero.webp" alt="Internal cup layers and padding components laid out on a workbench at the Charlizi factory" cls="w-full h-full object-cover" priority sizes="(max-width: 768px) calc(100vw - 2rem), 704px" />
+    </div>
+
+    <time class="text-sm text-slate">December 3, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Bra Pads and Inserts: Sourcing the Part That Decides Your Shape</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        The pad is the cheapest component in the bra and the one that decides whether the
+        bra sells twice. It costs between USD 0.06 and USD 0.55 depending on what it is
+        made of, and it is the component most often specified by a single word: "push-up".
+      </p>
+      <p>
+        That word covers at least four different products with different tooling, different
+        failure modes and price points three times apart. This is how we break the category
+        down when a buyer sends a tech pack, and the questions worth asking before the
+        sampling PO goes out.
+      </p>
+
+      <h2>Four things buyers call "the pad"</h2>
+      <p>
+        Before quoting, we ask which one is actually meant. The answer changes the mould,
+        the assembly sequence and the unit cost.
+      </p>
+      <ul>
+        <li><strong>Moulded foam cup.</strong> The whole cup is a single moulded foam piece, usually polyurethane (PU) foam 2–6 mm thick at the apex, thicker at the base. This is the standard seamless and T-shirt bra build. The pad and the cup are the same object.</li>
+        <li><strong>Cut-and-sew insert.</strong> A separate shaped pad dropped into a pocket or bonded between fabric layers of a cut-and-sew bra. Cheaper tooling because it is die-cut from sheet, not moulded.</li>
+        <li><strong>Graduated push-up pad.</strong> Thickness varies across the pad, thickest at the lower outer quadrant, tapering to near zero at the top edge. This is what produces lift rather than volume.</li>
+        <li><strong>Air or gel pocket.</strong> A sealed pocket of air, gel or silicone gel set into the lower cup. Highest unit cost, and the one with a distinct warranty problem - see the leakage section below.</li>
+      </ul>
+      <p>
+        A tech pack that says "push-up padding, 8 mm" and nothing else will be quoted four
+        different ways by four factories, and none of them will match what you pictured.
+        For how the pad integrates with the rest of the construction, the
+        <a href="/blog/bra-anatomy">bra anatomy breakdown</a> covers all twelve components.
+      </p>
+
+      <h2>Foam grades and what each one is actually for</h2>
+      <p>
+        Polyurethane foam is not one material either. The differences that matter are
+        density and cell structure, and both are quoted in numbers you can demand.
+      </p>
+      <ul>
+        <li><strong>Standard PU foam, 25–35 kg/m³.</strong> The workhorse. Fine for T-shirt bras and low-lift moulded cups. Compresses noticeably after 40–60 washes and yellows under UV.</li>
+        <li><strong>High-density PU, 40–55 kg/m³.</strong> Holds shape through more cycles, resists the crease that forms at the apex. Roughly 15–25% more per pad. Worth it on any bra above a C cup.</li>
+        <li><strong>Memory foam (viscoelastic).</strong> Slow recovery, soft hand-feel. Popular for comfort positioning. Poor resilience at high temperature - it can go flat in a warehouse in a hot climate before it ever reaches the customer.</li>
+        <li><strong>Spacer foam.</strong> Two knit faces with a spacer yarn between, so it breathes. Higher cost, and it is a fabric rather than a foam, which means it is cut and moulded differently.</li>
+        <li><strong>Silicone gel.</strong> Used as a fill inside the pad rather than the pad itself. Heavy, realistic hand-feel, and the highest cost per unit in the category.</li>
+      </ul>
+      <p>
+        Ask for density in kg/m³, not "high quality foam". Density is measurable, comparable
+        and the single number that best predicts how the pad looks after a year.
+      </p>
+
+      <h2>Thickness by size band, not one number for the range</h2>
+      <p>
+        The most common costing mistake we see is one pad spec across S to XL. It produces
+        two failures at once: the small sizes look padded and artificial, and the large
+        sizes are under-supported in exactly the quadrant that needs the most.
+      </p>
+      <p>
+        What we run as a starting point, adjusted per cup shape:
+      </p>
+      <ul>
+        <li><strong>32–34 A/B:</strong> 4–6 mm at the apex, 8 mm at the base. Thin, mostly for opacity and nipple coverage.</li>
+        <li><strong>34–36 B/C:</strong> 6–8 mm at the apex, 10–12 mm at the base. The volume band where most fashion push-ups sit.</li>
+        <li><strong>36–38 C/D:</strong> 8 mm at the apex, 12–15 mm at the base, with a wider support footprint rather than a taller one.</li>
+        <li><strong>40+ bands:</strong> shape and support over lift. A thick graduated pad on a large cup looks like a shelf and reads cheap. Most buyers move to a shape-focused mould here.</li>
+      </ul>
+      <p>
+        If your size range runs past D, the grading decisions upstream of the pad matter
+        more than the pad itself - see the <a href="/blog/size-grading">size grading guide</a>
+        for how cups are graded above D and where the wire and strap specs change.
+      </p>
+
+      <h2>Moulded or die-cut: the tooling trade-off</h2>
+      <p>
+        Both routes produce a pad. They differ in what you pay up front and what you pay
+        per piece.
+      </p>
+      <ul>
+        <li><strong>Moulded.</strong> Aluminium or steel tool, typically USD 1,200–3,500 per size for a cup mould. The pad comes out with a controlled thickness profile, a sealed surface and a defined edge, which is why moulded cups hold their shape. Sampling takes 20–30 days because the tool has to be cut.</li>
+        <li><strong>Die-cut.</strong> A steel rule die costs USD 150–400 and arrives in a week. The pad is cut from sheet foam, so thickness is whatever the sheet is - no profile, no sealed edge, and a visible cut edge that crumbles after washing.</li>
+      </ul>
+      <p>
+        Below roughly 500 pcs per size, die-cutting is the rational choice: you are not
+        amortising a mould you may never reuse. Above that, the moulded pad is usually
+        cheaper per unit and dramatically better in wear. The crossover point is worth
+        calculating rather than assuming - it depends on how many sizes the range carries,
+        because the tool cost multiplies per size and the unit saving does not.
+      </p>
+
+      <h2>Where pads fail in the field</h2>
+      <p>
+        Almost every padding complaint we see traces to one of four causes, and all four
+        are decided at sourcing, not at manufacture.
+      </p>
+      <ul>
+        <li><strong>Apex collapse.</strong> Low-density foam, or a pad moulded too thin at the apex to hold tension. Shows as a dent after a few dozen washes.</li>
+        <li><strong>Edge crumbling.</strong> A die-cut edge on open-cell foam. Unsealed cells take water, dry out, and shed. A moulded sealed edge is the only real fix.</li>
+        <li><strong>Pad migration.</strong> A loose insert that shifts inside the pocket and bunches at the side seam. Fixed at pattern stage by tacking, bonding or encapsulating the pad.</li>
+        <li><strong>Gel pocket leakage.</strong> Seam failure in the gel fill, usually along the weld. Ask what the burst test pressure is and whether it is done 100% or by AQL sample.</li>
+      </ul>
+      <p>
+        The migration failure is worth a note because it does not appear in a fit session
+        on a mannequin. It appears on a customer in week three. On adhesive bras the
+        equivalent risk is migration through the adhesive layer - covered in the
+        <a href="/blog/adhesive-bra-spec-guide">adhesive bra spec guide</a>.
+      </p>
+
+      <h2>What pads cost, and what moves the number</h2>
+      <p>
+        Indicative ex-factory pad cost at 1,000 pcs, per pair:
+      </p>
+      <ul>
+        <li><strong>Die-cut standard PU:</strong> USD 0.06–0.14</li>
+        <li><strong>Moulded PU, standard density:</strong> USD 0.15–0.32</li>
+        <li><strong>Moulded PU, high density, graduated:</strong> USD 0.28–0.55</li>
+        <li><strong>Gel-filled pocket:</strong> USD 0.60–1.40</li>
+      </ul>
+      <p>
+        Four levers move that number, in order of impact: gel versus foam, moulded versus
+        die-cut, density, and whether the pad is wrapped in a fabric cover. Fabric covering
+        the pad is easy to leave out of a quote and obvious in the sample - the pad has a
+        visible seam line where the cover was closed.
+      </p>
+
+      <h2>The spec sheet we ask buyers to fill in</h2>
+      <p>
+        Six lines. With these, the quote is a number. Without them, it is a guess.
+      </p>
+      <ul>
+        <li>Pad type: moulded cup, insert, graduated, or gel pocket</li>
+        <li>Foam density in kg/m³, or the fill medium if gel</li>
+        <li>Thickness at apex and at base, per size band</li>
+        <li>Moulded edge or cut edge</li>
+        <li>Encapsulated during assembly, tacked, or loose in a pocket</li>
+        <li>Wash cycles before failure is considered a defect, and the test standard</li>
+      </ul>
+      <p>
+        The last line is the one that gets skipped and the one that decides who pays for
+        returns. "Machine washable" is not a spec. Forty cycles at 40 °C with a defined
+        pass criterion is.
+      </p>
+      <p>
+        If the pad is part of a matched set, read
+        <a href="/blog/bra-set-development">bra set development</a> for how pad, cup and
+        panty rise have to be planned together. And if you are choosing a supplier on
+        this basis, the <a href="/blog/choosing-bra-manufacturer">manufacturer selection
+        guide</a> lists the factory questions that separate an assembler from a moulder.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Sourcing pads and inserts to your spec?</p>
+      <p class="text-sm text-stone mt-1">We cut pad tooling in-house, mould 25–55 kg/m³ PU foam, and quote thickness by size band rather than one number for the range. MOQ 200–300 pcs per design and colourway. <a href="/contact" class="text-accent hover:underline">Send your pad spec</a> or see the <a href="/products/bras" class="text-accent hover:underline">bra range</a>.</p>
+    </div>
+  <BlogSchema slug="bra-pads-and-inserts-sourcing" entry={entry} />
+
+  </article>
+</BlogLayout>

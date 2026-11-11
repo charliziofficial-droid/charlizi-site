@@ -1,0 +1,210 @@
+---
+// src/pages/blog/shapewear-qc-and-durability-testing.astro
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import Picture from '../../components/Picture.astro';
+import BlogSchema from '../../components/BlogSchema.astro';
+import { blogSchemaBySlug } from '../../data/blog-schema';
+
+const entry = blogSchemaBySlug['shapewear-qc-and-durability-testing'];
+---
+<BlogLayout
+  title="Shapewear QC: What to Test Before Bulk Ships"
+  description="The QC protocol we run on compression garments - recovery, seam bond strength, burst, and wash cycles - with pass criteria and sampling plans."
+>
+  <article class="container-site py-12 max-w-3xl">
+    <nav class="breadcrumb">
+      <a href="/">Home</a><span>/</span>
+      <a href="/blog">Blog</a><span>/</span>
+      <span class="text-navy font-medium">Shapewear QC</span>
+    </nav>
+
+    <div class="aspect-[16/10] overflow-hidden rounded-xl bg-cream-dark mb-8">
+      <Picture src="blog-shapewear-detail.webp" alt="Compression garment panel being measured and inspected on a cutting table at the Charlizi factory" cls="w-full h-full object-cover" priority sizes="(max-width: 768px) calc(100vw - 2rem), 704px" />
+    </div>
+
+    <time class="text-sm text-slate">December 10, 2026</time>
+    <h1 class="text-3xl md:text-4xl font-bold text-navy mt-2 mb-8">Shapewear QC: What to Test Before Bulk Ships</h1>
+
+    <div class="prose prose-stone max-w-none">
+      <p class="text-lg text-stone leading-relaxed">
+        Shapewear either works on the third wash or it does not work at all. Everything
+        before that point - the visual check, the measurement, the hand-feel in the
+        inspection room - can pass on a garment that is three weeks away from going slack.
+      </p>
+      <p>
+        This is the test protocol we run before a compression order leaves the building,
+        with the numbers we consider pass, and the sampling plan attached to each test.
+        It is deliberately short. Ten tests, not forty, and each one tied to a field
+        complaint it is designed to prevent.
+      </p>
+
+      <h2>1. Fabric weight and stretch, on the roll not the garment</h2>
+      <p>
+        Test incoming fabric before cutting, not the finished piece. Once a bodysuit is
+        cut and bonded, a faulty roll has already become a rejection.
+      </p>
+      <p>Four samples per roll. Tolerance ±5%.</p>
+      <p>
+        Two more numbers worth recording on the intake sheet.
+      <ul>
+        <li><strong>Weight:</strong> grams per square metre measured on a GSM cutter, four samples per roll, tolerance ±5%. A roll 8% light will feel fine and compress badly.</li>
+        <li><strong>Stretch and recovery:</strong> a strip cycled to a fixed extension, typically 80% of the garment's designed stretch, then released. Recovery should be 92% or better. Powernet below 90% goes slack in the first weeks of wear, not at end of life.</li>
+        <li><strong>Elongation direction:</strong> check separately lengthwise and crosswise. Many shapewear failures are a fabric where the high-stretch direction ended up running around the body instead of down it, and that is a cutting problem the fabric test cannot catch but the marker review will.</li>
+      </ul>
+      <p>
+        Fabric testing is the cheapest place in the whole process to find a problem. Every
+        yard rejected here saves a completed garment later.
+      </p>
+
+      <h2>2. Compression on the finished garment</h2>
+      <p>
+        The headline number, and the one most factories cannot show. Compression is
+        measured with a calibrated band tester at defined body positions - thigh, hip,
+        waist, under-bust - on a specified mannequin size, at a specified point in the
+        wear cycle.
+      </p>
+      <ul>
+        <li><strong>Position matters more than the number.</strong> A single "compression: 15-20 mmHg" figure is a marketing number. Zoned compression has to be checked per zone.</li>
+        <li><strong>Check at wear 0 and after 30 cycles.</strong> The loss of compression over the first month of use is the thing the customer actually experiences.</li>
+        <li><strong>Pass criterion:</strong> no zone falls below the lower bound of its design band after 30 cycles. See the <a href="/blog/shapewear-manufacturing">shapewear manufacturing guide</a> for how the zones are set at development.</li>
+      </ul>
+
+      <h2>3. Seam bond strength</h2>
+      <p>
+        Bonded seams are the highest-risk construction in shapewear. A sewn seam fails
+        loudly and immediately; a bonded seam fails quietly, at a load the customer
+        reaches naturally when she pulls the garment on.
+      </p>
+      <p>
+        Peel test on a cut strip: 180° peel at a defined rate, recorded in newtons per
+        25 mm width. We specify a floor of 6 N/25 mm for bonded edges and 8 N/25 mm on
+        high-tension seams such as the under-bust and the centre front. Below those,
+        edge lift is a matter of when.
+      </p>
+      <p>
+        Sample plan: five strips from each seam type per inspection lot, and always from
+        the seam with the highest tension in the panel - usually not the one the buyer
+        names.
+      </p>
+
+      <h2>4. Seam elongation</h2>
+      <p>
+        The companion test to peel strength, and the one that catches a seam that holds
+        under a straight pull and fails when the garment stretches. Bond the seam, then
+        extend the joined strip to garment stretch.
+      </p>
+      <p>
+        A seam that delaminates at 40% extension will survive the inspection room and
+        fail every time someone sits down. We extend to 80% and require the bond to hold
+        through ten cycles.
+      </p>
+
+      <h2>5. Burst strength</h2>
+      <p>
+        A diaphragm burst test applies pressure to a clamped fabric or panel until it
+        ruptures. It answers the question peel and stretch tests cannot: is there one
+        weak point in this panel that will be the first thing to let go?
+      </p>
+      <p>
+        Reported in kPa. The figure that matters is the minimum, not the mean. One sample
+        at 60% of the batch median means a problem in the fabric or the bond, and the
+        whole lot needs a wider sample before shipping.
+      </p>
+
+      <h2>6. Wash durability</h2>
+      <p>
+        The test that links everything else to the customer's actual experience. There is
+        no single standard, so specify one: we run 30 cycles at 40 °C, gentle cycle, line
+        dry, then repeat measurements 1 to 5.
+      </p>
+      <ul>
+        <li>Dimensional stability: within 5% of the original measurements.</li>
+        <li>Compression: within 10% of the wear-0 zone values.</li>
+        <li>Seam bond: no delamination on any tested seam.</li>
+        <li>Visual: no pilling above grade 4, no colour change above grade 4-5 on the grey scale.</li>
+      </ul>
+      <p>
+        Thirty cycles is roughly three months of twice-weekly wear. Most complaints about
+        shapewear land between month one and month four, which is why the cycle count is
+        not negotiable downwards for cost reasons.
+      </p>
+
+      <h2>7. Colourfastness - washing and crotch contact</h2>
+      <p>
+        Two different tests that get confused. Wash fastness is about the garment not
+        bleeding onto itself or a light load. Perspiration and rubbing fastness is about
+        the garment not discolouring where it contacts skin.
+      </p>
+      <p>
+        On shapewear the second one matters more than buyers expect. A black bodysuit
+        that is fine after washing may grey out at the crotch seam and the under-band
+        within a fortnight. Test with an alkaline perspiration solution, and specify the
+        grade rather than accepting "passed".
+      </p>
+
+      <h2>8. Zipper, hook and hardware strength</h2>
+      <p>
+        Anything metal gets a pull test and a cycle test. Hook-and-eye tape: 500 open and
+        close cycles with a load applied, then visual inspection of the tape. Zips: slider
+        pull strength and 300 cycles through the full run of the zip.
+      </p>
+      <p>
+        The failure to look for is not the hook breaking - it is the tape tearing away
+        from the garment edge, which takes the whole closure with it.
+      </p>
+
+      <h2>9. Construction symmetry</h2>
+      <p>
+        Not a lab test. A measurement test on the finished garment: left and right side
+        seam lengths, panel widths, and compression zone boundaries should not differ by
+        more than 3 mm.
+      </p>
+      <p>
+        Asymmetry is the defect customers notice first, before any of the durability
+        numbers, and it comes from cutting or from the bonding fixture rather than the
+        fabric. It costs almost nothing to check and catches whole lots of misaligned
+        panels.
+      </p>
+
+      <h2>10. Sampling plan and what AQL you are actually buying</h2>
+      <p>
+        Every test above means nothing without a sampling plan. A 100% visual check of a
+        cosmetic defect and a five-strip peel test on a 5,000-piece lot are not the same
+        level of assurance, and buyers often assume they bought the second when they
+        bought the first.
+      </p>
+      <ul>
+        <li><strong>Visual and measurement defect:</strong> AQL 2.5 general inspection level II, the usual apparel standard.</li>
+        <li><strong>Functional defects</strong> (seam delamination, closure failure): AQL 1.0 or tighter, because a functional failure is a return, not a discount.</li>
+        <li><strong>Destructive lab tests:</strong> per inspection lot, not per order, and never waived to save time on a reorder.</li>
+      </ul>
+      <p>
+        Write the sampling plan into the purchase order with the test list attached. A
+        factory that quotes an AQL it cannot support will pass inspection on the paperwork
+        and fail in the field.
+      </p>
+
+      <h2>The pattern behind most shapewear complaints</h2>
+      <p>
+        Nearly all of the failures above share one property: they are invisible at
+        incoming inspection and obvious at week four. That is the whole argument for a
+        documented durability protocol - not because buyers love testing, but because the
+        alternative is discovering the problem in the review section.
+      </p>
+      <p>
+        If the garment sits next to a matching bra or panty in a set, the set has its own
+        consistency requirements - see <a href="/blog/bra-set-development">bra set
+        development</a>. If you are still choosing a supplier, the
+        <a href="/blog/choosing-bra-manufacturer">manufacturer selection guide</a> covers
+        what a factory should be able to show you before you place the order.
+      </p>
+    </div>
+
+    <div class="mt-12 p-6 bg-cream border-l-4 border-accent">
+      <p class="text-sm text-navy font-semibold">Shipping shapewear and want a durability protocol attached?</p>
+      <p class="text-sm text-stone mt-1">We test compression per zone, bond strength at 6–8 N/25 mm, and 30 wash cycles before a lot ships, with the sampling plan written into the PO. MOQ 200–300 pcs per design and colourway. <a href="/contact" class="text-accent hover:underline">Ask for our QC checklist</a> or see the <a href="/products/shapewear" class="text-accent hover:underline">shapewear range</a>.</p>
+    </div>
+  <BlogSchema slug="shapewear-qc-and-durability-testing" entry={entry} />
+
+  </article>
+</BlogLayout>

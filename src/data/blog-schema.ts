@@ -526,6 +526,90 @@ export const blogSchema: BlogSchemaEntry[] = [
       },
     ],
   },
+
+  // ------------------------------------------------------------------ 13
+  {
+    slug: 'bra-pads-and-inserts-sourcing',
+    headline: 'Bra Pads and Inserts: Sourcing the Part That Decides Your Shape',
+    shortTitle: 'Bra Pads and Inserts: Sourcing Guide',
+    description:
+      'Foam grades, pad thickness by cup size, moulding versus die-cutting and how inserts move unit cost - a factory view of bra pad sourcing.',
+    date: '2026-12-03',
+    image: '/factory/images/blog-bra-anatomy-hero.webp',
+    imageAlt: 'Internal cup layers and padding components laid out on a workbench at the Charlizi factory',
+    keywords: ['bra pads', 'push up inserts', 'moulded foam cup', 'PU foam density', 'bra padding manufacturing', 'gel pad sourcing'],
+    section: 'Bra Construction',
+    readMinutes: 9,
+    related: [
+      { label: 'Bra Anatomy: 12 Components', href: '/blog/bra-anatomy' },
+      { label: 'Adhesive Bra Spec Guide', href: '/blog/adhesive-bra-spec-guide' },
+      { label: 'Size Grading Above D Cup', href: '/blog/size-grading' },
+    ],
+    faq: [
+      {
+        q: 'What is the difference between a moulded cup and a cut-and-sew insert?',
+        a: 'A moulded cup is the whole cup made as one foam piece with a formed thickness profile and a sealed edge, which is why it holds shape over time. A cut-and-sew insert is a pad die-cut from sheet foam and dropped into a pocket or bonded between fabric layers; tooling is far cheaper, but thickness is whatever the sheet is and the cut edge degrades in the wash.',
+      },
+      {
+        q: 'What foam density should a bra pad have?',
+        a: 'Standard PU foam runs 25-35 kg/m3 and is fine for T-shirt and low-lift moulded cups. Above a C cup, or anywhere the apex has to hold tension, specify 40-55 kg/m3: the higher density resists the apex collapse that shows up as a dent after 40-60 washes. Always ask for density in kg/m3 rather than a quality adjective.',
+      },
+      {
+        q: 'Should pad thickness be the same across the size range?',
+        a: 'No. One pad spec across S to XL produces two failures at once - padded-looking small sizes and under-supported large sizes. Typical starting points are 4-6 mm at the apex for 32-34 A/B, 6-8 mm for 34-36 B/C and 8 mm with a wider footprint for 36-38 C/D, with shape taking priority over lift above a 40 band.',
+      },
+      {
+        q: 'When is pad tooling worth the investment?',
+        a: 'A cup mould costs roughly USD 1,200-3,500 per size against USD 150-400 for a steel rule die. Below about 500 pcs per size, die-cutting is the rational choice because you are not amortising a mould that may never be reused. Above that, the moulded pad is usually cheaper per unit and much better in wear - and the crossover multiplies with the number of sizes in the range.',
+      },
+      {
+        q: 'How do I stop a pad from migrating inside the cup?',
+        a: 'Decide at pattern stage, not at assembly. Encapsulating the pad during moulding or bonding it between layers prevents movement; a pad left loose in a pocket will bunch at the side seam by the customer\'s third week of wear. This failure never shows up in a mannequin fit session, which is why it needs to be fixed on paper.',
+      },
+    ],
+  },
+
+  // ------------------------------------------------------------------ 14
+  {
+    slug: 'shapewear-qc-and-durability-testing',
+    headline: 'Shapewear QC: What to Test Before Bulk Ships',
+    shortTitle: 'Shapewear QC and Durability Testing',
+    description:
+      'The QC protocol we run on compression garments - recovery, seam bond strength, burst, and wash cycles - with pass criteria and sampling plans.',
+    date: '2026-12-10',
+    image: '/factory/images/blog-shapewear-detail.webp',
+    imageAlt: 'Compression garment panel being measured and inspected on a cutting table at the Charlizi factory',
+    keywords: ['shapewear QC', 'compression garment testing', 'bonded seam peel test', 'fabric recovery test', 'shapewear durability', 'AQL inspection apparel'],
+    section: 'Quality Control',
+    readMinutes: 9,
+    related: [
+      { label: 'Shapewear Manufacturing Guide', href: '/blog/shapewear-manufacturing' },
+      { label: 'How to Choose the Right Bra Manufacturer', href: '/blog/choosing-bra-manufacturer' },
+      { label: 'Bra Set Development', href: '/blog/bra-set-development' },
+    ],
+    faq: [
+      {
+        q: 'What is the most important test on shapewear?',
+        a: 'Compression measured per zone, at wear 0 and again after 30 cycles. A single garment-wide compression figure is a marketing number; zoned compression has to be checked per zone, and the loss of compression over the first month of use is what the customer actually experiences.',
+      },
+      {
+        q: 'What peel strength should a bonded seam hold?',
+        a: 'We specify a floor of 6 N/25 mm for bonded edges and 8 N/25 mm on high-tension seams such as the under-bust and centre front, tested at 180 degrees on a cut strip. Below those figures, edge lift is a question of when rather than whether. Sample five strips per seam type per inspection lot.',
+      },
+      {
+        q: 'How many wash cycles should a durability test run?',
+        a: 'Thirty cycles at 40 degrees on a gentle cycle, line dried, then re-measurement of dimensions, compression, seam bond and visuals. Thirty cycles is roughly three months of twice-weekly wear, and most shapewear complaints land between month one and month four - which is why the cycle count should not be cut for cost.',
+      },
+      {
+        q: 'What AQL should shapewear be inspected to?',
+        a: 'AQL 2.5 at general inspection level II for visual and measurement defects, which is the usual apparel standard. Functional defects such as seam delamination or closure failure should be AQL 1.0 or tighter, because a functional failure becomes a return rather than a markdown.',
+      },
+      {
+        q: 'Why does shapewear fail in the field after passing inspection?',
+        a: 'Because the failure modes that matter - compression loss, bonded seam creep, apex or panel fatigue - are invisible at incoming inspection and obvious at week four. That is the argument for a documented durability protocol tied to the purchase order rather than a visual check alone.',
+      },
+    ],
+  },
 ];
 
 export const blogSchemaBySlug: Record<string, BlogSchemaEntry> = Object.fromEntries(
