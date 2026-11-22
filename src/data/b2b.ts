@@ -105,10 +105,10 @@ export const productCategories: ProductCategory[] = [
   },
   {
     id: 'camisoles',
-    name: 'Camisole Sets',
+    name: 'Camisoles & Tank Tops',
     slug: 'camisoles',
-    description: 'Custom camisole and tank sets, strappy tops, matching two-piece lounge sets. Soft stretch fabrics with lace and mesh trims.',
-    subCategories: ['Cami & Shorts Set', 'Cami & Pants Set', 'Strappy Tank Top', 'Lace Trim Cami', 'Two-Piece Lounge Set'],
+    description: 'Custom camisoles, tank tops and cami underwear sets — strappy tops, built-in shelf bras, matching two-piece lounge sets. Soft stretch fabrics with lace and mesh trims.',
+    subCategories: ['Cami & Shorts Set', 'Cami & Pants Set', 'Strappy Tank Top', 'Lace Trim Cami', 'Tank Top with Built-in Bra', 'Two-Piece Lounge Set'],
     specs: ['Fabric: Cotton/Spandex jersey, Modal, Satin, Mesh', 'Trim: Lace, Ribbon, Scalloped edge', 'Straps: Adjustable, Spaghetti, Wide', 'Closure: Pullover, Hook &amp; eye', 'Sizes: S–XXXL, Plus size available'],
     moq: '200',
     leadTime: '30-45',

@@ -32,7 +32,7 @@ const CATNAME_FULL = {
   'silicone-bras': 'Silicone Bras',
   'panties': 'Panties',
   'shapewear': 'Shapewear & Bodysuits',
-  'camisoles': 'Camisole Sets',
+  'camisoles': 'Camisoles & Tank Tops',
   'sleepwear': 'Sleepwear & Dresses',
   'plus-size-bras': 'Plus Size Bras',
 };
