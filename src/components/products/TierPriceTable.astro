@@ -146,6 +146,17 @@ const skuKey = (sku ?? '').toUpperCase();
         <input type="email" name="email" autocomplete="email" required maxlength="200" />
       </label>
       <label>
+        <span>Phone / WhatsApp <em>*</em></span>
+        <input
+          type="tel"
+          name="phone"
+          autocomplete="tel"
+          required
+          maxlength="60"
+          placeholder="+49 170 1234567"
+        />
+      </label>
+      <label>
         <span>Country / market <em>*</em></span>
         <input type="text" name="market" autocomplete="country-name" required maxlength="100" />
       </label>
@@ -344,6 +355,7 @@ const skuKey = (sku ?? '').toUpperCase();
         var company = String(data.get('company') || '').trim();
         var name = String(data.get('name') || '').trim();
         var email = String(data.get('email') || '').trim();
+        var phone = String(data.get('phone') || '').trim();
         var market = String(data.get('market') || '').trim();
         var quantity = String(data.get('quantity') || '').trim();
 
@@ -351,10 +363,11 @@ const skuKey = (sku ?? '').toUpperCase();
         if (!company) missing.push('company');
         if (!name) missing.push('name');
         if (!email) missing.push('email');
+        if (!phone) missing.push('phone');
         if (!market) missing.push('market');
         if (missing.length) {
           if (errEl) {
-            errEl.textContent = 'Please fill in company, name, email and country.';
+            errEl.textContent = 'Please fill in company, name, email, phone and country.';
             errEl.hidden = false;
           }
           return;
@@ -407,6 +420,14 @@ const skuKey = (sku ?? '').toUpperCase();
         }
         // 补充品类到 message 之外，也把 quantity 覆盖成表单选择值
         data.set('category', category);
+        var msgEl2 = form.querySelector('[data-gate-message]');
+        if (msgEl2) data.set('message', msgEl2.value);
+        var landEl2 = form.querySelector('[data-gate-landing]');
+        if (landEl2) data.set('ref_landing', landEl2.value);
+        var refEl2 = form.querySelector('[data-gate-referrer]');
+        if (refEl2) data.set('ref_referrer', refEl2.value);
+        var utmEl2 = form.querySelector('[data-gate-utm]');
+        if (utmEl2) data.set('ref_utm', utmEl2.value);
 
         var btn = form.querySelector('button[type="submit"]');
         var label = btn ? btn.innerHTML : '';
