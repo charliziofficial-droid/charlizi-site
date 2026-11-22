@@ -1,8 +1,10 @@
 ---
 /**
  * 采购量阶梯报价表
- * - 现货款：30 件起批，四档
- * - 无库存款：300 件起订，两档 + 需沟通提示
+ * - 现货款：阶梯价 + 库存实时确认
+ * - 无库存款：阶梯价 + 需排产沟通
+ *
+ * 起订量以实际库存/产能沟通为准，不在页面上写死数字。
  *
  * gate 控制：
  *   'open'   全部公开（默认，保留 GEO 收益）
@@ -42,8 +44,8 @@ const fmt = (n: number) => n.toFixed(2);
 const stockLabel = stock === 'in-stock' ? 'In stock — ready to ship' : 'Made to order';
 const stockNote =
   stock === 'in-stock'
-    ? `Minimum order ${moq} pcs per colourway. Mixed colours can be combined in one run.`
-    : `Minimum order ${moq} pcs per style. Below ${moq} pcs, contact us — we quote case by case.`;
+    ? 'Order quantity is confirmed against live stock at the time of enquiry. Send your target quantity and colour breakdown and we will confirm availability, the applicable tier rate and the delivery window.'
+    : 'This style is produced to order. Quantity is confirmed against factory capacity at the time of enquiry — send your target volume and we will confirm the run size, rate and schedule.';
 ---
 
 <div class="tier-quote" data-sku={sku}>
@@ -88,8 +90,8 @@ const stockNote =
   {
     stock === 'made-to-order' && (
       <p class="tier-warn">
-        This style is made to order. Volume below {moq} pcs is evaluated case by case — send your
-        target quantity and we will confirm feasibility and price.
+        Produced to order rather than from stock. Send your target quantity and delivery window
+        for a confirmed run size, rate and production slot.
       </p>
     )
   }

@@ -37,12 +37,12 @@ const price = getPricing(s.category, s.slug);
 // 价格门槛：'open' 全部公开（保留 GEO 收益） / 'locked' 单价需登录
 const PRICE_GATE: 'open' | 'locked' = 'open';
 
-// 现货 30 件起批，无库存 300 件起订
+// 起订量：以实际库存/产能沟通为准，不在页面上写死数字
 const moqText = price
   ? price.stock === 'in-stock'
-    ? `${price.moq} pcs per colourway`
-    : `${price.moq} pcs per style (below ${price.moq} on request)`
-  : '30 pcs per colourway';
+    ? 'Confirmed per enquiry against live stock'
+    : 'Confirmed per enquiry (produced to order)'
+  : 'Confirmed per enquiry';
 
 // 阶梯价明细
 const tierOffers = (price?.tiers ?? [])
