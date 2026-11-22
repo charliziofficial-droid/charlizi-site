@@ -99,18 +99,18 @@ const productSchema = {
     ? {
         '@type': 'AggregateOffer',
         priceCurrency: 'USD',
-        lowPrice: price.low.toFixed(2),
-        highPrice: price.high.toFixed(2),
+        lowPrice: (price.tiers.length ? Math.min(...price.tiers.map((t: { price: number }) => t.price)) : 0).toFixed(2),
+        highPrice: (price.tiers.length ? Math.max(...price.tiers.map((t: { price: number }) => t.price)) : 0).toFixed(2),
         offerCount: String(tierOffers.length || 1),
         availability:
           price.stock === 'in-stock'
             ? 'https://schema.org/InStock'
             : 'https://schema.org/PreOrder',
-        // 现货 30 件起批，无库存 300 件起订
+        // 起订量：以实际库存/产能沟通为准，schema 用最低档位起点
         eligibleQuantity: {
           '@type': 'QuantitativeValue',
-          minValue: price.moq,
-          maxValue: 1000,
+          minValue: price.tiers.length ? Math.min(...price.tiers.map((t: { min: number }) => t.min)) : price.moq,
+          maxValue: price.tiers.length ? Math.max(...price.tiers.map((t: { max: number }) => t.max)) : 1000,
           unitCode: 'C62',
         },
         ...(tierOffers.length ? { offers: tierOffers } : {}),

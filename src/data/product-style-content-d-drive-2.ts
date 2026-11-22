@@ -39,6 +39,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -190,6 +194,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -345,6 +353,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Longline underband"
       },
@@ -493,6 +505,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -634,6 +650,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -778,6 +798,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -925,6 +949,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -1068,6 +1096,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -1209,6 +1241,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -1360,6 +1396,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -1502,6 +1542,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Stretch satin"
+      },
+      {
+        "label": "Composition",
+        "value": "92% Polyester; 8% Elastane"
       },
       {
         "label": "Cup shape",
@@ -1647,6 +1691,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Longline underband"
       },
@@ -1788,6 +1836,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -1932,6 +1984,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -2098,6 +2154,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Longline underband"
       },
@@ -2239,6 +2299,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -2543,6 +2607,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -2688,6 +2756,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -2830,6 +2902,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -2985,6 +3061,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -3126,6 +3206,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -3419,6 +3503,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -3560,6 +3648,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -3706,6 +3798,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Full coverage"
       },
@@ -3842,6 +3938,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -3987,6 +4087,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -4128,6 +4232,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Power mesh"
+      },
+      {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
       },
       {
         "label": "Cup shape",
@@ -4278,6 +4386,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -4419,6 +4531,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -4564,6 +4680,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -4705,6 +4825,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -4850,6 +4974,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -5291,6 +5419,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Combed cotton"
       },
       {
+        "label": "Composition",
+        "value": "92% Combed Cotton; 8% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Full coverage"
       },
@@ -5430,6 +5562,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Combed cotton"
       },
       {
+        "label": "Composition",
+        "value": "92% Combed Cotton; 8% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Full coverage"
       },
@@ -5567,6 +5703,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -5714,6 +5854,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -5858,6 +6002,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
+      },
+      {
         "label": "Cup shape",
         "value": "Longline underband"
       },
@@ -6000,6 +6148,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -6155,6 +6307,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Demi cup"
       },
@@ -6296,6 +6452,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Combed cotton"
+      },
+      {
+        "label": "Composition",
+        "value": "92% Combed Cotton; 8% Elastane"
       },
       {
         "label": "Cup shape",
@@ -6441,6 +6601,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -6582,6 +6746,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Sheer fabric"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane"
       },
       {
         "label": "Cup shape",
@@ -6747,6 +6915,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -6891,6 +7063,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -7032,6 +7208,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -7178,6 +7358,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -7321,6 +7505,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -7462,6 +7650,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -7608,6 +7800,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Stretch satin"
       },
       {
+        "label": "Composition",
+        "value": "92% Polyester; 8% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -7749,6 +7945,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -7895,6 +8095,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Longline underband"
       },
@@ -8036,6 +8240,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -8181,6 +8389,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -8324,6 +8536,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -8465,6 +8681,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -8615,6 +8835,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Longline underband"
       },
@@ -8759,6 +8983,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Stretch satin"
       },
       {
+        "label": "Composition",
+        "value": "92% Polyester; 8% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -8900,6 +9128,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -9051,6 +9283,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -9199,6 +9435,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -9340,6 +9580,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -9492,6 +9736,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -9634,6 +9882,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -9784,6 +10036,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -9932,6 +10188,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -10073,6 +10333,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Power mesh"
+      },
+      {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
       },
       {
         "label": "Cup shape",
@@ -10217,6 +10481,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -10367,6 +10635,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Full coverage"
       },
@@ -10508,6 +10780,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -10653,6 +10929,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Stretch satin"
       },
       {
+        "label": "Composition",
+        "value": "92% Polyester; 8% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -10794,6 +11074,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -10945,6 +11229,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -11086,6 +11374,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -11389,6 +11681,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -11530,6 +11826,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -11675,6 +11975,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Demi cup"
       },
@@ -11816,6 +12120,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -11961,6 +12269,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -12103,6 +12415,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -12250,6 +12566,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -12391,6 +12711,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -12544,6 +12868,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -12837,6 +13165,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -12980,6 +13312,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -13121,6 +13457,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -13268,6 +13608,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -13411,6 +13755,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -13552,6 +13900,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -13698,6 +14050,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -13839,6 +14195,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -13985,6 +14345,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -14127,6 +14491,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -14272,6 +14640,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Peached microfiber"
       },
       {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Demi cup"
       },
@@ -14413,6 +14785,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -14557,6 +14933,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -14704,6 +15084,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Demi cup"
       },
@@ -14845,6 +15229,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -14991,6 +15379,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -15133,6 +15525,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -15430,6 +15826,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
+      },
+      {
         "label": "Cup shape",
         "value": "Longline underband"
       },
@@ -15572,6 +15972,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Peached microfiber"
+      },
+      {
+        "label": "Composition",
+        "value": "85% Polyamide; 15% Elastane"
       },
       {
         "label": "Cup shape",
@@ -15876,6 +16280,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Full coverage"
       },
@@ -16018,6 +16426,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -16310,6 +16722,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -16451,6 +16867,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Power mesh"
+      },
+      {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
       },
       {
         "label": "Cup shape",
@@ -16597,6 +17017,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -16738,6 +17162,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Floral lace"
+      },
+      {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
       },
       {
         "label": "Cup shape",
@@ -16885,6 +17313,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
+      },
+      {
         "label": "Cup shape",
         "value": "Full coverage"
       },
@@ -17029,6 +17461,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -17167,6 +17603,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Mixed fabrication"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Longline underband"
       },
@@ -17303,6 +17743,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide; 14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -17591,6 +18035,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "88% Polyamide; 12% Elastane (lace shell)"
+      },
+      {
         "label": "Cup shape",
         "value": "Balconette cut"
       },
@@ -17733,6 +18181,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Power mesh"
+      },
+      {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
       },
       {
         "label": "Cup shape",
@@ -17879,6 +18331,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
+      },
+      {
         "label": "Cup shape",
         "value": "Full coverage"
       },
@@ -18021,6 +18477,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Power mesh"
+      },
+      {
+        "label": "Composition",
+        "value": "82% Polyamide; 18% Elastane (power mesh)"
       },
       {
         "label": "Cup shape",
@@ -18326,6 +18786,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -18479,6 +18943,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -18629,6 +19097,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
@@ -19844,6 +20316,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -20908,6 +21384,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -21197,6 +21677,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -21339,6 +21823,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide; 10% Elastane (circular knit)"
       },
       {
         "label": "Cup shape",
