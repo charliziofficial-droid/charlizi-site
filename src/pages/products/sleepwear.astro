@@ -89,7 +89,7 @@ const description = "Custom sleepwear OEM manufacturer. Nightgowns, chemises, ro
               <a href={`/products/${cat.id}/${style.slug}`} class="absolute inset-0 z-10" aria-label={style.title}></a>
               <div class="aspect-[4/5] bg-white overflow-hidden">
                 <img
-                  src={style.images.find((i) => i.view === 'front')?.file ?? style.images[0].file}
+                  src={(style.images.find((i) => i.view === 'front')?.file ?? style.images[0].file).replace(/\.webp$/, '-card.webp')}
                   alt={style.images.find((i) => i.view === 'front')?.alt ?? style.title}
                   class="w-full h-full object-contain"
                   width="900"
@@ -101,16 +101,11 @@ const description = "Custom sleepwear OEM manufacturer. Nightgowns, chemises, ro
                 <h3 class="text-sm font-semibold text-navy leading-snug">{style.title}</h3>
                 {style.images.length > 1 && (
                   <div class="flex gap-2 mt-3">
-                    {style.images.map((img) => (
-                      <img
-                        src={img.file}
-                        alt={`${style.title} - ${img.view} view thumbnail`}
-                        class="w-10 h-12 object-contain border border-gray-200 bg-white"
-                        width="120"
-                        height="150"
-                        loading="lazy"
-                      />
-                    ))}
+                    {style.images.length > 1 && (
+                  <p class="text-xs text-stone mt-2">
+                    {style.images.length} product views available
+                  </p>
+                )}
                   </div>
                 )}
                 <p class="text-xs text-stone mt-3">Custom fabric · Custom color · OEM/ODM</p>
