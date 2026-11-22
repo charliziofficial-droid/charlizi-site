@@ -6,6 +6,7 @@ import FactoryLayout from '../../../layouts/FactoryLayout.astro';
 import { styleContent, type StyleContent } from '../../../data/product-style-content';
 import { styleExtra } from '../../../data/product-style-content-extra';
 import { styleDDrive2 } from '../../../data/product-style-content-d-drive-2';
+import { getPricing } from '../../../data/product-pricing';
 import { CONTACT } from '../../../data/contact';
 
 // 注意：Astro 会把 getStaticPaths 提升到模块级执行，它无法访问同文件里的
@@ -23,13 +24,57 @@ const front = s.images.find((i) => i.view === 'front') ?? s.images[0];
 const backs = s.images.filter((i) => i !== front);
 const related = s.related;
 
+// SKU 从 specs 的 "Style No." 行取；没有则回退到 slug 大写
+const styleNo =
+  s.specs?.find((x: { label: string; value: string }) => /style\s*no/i.test(x.label))?.value ?? null;
+
 const canonical = `https://charlizi.com/products/${s.category}/${s.slug}/`;
+
+// 报价表价格（EXW 阶梯价）。source=estimated 表示该 SKU 未录入报价表，用了品类中位数。
+const price = getPricing(s.category, s.slug);
+
+// 阶梯价明细：只有真实报价才输出，推算价不对外暴露分档。
+const tierOffers =
+  price && price.source === 'quote'
+    ? [
+        { min: 500, max: 1000, p: price.p500 },
+        { min: 300, max: 500, p: price.p300 },
+        { min: 100, max: 300, p: price.p100 },
+        { min: 30, max: 100, p: price.p30 },
+      ]
+        .filter((t) => typeof t.p === 'number' && t.p > 0)
+        .map((t) => ({
+          '@type': 'Offer',
+          price: t.p.toFixed(2),
+          priceCurrency: 'USD',
+          eligibleQuantity: {
+            '@type': 'QuantitativeValue',
+            minValue: t.min,
+            maxValue: t.max,
+            unitCode: 'C62',
+          },
+          availability: 'https://schema.org/InStock',
+          seller: { '@type': 'Organization', name: CONTACT.company },
+        }))
+    : [];
 
 const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: s.baseTitle,
   description: s.seoDescription,
+  sku: styleNo ?? undefined,
+  mpn: styleNo ?? undefined,
+  material: price?.material || s.specs?.find((x: { label: string; value: string }) => /fabric/i.test(x.label))?.value || undefined,
+  color:
+    price?.colors?.length
+      ? price.colors.join(', ')
+      : s.specs?.find((x: { label: string; value: string }) => /^colou?r$/i.test(x.label))?.value
+          ?.replace(/\s*\(Pantone[^)]*\)/i, '') || undefined,
+  size:
+    price?.sizes?.length
+      ? price.sizes.join(', ')
+      : s.specs?.find((x: { label: string; value: string }) => /size/i.test(x.label))?.value || undefined,
   image: s.images.map((i) => `https://charlizi.com${i.file}`),
   brand: { '@type': 'Brand', name: 'Charlizi' },
   manufacturer: {
@@ -44,15 +89,29 @@ const productSchema = {
     },
   },
   category: s.categoryName,
-  offers: {
-    '@type': 'Offer',
-    availability: 'https://schema.org/InStock',
-    priceCurrency: 'USD',
-    priceSpecification: {
-      '@type': 'PriceSpecification',
-      valueAddedTaxIncluded: false,
-    },
-    seller: { '@type': 'Organization', name: CONTACT.company },
+  offers: price
+    ? {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'USD',
+        lowPrice: price.low.toFixed(2),
+        highPrice: price.high.toFixed(2),
+        offerCount: String(tierOffers.length || 1),
+        availability: 'https://schema.org/InStock',
+        // 小单起订量：报价表 30-1000 pcs 四档
+        eligibleQuantity: {
+          '@type': 'QuantitativeValue',
+          minValue: 30,
+          maxValue: 1000,
+          unitCode: 'C62',
+        },
+        ...(tierOffers.length ? { offers: tierOffers } : {}),
+        seller: { '@type': 'Organization', name: CONTACT.company },
+      }
+    : undefined,
+  hasMerchantReturnPolicy: {
+    '@type': 'MerchantReturnPolicy',
+    returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+    merchantReturnDays: 30,
   },
 };
 
