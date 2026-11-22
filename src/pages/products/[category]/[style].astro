@@ -49,9 +49,16 @@ const tierPrices = (price?.tiers ?? [])
   .filter((p) => typeof p === 'number' && p > 0);
 const priceLow = tierPrices.length ? Math.min(...tierPrices) : 0;
 const priceHigh = tierPrices.length ? Math.max(...tierPrices) : 0;
-const priceRangeText = tierPrices.length
-  ? `USD ${priceLow.toFixed(2)}–${priceHigh.toFixed(2)}`
-  : null;
+
+// 所有档位同价时区间没有意义（USD 1.85–1.85 看着像笔误），改成单一价。
+// 这类款的价格在表格里直接公开，不需要登记。
+const hasPrice = tierPrices.length > 0;
+const isFlatPrice = hasPrice && Math.abs(priceHigh - priceLow) < 0.005;
+const priceRangeText = !hasPrice
+  ? null
+  : isFlatPrice
+    ? `USD ${priceLow.toFixed(2)}`
+    : `USD ${priceLow.toFixed(2)}–${priceHigh.toFixed(2)}`;
 const minQty = price?.tiers?.length
   ? Math.min(...price.tiers.map((t: { min: number }) => t.min))
   : (price?.moq ?? 0);
@@ -60,9 +67,12 @@ const maxQty = price?.tiers?.length
   : 1000;
 
 // GEO：一句可被整句摘走的定价事实（放在正文，跟着 specs 一起被模型读到）
-const pricingAnswer = priceRangeText
-  ? `Wholesale pricing for this style runs ${priceRangeText} per piece EXW, scaling with order quantity from ${minQty} to ${maxQty}+ pieces. The full tier table is released to registered buyers on the page; formal quotations are issued within 24 hours of enquiry.`
-  : null;
+// 单一价款的区间描述要去掉，否则会和「已公开」的事实矛盾。
+const pricingAnswer = !priceRangeText
+  ? null
+  : isFlatPrice
+    ? `Wholesale pricing for this style is ${priceRangeText} per piece EXW across the order range from ${minQty} to ${maxQty}+ pieces; the same rate applies at every quantity tier. Formal quotations are issued within 24 hours of enquiry.`
+    : `Wholesale pricing for this style runs ${priceRangeText} per piece EXW, scaling with order quantity from ${minQty} to ${maxQty}+ pieces. The full tier table is released to registered buyers on the page; formal quotations are issued within 24 hours of enquiry.`;
 
 const productSchema = {
   '@context': 'https://schema.org',
@@ -272,12 +282,17 @@ const faqSchema = {
         {priceRangeText && (
           <div class="price-teaser mt-5">
             <div class="price-teaser-row">
-              <span class="price-teaser-label">Wholesale price range</span>
+              <span class="price-teaser-label">
+                {isFlatPrice ? 'Wholesale price' : 'Wholesale price range'}
+              </span>
               <span class="price-teaser-value">{priceRangeText}<em> / pc EXW</em></span>
             </div>
             <p class="price-teaser-note">
-              Full tier pricing by order quantity is released to registered buyers below.
-              Registration takes 20 seconds and unlocks every style on this site.
+              {
+                isFlatPrice
+                  ? 'The same rate applies at every order quantity — no registration needed to see it.'
+                  : 'Full tier pricing by order quantity is released to registered buyers below. Registration takes 20 seconds and unlocks every style on this site.'
+              }
             </p>
             <a href="#tier-pricing" class="price-teaser-link">See pricing by quantity →</a>
           </div>

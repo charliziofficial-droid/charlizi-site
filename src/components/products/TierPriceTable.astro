@@ -48,6 +48,11 @@ const fmt = (n: number) => n.toFixed(2);
 const minPrice = Math.min(...tiers.map((t) => t.price));
 const maxPrice = Math.max(...tiers.map((t) => t.price));
 
+// 全表只有一个价格（所有档位同价）时，区间本身已经等于单价。
+// 再要求客户填表「解锁」一个已经写在页面上的数字，只是浪费客户时间、
+// 也会让人怀疑站点在收集线索而不是真的想报价——这类款直接公开。
+const singlePrice = Math.abs(maxPrice - minPrice) < 0.005;
+
 const stockLabel = stock === 'in-stock' ? 'In stock — ready to ship' : 'Made to order';
 const stockNote =
   stock === 'in-stock'
@@ -62,7 +67,7 @@ const uid = `tq-${(sku ?? 'x').toLowerCase().replace(/[^a-z0-9]/g, '')}`;
 const skuKey = (sku ?? '').toUpperCase();
 ---
 
-<div class="tier-quote" data-sku={sku} data-uid={uid} data-gated="1">
+<div class="tier-quote" data-sku={sku} data-uid={uid} data-gated={singlePrice ? '0' : '1'}>
   <div class="tier-head">
     <h2>Wholesale Pricing by Order Quantity</h2>
     <span class:list={['badge', stock === 'in-stock' ? 'badge-stock' : 'badge-mto']}>{stockLabel}</span>
@@ -83,14 +88,23 @@ const skuKey = (sku ?? '').toUpperCase();
         tiers.map((t, idx) => (
           <tr>
             <td class="qty">
-              {t.min}–{t.max === 1000 ? '1,000+' : t.max} pcs
+              {t.min}–{t.max === 1000 ? '1,000+' : Number(t.max) - 1} pcs
             </td>
             <td class="price">
               {/* 真实单价由 JS 在登记成功后填入，HTML 里只有空壳 */}
               <span class="val" data-tier-idx={idx} hidden></span>
-              <span class="mask" aria-hidden="true">
-                {idx === 0 ? `${fmt(minPrice)}–${fmt(maxPrice)}` : '••••'}
-              </span>
+              {/*
+                登记前一律显示掩码，连区间也不放在表格里。
+                曾经在首行显示 minPrice–maxPrice，但当只有两档时该区间恰好等于
+                两档单价（如 M004 的 1.85–2.34＝第二档∶第一档），等于直接泄露。
+                区间已在上方 pricing-answer 正文里以文字形式公开，这里无需重复。
+              */}
+              {singlePrice ? (
+                /* 价格本身已经以区间文字公开，直接显示，不做无意义的登记 */
+                <span class="val publicly-shown"><span class="cur">USD</span> {fmt(t.price)}</span>
+              ) : (
+                <span class="mask" aria-hidden="true">••••</span>
+              )}
             </td>
             <td class="lead">{t.min >= 500 ? '20–30 days' : '30–45 days'}</td>
           </tr>
@@ -99,7 +113,8 @@ const skuKey = (sku ?? '').toUpperCase();
     </tbody>
   </table>
 
-  <!-- 解锁条：登记前显示，登记/解锁后隐藏 -->
+  <!-- 解锁条：登记前显示，登记/解锁后隐藏。单一价格款无需登记，整块不渲染 -->
+  {!singlePrice && (
   <div class="gate-bar" data-gate-bar>
     <div class="gate-copy">
       <strong>Wholesale prices are shown to registered buyers.</strong>
@@ -112,6 +127,7 @@ const skuKey = (sku ?? '').toUpperCase();
       Reveal wholesale price
     </button>
   </div>
+  )}
 
   <!-- 登记表单：默认隐藏 -->
   <form class="gate-form" data-gate-form hidden novalidate>
@@ -269,6 +285,10 @@ const skuKey = (sku ?? '').toUpperCase();
       var openBtn = box.querySelector('[data-gate-open]');
       var form = box.querySelector('[data-gate-form]');
       var errEl = box.querySelector('[data-gate-error]');
+
+      // 单一价格款在服务端已标记为解锁（data-gated="0"），价格已直接写在表格里。
+      // 这里不要再跑任何解锁逻辑，否则会把公开的价格重新盖住。
+      if (box.getAttribute('data-gated') === '0' && !bar) return;
 
       var stored = readUnlock();
       if (stored && stored.email) {
@@ -583,6 +603,13 @@ const skuKey = (sku ?? '').toUpperCase();
     border: 1px solid #e5e1da;
     border-radius: 0.5rem;
     background: #fff;
+  }
+  /* 显式保证 hidden 生效，避免其他 display 声明把它顶掉 */
+  .gate-form[hidden],
+  .gate-bar[hidden],
+  .gate-foot[hidden],
+  .gate-error[hidden] {
+    display: none !important;
   }
   .gate-form-title {
     font-size: 0.95rem;
