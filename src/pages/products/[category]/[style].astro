@@ -34,9 +34,6 @@ const canonical = `https://charlizi.com/products/${s.category}/${s.slug}/`;
 // 报价表价格（EXW 阶梯价）。source=reference 表示该 SKU 未录入报价表，按同款参考定价。
 const price = getPricing(s.category, s.slug);
 
-// 价格门槛：'open' 全部公开（保留 GEO 收益） / 'locked' 单价需登录
-const PRICE_GATE: 'open' | 'locked' = 'open';
-
 // 起订量：以实际库存/产能沟通为准，不在页面上写死数字
 const moqText = price
   ? price.stock === 'in-stock'
@@ -44,25 +41,28 @@ const moqText = price
     : 'Confirmed per enquiry (produced to order)'
   : 'Confirmed per enquiry';
 
-// 阶梯价明细
-const tierOffers = (price?.tiers ?? [])
-  .filter((t) => typeof t.price === 'number' && t.price > 0)
-  .map((t) => ({
-    '@type': 'Offer',
-    price: t.price.toFixed(2),
-    priceCurrency: 'USD',
-    eligibleQuantity: {
-      '@type': 'QuantitativeValue',
-      minValue: t.min,
-      maxValue: t.max,
-      unitCode: 'C62',
-    },
-    availability:
-      price.stock === 'in-stock'
-        ? 'https://schema.org/InStock'
-        : 'https://schema.org/PreOrder',
-    seller: { '@type': 'Organization', name: CONTACT.company },
-  }));
+// 价格区间（只露区间，不露分档明细）。这是 GEO 的关键燃料：
+// AI 摘要需要能抽出一句带数字的答案，"USD 1.85-2.34 per piece" 就够用，
+// 但分档单价是报价表核心资产，必须登记后才给。
+const tierPrices = (price?.tiers ?? [])
+  .map((t) => t.price)
+  .filter((p) => typeof p === 'number' && p > 0);
+const priceLow = tierPrices.length ? Math.min(...tierPrices) : 0;
+const priceHigh = tierPrices.length ? Math.max(...tierPrices) : 0;
+const priceRangeText = tierPrices.length
+  ? `USD ${priceLow.toFixed(2)}–${priceHigh.toFixed(2)}`
+  : null;
+const minQty = price?.tiers?.length
+  ? Math.min(...price.tiers.map((t: { min: number }) => t.min))
+  : (price?.moq ?? 0);
+const maxQty = price?.tiers?.length
+  ? Math.max(...price.tiers.map((t: { max: number }) => t.max))
+  : 1000;
+
+// GEO：一句可被整句摘走的定价事实（放在正文，跟着 specs 一起被模型读到）
+const pricingAnswer = priceRangeText
+  ? `Wholesale pricing for this style runs ${priceRangeText} per piece EXW, scaling with order quantity from ${minQty} to ${maxQty}+ pieces. The full tier table is released to registered buyers on the page; formal quotations are issued within 24 hours of enquiry.`
+  : null;
 
 const productSchema = {
   '@context': 'https://schema.org',
@@ -95,25 +95,24 @@ const productSchema = {
     },
   },
   category: s.categoryName,
-  offers: price
+  // 只保留价格区间，不含分档单价 —— 分档单价需登记后在前端解锁。
+  offers: priceRangeText
     ? {
         '@type': 'AggregateOffer',
         priceCurrency: 'USD',
-        lowPrice: (price.tiers.length ? Math.min(...price.tiers.map((t: { price: number }) => t.price)) : 0).toFixed(2),
-        highPrice: (price.tiers.length ? Math.max(...price.tiers.map((t: { price: number }) => t.price)) : 0).toFixed(2),
-        offerCount: String(tierOffers.length || 1),
+        lowPrice: priceLow.toFixed(2),
+        highPrice: priceHigh.toFixed(2),
+        offerCount: String(price?.tiers?.length || 1),
         availability:
-          price.stock === 'in-stock'
+          price?.stock === 'in-stock'
             ? 'https://schema.org/InStock'
             : 'https://schema.org/PreOrder',
-        // 起订量：以实际库存/产能沟通为准，schema 用最低档位起点
         eligibleQuantity: {
           '@type': 'QuantitativeValue',
-          minValue: price.tiers.length ? Math.min(...price.tiers.map((t: { min: number }) => t.min)) : price.moq,
-          maxValue: price.tiers.length ? Math.max(...price.tiers.map((t: { max: number }) => t.max)) : 1000,
+          minValue: minQty,
+          maxValue: maxQty,
           unitCode: 'C62',
         },
-        ...(tierOffers.length ? { offers: tierOffers } : {}),
         seller: { '@type': 'Organization', name: CONTACT.company },
       }
     : undefined,
@@ -145,6 +144,64 @@ const faqSchema = {
   })),
 };
 ---
+
+<style>
+  .price-teaser {
+    padding: 1rem 1.1rem;
+    border: 1px solid #e3ddd3;
+    border-radius: 0.5rem;
+    background: #fbf9f5;
+  }
+  .price-teaser-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .price-teaser-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #8b857c;
+  }
+  .price-teaser-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1f2a44;
+    font-variant-numeric: tabular-nums;
+  }
+  .price-teaser-value em {
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #8b857c;
+  }
+  .price-teaser-note {
+    margin: 0.5rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #6f6a62;
+  }
+  .price-teaser-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #8a5314;
+    text-decoration: underline;
+  }
+  .pricing-answer {
+    margin: 1.25rem 0 0;
+    max-width: 42rem;
+    padding: 0.85rem 1rem;
+    border-left: 3px solid #1f2a44;
+    background: #f6f5f2;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #45403a;
+  }
+</style>
 
 <FactoryLayout title={s.seoTitle} description={s.seoDescription} canonical={canonical}>
   <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
@@ -211,11 +268,25 @@ const faqSchema = {
         <p class="text-xs text-stone mt-4">
           Reply within 24 hours · MOQ {moqText}
         </p>
+
+        {priceRangeText && (
+          <div class="price-teaser mt-5">
+            <div class="price-teaser-row">
+              <span class="price-teaser-label">Wholesale price range</span>
+              <span class="price-teaser-value">{priceRangeText}<em> / pc EXW</em></span>
+            </div>
+            <p class="price-teaser-note">
+              Full tier pricing by order quantity is released to registered buyers below.
+              Registration takes 20 seconds and unlocks every style on this site.
+            </p>
+            <a href="#tier-pricing" class="price-teaser-link">See pricing by quantity →</a>
+          </div>
+        )}
       </div>
     </div>
 
     <!-- Specifications -->
-    <section class="mb-16">
+    <section class="mb-16" id="tier-pricing">
       <span class="section-label">Specifications</span>
       <h2 class="section-title text-2xl md:text-3xl">{s.baseTitle} Details</h2>
       <div class="card p-6 mt-8 rounded-lg max-w-2xl">
@@ -246,13 +317,16 @@ const faqSchema = {
       </div>
 
       {price && (
-        <TierPriceTable
-          tiers={price.tiers}
-          moq={price.moq}
-          stock={price.stock}
-          gate={PRICE_GATE}
-          sku={price.sku}
-        />
+        <>
+          {pricingAnswer && <p class="pricing-answer">{pricingAnswer}</p>}
+          <TierPriceTable
+            tiers={price.tiers}
+            moq={price.moq}
+            stock={price.stock}
+            sku={price.sku}
+            productName={s.baseTitle}
+          />
+        </>
       )}
     </section>
     <section class="bg-cream rounded-lg p-8 mb-16">

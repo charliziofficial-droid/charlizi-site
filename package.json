@@ -4,9 +4,9 @@
   "description": "Charlizi - Premium Lingerie & Sleepwear Brand",
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build && python scripts/gen_sitemap.py",
-    "build:astro": "astro build",
+    "dev": "node scripts/gen_tier_prices_json.cjs && astro dev",
+    "build": "node scripts/gen_tier_prices_json.cjs && astro build && python scripts/gen_sitemap.py",
+    "build:astro": "node scripts/gen_tier_prices_json.cjs && astro build",
     "sitemap": "python scripts/gen_sitemap.py",
     "indexnow": "python scripts/indexnow.py",
     "submit": "python scripts/indexnow.py",
