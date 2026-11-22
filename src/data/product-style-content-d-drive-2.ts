@@ -12,8 +12,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Floral Lace Bralette — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Lace Bralette OEM Wholesale | Charlizi",
-    "seoDescription": "Floral Lace Bralette (A1123) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
-    "intro": "Our Floral Lace Bralette uses a floral lace shell. The neckline is a triangle cup with a single vertical seam, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
+    "seoDescription": "Floral Lace Bralette (A1123) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Our Floral Lace Bralette uses a floral lace shell. The neckline is a triangle cup with a single vertical seam, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Minimum run is 300 pcs per style. Below that threshold we price case by case rather than publishing a fixed rate.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Triangle cup: a triangle cup with a single vertical seam.",
@@ -52,7 +52,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -83,7 +83,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -165,8 +165,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Floral Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Black Floral Lace Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Black Floral Lace Bra (A2172) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
-    "intro": "Our Black Floral Lace Bra uses a floral lace shell. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "Black Floral Lace Bra (A2172) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Our Black Floral Lace Bra uses a floral lace shell. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Balconette cut: a balconette cut with a horizontal top edge that lifts from below.",
@@ -205,7 +205,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -236,7 +236,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -318,7 +318,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "White Floral Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "White Floral Lace Bra OEM Wholesale | Charlizi",
-    "seoDescription": "White Floral Lace Bra (A2748) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
+    "seoDescription": "White Floral Lace Bra (A2748) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "White Floral Lace Bra starts with a floral lace shell over a soft stretch backing. The neckline is a longline underband that runs down the ribcage, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
@@ -389,7 +389,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -466,8 +466,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Floral Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Lace Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Floral Lace Bra (A3139) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
-    "intro": "Floral Lace Bra starts with a floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "Floral Lace Bra (A3139) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Floral Lace Bra starts with a floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -506,7 +506,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -537,7 +537,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -609,8 +609,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Floral Lace Balconette Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Lace Balconette Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Floral Lace Balconette Bra (A3166) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
-    "intro": "Floral Lace Balconette Bra starts with a floral lace shell over a soft stretch backing. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "Floral Lace Balconette Bra (A3166) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 300 pcs per style.",
+    "intro": "Floral Lace Balconette Bra starts with a floral lace shell over a soft stretch backing. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Balconette cut: a balconette cut with a horizontal top edge that lifts from below.",
@@ -649,7 +649,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -680,7 +680,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -824,7 +824,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -898,7 +898,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Lace Bralette — OEM Wholesale Manufacturer",
     "seoTitle": "Black Lace Bralette OEM Wholesale | Charlizi",
-    "seoDescription": "Black Lace Bralette (B2449) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Black Lace Bralette (B2449) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "We produce Black Lace Bralette for brands that need a consistent cup fit across sizes. The lace is brushed on the inside, so the scalloped edge sits flat against skin instead of curling up. The neckline is a triangle cup with a single vertical seam, which is what gives this style its silhouette. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
@@ -969,7 +969,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -1041,8 +1041,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Microfiber Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Microfiber Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Microfiber Plunge Bra (B2763) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Microfiber Plunge Bra: A fine-gauge microfiber with a peached hand-feel. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
+    "seoDescription": "Microfiber Plunge Bra (B2763) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Microfiber Plunge Bra: A fine-gauge microfiber with a peached hand-feel. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Production runs start at 300 pcs per style. Smaller trial quantities are assessed individually - send your target volume and we will confirm.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -1081,7 +1081,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -1112,7 +1112,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -1255,7 +1255,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -1404,7 +1404,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -1548,7 +1548,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -1691,7 +1691,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -1763,8 +1763,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Microfiber Plunge Underwire Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Microfiber Plunge Underwire Bra OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Microfiber Plunge Underwire Bra (B6068) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Microfiber Plunge Underwire Bra starts with a fine-gauge microfiber with a peached hand-feel. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with padded cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
+    "seoDescription": "OEM Microfiber Plunge Underwire Bra (B6068) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Microfiber Plunge Underwire Bra starts with a fine-gauge microfiber with a peached hand-feel. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with padded cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Minimum run is 300 pcs per style. Below that threshold we price case by case rather than publishing a fixed rate.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -1803,7 +1803,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -1834,7 +1834,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -1978,7 +1978,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -2071,8 +2071,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Black Lace Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Black Lace Bra (B6107) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
-    "intro": "We produce Black Lace Bra for brands that need a consistent cup fit across sizes. The lace is brushed on the inside, so the scalloped edge sits flat against skin instead of curling up. The neckline is a longline underband that runs down the ribcage, which is what gives this style its silhouette. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
+    "seoDescription": "Black Lace Bra (B6107) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "We produce Black Lace Bra for brands that need a consistent cup fit across sizes. The lace is brushed on the inside, so the scalloped edge sits flat against skin instead of curling up. The neckline is a longline underband that runs down the ribcage, which is what gives this style its silhouette. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Production runs start at 300 pcs per style. Smaller trial quantities are assessed individually - send your target volume and we will confirm.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Longline underband: a longline underband that runs down the ribcage.",
@@ -2111,7 +2111,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -2142,7 +2142,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -2285,7 +2285,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this sports bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -2359,7 +2359,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "White Balconette Bra — OEM Wholesale Manufacturer",
     "seoTitle": "White Balconette Bra OEM Wholesale | Charlizi",
-    "seoDescription": "White Balconette Bra (B905) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "White Balconette Bra (B905) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Our White Balconette Bra uses a mixed build — lace or mesh panels set into a knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -2384,6 +2384,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -2430,7 +2434,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -2583,7 +2587,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this sports bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -2657,7 +2661,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Floral Lace Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Lace Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Floral Lace Plunge Bra (J2028) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
+    "seoDescription": "Floral Lace Plunge Bra (J2028) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Floral Lace Plunge Bra starts with a floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with unlined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
@@ -2728,7 +2732,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -2801,7 +2805,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Blue Microfiber Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Blue Microfiber Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Blue Microfiber Bra (J2496) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Blue Microfiber Bra (J2496) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "We produce Blue Microfiber Bra for brands that need a consistent cup fit across sizes. Microfiber takes dye evenly, which is what keeps the shade consistent across a full size run. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
@@ -2872,7 +2876,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -2954,7 +2958,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Print Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Print Lace Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Print Lace Bra (J3056) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Print Lace Bra (J3056) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Print Lace Bra is built around a floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
@@ -3025,7 +3029,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -3168,7 +3172,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -3241,7 +3245,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Longline Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Black Longline Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Black Longline Bra (L2380) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Black Longline Bra (L2380) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Black Longline Bra: A mixed build — lace or mesh panels set into a knit base. The neckline is a longline underband that runs down the ribcage, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -3266,6 +3270,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -3312,7 +3320,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -3384,8 +3392,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Red Microfiber Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Red Microfiber Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Red Microfiber Bra (L2538) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
-    "intro": "Red Microfiber Bra: A fine-gauge microfiber with a peached hand-feel. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
+    "seoDescription": "Red Microfiber Bra (L2538) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Red Microfiber Bra: A fine-gauge microfiber with a peached hand-feel. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Production runs start at 300 pcs per style. Smaller trial quantities are assessed individually - send your target volume and we will confirm.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
       "Balconette cut: a balconette cut with a horizontal top edge that lifts from below.",
@@ -3424,7 +3432,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -3455,7 +3463,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -3527,8 +3535,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Lace Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Lace Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Lace Plunge Bra (L2957) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
-    "intro": "Lace Plunge Bra: A floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "Lace Plunge Bra (L2957) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Lace Plunge Bra: A floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -3567,7 +3575,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -3598,7 +3606,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -3671,8 +3679,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Full Coverage Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Black Full Coverage Bra OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Black Full Coverage Bra (M2796) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Black Full Coverage Bra starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a full-coverage cup that contains the whole bust, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "Black Full Coverage Bra (M2796) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Black Full Coverage Bra starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a full-coverage cup that contains the whole bust, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Full coverage: a full-coverage cup that contains the whole bust.",
@@ -3711,7 +3719,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -3742,7 +3750,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -3880,7 +3888,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -4023,7 +4031,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -4095,7 +4103,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Pink Mesh Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Pink Mesh Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Pink Mesh Plunge Bra (MR2635) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
+    "seoDescription": "Pink Mesh Plunge Bra (MR2635) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "We produce Pink Mesh Plunge Bra for brands that need a consistent cup fit across sizes. The mesh is graded by zone — denser at the underband for support, more open across the cup. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
     "features": [
       "Power mesh: a fine power-mesh panel set into a solid knit base.",
@@ -4166,7 +4174,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -4243,7 +4251,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Green Microfiber Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Green Microfiber Bra OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Green Microfiber Bra (MR2639) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 30 pcs per colourway.",
+    "seoDescription": "Green Microfiber Bra (MR2639) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Green Microfiber Bra: A fine-gauge microfiber with a peached hand-feel. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
@@ -4314,7 +4322,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -4386,8 +4394,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "White Floral Lace Bralette — OEM Wholesale Manufacturer",
     "seoTitle": "White Floral Lace Bralette OEM Wholesale | Charlizi",
-    "seoDescription": "White Floral Lace Bralette (MR2641) — custom bralette manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
-    "intro": "Our White Floral Lace Bralette uses a floral lace shell. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
+    "seoDescription": "White Floral Lace Bralette (MR2641) — custom bralette manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 300 pcs per style.",
+    "intro": "Our White Floral Lace Bralette uses a floral lace shell. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Minimum run is 300 pcs per style. Below that threshold we price case by case rather than publishing a fixed rate.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -4426,7 +4434,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -4457,7 +4465,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -4529,8 +4537,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Strappy Balconette Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Strappy Balconette Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Strappy Balconette Bra (MR2659) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
-    "intro": "Strappy Balconette Bra starts with a fine power-mesh panel set into a solid knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Support is underwire with unlined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "Strappy Balconette Bra (MR2659) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Strappy Balconette Bra starts with a fine power-mesh panel set into a solid knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Support is underwire with unlined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Power mesh: a fine power-mesh panel set into a solid knit base.",
       "Balconette cut: a balconette cut with a horizontal top edge that lifts from below.",
@@ -4569,7 +4577,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -4600,7 +4608,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -4743,7 +4751,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this sports bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -4817,7 +4825,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Blue Floral Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Blue Floral Lace Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Blue Floral Lace Bra (MR2702) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
+    "seoDescription": "Blue Floral Lace Bra (MR2702) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "We produce Blue Floral Lace Bra for brands that need a consistent cup fit across sizes. The lace is brushed on the inside, so the scalloped edge sits flat against skin instead of curling up. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
@@ -4888,7 +4896,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -4987,6 +4995,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -5031,7 +5043,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -5132,6 +5144,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Stretch satin"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -5176,7 +5192,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -5248,8 +5264,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Cotton Full Coverage Wireless Sports Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Cotton Full Coverage Wireless Sports Bra | Charlizi",
-    "seoDescription": "OEM Cotton Full Coverage Wireless Sports Bra (MR2752) made in Puning, Guangdong. Combed cotton. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "We produce Cotton Full Coverage Wireless Sports Bra for brands that need a consistent cup fit across sizes. Cotton keeps the piece breathable, and it actually gets softer with each wash. The neckline is a full-coverage cup that contains the whole bust, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "OEM Cotton Full Coverage Wireless Sports Bra (MR2752) made in Puning, Guangdong. Combed cotton. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "We produce Cotton Full Coverage Wireless Sports Bra for brands that need a consistent cup fit across sizes. Cotton keeps the piece breathable, and it actually gets softer with each wash. The neckline is a full-coverage cup that contains the whole bust, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Combed cotton: combed cotton with a touch of elastane for recovery.",
       "Full coverage: a full-coverage cup that contains the whole bust.",
@@ -5288,7 +5304,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -5319,7 +5335,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this sports bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -5458,7 +5474,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this sports bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -5597,7 +5613,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -5671,7 +5687,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Lace Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Black Lace Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Black Lace Plunge Bra (MR2796) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
+    "seoDescription": "Black Lace Plunge Bra (MR2796) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Black Lace Plunge Bra is built around a floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
@@ -5742,7 +5758,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -5815,8 +5831,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Seamless Longline Wireless Camisole — OEM Wholesale Manufacturer",
     "seoTitle": "Seamless Longline Wireless Camisole OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Seamless Longline Wireless Camisole (MR2803) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Our Seamless Longline Wireless Camisole uses a circular-knit seamless shell. The neckline is a longline underband that runs down the ribcage, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
+    "seoDescription": "OEM Seamless Longline Wireless Camisole (MR2803) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Our Seamless Longline Wireless Camisole uses a circular-knit seamless shell. The neckline is a longline underband that runs down the ribcage, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Minimum run is 300 pcs per style. Below that threshold we price case by case rather than publishing a fixed rate.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
       "Longline underband: a longline underband that runs down the ribcage.",
@@ -5855,7 +5871,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -5886,7 +5902,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this camisole?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -6030,7 +6046,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -6183,7 +6199,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -6326,7 +6342,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this camisole?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -6469,7 +6485,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -6541,7 +6557,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Sheer Floral Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Sheer Floral Lace Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Sheer Floral Lace Bra (MR2956) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
+    "seoDescription": "Sheer Floral Lace Bra (MR2956) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Sheer Floral Lace Bra starts with a sheer ground fabric with reinforced stress seams. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Support is underwire with unlined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
     "features": [
       "Sheer fabric: a sheer ground fabric with reinforced stress seams.",
@@ -6612,7 +6628,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -6775,7 +6791,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -6848,8 +6864,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Red Black Print Bralette — OEM Wholesale Manufacturer",
     "seoTitle": "Red Black Print Bralette OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Red Black Print Bralette (MR2974) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Red Black Print Bralette starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is wire-free with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "Red Black Print Bralette (MR2974) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Red Black Print Bralette starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is wire-free with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -6888,7 +6904,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -6919,7 +6935,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -6991,7 +7007,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Seamless Print Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Seamless Print Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Seamless Print Bra (MR2975) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Seamless Print Bra (MR2975) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Our Seamless Print Bra uses a circular-knit seamless shell. The neckline is a longline underband that runs down the ribcage, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Full private label: your woven label, printed care label, hangtag and polybag or gift box. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
@@ -7062,7 +7078,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -7206,7 +7222,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -7278,7 +7294,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Red Floral Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Red Floral Lace Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Red Floral Lace Bra (MR2986) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Red Floral Lace Bra (MR2986) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Red Floral Lace Bra: A floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
@@ -7349,7 +7365,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -7492,7 +7508,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this camisole?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -7636,7 +7652,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -7779,7 +7795,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -7923,7 +7939,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -8066,7 +8082,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -8209,7 +8225,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -8281,7 +8297,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "White Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "White Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "White Plunge Bra (MR3402) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "White Plunge Bra (MR3402) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "White Plunge Bra is built around a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -8352,7 +8368,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -8495,7 +8511,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -8643,7 +8659,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -8787,7 +8803,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this camisole?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -8930,7 +8946,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -9008,7 +9024,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Microfiber Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Black Microfiber Bra OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Black Microfiber Bra (MR3459) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 30 pcs per colourway.",
+    "seoDescription": "Black Microfiber Bra (MR3459) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "We produce Black Microfiber Bra for brands that need a consistent cup fit across sizes. Microfiber takes dye evenly, which is what keeps the shade consistent across a full size run. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
@@ -9079,7 +9095,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -9156,7 +9172,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Multiway Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Multiway Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Multiway Plunge Bra (MR3466) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Multiway Plunge Bra (MR3466) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Multiway Plunge Bra is built around a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -9227,7 +9243,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -9370,7 +9386,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this sports bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -9449,7 +9465,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Halter Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Halter Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Halter Plunge Bra (MR3488) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Halter Plunge Bra (MR3488) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Our Halter Plunge Bra uses a fine-gauge microfiber. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Full private label: your woven label, printed care label, hangtag and polybag or gift box. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
@@ -9520,7 +9536,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -9593,7 +9609,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Beige Balconette Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Beige Balconette Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Beige Balconette Bra (MR3491) — custom bra manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
+    "seoDescription": "Beige Balconette Bra (MR3491) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Beige Balconette Bra starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Support is wire-free with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Full private label: your woven label, printed care label, hangtag and polybag or gift box. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -9664,7 +9680,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -9741,7 +9757,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Push Up Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Push Up Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Push Up Bra (MR3500) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Push Up Bra (MR3500) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Our Push Up Bra uses a fine power-mesh panel set into a solid knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
     "features": [
       "Power mesh: a fine power-mesh panel set into a solid knit base.",
@@ -9812,7 +9828,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -9889,7 +9905,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Pink Ribbed Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Pink Ribbed Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Pink Ribbed Bra (MR3505) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Pink Ribbed Bra (MR3505) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Our Pink Ribbed Bra uses a mixed build — lace or mesh panels set into a knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -9960,7 +9976,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -10103,7 +10119,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -10176,7 +10192,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Nude Microfiber Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Nude Microfiber Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Nude Microfiber Bra (MR3529) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Nude Microfiber Bra (MR3529) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Nude Microfiber Bra is built around a fine-gauge microfiber with a peached hand-feel. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
@@ -10247,7 +10263,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -10324,8 +10340,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Pink Floral Lace Bralette — OEM Wholesale Manufacturer",
     "seoTitle": "Pink Floral Lace Bralette OEM Wholesale | Charlizi",
-    "seoDescription": "Pink Floral Lace Bralette (MR3535) — custom bralette manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
-    "intro": "We produce Pink Floral Lace Bralette for brands that need a consistent cup fit across sizes. The lace is brushed on the inside, so the scalloped edge sits flat against skin instead of curling up. The neckline is a full-coverage cup that contains the whole bust, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "Pink Floral Lace Bralette (MR3535) — custom bralette manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 300 pcs per style.",
+    "intro": "We produce Pink Floral Lace Bralette for brands that need a consistent cup fit across sizes. The lace is brushed on the inside, so the scalloped edge sits flat against skin instead of curling up. The neckline is a full-coverage cup that contains the whole bust, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Full coverage: a full-coverage cup that contains the whole bust.",
@@ -10364,7 +10380,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -10395,7 +10411,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -10467,7 +10483,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Plunge Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Black Plunge Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Black Plunge Bra (MR3573) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Black Plunge Bra (MR3573) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Our Black Plunge Bra uses a floral lace shell. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
@@ -10538,7 +10554,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -10681,7 +10697,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -10824,7 +10840,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -10973,7 +10989,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -11116,7 +11132,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -11199,7 +11215,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bras",
     "h1": "Black Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Black Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Black Bra and Panty Set (U055) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
+    "seoDescription": "Black Bra and Panty Set (U055) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Our Black Bra and Panty Set uses a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -11224,6 +11240,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -11270,7 +11290,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -11413,7 +11433,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -11556,7 +11576,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -11699,7 +11719,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -11842,7 +11862,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -11914,8 +11934,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Microfiber Plunge Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Microfiber Plunge Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Microfiber Plunge Bra and Panty Set (A2148) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "We produce Microfiber Plunge Bra and Panty Set for brands that need a consistent cup fit across sizes. Microfiber takes dye evenly, which is what keeps the shade consistent across a full size run. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
+    "seoDescription": "OEM Microfiber Plunge Bra and Panty Set (A2148) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "We produce Microfiber Plunge Bra and Panty Set for brands that need a consistent cup fit across sizes. Microfiber takes dye evenly, which is what keeps the shade consistent across a full size run. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Production runs start at 300 pcs per style. Smaller trial quantities are assessed individually - send your target volume and we will confirm.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -11954,7 +11974,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -11985,7 +12005,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -12058,8 +12078,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Red Black Lace Plunge Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Red Black Lace Plunge Bra and Panty Set Wholesale | Charlizi",
-    "seoDescription": "OEM Red Black Lace Plunge Bra and Panty Set (A2161) made in Puning, Guangdong. Floral lace. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "We produce Red Black Lace Plunge Bra and Panty Set for brands that need a consistent cup fit across sizes. The lace is brushed on the inside, so the scalloped edge sits flat against skin instead of curling up. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "OEM Red Black Lace Plunge Bra and Panty Set (A2161) made in Puning, Guangdong. Floral lace. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "We produce Red Black Lace Plunge Bra and Panty Set for brands that need a consistent cup fit across sizes. The lace is brushed on the inside, so the scalloped edge sits flat against skin instead of curling up. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -12098,7 +12118,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -12129,7 +12149,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -12203,8 +12223,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Black Balconette Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Black Balconette Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Black Balconette Bra and Panty Set (A2168) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Our Black Balconette Bra and Panty Set uses a mixed build — lace or mesh panels set into a knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Full private label: your woven label, printed care label, hangtag and polybag or gift box. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
+    "seoDescription": "OEM Black Balconette Bra and Panty Set (A2168) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Our Black Balconette Bra and Panty Set uses a mixed build — lace or mesh panels set into a knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Minimum run is 300 pcs per style. Below that threshold we price case by case rather than publishing a fixed rate.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Balconette cut: a balconette cut with a horizontal top edge that lifts from below.",
@@ -12243,7 +12263,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -12274,7 +12294,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -12417,7 +12437,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -12570,7 +12590,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -12643,7 +12663,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Triangle Wireless Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Triangle Wireless Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Triangle Wireless Bra (A2205) — custom style manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
+    "seoDescription": "Triangle Wireless Bra (A2205) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Triangle Wireless Bra: A mixed build — lace or mesh panels set into a knit base. The neckline is a triangle cup with a single vertical seam, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -12668,6 +12688,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "90% Polyamide;10% Elastane"
       },
       {
         "label": "Cup shape",
@@ -12714,7 +12738,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this style?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -12857,7 +12881,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -12929,8 +12953,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Balconette Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Balconette Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Balconette Bra and Panty Set (A3103) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Our Balconette Bra and Panty Set uses a mixed build — lace or mesh panels set into a knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
+    "seoDescription": "OEM Balconette Bra and Panty Set (A3103) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Our Balconette Bra and Panty Set uses a mixed build — lace or mesh panels set into a knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Minimum run is 300 pcs per style. Below that threshold we price case by case rather than publishing a fixed rate.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Balconette cut: a balconette cut with a horizontal top edge that lifts from below.",
@@ -12969,7 +12993,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -13000,7 +13024,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -13072,8 +13096,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Floral Lace Plunge Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Lace Plunge Bra and Panty Set Wholesale | Charlizi",
-    "seoDescription": "OEM Floral Lace Plunge Bra and Panty Set (A3113) made in Puning, Guangdong. Floral lace. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Floral Lace Plunge Bra and Panty Set is built around a floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "OEM Floral Lace Plunge Bra and Panty Set (A3113) made in Puning, Guangdong. Floral lace. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Floral Lace Plunge Bra and Panty Set is built around a floral lace shell over a soft stretch backing. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -13112,7 +13136,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -13143,7 +13167,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -13217,8 +13241,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Black Yellow Print Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Black Yellow Print Bra and Panty Set Wholesale | Charlizi",
-    "seoDescription": "OEM Black Yellow Print Bra and Panty Set (A3116) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Black Yellow Print Bra and Panty Set starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
+    "seoDescription": "OEM Black Yellow Print Bra and Panty Set (A3116) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Black Yellow Print Bra and Panty Set starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Production runs start at 300 pcs per style. Smaller trial quantities are assessed individually - send your target volume and we will confirm.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -13257,7 +13281,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -13288,7 +13312,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -13360,8 +13384,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Lightly Lined Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Lightly Lined Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Lightly Lined Bra and Panty Set (A3120) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Lightly Lined Bra and Panty Set starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "OEM Lightly Lined Bra and Panty Set (A3120) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Lightly Lined Bra and Panty Set starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -13400,7 +13424,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -13431,7 +13455,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -13574,7 +13598,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -13647,8 +13671,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Push Up Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Push Up Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Push Up Bra and Panty Set (A3131) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Push Up Bra and Panty Set is built around a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "Push Up Bra and Panty Set (A3131) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Push Up Bra and Panty Set is built around a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with push-up padding, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -13687,7 +13711,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -13718,7 +13742,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -13790,8 +13814,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Plunge Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Plunge Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Plunge Bra and Panty Set (A3139) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Plunge Bra and Panty Set starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "Plunge Bra and Panty Set (A3139) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Plunge Bra and Panty Set starts with a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -13830,7 +13854,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -13861,7 +13885,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -13934,8 +13958,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Black Yellow Plunge Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Black Yellow Plunge Bra and Panty Set Wholesale | Charlizi",
-    "seoDescription": "OEM Black Yellow Plunge Bra and Panty Set (A3140) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Black Yellow Plunge Bra and Panty Set is built around a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "OEM Black Yellow Plunge Bra and Panty Set (A3140) made in Puning, Guangdong. Mixed fabrication. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Black Yellow Plunge Bra and Panty Set is built around a mixed build — lace or mesh panels set into a knit base. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Support is underwire with lightly lined cups, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -13974,7 +13998,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -14005,7 +14029,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -14078,8 +14102,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Microfiber Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Microfiber Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Microfiber Bra and Panty Set (A3151) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "We produce Microfiber Bra and Panty Set for brands that need a consistent cup fit across sizes. Microfiber takes dye evenly, which is what keeps the shade consistent across a full size run. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "OEM Microfiber Bra and Panty Set (A3151) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "We produce Microfiber Bra and Panty Set for brands that need a consistent cup fit across sizes. Microfiber takes dye evenly, which is what keeps the shade consistent across a full size run. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -14118,7 +14142,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -14149,7 +14173,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -14221,8 +14245,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "White Floral Microfiber Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "White Floral Microfiber Bra and Panty Set | Charlizi",
-    "seoDescription": "OEM White Floral Microfiber Bra and Panty Set (A3155) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "White Floral Microfiber Bra and Panty Set: A fine-gauge microfiber with a peached hand-feel. The neckline is a demi cup that covers the lower half of the bust, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "OEM White Floral Microfiber Bra and Panty Set (A3155) made in Puning, Guangdong. Peached microfiber. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "White Floral Microfiber Bra and Panty Set: A fine-gauge microfiber with a peached hand-feel. The neckline is a demi cup that covers the lower half of the bust, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Peached microfiber: a fine-gauge microfiber with a peached hand-feel.",
       "Demi cup: a demi cup that covers the lower half of the bust.",
@@ -14261,7 +14285,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -14292,7 +14316,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -14364,8 +14388,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Red Black Plunge Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Red Black Plunge Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Red Black Plunge Bra and Panty Set (A3211) made in Puning, Guangdong. Floral lace. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Our Red Black Plunge Bra and Panty Set uses a floral lace shell. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
+    "seoDescription": "OEM Red Black Plunge Bra and Panty Set (A3211) made in Puning, Guangdong. Floral lace. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Our Red Black Plunge Bra and Panty Set uses a floral lace shell. The neckline is a plunge neckline that sits low between the cups, which is what gives this style its silhouette. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Production runs start at 300 pcs per style. Smaller trial quantities are assessed individually - send your target volume and we will confirm.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Plunge neckline: a plunge neckline that sits low between the cups.",
@@ -14404,7 +14428,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -14435,7 +14459,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -14579,7 +14603,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -14724,7 +14748,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -14867,7 +14891,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and thong set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -15011,7 +15035,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -15155,7 +15179,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and thong set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -15256,6 +15280,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -15300,7 +15328,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and thong set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -15446,7 +15474,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and thong set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -15590,7 +15618,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -15699,6 +15727,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Plunge neckline"
       },
@@ -15743,7 +15775,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and thong set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -15888,7 +15920,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -16032,7 +16064,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -16131,6 +16163,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Triangle cup"
       },
@@ -16175,7 +16211,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -16318,7 +16354,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -16390,8 +16426,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Mesh Balconette Underwire Bra and Thong Set — OEM Wholesale Manufacturer",
     "seoTitle": "Mesh Balconette Underwire Bra and Thong Set | Charlizi",
-    "seoDescription": "OEM Mesh Balconette Underwire Bra and Thong Set (MR3449) made in Puning, Guangdong. Power mesh. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Mesh Balconette Underwire Bra and Thong Set: A fine power-mesh panel set into a solid knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "OEM Mesh Balconette Underwire Bra and Thong Set (MR3449) made in Puning, Guangdong. Power mesh. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Mesh Balconette Underwire Bra and Thong Set: A fine power-mesh panel set into a solid knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Power mesh: a fine power-mesh panel set into a solid knit base.",
       "Balconette cut: a balconette cut with a horizontal top edge that lifts from below.",
@@ -16430,7 +16466,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -16461,7 +16497,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and thong set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -16534,8 +16570,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Floral Lace Bralette Set — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Lace Bralette Set OEM Wholesale | Charlizi",
-    "seoDescription": "Floral Lace Bralette Set (MR3520) — custom bralette and panty set manufacturing in Guangdong. BSCI & OEKO-TEX. Sampling 7-15 days. From 30 pcs per colourway.",
-    "intro": "Floral Lace Bralette Set: A floral lace shell over a soft stretch backing. The neckline is a triangle cup with a single vertical seam, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "Floral Lace Bralette Set (MR3520) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 300 pcs per style.",
+    "intro": "Floral Lace Bralette Set: A floral lace shell over a soft stretch backing. The neckline is a triangle cup with a single vertical seam, which is what gives this style its silhouette. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Floral lace: a floral lace shell over a soft stretch backing.",
       "Triangle cup: a triangle cup with a single vertical seam.",
@@ -16574,7 +16610,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -16605,7 +16641,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -16748,7 +16784,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and thong set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -16893,7 +16929,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this style?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -16966,8 +17002,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "White Mesh Triangle Bralette Set — OEM Wholesale Manufacturer",
     "seoTitle": "White Mesh Triangle Bralette Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM White Mesh Triangle Bralette Set (MR3865) made in Puning, Guangdong. Power mesh. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "White Mesh Triangle Bralette Set starts with a fine power-mesh panel set into a solid knit base. The neckline is a triangle cup with a single vertical seam, which is what gives this style its silhouette. Support is wire-free with unlined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "OEM White Mesh Triangle Bralette Set (MR3865) made in Puning, Guangdong. Power mesh. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "White Mesh Triangle Bralette Set starts with a fine power-mesh panel set into a solid knit base. The neckline is a triangle cup with a single vertical seam, which is what gives this style its silhouette. Support is wire-free with unlined cups, so the silhouette holds without adding bulk. Every style is fitted on a live model in at least two sizes before we sign off the grading. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Power mesh: a fine power-mesh panel set into a solid knit base.",
       "Triangle cup: a triangle cup with a single vertical seam.",
@@ -17006,7 +17042,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -17037,7 +17073,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -17175,7 +17211,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -17313,7 +17349,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -17407,6 +17443,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Floral lace"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Demi cup"
       },
@@ -17451,7 +17491,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -17595,7 +17635,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -17668,8 +17708,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Bra Sets",
     "h1": "Mesh Lace Trim Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Mesh Lace Trim Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Mesh Lace Trim Bra and Panty Set (YS2991) made in Puning, Guangdong. Power mesh. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Mesh Lace Trim Bra and Panty Set is built around a fine power-mesh panel set into a solid knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Support is underwire with padded cups, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "OEM Mesh Lace Trim Bra and Panty Set (YS2991) made in Puning, Guangdong. Power mesh. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Mesh Lace Trim Bra and Panty Set is built around a fine power-mesh panel set into a solid knit base. The neckline is a balconette cut with a horizontal top edge that lifts from below, which is what gives this style its silhouette. Support is underwire with padded cups, so the silhouette holds without adding bulk. Full private label: your woven label, printed care label, hangtag and polybag or gift box. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Power mesh: a fine power-mesh panel set into a solid knit base.",
       "Balconette cut: a balconette cut with a horizontal top edge that lifts from below.",
@@ -17708,7 +17748,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -17739,7 +17779,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -17883,7 +17923,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -18027,7 +18067,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -18128,6 +18168,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -18172,7 +18216,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -18255,8 +18299,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "Grey Seamless Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Grey Seamless Bra and Panty Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Grey Seamless Bra and Panty Set (M004) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Grey Seamless Bra and Panty Set is built around a circular-knit seamless shell with bonded edges. The cup is cut to your reference sample. Support is wire-free with lightly lined cups, so the silhouette holds without adding bulk. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "OEM Grey Seamless Bra and Panty Set (M004) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Grey Seamless Bra and Panty Set is built around a circular-knit seamless shell with bonded edges. The cup is cut to your reference sample. Support is wire-free with lightly lined cups, so the silhouette holds without adding bulk. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
       "Cup: cut to your reference sample.",
@@ -18295,7 +18339,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -18326,7 +18370,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -18408,8 +18452,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "Grey Ribbed Seamless Bralette Set — OEM Wholesale Manufacturer",
     "seoTitle": "Grey Ribbed Seamless Bralette Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Grey Ribbed Seamless Bralette Set (M006) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "We produce Grey Ribbed Seamless Bralette Set for brands that need a consistent cup fit across sizes. The shell is knit in one piece, which means no side seams to rub or show through under clothing. The cup is cut to your reference sample. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "OEM Grey Ribbed Seamless Bralette Set (M006) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "We produce Grey Ribbed Seamless Bralette Set for brands that need a consistent cup fit across sizes. The shell is knit in one piece, which means no side seams to rub or show through under clothing. The cup is cut to your reference sample. Colour matching runs to Pantone with lab dips submitted before bulk; trim and hardware are sourced to your reference. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
       "Cup: cut to your reference sample.",
@@ -18448,7 +18492,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -18479,7 +18523,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -18560,8 +18604,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "Grey Seamless Wireless Tank Top Set — OEM Wholesale Manufacturer",
     "seoTitle": "Grey Seamless Wireless Tank Top Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Grey Seamless Wireless Tank Top Set (M008) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Our Grey Seamless Wireless Tank Top Set uses a circular-knit seamless shell. The cup is cut to your reference sample. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Run sizes start at 30 pcs per colourway and scale to 1000 pcs, where the EXW rate is cheapest.",
+    "seoDescription": "OEM Grey Seamless Wireless Tank Top Set (M008) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Our Grey Seamless Wireless Tank Top Set uses a circular-knit seamless shell. The cup is cut to your reference sample. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Made-to-order runs begin at 300 pcs per style, sampled in 7-15 days and shipped 30-45 days after sample approval.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
       "Cup: cut to your reference sample.",
@@ -18600,7 +18644,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -18631,7 +18675,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this tank top and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -18730,6 +18774,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -18774,7 +18822,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -18883,6 +18931,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -18927,7 +18979,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this tank top and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -19036,6 +19088,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -19080,7 +19136,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -19190,6 +19246,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -19234,7 +19294,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -19343,6 +19403,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -19387,7 +19451,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this style?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -19486,6 +19550,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Power mesh"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -19530,7 +19598,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this crop top?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -19628,6 +19696,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -19672,7 +19744,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -19745,8 +19817,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "White Seamless Bralette Set — OEM Wholesale Manufacturer",
     "seoTitle": "White Seamless Bralette Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM White Seamless Bralette Set (M041) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "White Seamless Bralette Set: A circular-knit seamless shell with bonded edges. The cup is cut to your reference sample. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
+    "seoDescription": "OEM White Seamless Bralette Set (M041) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "White Seamless Bralette Set: A circular-knit seamless shell with bonded edges. The cup is cut to your reference sample. We hold the underband tension constant across the size run — this is where most fit complaints originate in low-cost production. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Production runs start at 300 pcs per style. Smaller trial quantities are assessed individually - send your target volume and we will confirm.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
       "Cup: cut to your reference sample.",
@@ -19785,7 +19857,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -19816,7 +19888,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -19924,6 +19996,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -19968,7 +20044,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -20067,6 +20143,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -20111,7 +20191,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -20194,7 +20274,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "Halter Crop Top — OEM Wholesale Manufacturer",
     "seoTitle": "Halter Crop Top OEM Wholesale | Charlizi",
-    "seoDescription": "Halter Crop Top (M047) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Halter Crop Top (M047) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "We produce Halter Crop Top for brands that need a consistent cup fit across sizes. The shell is knit in one piece, which means no side seams to rub or show through under clothing. The cup is cut to your reference sample. Full private label: your woven label, printed care label, hangtag and polybag or gift box. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
@@ -20219,6 +20299,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -20265,7 +20349,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this crop top?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -20373,6 +20457,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -20417,7 +20505,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this style?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -20489,7 +20577,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "Seamless Ribbed Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Seamless Ribbed Bra OEM Wholesale | Charlizi",
-    "seoDescription": "Seamless Ribbed Bra (M049) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Seamless Ribbed Bra (M049) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "Our Seamless Ribbed Bra uses a circular-knit seamless shell. The cup is cut to your reference sample. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Minimum run is 30 pcs per colour, sampled in 7-15 days and shipped 30-45 days after sample approval; tiered pricing rewards larger runs.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
@@ -20514,6 +20602,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Seamless circular knit"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -20560,7 +20652,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -20669,6 +20761,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
         "value": "Seamless circular knit"
       },
       {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
+      },
+      {
         "label": "Cup shape",
         "value": "Cut to reference"
       },
@@ -20713,7 +20809,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this crop top?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -20785,8 +20881,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "Grey Seamless Wireless Camisole Set — OEM Wholesale Manufacturer",
     "seoTitle": "Grey Seamless Wireless Camisole Set OEM Wholesale | Charlizi",
-    "seoDescription": "OEM Grey Seamless Wireless Camisole Set (M6031) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "Our Grey Seamless Wireless Camisole Set uses a circular-knit seamless shell. The cup is cut to your reference sample. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "OEM Grey Seamless Wireless Camisole Set (M6031) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "Our Grey Seamless Wireless Camisole Set uses a circular-knit seamless shell. The cup is cut to your reference sample. Strap width and elastic tension are adjusted per size so the piece does not dig in on larger cups. Fabric, colour, trim, labelling and packaging are all open to your spec — send a tech pack or a reference sample and we will quote against it. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
       "Cup: cut to your reference sample.",
@@ -20825,7 +20921,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -20856,7 +20952,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this style?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -20928,7 +21024,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "Beige Ribbed Bralette — OEM Wholesale Manufacturer",
     "seoTitle": "Beige Ribbed Bralette OEM Wholesale | Charlizi",
-    "seoDescription": "Beige Ribbed Bralette (M902) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs, tiered to 1000.",
+    "seoDescription": "Beige Ribbed Bralette (M902) OEM wholesale from our Guangdong factory. BSCI & OEKO-TEX certified. Custom fabric, colour and sizing. From 30 pcs per colourway.",
     "intro": "We produce Beige Ribbed Bralette for brands that need a consistent cup fit across sizes. Mixing materials lets you keep a soft hand-feel at the cup while holding structure at the band. The cup is cut to your reference sample. Full private label: your woven label, printed care label, hangtag and polybag or gift box. We start at 30 pcs per colourway and price down through the 100, 300 and 500 pcs tiers.",
     "features": [
       "Mixed fabrication: a mixed build — lace or mesh panels set into a knit base.",
@@ -20953,6 +21049,10 @@ export const styleDDrive2: Record<string, StyleContent> = {
       {
         "label": "Fabrication",
         "value": "Mixed fabrication"
+      },
+      {
+        "label": "Composition",
+        "value": "86% Polyamide;14% Elastane"
       },
       {
         "label": "Cup shape",
@@ -20999,7 +21099,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bralette?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -21141,7 +21241,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "30 pcs per colourway at the small-batch tier, dropping to wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",
@@ -21214,8 +21314,8 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "categoryName": "Camisoles & Tank Tops",
     "h1": "Black Seamless Wireless Bra and Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Black Seamless Wireless Bra and Panty Set | Charlizi",
-    "seoDescription": "OEM Black Seamless Wireless Bra and Panty Set (Z418) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 30 pcs per colourway.",
-    "intro": "We produce Black Seamless Wireless Bra and Panty Set for brands that need a consistent cup fit across sizes. The shell is knit in one piece, which means no side seams to rub or show through under clothing. The cup is cut to your reference sample. Full private label: your woven label, printed care label, hangtag and polybag or gift box. Ordering starts at 30 pcs per colourway and drops through the 100, 300 and 500 pcs tiers, with the lowest unit rate applied at 500-1000 pcs.",
+    "seoDescription": "OEM Black Seamless Wireless Bra and Panty Set (Z418) made in Puning, Guangdong. Seamless circular knit. Custom grading to 5XL. From 300 pcs per style.",
+    "intro": "We produce Black Seamless Wireless Bra and Panty Set for brands that need a consistent cup fit across sizes. The shell is knit in one piece, which means no side seams to rub or show through under clothing. The cup is cut to your reference sample. Full private label: your woven label, printed care label, hangtag and polybag or gift box. This style is made to order, with a 300 pcs minimum per style; below that we quote case by case and confirm feasibility first.",
     "features": [
       "Seamless circular knit: a circular-knit seamless shell with bonded edges.",
       "Cup: cut to your reference sample.",
@@ -21254,7 +21354,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
       },
       {
         "label": "MOQ",
-        "value": "30 pcs per colourway (tiered pricing to 1000 pcs)"
+        "value": "300 pcs per style (below 300 on request)"
       },
       {
         "label": "Sampling",
@@ -21285,7 +21385,7 @@ export const styleDDrive2: Record<string, StyleContent> = {
     "faq": [
       {
         "q": "What is the MOQ for this bra and panty set?",
-        "a": "30 pcs per colourway at the small-batch tier, dropping to USD wholesale rates from 300 pcs and the lowest tier at 500-1000 pcs. Mixed-colour orders count toward the same quantity break, so you can test several shades in one run."
+        "a": "300 pcs per style is the production minimum. Below 300 pcs we assess case by case — send your target quantity, colourway count and delivery window and we will confirm what is feasible."
       },
       {
         "q": "Can the fabrication and cup shape be changed?",

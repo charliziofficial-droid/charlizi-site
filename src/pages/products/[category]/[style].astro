@@ -7,6 +7,7 @@ import { styleContent, type StyleContent } from '../../../data/product-style-con
 import { styleExtra } from '../../../data/product-style-content-extra';
 import { styleDDrive2 } from '../../../data/product-style-content-d-drive-2';
 import { getPricing } from '../../../data/product-pricing';
+import TierPriceTable from '../../../components/products/TierPriceTable.astro';
 import { CONTACT } from '../../../data/contact';
 
 // 注意：Astro 会把 getStaticPaths 提升到模块级执行，它无法访问同文件里的
@@ -30,33 +31,38 @@ const styleNo =
 
 const canonical = `https://charlizi.com/products/${s.category}/${s.slug}/`;
 
-// 报价表价格（EXW 阶梯价）。source=estimated 表示该 SKU 未录入报价表，用了品类中位数。
+// 报价表价格（EXW 阶梯价）。source=reference 表示该 SKU 未录入报价表，按同款参考定价。
 const price = getPricing(s.category, s.slug);
 
-// 阶梯价明细：只有真实报价才输出，推算价不对外暴露分档。
-const tierOffers =
-  price && price.source === 'quote'
-    ? [
-        { min: 500, max: 1000, p: price.p500 },
-        { min: 300, max: 500, p: price.p300 },
-        { min: 100, max: 300, p: price.p100 },
-        { min: 30, max: 100, p: price.p30 },
-      ]
-        .filter((t) => typeof t.p === 'number' && t.p > 0)
-        .map((t) => ({
-          '@type': 'Offer',
-          price: t.p.toFixed(2),
-          priceCurrency: 'USD',
-          eligibleQuantity: {
-            '@type': 'QuantitativeValue',
-            minValue: t.min,
-            maxValue: t.max,
-            unitCode: 'C62',
-          },
-          availability: 'https://schema.org/InStock',
-          seller: { '@type': 'Organization', name: CONTACT.company },
-        }))
-    : [];
+// 价格门槛：'open' 全部公开（保留 GEO 收益） / 'locked' 单价需登录
+const PRICE_GATE: 'open' | 'locked' = 'open';
+
+// 现货 30 件起批，无库存 300 件起订
+const moqText = price
+  ? price.stock === 'in-stock'
+    ? `${price.moq} pcs per colourway`
+    : `${price.moq} pcs per style (below ${price.moq} on request)`
+  : '30 pcs per colourway';
+
+// 阶梯价明细
+const tierOffers = (price?.tiers ?? [])
+  .filter((t) => typeof t.price === 'number' && t.price > 0)
+  .map((t) => ({
+    '@type': 'Offer',
+    price: t.price.toFixed(2),
+    priceCurrency: 'USD',
+    eligibleQuantity: {
+      '@type': 'QuantitativeValue',
+      minValue: t.min,
+      maxValue: t.max,
+      unitCode: 'C62',
+    },
+    availability:
+      price.stock === 'in-stock'
+        ? 'https://schema.org/InStock'
+        : 'https://schema.org/PreOrder',
+    seller: { '@type': 'Organization', name: CONTACT.company },
+  }));
 
 const productSchema = {
   '@context': 'https://schema.org',
@@ -96,11 +102,14 @@ const productSchema = {
         lowPrice: price.low.toFixed(2),
         highPrice: price.high.toFixed(2),
         offerCount: String(tierOffers.length || 1),
-        availability: 'https://schema.org/InStock',
-        // 小单起订量：报价表 30-1000 pcs 四档
+        availability:
+          price.stock === 'in-stock'
+            ? 'https://schema.org/InStock'
+            : 'https://schema.org/PreOrder',
+        // 现货 30 件起批，无库存 300 件起订
         eligibleQuantity: {
           '@type': 'QuantitativeValue',
-          minValue: 30,
+          minValue: price.moq,
           maxValue: 1000,
           unitCode: 'C62',
         },
@@ -200,7 +209,7 @@ const faqSchema = {
           </a>
         </div>
         <p class="text-xs text-stone mt-4">
-          Reply within 24 hours · MOQ {s.specs.find((x) => x.label === 'MOQ')?.value ?? '200 pcs'}
+          Reply within 24 hours · MOQ {moqText}
         </p>
       </div>
     </div>
@@ -211,24 +220,48 @@ const faqSchema = {
       <h2 class="section-title text-2xl md:text-3xl">{s.baseTitle} Details</h2>
       <div class="card p-6 mt-8 rounded-lg max-w-2xl">
         <dl class="divide-y divide-gray-200">
-          {s.specs.map((sp) => (
+          {price && (
+            <div class="flex justify-between gap-6 py-3">
+              <dt class="text-sm text-stone">Availability</dt>
+              <dd class="text-sm font-medium text-navy text-right">
+                {price.stock === 'in-stock' ? 'In stock' : 'Made to order'}
+              </dd>
+            </div>
+          )}
+          {s.specs
+            .filter((sp) => sp.label !== 'MOQ' && sp.label !== 'Unit price')
+            .map((sp) => (
             <div class="flex justify-between gap-6 py-3">
               <dt class="text-sm text-stone">{sp.label}</dt>
               <dd class="text-sm font-medium text-navy text-right">{sp.value}</dd>
             </div>
           ))}
+          {price && (
+            <div class="flex justify-between gap-6 py-3">
+              <dt class="text-sm text-stone">MOQ</dt>
+              <dd class="text-sm font-medium text-navy text-right">{moqText}</dd>
+            </div>
+          )}
         </dl>
       </div>
-    </section>
 
-    <!-- Use cases -->
+      {price && (
+        <TierPriceTable
+          tiers={price.tiers}
+          moq={price.moq}
+          stock={price.stock}
+          gate={PRICE_GATE}
+          sku={price.sku}
+        />
+      )}
+    </section>
     <section class="bg-cream rounded-lg p-8 mb-16">
       <span class="section-label">Applications</span>
       <h2 class="section-title text-2xl md:text-3xl mb-6">Where This Style Sells</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {s.useCases.map((u) => (
           <div class="bg-white rounded-lg p-5 border border-gray-200">
-            <p class="text-sm font-medium text-navy">{u}</p>
+            <h3 class="text-sm font-medium text-navy">{u}</h3>
           </div>
         ))}
       </div>
@@ -239,9 +272,11 @@ const faqSchema = {
       <span class="section-label">FAQ</span>
       <h2 class="section-title text-2xl md:text-3xl">Ordering &amp; Customization</h2>
       <div class="mt-8 space-y-3 max-w-3xl">
-        {s.faq.map((f) => (
-          <details class="card p-5 rounded-lg">
-            <summary class="font-semibold text-navy cursor-pointer">{f.q}</summary>
+        {s.faq.map((f, idx) => (
+          <details class="card p-5 rounded-lg" open={idx === 0}>
+            <summary class="cursor-pointer">
+              <h3 class="font-semibold text-navy inline">{f.q}</h3>
+            </summary>
             <p class="text-sm text-stone mt-3 leading-relaxed">{f.a}</p>
           </details>
         ))}

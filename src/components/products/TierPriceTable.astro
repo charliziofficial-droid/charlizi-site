@@ -1,0 +1,225 @@
+---
+/**
+ * 采购量阶梯报价表
+ * - 现货款：30 件起批，四档
+ * - 无库存款：300 件起订，两档 + 需沟通提示
+ *
+ * gate 控制：
+ *   'open'   全部公开（默认，保留 GEO 收益）
+ *   'locked' 具体单价需登录，只显示档位区间
+ */
+interface Tier {
+  min: number;
+  max: number;
+  price: number;
+}
+
+interface Props {
+  tiers: Tier[];
+  moq: number;
+  stock: 'in-stock' | 'made-to-order';
+  gate?: 'open' | 'locked';
+  sku?: string;
+}
+
+const { tiers: rawTiers, moq, stock, gate = 'open', sku } = Astro.props;
+const isLocked = gate === 'locked';
+
+// 相邻档位单价相同时合并展示（参考定价常见），避免出现两行同价
+const tiers = rawTiers.reduce<Tier[]>((acc, t) => {
+  const last = acc[acc.length - 1];
+  if (last && Math.abs(last.price - t.price) < 0.005) {
+    last.max = t.max;
+  } else {
+    acc.push({ ...t });
+  }
+  return acc;
+}, []);
+
+const fmt = (n: number) => n.toFixed(2);
+
+// 现货 vs 无库存款说明
+const stockLabel = stock === 'in-stock' ? 'In stock — ready to ship' : 'Made to order';
+const stockNote =
+  stock === 'in-stock'
+    ? `Minimum order ${moq} pcs per colourway. Mixed colours can be combined in one run.`
+    : `Minimum order ${moq} pcs per style. Below ${moq} pcs, contact us — we quote case by case.`;
+---
+
+<div class="tier-quote" data-sku={sku}>
+  <div class="tier-head">
+    <h2>Wholesale Pricing by Order Quantity</h2>
+    <span class:list={['badge', stock === 'in-stock' ? 'badge-stock' : 'badge-mto']}>{stockLabel}</span>
+  </div>
+
+  <p class="tier-note">{stockNote}</p>
+
+  <table class="tier-table">
+    <thead>
+      <tr>
+        <th>Order quantity</th>
+        <th>Unit price (EXW)</th>
+        <th>Production</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        tiers.map((t) => (
+          <tr>
+            <td class="qty">
+              {t.min}–{t.max === 1000 ? '1,000+' : t.max} pcs
+            </td>
+            <td class="price">
+              {isLocked ? (
+                <span class="locked">Sign in to view</span>
+              ) : (
+                <>
+                  <span class="cur">USD</span> {fmt(t.price)}
+                </>
+              )}
+            </td>
+            <td class="lead">{t.min >= 500 ? '20–30 days' : '30–45 days'}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+
+  {
+    stock === 'made-to-order' && (
+      <p class="tier-warn">
+        This style is made to order. Volume below {moq} pcs is evaluated case by case — send your
+        target quantity and we will confirm feasibility and price.
+      </p>
+    )
+  }
+
+  <div class="tier-foot">
+    <p class="tier-inc">
+      Price includes bulk production only. Labelling, polybags, hangtags and cartons quoted
+      separately. Payment: 30% deposit, balance against B/L copy.
+    </p>
+    {
+      isLocked && (
+        <p class="tier-cta">
+          <a href="/login/">Sign in</a> to see tier prices, or{' '}
+          <a href="/contact/">request a quotation</a>.
+        </p>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .tier-quote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid #e5e1da;
+    border-radius: 0.5rem;
+    background: #fdfcfa;
+  }
+  .tier-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  .tier-head h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .badge-stock {
+    background: #e6f4ea;
+    color: #1e6b34;
+  }
+  .badge-mto {
+    background: #fdf0e3;
+    color: #8a5314;
+  }
+  .tier-note {
+    font-size: 0.875rem;
+    color: #55504a;
+    margin: 0 0 1rem;
+  }
+  .tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .tier-table th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #77716a;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e1da;
+  }
+  .tier-table td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid #f0ece6;
+  }
+  .tier-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  .qty {
+    font-variant-numeric: tabular-nums;
+  }
+  .price {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .cur {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #77716a;
+  }
+  .locked {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #8a5314;
+  }
+  .lead {
+    color: #55504a;
+    font-size: 0.85rem;
+  }
+  .tier-warn {
+    margin: 1rem 0 0;
+    padding: 0.75rem;
+    background: #fdf0e3;
+    border-left: 3px solid #c98a3f;
+    font-size: 0.85rem;
+    color: #6b4a1e;
+    border-radius: 0 0.25rem 0.25rem 0;
+  }
+  .tier-foot {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #e5e1da;
+  }
+  .tier-inc {
+    font-size: 0.78rem;
+    color: #77716a;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .tier-cta {
+    margin: 0.6rem 0 0;
+    font-size: 0.875rem;
+  }
+  .tier-cta a {
+    color: #8a5314;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+</style>
