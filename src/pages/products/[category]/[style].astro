@@ -5,13 +5,16 @@
 import FactoryLayout from '../../../layouts/FactoryLayout.astro';
 import { styleContent, type StyleContent } from '../../../data/product-style-content';
 import { styleExtra } from '../../../data/product-style-content-extra';
+import { applyTitleOverrides } from '../../../data/style-titles-override';
 import { CONTACT } from '../../../data/contact';
 
 // 注意：Astro 会把 getStaticPaths 提升到模块级执行，它无法访问同文件里的
 // 任何模块级变量，所以这里的 import 必须直接在函数体内部引用。
 export function getStaticPaths() {
   const merged: Record<string, StyleContent> = { ...styleContent, ...styleExtra };
-  return Object.values(merged).map((s) => ({
+  // 标题覆盖层：批发意图为主 + 零售词为辅 + 款号收尾（gen_titles_v2.py 产出）
+  const titled = applyTitleOverrides(merged);
+  return Object.values(titled).map((s) => ({
     params: { category: s.category, style: s.slug },
     props: { s },
   }));
@@ -43,16 +46,22 @@ const productSchema = {
     },
   },
   category: s.categoryName,
-  offers: {
-    '@type': 'Offer',
-    availability: 'https://schema.org/InStock',
-    priceCurrency: 'USD',
-    priceSpecification: {
-      '@type': 'PriceSpecification',
-      valueAddedTaxIncluded: false,
-    },
-    seller: { '@type': 'Organization', name: CONTACT.company },
+  // 【2026-11-23 修复】原来声明了 offers 却不给 price，且写死 availability: InStock。
+  //   Google Product 结构化数据规范要求 Offer 必须有 price，空 offers 属于无效标记，
+  //   会拉低富媒体摘要通过率；写死 InStock 而实际无库存数据也属于误导性声明。
+  //   价格/库存属于受保护数据（未登录不可见），静态页本就不应泄露。
+  //   正确做法：不声明 offers，改为声明 manufacturer + 行业属性；
+  //   B2B 批发场景下 Product 不带 Offer 是合规且常见的（价格需询盘）。
+  isRelatedTo: {
+    '@type': 'ProductModel',
+    name: s.baseTitle,
   },
+  additionalProperty: [
+    { '@type': 'PropertyValue', name: 'Minimum Order Quantity', value: '200 pcs' },
+    { '@type': 'PropertyValue', name: 'Business Type', value: 'OEM / ODM Manufacturer' },
+    { '@type': 'PropertyValue', name: 'Place of Origin', value: 'Guangdong, China' },
+    { '@type': 'PropertyValue', name: 'Pricing', value: 'EXW, tiered by order quantity — request quotation' },
+  ],
 };
 
 const breadcrumbSchema = {
