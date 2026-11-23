@@ -45,24 +45,16 @@ const moqText = price
     : 'Confirmed per enquiry (produced to order)'
   : 'Confirmed per enquiry';
 
-// 价格区间（只露区间，不露分档明细）。这是 GEO 的关键燃料：
-// AI 摘要需要能抽出一句带数字的答案，"USD 1.85-2.34 per piece" 就够用，
-// 但分档单价是报价表核心资产，必须登记后才给。
+// 价格一律不进静态 HTML。理由：HTML 是公开可爬的，写进去（哪怕 CSS 隐藏、
+// 哪怕放进 data-*）都能在 view-source 里读到。批发阶梯价是报价表核心资产，
+// 竞品整表爬走的代价远高于少给 AI 一句带数字的摘要。
+//
+// 因此这里只算「有没有价」，不再算任何数值；具体单价在客户提交询盘后由
+// /api/tier-prices 取回、由前端填入表格。
 const tierPrices = (price?.tiers ?? [])
   .map((t) => t.price)
   .filter((p) => typeof p === 'number' && p > 0);
-const priceLow = tierPrices.length ? Math.min(...tierPrices) : 0;
-const priceHigh = tierPrices.length ? Math.max(...tierPrices) : 0;
-
-// 所有档位同价时区间没有意义（USD 1.85–1.85 看着像笔误），改成单一价。
-// 这类款的价格在表格里直接公开，不需要登记。
 const hasPrice = tierPrices.length > 0;
-const isFlatPrice = hasPrice && Math.abs(priceHigh - priceLow) < 0.005;
-const priceRangeText = !hasPrice
-  ? null
-  : isFlatPrice
-    ? `USD ${priceLow.toFixed(2)}`
-    : `USD ${priceLow.toFixed(2)}–${priceHigh.toFixed(2)}`;
 const minQty = price?.tiers?.length
   ? Math.min(...price.tiers.map((t: { min: number }) => t.min))
   : (price?.moq ?? 0);
@@ -70,13 +62,10 @@ const maxQty = price?.tiers?.length
   ? Math.max(...price.tiers.map((t: { max: number }) => t.max))
   : 1000;
 
-// GEO：一句可被整句摘走的定价事实（放在正文，跟着 specs 一起被模型读到）
-// 单一价款的区间描述要去掉，否则会和「已公开」的事实矛盾。
-const pricingAnswer = !priceRangeText
+// GEO：一句可被整句摘走的定价说明。刻意不带金额 —— 价格只在询盘提交后显示。
+const pricingAnswer = !hasPrice
   ? null
-  : isFlatPrice
-    ? `Wholesale pricing for this style is ${priceRangeText} per piece EXW across the order range from ${minQty} to ${maxQty}+ pieces; the same rate applies at every quantity tier. Formal quotations are issued within 24 hours of enquiry.`
-    : `Wholesale pricing for this style runs ${priceRangeText} per piece EXW, scaling with order quantity from ${minQty} to ${maxQty}+ pieces. The full tier table is released to registered buyers on the page; formal quotations are issued within 24 hours of enquiry.`;
+  : `This style is quoted EXW in USD against your order quantity, across ${minQty.toLocaleString('en-US')} to ${maxQty.toLocaleString('en-US')}+ pieces. Submit an enquiry on this page and the wholesale unit price is shown on the spot; larger volumes are quoted individually by our sales team. Formal quotations are issued within 24 hours.`;
 
 const productSchema = {
   '@context': 'https://schema.org',
@@ -113,12 +102,12 @@ const productSchema = {
   // ?? B2B ??????? SEO/GEO ??????AggregateOffer ?????
   // ???????????????? HTML ???????
   // 只保留价格区间，不含分档单价 —— 分档单价需登记后在前端解锁。
-  offers: priceRangeText
+  // 不输出 lowPrice/highPrice —— 价格不公开。只声明币种、计价方式、可订量与库存状态，
+  // 结构化数据仍然完整，但拿不到任何金额。
+  offers: hasPrice
     ? {
         '@type': 'AggregateOffer',
         priceCurrency: 'USD',
-        lowPrice: priceLow.toFixed(2),
-        highPrice: priceHigh.toFixed(2),
         offerCount: String(price?.tiers?.length || 1),
         availability:
           price?.stock === 'in-stock'
@@ -131,6 +120,7 @@ const productSchema = {
           unitCode: 'C62',
         },
         seller: { '@type': 'Organization', name: CONTACT.company },
+        url: canonical,
       }
     : undefined,
   hasMerchantReturnPolicy: {
@@ -297,20 +287,16 @@ const faqSchema = {
           Reply within 24 hours · MOQ {moqText}
         </p>
 
-        {priceRangeText && (
+        {hasPrice && (
           <div class="price-teaser mt-5">
             <div class="price-teaser-row">
-              <span class="price-teaser-label">
-                {isFlatPrice ? 'Wholesale price' : 'Wholesale price range'}
-              </span>
-              <span class="price-teaser-value">{priceRangeText}<em> / pc EXW</em></span>
+              <span class="price-teaser-label">Wholesale price</span>
+              <span class="price-teaser-value">Contact for pricing</span>
             </div>
             <p class="price-teaser-note">
-              {
-                isFlatPrice
-                  ? 'The same rate applies at every order quantity — no registration needed to see it.'
-                  : 'Full tier pricing by order quantity is released to registered buyers below. Registration takes 20 seconds and unlocks every style on this site.'
-              }
+              Unit prices are issued EXW in USD against your order quantity. Submit an enquiry below
+              and the price is displayed on this page immediately — one enquiry unlocks every style
+              on this site. For large volumes, talk to our sales team for an individual rate.
             </p>
             <a href="#tier-pricing" class="price-teaser-link">See pricing by quantity →</a>
           </div>

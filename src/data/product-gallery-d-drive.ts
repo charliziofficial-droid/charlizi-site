@@ -376,10 +376,10 @@ export const dDriveByCategory: Record<string, GalleryStyle[]> = {
   'silicone-bras': [
     {
       slug: '10761',
-      title: "Silicone Bra 10761\u91d1\u8272",
+      title: "Silicone Bra 10761 Gold",
       category: 'silicone-bras',
       images: [
-        { file: `${C}/silicone-bras/10761-front.webp`, view: 'front', alt: "Silicone Bra 10761\u91d1\u8272, front view" },
+        { file: `${C}/silicone-bras/10761-front.webp`, view: 'front', alt: "Silicone Bra 10761 Gold, front view" },
       ],
     },
     {

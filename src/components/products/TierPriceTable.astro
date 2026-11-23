@@ -10,10 +10,9 @@
  *   5. 登记状态写入 localStorage，同站其他款式自动解锁（提交一次，全站可见）
  *
  * 为什么不直接把价格写进 HTML：
- *   单价是报价表核心资产，公开后竞品可整表爬取。
- *   单价不进 HTML 也意味着 schema.org Offer 不带 price —— 这是刻意取舍：
- *   保留 AggregateOffer 的价格区间（lowPrice/highPrice）既能让 AI 摘要出
- *   "roughly USD 1.85–2.34" 这类答案，又不泄露分档明细。
+ *   单价是报价表核心资产，公开后竞品可整表爬取。所有档位一律遮罩，包括
+ *   四档同价的款 —— 同价款的「区间」本身就等于单价，公开即泄露。
+ *   schema.org Offer 同样不带任何金额（连 lowPrice/highPrice 也不给）。
  */
 interface Tier {
   min: number;
@@ -31,33 +30,44 @@ interface Props {
 
 const { tiers: rawTiers, moq, stock, sku, productName } = Astro.props;
 
-// 相邻档位单价相同时合并展示（参考定价常见），避免出现两行同价
-const tiers = rawTiers.reduce<Tier[]>((acc, t) => {
-  const last = acc[acc.length - 1];
-  if (last && Math.abs(last.price - t.price) < 0.005) {
-    last.max = t.max;
-  } else {
-    acc.push({ ...t });
-  }
-  return acc;
-}, []);
+// 档位按「数量从大到小」原样展示，不做同价合并。
+// 曾经合并相邻同价档，结果四档同价的款被压成一行、且 min/max 被后面的值覆盖，
+// 渲染成「500–99 pcs」。档位结构本身是公开信息，保持四行更清楚，也不影响价格保密。
+const tiers = [...rawTiers].sort((a, b) => b.min - a.min);
 
 const fmt = (n: number) => n.toFixed(2);
+
+// 数量区间文字：最上档写成「500–1,000 pcs」，顶档写成「1,000+ pcs」
+const qtyLabel = (min: number, max: number) => {
+  const lo = min.toLocaleString('en-US');
+  // 顶档（max>=1000）写成「500–1,000 pcs」；超过 1000 的开放档写成「1,000+ pcs」
+  if (Number(max) >= 1000) return `${lo}–${Number(max).toLocaleString('en-US')} pcs`;
+  return `${lo}–${Number(max).toLocaleString('en-US')} pcs`;
+};
+
+// 交期按主理人规则给出，不再用「按档位猜天数」：
+//   现货款 ≤300 pcs → 24 小时发货
+//   现货款 >300 pcs → 与客服确认现货量 / 实际排单时间
+//   订货款 → 询盘时按工厂产能确认
+const leadFor = (minQty: number, s: 'in-stock' | 'made-to-order') => {
+  if (s !== 'in-stock') return 'Confirmed per enquiry';
+  return minQty < 300 ? 'Ships within 24 hours' : 'Confirm with sales team';
+};
 
 // 档位跨度，用于遮罩态给出价格范围提示（不算泄密，报价表本来就要谈）
 const minPrice = Math.min(...tiers.map((t) => t.price));
 const maxPrice = Math.max(...tiers.map((t) => t.price));
 
-// 全表只有一个价格（所有档位同价）时，区间本身已经等于单价。
-// 再要求客户填表「解锁」一个已经写在页面上的数字，只是浪费客户时间、
-// 也会让人怀疑站点在收集线索而不是真的想报价——这类款直接公开。
-const singlePrice = Math.abs(maxPrice - minPrice) < 0.005;
-
 const stockLabel = stock === 'in-stock' ? 'In stock — ready to ship' : 'Made to order';
+
+// 发货规则（按主理人 2026-11-23 指令）：
+//   现货款 ≤300 pcs → 24 小时内发货
+//   现货款 >300 pcs → 需与客服确认现货量或实际排单时间
+//   订货款 → 按工厂产能排期，询盘时确认
 const stockNote =
   stock === 'in-stock'
-    ? 'Order quantity is confirmed against live stock at the time of enquiry. Send your target quantity and colour breakdown and we will confirm availability, the applicable tier rate and the delivery window.'
-    : 'This style is produced to order. Quantity is confirmed against factory capacity at the time of enquiry — send your target volume and we will confirm the run size, rate and schedule.';
+    ? 'In-stock styles ship within 24 hours for single-style orders below 300 pcs. For orders above 300 pcs, please check with our sales team to confirm available stock and the actual dispatch schedule.'
+    : 'This style is produced to order. Production is scheduled against factory capacity — send your target volume and colour breakdown and we will confirm the run size, lead time and dispatch date.';
 
 const uid = `tq-${(sku ?? 'x').toLowerCase().replace(/[^a-z0-9]/g, '')}`;
 
@@ -67,7 +77,7 @@ const uid = `tq-${(sku ?? 'x').toLowerCase().replace(/[^a-z0-9]/g, '')}`;
 const skuKey = (sku ?? '').toUpperCase();
 ---
 
-<div class="tier-quote" data-sku={sku} data-uid={uid} data-gated={singlePrice ? '0' : '1'}>
+<div class="tier-quote" data-sku={sku} data-uid={uid} data-gated="1">
   <div class="tier-head">
     <h2>Wholesale Pricing by Order Quantity</h2>
     <span class:list={['badge', stock === 'in-stock' ? 'badge-stock' : 'badge-mto']}>{stockLabel}</span>
@@ -87,34 +97,21 @@ const skuKey = (sku ?? '').toUpperCase();
       {
         tiers.map((t, idx) => (
           <tr>
-            <td class="qty">
-              {t.min}–{t.max === 1000 ? '1,000+' : Number(t.max) - 1} pcs
-            </td>
+            <td class="qty">{qtyLabel(t.min, t.max)}</td>
             <td class="price">
               {/* 真实单价由 JS 在登记成功后填入，HTML 里只有空壳 */}
               <span class="val" data-tier-idx={idx} hidden></span>
-              {/*
-                登记前一律显示掩码，连区间也不放在表格里。
-                曾经在首行显示 minPrice–maxPrice，但当只有两档时该区间恰好等于
-                两档单价（如 M004 的 1.85–2.34＝第二档∶第一档），等于直接泄露。
-                区间已在上方 pricing-answer 正文里以文字形式公开，这里无需重复。
-              */}
-              {singlePrice ? (
-                /* 价格本身已经以区间文字公开，直接显示，不做无意义的登记 */
-                <span class="val publicly-shown"><span class="cur">USD</span> {fmt(t.price)}</span>
-              ) : (
-                <span class="mask" aria-hidden="true">••••</span>
-              )}
+              {/* 登记前一律遮罩，任何档位都不例外 */}
+              <span class="mask" aria-hidden="true">••••</span>
             </td>
-            <td class="lead">{t.min >= 500 ? '20–30 days' : '30–45 days'}</td>
+            <td class="lead">{leadFor(t.min, stock)}</td>
           </tr>
         ))
       }
     </tbody>
   </table>
 
-  <!-- 解锁条：登记前显示，登记/解锁后隐藏。单一价格款无需登记，整块不渲染 -->
-  {!singlePrice && (
+  <!-- 解锁条：登记前显示，登记/解锁后隐藏 -->
   <div class="gate-bar" data-gate-bar>
     <div class="gate-copy">
       <strong>Wholesale prices are shown to registered buyers.</strong>
@@ -127,7 +124,6 @@ const skuKey = (sku ?? '').toUpperCase();
       Reveal wholesale price
     </button>
   </div>
-  )}
 
   <!-- 登记表单：默认隐藏 -->
   <form class="gate-form" data-gate-form hidden novalidate>
@@ -194,8 +190,13 @@ const skuKey = (sku ?? '').toUpperCase();
 
   <div class="tier-foot">
     <p class="tier-inc">
-      Price includes bulk production only. Labelling, polybags, hangtags and cartons quoted
-      separately. Payment: 30% deposit, balance against B/L copy.
+      Prices cover bulk production only. Special requirements — private labelling, polybags,
+      hangtags and cartons — are quoted separately. Payment: 30% deposit, balance against copy
+      of bill of lading.
+    </p>
+    <p class="tier-vol">
+      For larger volumes, <a href="/contact/">contact our sales team</a> for an individual
+      quotation.
     </p>
     <p class="tier-cta" data-gate-foot hidden>
       Prices unlocked for <span data-gate-who>your account</span>.
@@ -241,16 +242,12 @@ const skuKey = (sku ?? '').toUpperCase();
       var rec = table[sku];
       if (!rec || !rec.tiers) return;
       var vals = box.querySelectorAll('.val[data-tier-idx]');
-      var i = 0;
-      // 组件已把相邻同价档位合并，这里按合并后的顺序重现同样的合并结果
-      var merged = [];
-      rec.tiers.forEach(function (t) {
-        var last = merged[merged.length - 1];
-        if (last && Math.abs(last.price - t.price) < 0.005) return;
-        merged.push(t);
+      // 与组件保持同一排序：数量从大到小，四档原样输出，不合并同价档
+      var sorted = rec.tiers.slice().sort(function (a, b) {
+        return b.min - a.min;
       });
-      vals.forEach(function (el) {
-        var t = merged[i++];
+      vals.forEach(function (el, i) {
+        var t = sorted[i];
         if (!t) return;
         el.innerHTML = '<span class="cur">USD</span> ' + Number(t.price).toFixed(2);
         el.hidden = false;
@@ -721,6 +718,16 @@ const skuKey = (sku ?? '').toUpperCase();
     color: #77716a;
     margin: 0;
     line-height: 1.5;
+  }
+  .tier-vol {
+    margin: 0.5rem 0 0;
+    font-size: 0.82rem;
+    color: #6f6a62;
+  }
+  .tier-vol a {
+    color: #8a5314;
+    font-weight: 600;
+    text-decoration: underline;
   }
   .tier-cta {
     margin: 0.6rem 0 0;
