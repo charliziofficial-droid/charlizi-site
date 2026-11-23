@@ -1,0 +1,60 @@
+name: build-check
+
+# 为什么要有这个 workflow：
+#   charlizi.com 由 Cloudflare Pages 托管，但 Git 集成的构建日志在控制台才能看到。
+#   一段时间以来「push 成功但线上不更新」，线上 HTML 停在旧 commit，而 public/ 下的
+#   静态文件却能更新——说明 Pages 侧的 build 没跑成功，但失败原因拿不到。
+#   这里在 GitHub 上跑一遍完全相同的 build 链，把日志留在 Actions 里，
+#   用于区分两种可能：
+#     a) build 链本身有问题 → 这里会红，日志就是答案
+#     b) build 链正常 → 问题在 Pages 项目配置（分支/构建命令/输出目录）
+#   同时把产物里关键判据（有价商品页数量）打印出来，和本地对账。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify price gate made it into the HTML
+        run: |
+          set -e
+          echo "=== sitemap ==="
+          head -c 200 dist/sitemap.xml; echo
+          echo "url count: $(grep -c '<url>' dist/sitemap.xml || true)"
+          echo
+          echo "=== product pages ==="
+          total=$(find dist/products -name index.html -mindepth 3 -maxdepth 3 | wc -l)
+          priced=$(grep -rl 'tier-quote' dist/products --include=index.html | wc -l)
+          echo "product pages: $total"
+          echo "pages with price table: $priced"
+          echo
+          echo "=== a2099 spot check ==="
+          for needle in 'tier-quote' 'Contact for pricing' 'bill of lading' 'cover bulk production only'; do
+            if grep -q "$needle" dist/products/bra-sets/a2099/index.html; then
+              echo "  OK   $needle"
+            else
+              echo "  MISS $needle"
+            fi
+          done
+          echo
+          echo "=== no prices leaked into static HTML ==="
+          if grep -rl 'lowPrice' dist --include=*.html | head -5 | grep -q .; then
+            echo "FAIL: lowPrice found in HTML"; exit 1
+          fi
+          echo "OK: no lowPrice in HTML"
