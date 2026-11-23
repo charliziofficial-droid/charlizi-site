@@ -16,7 +16,7 @@ async function loadJSON<T>(path: string, fallback: T): Promise<T> {
 export const loadSiteContent = () => loadJSON('./site-content.json', {
   brandName: 'Charlizi',
   heroTitle: 'Your Intimate Apparel OEM/ODM Partner',
-  heroSubtitle: '200+ skilled workers. BSCI & OEKO-TEX certified.',
+  heroSubtitle: '200+ skilled workers. Sedex SMETA audited.',
   workers: '200+', area: '5,000㎡', annualOutput: '5M+',
   monthlyContainers: '40+', founded: '2018',
   logoSvg: 'M12 3c-1 0-3 2-3 4s2 3 4 3 3-1 3-3-2-4-4-4z M4 21c0-4 4-8 8-8s8 4 8 8',

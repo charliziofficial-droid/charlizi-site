@@ -2,7 +2,7 @@
 export default {
   "site": {
     "title": "OEM-Hersteller für Dessous | Dessous-Fabrik China",
-    "desc": "Charlizi Factory — professioneller OEM/ODM-Hersteller für Dessous & Reizwäsche. BSCI- und OEKO-TEX-zertifiziert. BHs, Shapewear, Slips, Silikon-BHs & maßgeschneiderte Nachtwäsche.",
+    "desc": "Charlizi Factory — professioneller OEM/ODM-Hersteller für Dessous & Reizwäsche. Sedex- und SMETA-zertifiziert. BHs, Shapewear, Slips, Silikon-BHs & maßgeschneiderte Nachtwäsche.",
     "tagline": "Fabrik"
   },
   "nav": {
@@ -20,7 +20,7 @@ export default {
   "hero": {
     "label": "OEM/ODM-HERSTELLER SEIT 2018",
     "heading": "Ihr zuverlässiger <span>Dessous</span>-Produktionspartner",
-    "sub": "Dessous, Shapewear, Slips und Silikon-BHs — vom Design bis zur Lieferung. BSCI- und OEKO-TEX-zertifizierte Qualität.",
+    "sub": "Dessous, Shapewear, Slips und Silikon-BHs — vom Design bis zur Lieferung. Sedex- und SMETA-zertifizierte Qualität.",
     "browse": "Katalog durchstöbern",
     "quote": "Angebot anfordern",
     "sample": "📦 Kleinmengen-Muster"
@@ -47,7 +47,7 @@ export default {
     "title": "Komplette Fertigung<br />Unter Einem Dach",
     "items": [
       { "title": "Vollständiger OEM/ODM-Service", "desc": "Vom Tech Pack bis zur Serienproduktion. Schnittmustererstellung, Musterentwicklung, Größenstaffelung." },
-      { "title": "Zertifizierte Qualität", "desc": "BSCI- und OEKO-TEX-zertifizierte Fabrik. Drei-stufiger Qualitätskontrollprozess (AQL 2.5)." },
+      { "title": "Zertifizierte Qualität", "desc": "Sedex- und SMETA-zertifizierte Fabrik. Drei-stufiger Qualitätskontrollprozess (AQL 2.5)." },
       { "title": "Kleinmengen möglich", "desc": "Bemusterung über Viomisha.com. Qualität vor der Großbestellung prüfen." },
       { "title": "Globale Export-Erfahrung", "desc": "Versand nach Nordamerika, Europa, Naher Osten und Südostasien. FCL/LCL." }
     ]
@@ -87,7 +87,7 @@ export default {
     "sampleBtn": "📦 Kleinmengen kaufen →",
     "badges": {
       "oem": "OEM/ODM",
-      "certified": "BSCI & OEKO-TEX",
+      "certified": "Sedex & SMETA",
       "moq": "MOQ {qty} Stk.",
       "leadTime": "Lieferzeit 30-45 Tage"
     },
@@ -135,7 +135,7 @@ export default {
   },
   "footer": {
     "aboutTitle": "Charlizi Factory",
-    "aboutText": "BSCI- & OEKO-TEX-zertifizierter Dessous-Hersteller. OEM/ODM seit 2018.",
+    "aboutText": "Sedex- & SMETA-zertifizierter Dessous-Hersteller. OEM/ODM seit 2018.",
     "productTitle": "Produkte",
     "companyTitle": "Unternehmen",
     "companyLinks": {

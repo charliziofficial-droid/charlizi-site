@@ -2,7 +2,7 @@
 export default {
   "site": {
     "title": "Intimate Apparel OEM Manufacturer | Lingerie Factory China",
-    "desc": "Charlizi Factory — professional lingerie & intimate apparel OEM/ODM manufacturer. BSCI & OEKO-TEX certified. Bras, shapewear, panties, silicone bras & custom sleepwear.",
+    "desc": "Charlizi Factory — professional lingerie & intimate apparel OEM/ODM manufacturer. Sedex SMETA audited. Bras, shapewear, panties, silicone bras & custom sleepwear.",
     "tagline": "Factory"
   },
   "nav": {
@@ -20,7 +20,7 @@ export default {
   "hero": {
     "label": "OEM/ODM MANUFACTURER SINCE 2018",
     "heading": "Your Trusted <span>Intimate Apparel</span> Manufacturing Partner",
-    "sub": "Lingerie, shapewear, panties, and silicone bras — from design to delivery. BSCI & OEKO-TEX certified quality.",
+    "sub": "Lingerie, shapewear, panties, and silicone bras — from design to delivery. Sedex SMETA audited quality.",
     "browse": "Browse Catalog",
     "quote": "Request a Quote",
     "sample": "📦 Small Batch Sample"
@@ -47,7 +47,7 @@ export default {
     "title": "End-to-End Manufacturing<br />Under One Roof",
     "items": [
       { "title": "Full OEM/ODM Service", "desc": "From tech pack to bulk production. Pattern making, sample development, size grading." },
-      { "title": "Certified Quality", "desc": "BSCI & OEKO-TEX certified factory. Three-stage QC process (AQL 2.5)." },
+      { "title": "Certified Quality", "desc": "Sedex SMETA audited factory. Three-stage QC process (AQL 2.5)." },
       { "title": "Small Batch Available", "desc": "Sampling through Viomisha.com. Evaluate quality before committing to bulk." },
       { "title": "Global Export Experience", "desc": "Shipping to North America, Europe, Middle East & Southeast Asia. FCL/LCL." }
     ]
@@ -87,7 +87,7 @@ export default {
     "sampleBtn": "📦 Shop Small Batch →",
     "badges": {
       "oem": "OEM/ODM",
-      "certified": "BSCI & OEKO-TEX",
+      "certified": "Sedex & SMETA",
       "moq": "MOQ {qty} pcs",
       "leadTime": "Lead Time 30-45 Days"
     },
@@ -135,7 +135,7 @@ export default {
   },
   "footer": {
     "aboutTitle": "Charlizi Factory",
-    "aboutText": "BSCI & OEKO-TEX certified intimate apparel manufacturer. OEM/ODM since 2018.",
+    "aboutText": "Sedex SMETA audited intimate apparel manufacturer. OEM/ODM since 2018.",
     "productTitle": "Products",
     "companyTitle": "Company",
     "companyLinks": {

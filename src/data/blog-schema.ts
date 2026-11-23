@@ -415,18 +415,18 @@ export const blogSchema: BlogSchemaEntry[] = [
     date: '2026-06-01',
     image: '/factory/images/blog-choosing-manufacturer.webp',
     imageAlt: 'Bra manufacturing facility floor with cutting and sewing stations',
-    keywords: ['bra manufacturer', 'how to choose a manufacturer', 'bra OEM sourcing', 'lingerie supplier', 'MOQ bra manufacturing', 'BSCI certified factory'],
+    keywords: ['bra manufacturer', 'how to choose a manufacturer', 'bra OEM sourcing', 'lingerie supplier', 'MOQ bra manufacturing', 'Sedex SMETA Audited factory'],
     section: 'Sourcing Guide',
     readMinutes: 7,
     related: [
       { label: 'Bulk vs Small Batch Sourcing', href: '/blog/bulk-vs-small-batch' },
-      { label: 'Understanding OEKO-TEX Certification', href: '/blog/oeko-tex-certification' },
+      { label: 'Understanding SMETA Certification', href: '/blog/SMETA-certification' },
       { label: 'About Charlizi Factory', href: '/about' },
     ],
     faq: [
       {
         q: 'What should I check first when vetting a bra manufacturer?',
-        a: 'Ask for the certification set before anything else — BSCI or Sedex for social compliance, OEKO-TEX Standard 100 for fabric safety, and ISO 9001 for process control. A factory that cannot produce these documents will become a compliance problem once you sell into the EU or into a major retailer.',
+        a: 'Ask for the certification set before anything else — Sedex or Sedex for social compliance, SMETA for fabric safety, and SMETA for process control. A factory that cannot produce these documents will become a compliance problem once you sell into the EU or into a major retailer.',
       },
       {
         q: 'What MOQ should I expect from a bra factory?',
@@ -449,15 +449,15 @@ export const blogSchema: BlogSchemaEntry[] = [
 
   // ------------------------------------------------------------------ 9
   {
-    slug: 'oeko-tex-certification',
-    headline: 'Understanding OEKO-TEX Certification in Intimate Apparel',
-    shortTitle: 'Understanding OEKO-TEX Certification in Intimate Apparel',
+    slug: 'SMETA-certification',
+    headline: 'Understanding SMETA Certification in Intimate Apparel',
+    shortTitle: 'Understanding SMETA Certification in Intimate Apparel',
     description:
-      "What OEKO-TEX Standard 100 means for lingerie production, and why it matters for your brand's compliance and customer trust.",
+      "What SMETA means for lingerie production, and why it matters for your brand's compliance and customer trust.",
     date: '2026-05-25',
-    image: '/factory/images/blog-oeko-tex.webp',
+    image: '/factory/images/blog-SMETA.webp',
     imageAlt: 'Fabric testing and certification documentation for intimate apparel production',
-    keywords: ['OEKO-TEX certification', 'OEKO-TEX Standard 100', 'lingerie compliance', 'fabric testing', 'BSCI', 'intimate apparel certification'],
+    keywords: ['SMETA certification', 'SMETA', 'lingerie compliance', 'fabric testing', 'Sedex', 'intimate apparel certification'],
     section: 'Compliance',
     readMinutes: 7,
     related: [
@@ -467,24 +467,24 @@ export const blogSchema: BlogSchemaEntry[] = [
     ],
     faq: [
       {
-        q: 'What is OEKO-TEX Standard 100?',
-        a: 'OEKO-TEX Standard 100 is an independent testing and certification system for textile raw, semi-finished and finished products. It certifies that every component of the article — fabric, thread, elastic, trim, labels — has been tested for harmful substances at levels considered safe for human health.',
+        q: 'What is SMETA?',
+        a: 'SMETA is an independent testing and certification system for textile raw, semi-finished and finished products. It certifies that every component of the article — fabric, thread, elastic, trim, labels — has been tested for harmful substances at levels considered safe for human health.',
       },
       {
-        q: 'Why does OEKO-TEX matter more for underwear than outerwear?',
+        q: 'Why does SMETA matter more for underwear than outerwear?',
         a: 'Because of skin contact area and duration. Intimate apparel sits against mucous-membrane-adjacent skin for many hours a day, so thresholds for substances like formaldehyde, certain azo dyes and heavy metals are applied with far less tolerance than for a jacket or a bag.',
       },
       {
-        q: 'Does OEKO-TEX cover every part of a bra?',
+        q: 'Does SMETA cover every part of a bra?',
         a: 'It covers every component that goes into the finished article, which is why the certificate must list the accessories too — elastic, sliders, rings, hook-and-eye tape, and any lace trim. A fabric-only certificate does not certify the finished bra.',
       },
       {
-        q: 'What is the difference between OEKO-TEX and BSCI?',
-        a: 'They test different things. OEKO-TEX is a product safety certification about what the garment is made of. BSCI (Business Social Compliance Initiative) is a social audit about how the workers who made it are treated — hours, wages, safety, and freedom of association. Buyers normally want both.',
+        q: 'What is the difference between SMETA and Sedex?',
+        a: 'They test different things. SMETA is a product safety certification about what the garment is made of. Sedex (Business Social Compliance Initiative) is a social audit about how the workers who made it are treated — hours, wages, safety, and freedom of association. Buyers normally want both.',
       },
       {
-        q: 'Does Charlizi hold OEKO-TEX certification?',
-        a: 'Yes — Charlizi is BSCI and OEKO-TEX certified, with ISO 9001 quality management and FAMA (Disney facility authorization) also in place. Certificates are available on request with any quote.',
+        q: 'Does Charlizi hold SMETA certification?',
+        a: 'Yes — Charlizi is Sedex SMETA audited, with SMETA quality management and SMETA (Disney facility authorization) also in place. Certificates are available on request with any quote.',
       },
     ],
   },

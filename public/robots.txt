@@ -35,6 +35,9 @@ Disallow: /manage
 Disallow: /decapcms
 Disallow: /cgi-bin
 Disallow: /api/
+# Price/stock sub-app — protected behind login, must never be indexed
+Disallow: /quote/
+Disallow: /quote
 
 # ---------------------------------------------------------------------------
 # Group 2 — AI search / answer engines: ALLOWED (GEO channel)

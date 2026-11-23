@@ -2,7 +2,7 @@
 export default {
   "site": {
     "title": "Fabricante OEM de Ropa Interior Íntima | Fábrica de Lencería en China",
-    "desc": "Charlizi Factory — fabricante profesional de lencería y ropa interior OEM/ODM. Certificado BSCI y OEKO-TEX. Sujetadores, fajas, braguitas, sujetadores de silicona y ropa de dormir personalizada.",
+    "desc": "Charlizi Factory — fabricante profesional de lencería y ropa interior OEM/ODM. Certificado Sedex y SMETA. Sujetadores, fajas, braguitas, sujetadores de silicona y ropa de dormir personalizada.",
     "tagline": "Fábrica"
   },
   "nav": {
@@ -20,7 +20,7 @@ export default {
   "hero": {
     "label": "FABRICANTE OEM/ODM DESDE 2018",
     "heading": "Su Socio de Confianza en <span>Ropa Interior Íntima</span>",
-    "sub": "Lencería, fajas, braguitas y sujetadores de silicona — del diseño a la entrega. Calidad certificada BSCI y OEKO-TEX.",
+    "sub": "Lencería, fajas, braguitas y sujetadores de silicona — del diseño a la entrega. Calidad certificada Sedex y SMETA.",
     "browse": "Ver Catálogo",
     "quote": "Solicitar Cotización",
     "sample": "📦 Muestra de Lote Pequeño"
@@ -47,7 +47,7 @@ export default {
     "title": "Fabricación Integral<br />Bajo un Mismo Techo",
     "items": [
       { "title": "Servicio OEM/ODM Completo", "desc": "Desde ficha técnica hasta producción en masa. Creación de patrones, desarrollo de muestras, graduación de tallas." },
-      { "title": "Calidad Certificada", "desc": "Fábrica certificada BSCI y OEKO-TEX. Proceso de control de calidad en tres etapas (AQL 2.5)." },
+      { "title": "Calidad Certificada", "desc": "Fábrica certificada Sedex y SMETA. Proceso de control de calidad en tres etapas (AQL 2.5)." },
       { "title": "Lotes Pequeños Disponibles", "desc": "Muestras a través de Viomisha.com. Evalúe la calidad antes de comprometerse con un pedido grande." },
       { "title": "Experiencia en Exportación Global", "desc": "Envíos a Norteamérica, Europa, Medio Oriente y Sudeste Asiático. FCL/LCL." }
     ]
@@ -87,7 +87,7 @@ export default {
     "sampleBtn": "📦 Comprar Lote Pequeño →",
     "badges": {
       "oem": "OEM/ODM",
-      "certified": "BSCI y OEKO-TEX",
+      "certified": "Sedex y SMETA",
       "moq": "MOQ {qty} uds",
       "leadTime": "Plazo 30-45 Días"
     },
@@ -135,7 +135,7 @@ export default {
   },
   "footer": {
     "aboutTitle": "Charlizi Factory",
-    "aboutText": "Fabricante de ropa interior íntima certificado BSCI y OEKO-TEX. OEM/ODM desde 2018.",
+    "aboutText": "Fabricante de ropa interior íntima certificado Sedex y SMETA. OEM/ODM desde 2018.",
     "productTitle": "Productos",
     "companyTitle": "Empresa",
     "companyLinks": {

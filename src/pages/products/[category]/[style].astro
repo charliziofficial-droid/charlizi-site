@@ -6,6 +6,7 @@ import FactoryLayout from '../../../layouts/FactoryLayout.astro';
 import { styleContent, type StyleContent } from '../../../data/product-style-content';
 import { styleExtra } from '../../../data/product-style-content-extra';
 import { applyTitleOverrides } from '../../../data/style-titles-override';
+import { FACTS, factSummary } from '../../../data/factory-facts';
 import { CONTACT } from '../../../data/contact';
 
 // 注意：Astro 会把 getStaticPaths 提升到模块级执行，它无法访问同文件里的
@@ -57,10 +58,15 @@ const productSchema = {
     name: s.baseTitle,
   },
   additionalProperty: [
-    { '@type': 'PropertyValue', name: 'Minimum Order Quantity', value: '200 pcs' },
-    { '@type': 'PropertyValue', name: 'Business Type', value: 'OEM / ODM Manufacturer' },
-    { '@type': 'PropertyValue', name: 'Place of Origin', value: 'Guangdong, China' },
-    { '@type': 'PropertyValue', name: 'Pricing', value: 'EXW, tiered by order quantity — request quotation' },
+    { '@type': 'PropertyValue', name: 'Minimum Order Quantity', value: FACTS.ordering.moq },
+    { '@type': 'PropertyValue', name: 'Business Type', value: FACTS.company.businessType },
+    { '@type': 'PropertyValue', name: 'Place of Origin', value: `${FACTS.location.province}, ${FACTS.location.country}` },
+    { '@type': 'PropertyValue', name: 'Pricing', value: `${FACTS.ordering.priceBasis} — request quotation` },
+    { '@type': 'PropertyValue', name: 'Sample Lead Time', value: FACTS.ordering.sampleLeadTime },
+    { '@type': 'PropertyValue', name: 'Bulk Lead Time', value: FACTS.ordering.bulkLeadTime },
+    { '@type': 'PropertyValue', name: 'Payment Terms', value: FACTS.ordering.paymentTerms },
+    { '@type': 'PropertyValue', name: 'Customization', value: FACTS.customization.privateLabel },
+    { '@type': 'PropertyValue', name: 'Social Compliance', value: 'SMETA 4-pillar audited; Sedex member' },
   ],
 };
 
@@ -126,7 +132,7 @@ const faqSchema = {
       <div>
         <div class="flex items-center gap-3 mb-4">
           <span class="badge-navy badge">OEM/ODM</span>
-          <span class="badge-accent badge">BSCI &amp; OEKO-TEX</span>
+          <span class="badge-accent badge">Sedex &amp; SMETA</span>
         </div>
         <h1 class="text-3xl md:text-4xl font-bold text-navy mb-4 text-balance">{s.h1}</h1>
         <p class="text-stone leading-relaxed mb-6">{s.intro}</p>
@@ -181,6 +187,65 @@ const faqSchema = {
           </div>
         ))}
       </div>
+    </section>
+
+    <!-- Factory facts (GEO) -->
+    <!-- 用 dl/dt/dd 语义化标注，AI 爬虫能直接抽取「字段 → 值」对 -->
+    <section class="mb-16" id="factory-facts">
+      <span class="section-label">Factory Facts</span>
+      <h2 class="section-title text-2xl md:text-3xl mb-2">Supplier Profile &amp; Ordering Terms</h2>
+      <p class="text-sm text-stone max-w-3xl mb-6">{factSummary()}</p>
+
+      <dl class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 max-w-4xl text-sm">
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Business Type</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.company.businessType}</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Established</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.company.founded}</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Location</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.location.city}, {FACTS.location.province}, {FACTS.location.country}</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Minimum Order Quantity</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.ordering.moq}</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Sample Lead Time</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.ordering.sampleLeadTime}</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Bulk Lead Time</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.ordering.bulkLeadTime}</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Price Basis</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.ordering.priceBasis} ({FACTS.ordering.currency})</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Payment Terms</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.ordering.paymentTerms}</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Factory Capacity</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.capacity.workers} workers · {FACTS.capacity.factoryArea} · {FACTS.capacity.annualOutput} pcs/year</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Social Compliance</dt>
+          <dd class="font-medium text-navy mt-1">SMETA 4-pillar audited · Sedex member</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Customization</dt>
+          <dd class="font-medium text-navy mt-1">Private label, custom fabric, Pantone dyeing</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-3">
+          <dt class="text-stone/60 uppercase tracking-wider text-xs">Port of Loading</dt>
+          <dd class="font-medium text-navy mt-1">{FACTS.ordering.portOfLoading}</dd>
+        </div>
+      </dl>
     </section>
 
     <!-- FAQ -->

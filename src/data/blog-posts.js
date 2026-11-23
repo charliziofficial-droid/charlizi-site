@@ -11,7 +11,7 @@ export const handBuiltSlugs = new Set([
   'size-grading',
   'wirefree-vs-underwire',
   'choosing-bra-manufacturer',
-  'oeko-tex-certification',
+  'SMETA-certification',
   'bulk-vs-small-batch',
   'adhesive-bra-spec-guide',
   'silicone-cup-moulding-process',
@@ -28,6 +28,6 @@ export const blogPosts = [
   { title: 'Size Grading for Full-Bust Bras: Where Ranges Break', slug: 'size-grading', date: '2026-11-08', image: 'blog-size-grading-hero.webp', desc: 'Why scaling a 34B pattern to a 42F does not work, how grading increments should change above a D cup, and what to specify so your full-bust sizes actually fit.' },
   { title: 'Wirefree vs Underwire Bras: What Actually Changes in Production', slug: 'wirefree-vs-underwire', date: '2026-11-08', image: 'blog-wirefree-underwire-hero.webp', desc: 'The real manufacturing differences between wirefree and underwire bras - pattern complexity, support structures, grading costs and how to choose for your product line.' },
   { title: 'How to Choose the Right Bra Manufacturer for Your Brand', slug: 'choosing-bra-manufacturer', date: '2026-06-01', image: 'blog-choosing-manufacturer.webp', desc: 'A practical guide for DTC brands looking for a reliable bra OEM partner - from MOQ considerations to quality certification requirements.' },
-  { title: 'Understanding OEKO-TEX Certification in Intimate Apparel', slug: 'oeko-tex-certification', date: '2026-05-25', image: 'blog-oeko-tex.webp', desc: 'What OEKO-TEX Standard 100 means for lingerie production, and why it matters for your brand\'s compliance and customer trust.' },
+  { title: 'Understanding SMETA Certification in Intimate Apparel', slug: 'SMETA-certification', date: '2026-05-25', image: 'blog-SMETA.webp', desc: 'What SMETA means for lingerie production, and why it matters for your brand\'s compliance and customer trust.' },
   { title: 'Bulk vs Small Batch: Sourcing Strategy for Apparel Brands', slug: 'bulk-vs-small-batch', date: '2026-05-18', image: 'blog-bulk-vs-small.webp', desc: 'When to start with small batch sampling and when to scale to full production. A strategic guide for intimate apparel brands.' },
 ];

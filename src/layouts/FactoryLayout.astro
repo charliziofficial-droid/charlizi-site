@@ -64,7 +64,7 @@ import '../styles/global.css';
       logo: 'https://charlizi.com/factory/images/logo.png',
       image: 'https://charlizi.com/images/og-factory-default.jpg',
       description:
-        'Professional intimate apparel OEM/ODM manufacturer in Guangdong, China. BSCI & OEKO-TEX certified. Bras, panties, shapewear, and sleepwear for brands worldwide.',
+        'Professional intimate apparel OEM/ODM manufacturer in Guangdong, China. Sedex SMETA audited. Bras, panties, shapewear, and sleepwear for brands worldwide.',
       foundingDate: '2018',
       address: {
         '@type': 'PostalAddress',
@@ -90,12 +90,27 @@ import '../styles/global.css';
         { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ODM Custom Development' } },
       ],
       hasCredential: [
-        { '@type': 'EducationalOccupationalCredential', name: 'BSCI' },
-        { '@type': 'EducationalOccupationalCredential', name: 'OEKO-TEX' },
-        { '@type': 'EducationalOccupationalCredential', name: 'ISO 9001' },
-        { '@type': 'EducationalOccupationalCredential', name: 'FAMA' },
+        { '@type': 'EducationalOccupationalCredential', name: 'Sedex Membership', credentialCategory: 'Ethical Trade Membership', recognizedBy: { '@type': 'Organization', name: 'Sedex' } },
+        { '@type': 'EducationalOccupationalCredential', name: 'SMETA 4-Pillar Audit', credentialCategory: 'Social Compliance Audit', recognizedBy: { '@type': 'Organization', name: 'Sedex' } },
       ],
       areaServed: ['North America', 'Europe', 'Middle East', 'Southeast Asia'],
+      // GEO：供应商能力与采购条款（AI 搜索直接引用的字段）
+      naics: '315240',
+      numberOfEmployees: { '@type': 'QuantitativeValue', value: 200, unitText: 'people' },
+      foundingLocation: { '@type': 'Place', name: 'Puning, Guangdong, China' },
+      knowsLanguage: ['en', 'zh'],
+      slogan: 'Intimate apparel OEM/ODM manufacturer since 2018',
+      additionalProperty: [
+        { '@type': 'PropertyValue', name: 'Minimum Order Quantity', value: '200 pcs per design per colour' },
+        { '@type': 'PropertyValue', name: 'Sample Lead Time', value: '7-15 days after tech pack confirmation' },
+        { '@type': 'PropertyValue', name: 'Bulk Lead Time', value: '30-45 days after sample approval' },
+        { '@type': 'PropertyValue', name: 'Price Basis', value: 'EXW, tiered by order quantity, USD' },
+        { '@type': 'PropertyValue', name: 'Payment Terms', value: '30% deposit / 70% before shipment' },
+        { '@type': 'PropertyValue', name: 'Factory Area', value: '5,000 sqm' },
+        { '@type': 'PropertyValue', name: 'Annual Output', value: '5,000,000+ pcs' },
+        { '@type': 'PropertyValue', name: 'Monthly Containers', value: '40+' },
+        { '@type': 'PropertyValue', name: 'Port of Loading', value: 'Shenzhen / Shantou, Guangdong' },
+      ],
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'sales',
@@ -242,7 +257,7 @@ import '../styles/global.css';
           <span class="text-accent text-xs tracking-widest uppercase ml-2">Factory</span>
           <p class="mt-4 text-sm text-white/60 leading-relaxed max-w-md">
             Professional intimate apparel OEM/ODM manufacturer since 2018.
-            BSCI & OEKO-TEX certified. {factoryStats.workers} skilled workers, {factoryStats.area} facility.
+            Sedex SMETA audited. {factoryStats.workers} skilled workers, {factoryStats.area} facility.
           </p>
           <p class="mt-2 text-xs text-white/40">
             Export markets: {factoryStats.exportMarkets}

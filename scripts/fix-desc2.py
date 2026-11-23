@@ -16,10 +16,10 @@ CAT_PHRASE = {
 def shorten(cat, code):
     phrase = CAT_PHRASE.get(cat, 'intimate apparel OEM')
     cands = [
-        f'{phrase} {code}: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.',
-        f'{phrase} {code} — custom fabric, colour, sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Get a quote.',
-        f'{phrase} {code}: custom fabric & sizing. BSCI & OEKO-TEX certified. MOQ 200 pcs.',
-        f'{phrase} {code}. Custom fabric, colour, sizing. MOQ 200 pcs. BSCI certified.',
+        f'{phrase} {code}: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.',
+        f'{phrase} {code} — custom fabric, colour, sizing. Sedex & SMETA. MOQ 200 pcs. Get a quote.',
+        f'{phrase} {code}: custom fabric & sizing. Sedex SMETA audited. MOQ 200 pcs.',
+        f'{phrase} {code}. Custom fabric, colour, sizing. MOQ 200 pcs. Sedex SMETA Audited.',
         f'{phrase} {code} from Charlizi Factory. Custom sizing, MOQ 200 pcs.',
     ]
     for c in cands:

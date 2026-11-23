@@ -12,7 +12,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra 1340 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra 1340 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras 1340: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras 1340: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra 1340 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -48,7 +48,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -76,7 +76,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -105,7 +105,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra 1500-7 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra 1500-7 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras 1500-7: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras 1500-7: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra 1500-7 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -141,7 +141,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -169,7 +169,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -198,7 +198,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra A5032 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra A5032 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras a5032: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras a5032: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra A5032 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -234,7 +234,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -262,7 +262,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -296,7 +296,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra A5034 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra A5034 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras a5034: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras a5034: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra A5034 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -332,7 +332,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -360,7 +360,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -394,7 +394,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B1133 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B1133 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b1133: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b1133: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B1133 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -430,7 +430,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -458,7 +458,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -492,7 +492,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B2019 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B2019 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b2019: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b2019: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B2019 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -528,7 +528,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -556,7 +556,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -595,7 +595,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B2048 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B2048 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b2048: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b2048: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B2048 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -631,7 +631,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -659,7 +659,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -693,7 +693,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B2049 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B2049 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b2049: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b2049: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B2049 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -729,7 +729,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -757,7 +757,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -791,7 +791,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B269 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B269 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b269: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b269: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B269 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -827,7 +827,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -855,7 +855,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -889,7 +889,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B6043 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B6043 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b6043: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b6043: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B6043 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -925,7 +925,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -953,7 +953,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -997,7 +997,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B6103 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B6103 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b6103: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b6103: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B6103 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1033,7 +1033,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1061,7 +1061,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1100,7 +1100,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B6111 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B6111 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b6111: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b6111: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B6111 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1136,7 +1136,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1164,7 +1164,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1198,7 +1198,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B6113 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B6113 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b6113: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b6113: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B6113 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1234,7 +1234,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1262,7 +1262,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1296,7 +1296,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra B6134 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra B6134 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras b6134: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras b6134: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra B6134 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1332,7 +1332,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1360,7 +1360,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1394,7 +1394,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra C8820 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra C8820 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras c8820: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras c8820: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra C8820 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1430,7 +1430,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1458,7 +1458,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1492,7 +1492,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra R044 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra R044 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras r044: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras r044: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra R044 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1528,7 +1528,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1556,7 +1556,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1590,7 +1590,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra U03 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra U03 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras u03: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras u03: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra U03 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1626,7 +1626,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1654,7 +1654,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1693,7 +1693,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra U056 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra U056 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras u056: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras u056: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra U056 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1729,7 +1729,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1757,7 +1757,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1791,7 +1791,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra U06 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra U06 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras u06: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras u06: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra U06 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1827,7 +1827,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1855,7 +1855,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1889,7 +1889,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra U204 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra U204 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras u204: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras u204: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra U204 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -1925,7 +1925,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -1953,7 +1953,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -1987,7 +1987,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra U210 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra U210 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras u210: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras u210: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra U210 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -2023,7 +2023,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2051,7 +2051,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2085,7 +2085,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra YS03 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra YS03 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras ys03: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras ys03: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra YS03 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -2121,7 +2121,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2149,7 +2149,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2183,7 +2183,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Bra YS04 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra YS04 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bras ys04: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras ys04: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra YS04 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire or wire-free construction to your spec. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire or wire-free construction to your spec",
@@ -2219,7 +2219,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2247,7 +2247,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2281,7 +2281,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set 10751 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set 10751 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets 10751: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets 10751: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set 10751 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -2317,7 +2317,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2345,7 +2345,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2374,7 +2374,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A1112 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A1112 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a1112: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a1112: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A1112 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -2410,7 +2410,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2438,7 +2438,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2477,7 +2477,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A1119 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A1119 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a1119: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a1119: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A1119 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -2513,7 +2513,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2541,7 +2541,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2580,7 +2580,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A1130 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A1130 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a1130: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a1130: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A1130 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -2616,7 +2616,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2644,7 +2644,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2683,7 +2683,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A1558 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A1558 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a1558: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a1558: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A1558 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -2719,7 +2719,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2747,7 +2747,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2786,7 +2786,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A2099 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A2099 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a2099: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a2099: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A2099 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -2822,7 +2822,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2850,7 +2850,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -2904,7 +2904,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A2124 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A2124 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a2124: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a2124: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A2124 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -2940,7 +2940,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -2968,7 +2968,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3002,7 +3002,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A2138 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A2138 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a2138: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a2138: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A2138 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3038,7 +3038,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3066,7 +3066,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3100,7 +3100,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A3136 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A3136 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a3136: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a3136: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A3136 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3136,7 +3136,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3164,7 +3164,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3198,7 +3198,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set A4001 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set A4001 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets a4001: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets a4001: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set A4001 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3234,7 +3234,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3262,7 +3262,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3296,7 +3296,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set B2046 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set B2046 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets b2046: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets b2046: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set B2046 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3332,7 +3332,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3360,7 +3360,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3394,7 +3394,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set B2050 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set B2050 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets b2050: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets b2050: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set B2050 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3430,7 +3430,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3458,7 +3458,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3492,7 +3492,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set B6112 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set B6112 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets b6112: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets b6112: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set B6112 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3528,7 +3528,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3556,7 +3556,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3590,7 +3590,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set C2703 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set C2703 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets c2703: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets c2703: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set C2703 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3626,7 +3626,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3654,7 +3654,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3688,7 +3688,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set U092 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set U092 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets u092: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets u092: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set U092 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3724,7 +3724,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3752,7 +3752,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3786,7 +3786,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Bra Set U098 — OEM Wholesale Manufacturer",
     "seoTitle": "Bra Set U098 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM bra sets u098: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets u098: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Bra Set U098 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Coordinated bra and bottom in matching fabric. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Coordinated bra and bottom in matching fabric",
@@ -3822,7 +3822,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3850,7 +3850,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3884,7 +3884,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra 10761 Gold — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra 10761 Gold OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM 10761: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM 10761: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra 10761 Gold produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -3920,7 +3920,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -3948,7 +3948,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -3977,7 +3977,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra 71HHDJ7WWBL._AC_SX679_ — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra 71HHDJ7WWBL._AC_SX679_ OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM 71hhdj7wwbl-ac-sx679: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM 71hhdj7wwbl-ac-sx679: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra 71HHDJ7WWBL._AC_SX679_ produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4013,7 +4013,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4041,7 +4041,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4070,7 +4070,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J1074 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J1074 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j1074: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j1074: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J1074 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4106,7 +4106,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4134,7 +4134,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4163,7 +4163,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J10741 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J10741 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j10741: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j10741: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J10741 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4199,7 +4199,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4227,7 +4227,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4261,7 +4261,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J10744 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J10744 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j10744: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j10744: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J10744 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4297,7 +4297,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4325,7 +4325,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4354,7 +4354,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J10749 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J10749 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j10749: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j10749: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J10749 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4390,7 +4390,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4418,7 +4418,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4452,7 +4452,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J10751 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J10751 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j10751: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j10751: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J10751 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4488,7 +4488,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4516,7 +4516,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4550,7 +4550,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J10765 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J10765 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j10765: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j10765: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J10765 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4586,7 +4586,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4614,7 +4614,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4648,7 +4648,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J10773 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J10773 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j10773: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j10773: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J10773 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4684,7 +4684,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4712,7 +4712,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4746,7 +4746,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J10782 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J10782 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j10782: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j10782: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J10782 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4782,7 +4782,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4810,7 +4810,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4844,7 +4844,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra J10794 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra J10794 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM j10794: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM j10794: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra J10794 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4880,7 +4880,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -4908,7 +4908,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -4942,7 +4942,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra JA1066 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra JA1066 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM ja1066: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM ja1066: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra JA1066 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -4978,7 +4978,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5006,7 +5006,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5040,7 +5040,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra JA23372 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra JA23372 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM ja23372: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM ja23372: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra JA23372 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -5076,7 +5076,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5104,7 +5104,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5143,7 +5143,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra JA2662 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra JA2662 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM ja2662: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM ja2662: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra JA2662 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -5179,7 +5179,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5207,7 +5207,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5241,7 +5241,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Bra JC2431 — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Bra JC2431 OEM Wholesale Manufacturer",
-    "seoDescription": "silicone bra OEM jc2431: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM jc2431: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Bra JC2431 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Skin-friendly silicone adhesive, reusable. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Skin-friendly silicone adhesive, reusable",
@@ -5277,7 +5277,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5305,7 +5305,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5339,7 +5339,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Panties C209 — OEM Wholesale Manufacturer",
     "seoTitle": "Panties C209 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM panties c209: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties c209: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Panties C209 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Brief, thong, hipster and high-waist shapes. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Brief, thong, hipster and high-waist shapes",
@@ -5375,7 +5375,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5403,7 +5403,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5442,7 +5442,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Panties C312 — OEM Wholesale Manufacturer",
     "seoTitle": "Panties C312 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM panties c312: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties c312: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Panties C312 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Brief, thong, hipster and high-waist shapes. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Brief, thong, hipster and high-waist shapes",
@@ -5478,7 +5478,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5506,7 +5506,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5540,7 +5540,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Panties C3307 — OEM Wholesale Manufacturer",
     "seoTitle": "Panties C3307 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM panties c3307: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties c3307: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Panties C3307 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Brief, thong, hipster and high-waist shapes. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Brief, thong, hipster and high-waist shapes",
@@ -5576,7 +5576,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5604,7 +5604,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5648,7 +5648,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Panties C390 — OEM Wholesale Manufacturer",
     "seoTitle": "Panties C390 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM panties c390: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties c390: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Panties C390 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Brief, thong, hipster and high-waist shapes. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Brief, thong, hipster and high-waist shapes",
@@ -5684,7 +5684,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5712,7 +5712,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5746,7 +5746,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Panties C8591 — OEM Wholesale Manufacturer",
     "seoTitle": "Panties C8591 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM panties c8591: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties c8591: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Panties C8591 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Brief, thong, hipster and high-waist shapes. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Brief, thong, hipster and high-waist shapes",
@@ -5782,7 +5782,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5810,7 +5810,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5839,7 +5839,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Panties C878 — OEM Wholesale Manufacturer",
     "seoTitle": "Panties C878 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM panties c878: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties c878: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Panties C878 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Brief, thong, hipster and high-waist shapes. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Brief, thong, hipster and high-waist shapes",
@@ -5875,7 +5875,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5903,7 +5903,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -5932,7 +5932,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Panties C967 — OEM Wholesale Manufacturer",
     "seoTitle": "Panties C967 OEM Wholesale Manufacturer",
-    "seoDescription": "OEM panties c967: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties c967: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Panties C967 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Brief, thong, hipster and high-waist shapes. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Brief, thong, hipster and high-waist shapes",
@@ -5968,7 +5968,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -5996,7 +5996,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6025,7 +6025,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Shapewear & Bodysuits",
     "h1": "Shapewear & Bodysuit A8168 — OEM Wholesale Manufacturer",
     "seoTitle": "Shapewear & Bodysuit A8168 OEM Wholesale Manufacturer",
-    "seoDescription": "shapewear OEM a8168: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "shapewear OEM a8168: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Shapewear & Bodysuit A8168 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Tummy control and waist definition panels. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Tummy control and waist definition panels",
@@ -6061,7 +6061,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6089,7 +6089,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6138,7 +6138,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Shapewear & Bodysuits",
     "h1": "Shapewear & Bodysuit A8805 — OEM Wholesale Manufacturer",
     "seoTitle": "Shapewear & Bodysuit A8805 OEM Wholesale Manufacturer",
-    "seoDescription": "shapewear OEM a8805: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "shapewear OEM a8805: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Shapewear & Bodysuit A8805 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Tummy control and waist definition panels. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Tummy control and waist definition panels",
@@ -6174,7 +6174,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6202,7 +6202,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6236,7 +6236,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Shapewear & Bodysuits",
     "h1": "Shapewear & Bodysuit A8808 — OEM Wholesale Manufacturer",
     "seoTitle": "Shapewear & Bodysuit A8808 OEM Wholesale Manufacturer",
-    "seoDescription": "shapewear OEM a8808: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "shapewear OEM a8808: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Shapewear & Bodysuit A8808 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Tummy control and waist definition panels. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Tummy control and waist definition panels",
@@ -6272,7 +6272,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6300,7 +6300,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6354,7 +6354,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Shapewear & Bodysuits",
     "h1": "Shapewear & Bodysuit YS01 — OEM Wholesale Manufacturer",
     "seoTitle": "Shapewear & Bodysuit YS01 OEM Wholesale Manufacturer",
-    "seoDescription": "shapewear OEM ys01: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "shapewear OEM ys01: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Shapewear & Bodysuit YS01 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Tummy control and waist definition panels. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Tummy control and waist definition panels",
@@ -6390,7 +6390,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6418,7 +6418,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6452,7 +6452,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Camisole Sets",
     "h1": "Camisole Set B6051 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set B6051 OEM Wholesale Manufacturer",
-    "seoDescription": "camisole set OEM b6051: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "camisole set OEM b6051: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Camisole Set B6051 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Camisole tops and matching two-piece sets. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Camisole tops and matching two-piece sets",
@@ -6488,7 +6488,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6516,7 +6516,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6555,7 +6555,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Camisole Sets",
     "h1": "Camisole Set M001 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set M001 OEM Wholesale Manufacturer",
-    "seoDescription": "camisole set OEM m001: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "camisole set OEM m001: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Camisole Set M001 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Camisole tops and matching two-piece sets. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Camisole tops and matching two-piece sets",
@@ -6591,7 +6591,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6619,7 +6619,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6653,7 +6653,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Camisole Sets",
     "h1": "Camisole Set M002 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set M002 OEM Wholesale Manufacturer",
-    "seoDescription": "camisole set OEM m002: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "camisole set OEM m002: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Camisole Set M002 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Camisole tops and matching two-piece sets. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Camisole tops and matching two-piece sets",
@@ -6689,7 +6689,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6717,7 +6717,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6751,7 +6751,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Camisole Sets",
     "h1": "Camisole Set M13 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set M13 OEM Wholesale Manufacturer",
-    "seoDescription": "camisole set OEM m13: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "camisole set OEM m13: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Camisole Set M13 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Camisole tops and matching two-piece sets. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Camisole tops and matching two-piece sets",
@@ -6787,7 +6787,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6815,7 +6815,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [
@@ -6849,7 +6849,7 @@ export const styleExtra: Record<string, StyleContent> =
     "categoryName": "Camisole Sets",
     "h1": "Camisole Set U018 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set U018 OEM Wholesale Manufacturer",
-    "seoDescription": "camisole set OEM u018: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "camisole set OEM u018: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Camisole Set U018 produced in our Guangdong factory for brands, wholesalers and private-label buyers. Camisole tops and matching two-piece sets. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Camisole tops and matching two-piece sets",
@@ -6885,7 +6885,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Packing",
@@ -6913,7 +6913,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "q": "Are you certified for export?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified fabrics. Full documentation is provided with each order."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Full documentation is provided with each order."
       }
     ],
     "images": [

@@ -3,14 +3,14 @@
 fix_certifications.py — 认证信息纠错（2026-11-23）
 
 主理人指令：网站只允许出现 Sedex / SMETA 认证。
-现有站点虚构了 BSCI / OEKO-TEX Standard 100 / ISO 9001 / FAMA / GOTS / WRAP，
+现有站点虚构了 Sedex / SMETA / SMETA / SMETA / SMETA / SMETA，
 属于欺诈性 B2B 宣传（客户会索要审核报告），必须全部清除。
 
 策略：
   1. 源头文件（b2b.ts / products-b2b.js / certifications.json / faq.json 等）语义化改写
   2. 批量派生文件（product-style-content*.ts / style-titles*.json）正则替换
-  3. 删除整篇 OEKO-TEX 博客及其索引
-  4. 自检：全站 0 处 BSCI / OEKO-TEX / ISO 9001 / FAMA / GOTS / WRAP（历史 blog 除外时显式报出）
+  3. 删除整篇 SMETA 博客及其索引
+  4. 自检：全站 0 处 Sedex / SMETA / SMETA / SMETA / SMETA / SMETA（历史 blog 除外时显式报出）
 
 用法: python -X utf8 scripts/fix_certifications.py [--apply]
 不带 --apply 只报告。
@@ -28,31 +28,31 @@ SKIP_DIRS = ('node_modules', 'dist', '.git', '.astro')
 
 # 要清除的虚构认证
 FAKE = {
-    'BSCI':  re.compile(r'BSCI', re.I),
+    'Sedex':  re.compile(r'Sedex', re.I),
     'OEKO':  re.compile(r'OEKO[\s-]?TEX(\s+Standard\s+100)?', re.I),
     'ISO':   re.compile(r'ISO\s*9001(:?2015)?', re.I),
-    'FAMA':  re.compile(r'(Disney\s+)?FAMA', re.I),
-    'GOTS':  re.compile(r'GOTS(?:/OCS)?', re.I),
-    'WRAP':  re.compile(r'\bWRAP\b'),
+    'SMETA':  re.compile(r'(Disney\s+)?SMETA', re.I),
+    'SMETA':  re.compile(r'SMETA(?:/OCS)?', re.I),
+    'SMETA':  re.compile(r'\bWRAP\b'),
 }
 
 # ---- 语义化替换（长句优先，顺序敏感）----
 PHRASE_RULES = [
     # 认证并列 → 统一 Sedex / SMETA
-    (re.compile(r'BSCI\s*&\s*OEKO-?TEX\s*certified', re.I), 'Sedex SMETA audited'),
-    (re.compile(r'BSCI\s*/\s*OEKO-?TEX\s*certified', re.I), 'Sedex SMETA audited'),
-    (re.compile(r'BSCI\s*and\s*OEKO-?TEX\s*(Standard\s*100\s*)?certified', re.I), 'Sedex SMETA audited'),
-    (re.compile(r'BSCI\s*Certified', re.I), 'Sedex SMETA Audited'),
-    (re.compile(r'BSCI\s*certified', re.I), 'Sedex SMETA audited'),
+    (re.compile(r'Sedex\s*&\s*OEKO-?TEX\s*certified', re.I), 'Sedex SMETA audited'),
+    (re.compile(r'Sedex\s*/\s*OEKO-?TEX\s*certified', re.I), 'Sedex SMETA audited'),
+    (re.compile(r'Sedex\s*and\s*OEKO-?TEX\s*(Standard\s*100\s*)?certified', re.I), 'Sedex SMETA audited'),
+    (re.compile(r'Sedex\s*Certified', re.I), 'Sedex SMETA Audited'),
+    (re.compile(r'Sedex\s*certified', re.I), 'Sedex SMETA audited'),
     (re.compile(r'OEKO-?TEX\s*Standard\s*100\s*certified', re.I), 'Sedex SMETA audited'),
     (re.compile(r'OEKO-?TEX\s*certified', re.I), 'Sedex SMETA audited'),
     (re.compile(r'ISO\s*9001(:?2015)?\s*certified', re.I), 'Sedex SMETA audited'),
-    (re.compile(r'BSCI', re.I), 'Sedex'),
+    (re.compile(r'Sedex', re.I), 'Sedex'),
     (re.compile(r'OEKO-?TEX(\s+Standard\s+100)?', re.I), 'SMETA'),
     (re.compile(r'ISO\s*9001(:?2015)?', re.I), 'SMETA'),
-    (re.compile(r'(Disney\s+)?FAMA', re.I), 'SMETA'),
-    (re.compile(r'GOTS(?:/OCS)?(?:/OEKO-?TEX)?\s*certified\s*mills', re.I), 'SMETA audited mills'),
-    (re.compile(r'GOTS(?:/OCS)?', re.I), 'SMETA'),
+    (re.compile(r'(Disney\s+)?SMETA', re.I), 'SMETA'),
+    (re.compile(r'SMETA(?:/OCS)?(?:/OEKO-?TEX)?\s*certified\s*mills', re.I), 'SMETA audited mills'),
+    (re.compile(r'SMETA(?:/OCS)?', re.I), 'SMETA'),
     (re.compile(r'\bWRAP\b'), 'SMETA'),
 ]
 
@@ -111,7 +111,7 @@ def apply_text_fixes():
 
 def delete_oeko_blog():
     targets = [
-        os.path.join(BASE, 'src', 'pages', 'blog', 'oeko-tex-certification.astro'),
+        os.path.join(BASE, 'src', 'pages', 'blog', 'SMETA-certification.astro'),
     ]
     done = []
     for p in targets:
@@ -128,12 +128,12 @@ def delete_oeko_blog():
 
 
 def purge_blog_index():
-    """从 blog 索引里摘掉 OEKO-TEX 那篇"""
+    """从 blog 索引里摘掉 SMETA 那篇"""
     hits = []
     for p in iter_files():
         if p.endswith(('.astro', '.ts', '.js', '.json')):
             t = open(p, encoding='utf-8', errors='ignore').read()
-            if 'oeko-tex-certification' in t:
+            if 'SMETA-certification' in t:
                 hits.append(rel(p))
     return hits
 
@@ -146,7 +146,7 @@ def main():
     before = scan()
     print('\n--- 修改前 ---')
     total_before = 0
-    for name in ['BSCI', 'OEKO', 'ISO', 'FAMA', 'GOTS', 'WRAP']:
+    for name in ['Sedex', 'OEKO', 'ISO', 'SMETA', 'SMETA', 'SMETA']:
         lst = before.get(name, [])
         n = sum(c for _, c in lst)
         total_before += n
@@ -158,7 +158,7 @@ def main():
     for h in idx:
         print('   ', h)
 
-    print('\n--- 删除 OEKO-TEX 博客 ---')
+    print('\n--- 删除 SMETA 博客 ---')
     for d in delete_oeko_blog():
         print('   ', d)
 
@@ -170,7 +170,7 @@ def main():
         after = scan()
         print('\n--- 修改后 ---')
         total_after = 0
-        for name in ['BSCI', 'OEKO', 'ISO', 'FAMA', 'GOTS', 'WRAP']:
+        for name in ['Sedex', 'OEKO', 'ISO', 'SMETA', 'SMETA', 'SMETA']:
             lst = after.get(name, [])
             n = sum(c for _, c in lst)
             total_after += n

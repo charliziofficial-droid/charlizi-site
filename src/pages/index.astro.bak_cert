@@ -1,0 +1,227 @@
+---
+// src/pages/index.astro - B2B Factory Homepage
+import FactoryLayout from '../layouts/FactoryLayout.astro';
+import { factoryStats, certifications, productCategories } from '../data/products-b2b.js';
+import Picture from '../components/Picture.astro';
+---
+<FactoryLayout
+  title="Intimate Apparel OEM Manufacturer | Lingerie Factory China"
+  description="Lingerie & intimate apparel OEM/ODM manufacturer in China. BSCI & OEKO-TEX certified, 200+ workers, 5,000 sqm. MOQ 200 pcs, samples available."
+>
+  <!-- JSON-LD Organization/WebSite 已在 FactoryLayout 全局注入 -->
+
+  <!-- Hero. Two completely separate layouts, not one layout squeezed.
+
+       Desktop (>=768px): the 2.09:1 landscape banner stays as-is. It has promo
+       copy baked into its left half, so the band height is tied to the viewport
+       (see .hero-band) and the focal point sits on the blonde model.
+
+       Mobile (<768px): a dedicated 4:5 portrait crop (hero-mobile.webp) whose
+       bottom 15.56% is pure white. That white strip is the text canvas -- the
+       headline and CTAs sit ON it in navy, so no overlay scrim is needed and
+       nothing covers the models. The image is sized by aspect-ratio rather than
+       vh so the white strip always lands exactly where the copy is anchored.
+       Two blocks are swapped with CSS (.hero-desktop / .hero-mobile) instead of
+       <picture>, because the markup differs, not just the source. -->
+  <section class="hero-band relative bg-navy overflow-hidden flex items-center">
+    <!-- ===== Desktop ===== -->
+    <div class="hero-desktop absolute inset-0">
+      <Picture src="hero.webp" alt="Charlizi intimate apparel factory in Guangdong, China" sizes="100vw" objectPosition="70% 20%" cls="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-r from-navy/92 via-navy/75 to-navy/25"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-navy/60 via-transparent to-navy/30"></div>
+    </div>
+
+    <!-- Mobile photo only; copy is rendered in the flow below it -->
+    <div class="hero-mobile-photo" aria-hidden="true">
+      <Picture src="hero-mobile.webp" alt="Charlizi intimate apparel factory showroom in Guangdong, China" sizes="100vw" objectPosition="center top" cls="w-full h-full object-cover" />
+    </div>
+
+    <!-- ===== Desktop copy ===== -->
+    <div class="hero-desktop container-site relative z-10 py-14 sm:py-20 md:py-28">
+      <div class="max-w-3xl">
+        <span class="section-label text-accent/80 text-white/80">OEM/ODM MANUFACTURER SINCE 2018</span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mt-4 leading-[1.1] tracking-tight">
+          Your Trusted <br />
+          <span class="text-accent">Intimate Apparel</span><br />
+          Manufacturing Partner
+        </h1>
+        <p class="text-white/70 text-base sm:text-lg mt-6 max-w-xl leading-relaxed">
+          Lingerie, bra sets, panties, plus size bras, silicone bras, shapewear and sleepwear - from design to delivery. BSCI & OEKO-TEX certified quality.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-10">
+          <a href="/products" class="btn-accent text-sm px-8 py-4 font-semibold">Browse Catalog</a>
+          <a href="/contact" class="inline-flex items-center justify-center border-2 border-white/30 text-white px-8 py-4 font-medium text-sm hover:bg-white/10 transition-colors">Request a Quote</a>
+          <a href="https://viomisha.com" target="_blank" class="inline-flex items-center justify-center text-white/70 px-8 py-4 font-medium text-sm hover:text-white transition-colors gap-2">
+            Small Batch Sample
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== Mobile copy: sits in the white strip ===== -->
+    <div class="hero-mobile-copy">
+      <span class="hero-m-eyebrow">OEM/ODM SINCE 2018</span>
+      <h1 class="hero-m-title">
+        Your <span>Intimate Apparel</span><br />Manufacturing Partner
+      </h1>
+      <p class="hero-m-sub">Bra sets, panties, shapewear &amp; sleepwear.<br />BSCI &amp; OEKO-TEX certified &middot; MOQ 200 pcs.</p>
+      <div class="hero-m-actions">
+        <a href="/contact" class="hero-m-cta">Request a Quote</a>
+        <a href="/products" class="hero-m-cta-ghost">View Catalog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="bg-cream border-y border-gray-200">
+    <div class="container-site py-8 md:py-10">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+        <div><div class="text-2xl md:text-3xl font-bold text-navy">{factoryStats.workers}</div><div class="text-xs text-slate mt-1">Skilled Workers</div></div>
+        <div><div class="text-2xl md:text-3xl font-bold text-navy">{factoryStats.area}</div><div class="text-xs text-slate mt-1">Facility Area</div></div>
+        <div><div class="text-2xl md:text-3xl font-bold text-navy">{factoryStats.annualOutput}</div><div class="text-xs text-slate mt-1">Annual Output</div></div>
+        <div><div class="text-2xl md:text-3xl font-bold text-navy">{factoryStats.monthlyContainers}</div><div class="text-xs text-slate mt-1">Monthly Shipments</div></div>
+        <div><div class="text-2xl md:text-3xl font-bold text-navy">200-300</div><div class="text-xs text-slate mt-1">MOQ (pcs/design)</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories -->
+  <section class="section-padding">
+    <!-- Factory capability strip: full-bleed, 6 stages in production order -->
+    <div class="strip-block">
+    <div class="factory-strip">
+      {[['factory-building', 'Facility'], ['factory-cutting', 'Cutting'], ['factory-sewing', 'Sewing'], ['factory-assembly', 'Assembly'], ['factory-warehouse', 'Warehouse'], ['factory-showroom', 'Showroom']].map(([img, label]) => (
+        <a href="/about" class="strip-cell" aria-label={`${label} - see our factory`}>
+          <Picture src={`${img}.webp`} alt={`${label} at our Puning, Guangdong factory`} sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 33vw" cls="w-full h-full object-cover" />
+          <span class="strip-cap">{label}</span>
+        </a>
+      ))}
+    </div>
+    <p class="strip-note">From our own building to cutting, sewing and assembly, then warehousing and the buyer showroom &mdash; the whole chain sits under one roof at our 5,000 m&sup2; facility in Puning, Guangdong. <a href="/about">Tour the factory &rarr;</a></p>
+    </div>
+
+    <div class="container-site">
+    <div class="text-center mb-12">
+      <span class="section-label">Product Categories</span>
+      <h2 class="section-title">Full Range of Intimate Apparel</h2>
+      <p class="section-desc mx-auto">7 product lines covering bras, panties, shapewear, and more. Custom OEM/ODM development available.</p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5">
+      {productCategories.map(cat => (
+        <a href={`/products/${cat.slug}`} class="card-hover group;">
+          <div class="aspect-[4/5] mb-4 overflow-hidden rounded-sm relative bg-cream-dark">
+            <img src={cat.image} alt={cat.name} class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" width="900" height="1125" />
+          </div>
+          <h3 class="font-semibold text-navy group-hover:text-accent transition-colors text-sm">{cat.name}</h3>
+          <p class="text-xs text-slate mt-2 line-clamp-2">{cat.description}</p>
+          <div class="flex flex-wrap gap-1.5 mt-3">
+            {cat.subCategories.map(sc => (
+              <span class="text-[10px] px-2 py-0.5 bg-navy/5 text-navy/70">{sc}</span>
+            ))}
+          </div>
+          {cat.id === 'sleepwear' && (
+            <div class="mt-3 text-[10px] text-accent font-medium uppercase tracking-wider">Custom Only - MOQ 300 pcs</div>
+          )}
+        </a>
+      ))}
+    </div>
+    <div class="text-center mt-10">
+      <a href="/products" class="btn-outline">View All Products</a>
+    </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="bg-cream section-padding">
+    <div class="container-site text-center">
+      <span class="section-label">Certifications</span>
+      <h2 class="section-title">Quality and Compliance</h2>
+      <p class="section-desc mx-auto mb-10">We maintain globally recognized certifications to ensure every shipment meets international standards.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        {certifications.map(cert => (
+          <div class="bg-white p-6 border border-gray-200 hover:border-accent/20 hover:shadow-sm transition-all">
+            <div class="w-10 h-10 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-3">
+              <svg class="w-5 h-5 text-navy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                {cert.name.includes('BSCI') && <><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></>}
+                {cert.name.includes('OEKO') && <><path d="M12 2l3 6 6.5.7-4.7 4.5L18 20l-6-3-6 3 1.2-6.8L2.5 8.7 9 8z"/></>}
+                {cert.name.includes('ISO') && <><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></>}
+                {cert.name.includes('FAMA') && <><path d="M20 12H4"/><path d="M12 4v16"/><rect x="2" y="6" width="20" height="12" rx="2"/></>}
+                {cert.name.includes('Sedex') && <><path d="M3 9h18v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M7 9V5a5 5 0 0110 0v4"/></>}
+              </svg>
+            </div>
+            <div class="text-sm font-bold text-navy tracking-tight">{cert.name}</div>
+            <div class="text-xs text-slate mt-2 leading-relaxed">{cert.desc}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="container-site section-padding">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title">End-to-End Manufacturing<br />Under One Roof</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-x-10 gap-y-8 mb-14">
+      <div class="flex gap-4">
+        <span class="text-accent font-bold text-lg mt-0.5">01</span>
+        <div>
+          <h3 class="font-semibold text-navy">Full OEM/ODM Service</h3>
+          <p class="text-sm text-stone mt-1 leading-relaxed">From tech pack to bulk production. Pattern making, sample development, size grading.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <span class="text-accent font-bold text-lg mt-0.5">02</span>
+        <div>
+          <h3 class="font-semibold text-navy">Certified Quality</h3>
+          <p class="text-sm text-stone mt-1 leading-relaxed">BSCI and OEKO-TEX certified factory. Three-stage QC process (AQL 2.5).</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <span class="text-accent font-bold text-lg mt-0.5">03</span>
+        <div>
+          <h3 class="font-semibold text-navy">Small Batch Available</h3>
+          <p class="text-sm text-stone mt-1 leading-relaxed">Sampling through Viomisha.com. Evaluate quality before committing to bulk.</p>
+        </div>
+      </div>
+      <div class="flex gap-4">
+        <span class="text-accent font-bold text-lg mt-0.5">04</span>
+        <div>
+          <h3 class="font-semibold text-navy">Global Export Experience</h3>
+          <p class="text-sm text-stone mt-1 leading-relaxed">Shipping to North America, Europe, Middle East and Southeast Asia. FCL/LCL.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="/about/" class="inline-block text-sm font-medium text-accent hover:text-accent-dark transition-colors">
+        Tour the facility &rarr;
+      </a>
+    </div>  </section>
+
+  <!-- CTA -->
+  <section class="bg-navy section-padding">
+    <div class="container-site">
+      <div class="text-center max-w-2xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold text-white">Talk to a Real Person</h2>
+        <p class="text-white/60 mt-4">Send your tech pack or reference sample &mdash; we reply within 24 hours with pricing and lead time.</p>
+      </div>
+      <figure class="mt-10 max-w-3xl mx-auto overflow-hidden rounded-lg bg-white shadow-2xl">
+        <img
+          src="/factory/images/factory-footer-contact.jpg"
+          alt="Charlizi sales contact: phone, email, WeChat and factory address"
+          class="w-full h-auto"
+          width="747"
+          height="336"
+          loading="lazy"
+        />
+      </figure>
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <a href="/contact" class="btn-accent px-8 py-4 font-semibold">Send Inquiry</a>
+        <a href="https://viomisha.com" target="_blank" class="inline-flex items-center gap-2 border-2 border-white/30 text-white px-8 py-4 text-sm hover:bg-white/10 transition-colors">Try Small Batch - Viomisha</a>
+      </div>
+    </div>
+  </section>
+</FactoryLayout>

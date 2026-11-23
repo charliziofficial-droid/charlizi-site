@@ -34,14 +34,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Wine Red Underwire Bra & Thong Set — OEM Wholesale Manufacturer",
     "seoTitle": "Wine Red Underwire Bra & Thong Set OEM Wholesale",
-    "seoDescription": "OEM bra sets wine-red-underwire-bra-thong-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets wine-red-underwire-bra-thong-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Wine Red Underwire Bra & Thong Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire cups for structured lift and reliable support. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire cups for structured lift and reliable support",
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -78,7 +78,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -110,7 +110,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -160,7 +160,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Lace Bodysuit Teddy Set — OEM Wholesale Manufacturer",
     "seoTitle": "Lace Bodysuit Teddy Set OEM Manufacturer | Wholesale China",
-    "seoDescription": "OEM bra sets lace-bodysuit-for-women-comfortable-sexy-teddy-for-everyday-confidence: custom fabric & sizing. BSCI & OEKO-TEX certified. MOQ 200 pcs.",
+    "seoDescription": "OEM bra sets lace-bodysuit-for-women-comfortable-sexy-teddy-for-everyday-confidence: custom fabric & sizing. Sedex SMETA audited. MOQ 200 pcs.",
     "intro": "Lace Bodysuit Teddy Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Bodysuit construction that stays tucked and smooth. Teddy silhouette with a flattering one-piece line. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -169,7 +169,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -206,7 +206,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -238,7 +238,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -290,14 +290,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Sticky Bra & Thong Briefs Set — OEM Wholesale Manufacturer",
     "seoTitle": "Sticky Bra & Thong Briefs Set OEM Wholesale",
-    "seoDescription": "OEM bra sets viomisha-1-set-women-sticky: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets viomisha-1-set-women-sticky: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Sticky Bra & Thong Briefs Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Medical-grade silicone adhesive, reusable and skin-friendly. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -334,7 +334,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -366,7 +366,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -423,7 +423,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -460,7 +460,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -492,7 +492,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -542,7 +542,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Transparent Sexy Lace Lingerie Set — OEM Wholesale Manufacturer",
     "seoTitle": "Transparent Sexy Lace Lingerie Set OEM Wholesale",
-    "seoDescription": "OEM bra sets women-sexy-sheer-lace-bras-set-2099: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets women-sexy-sheer-lace-bras-set-2099: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Transparent Sexy Lace Lingerie Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Sheer mesh panels for a lightweight, breathable feel. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -550,7 +550,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -587,7 +587,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -619,7 +619,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -670,7 +670,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Underwire Lace Bra & Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Underwire Lace Bra & Panty Set OEM Wholesale",
-    "seoDescription": "OEM bra sets viomisha-women-bra-panty-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets viomisha-women-bra-panty-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Underwire Lace Bra & Panty Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire cups for structured lift and reliable support. Soft-touch lace with finished scalloped edges. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire cups for structured lift and reliable support",
@@ -678,7 +678,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -719,7 +719,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -751,7 +751,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -802,14 +802,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Deep V Neck Front Button Halter Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Deep V Neck Front Button Halter Bra OEM Wholesale",
-    "seoDescription": "OEM bras womens-deep-v-neck-front: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras womens-deep-v-neck-front: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Deep V Neck Front Button Halter Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Halter neckline with adjustable ties for a customizable fit. Deep V neckline for a plunging look under low-cut tops. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Halter neckline with adjustable ties for a customizable fit",
       "Deep V neckline for a plunging look under low-cut tops",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -842,7 +842,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -874,7 +874,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -924,13 +924,13 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Sexy Lace Half Cup Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Sexy Lace Half Cup Bra OEM Manufacturer | Wholesale China",
-    "seoDescription": "OEM bras viomisha-womens-sexy-lace-half: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras viomisha-womens-sexy-lace-half: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Sexy Lace Half Cup Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -963,7 +963,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -995,7 +995,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -1051,7 +1051,7 @@ export const styleContent: Record<string, StyleContent> =
       "Soft-touch lace with finished scalloped edges",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -1088,7 +1088,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -1120,7 +1120,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -1170,7 +1170,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Push Up Strapless Multiway Lace Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Push Up Strapless Multiway Lace Bra OEM Wholesale",
-    "seoDescription": "OEM bras ess-mutiway-bra-underwired-invisible: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras ess-mutiway-bra-underwired-invisible: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Push Up Strapless Multiway Lace Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Push-up padding that shapes and lifts naturally. Strapless silhouette that stays put without slipping. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -1179,7 +1179,7 @@ export const styleContent: Record<string, StyleContent> =
       "Multiway straps convert between 5 wearing positions",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -1220,7 +1220,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -1252,7 +1252,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -1304,7 +1304,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Floral Lace Halter Bralette — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Lace Halter Bralette OEM Wholesale",
-    "seoDescription": "OEM bras viomisha-floral-lace-halter-bralette: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras viomisha-floral-lace-halter-bralette: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Floral Lace Halter Bralette produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Floral lace pattern selected for a soft hand feel. Halter neckline with adjustable ties for a customizable fit. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -1313,7 +1313,7 @@ export const styleContent: Record<string, StyleContent> =
       "Soft bralette with no rigid structure, easy to wear",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -1354,7 +1354,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -1386,7 +1386,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -1438,13 +1438,13 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Sexy Push-up Half Cup Wire Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Sexy Push-up Half Cup Wire Bra OEM Wholesale",
-    "seoDescription": "OEM bras womens-bras-underwire-push-up-bra: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras womens-bras-underwire-push-up-bra: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Sexy Push-up Half Cup Wire Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Push-up padding that shapes and lifts naturally. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Push-up padding that shapes and lifts naturally",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -1477,7 +1477,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -1509,7 +1509,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -1558,14 +1558,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Lace Bralette Scalloped Trim — OEM Wholesale Manufacturer",
     "seoTitle": "Lace Bralette Scalloped Trim OEM Wholesale",
-    "seoDescription": "OEM bras viomisha-lace-bralettes-women-sexy-bras-mr2641: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras viomisha-lace-bralettes-women-sexy-bras-mr2641: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Lace Bralette Scalloped Trim produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Soft bralette with no rigid structure, easy to wear. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
       "Soft bralette with no rigid structure, easy to wear",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -1598,7 +1598,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -1630,7 +1630,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -1680,14 +1680,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Underwire Black Deep U Push Up Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Underwire Black Deep U Push Up Bra OEM Wholesale",
-    "seoDescription": "OEM bras underwire-black-deep-u-push-up-bra: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras underwire-black-deep-u-push-up-bra: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Underwire Black Deep U Push Up Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire cups for structured lift and reliable support. Push-up padding that shapes and lifts naturally. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire cups for structured lift and reliable support",
       "Push-up padding that shapes and lifts naturally",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -1724,7 +1724,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -1756,7 +1756,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -1806,7 +1806,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Strapless Halter Bandeau Backless Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Strapless Halter Bandeau Backless Bra OEM Wholesale",
-    "seoDescription": "OEM bras womens-strapless-halter-bras-bandeau-underwear-backless-bra-top — custom fabric, colour, sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Get a quote.",
+    "seoDescription": "OEM bras womens-strapless-halter-bras-bandeau-underwear-backless-bra-top — custom fabric, colour, sizing. Sedex & SMETA. MOQ 200 pcs. Get a quote.",
     "intro": "Strapless Halter Bandeau Backless Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Halter neckline with adjustable ties for a customizable fit. Strapless silhouette that stays put without slipping. Backless cut designed for low-back garments. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Halter neckline with adjustable ties for a customizable fit",
@@ -1815,7 +1815,7 @@ export const styleContent: Record<string, StyleContent> =
       "Bandeau shape that works under strapless outfits",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -1856,7 +1856,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -1888,7 +1888,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -1940,14 +1940,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Plus Size Bras",
     "h1": "Full Coverage No Wire Plus Size Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Full Coverage No Wire Plus Size Bra OEM Wholesale",
-    "seoDescription": "plus-size bra OEM viomisha-women-plus-size-bras: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "plus-size bra OEM viomisha-women-plus-size-bras: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Full Coverage No Wire Plus Size Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Wirefree design for all-day comfort without pressure points. Graded across an extended size range up to 5XL. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Wirefree design for all-day comfort without pressure points",
       "Graded across an extended size range up to 5XL",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -1984,7 +1984,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -2016,7 +2016,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -2066,7 +2066,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Plus Size Bras",
     "h1": "Plus Size Wireless Seamless Comfort Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Plus Size Wireless Seamless Comfort Bra OEM Wholesale",
-    "seoDescription": "plus-size bra OEM women-plus-size-wireless-sleep-bras: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "plus-size bra OEM women-plus-size-wireless-sleep-bras: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Plus Size Wireless Seamless Comfort Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Wirefree design for all-day comfort without pressure points. Seamless bonded edges that stay invisible under clothing. Graded across an extended size range up to 5XL. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Wirefree design for all-day comfort without pressure points",
@@ -2074,7 +2074,7 @@ export const styleContent: Record<string, StyleContent> =
       "Graded across an extended size range up to 5XL",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -2115,7 +2115,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -2147,7 +2147,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -2198,7 +2198,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Plus Size Lace Panties Multipack — OEM Wholesale Manufacturer",
     "seoTitle": "Plus Size Lace Panties Multipack OEM Wholesale",
-    "seoDescription": "OEM panties viomisha-womens-underwear-sexy-lace: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties viomisha-womens-underwear-sexy-lace: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Plus Size Lace Panties Multipack produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Graded across an extended size range up to 5XL. Multi-pack format that lowers per-unit landed cost. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -2206,7 +2206,7 @@ export const styleContent: Record<string, StyleContent> =
       "Multi-pack format that lowers per-unit landed cost",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -2247,7 +2247,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -2279,7 +2279,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -2330,13 +2330,13 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Adhesive Invisible Lifting Bra — 2 Pairs — OEM Wholesale Manufacturer",
     "seoTitle": "Adhesive Invisible Lifting Bra — 2 Pairs OEM Wholesale",
-    "seoDescription": "silicone bra OEM viomisha-adhesive-bra-invisible-strapless-bra: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM viomisha-adhesive-bra-invisible-strapless-bra: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Adhesive Invisible Lifting Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Medical-grade silicone adhesive, reusable and skin-friendly. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -2369,7 +2369,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -2401,7 +2401,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -2450,14 +2450,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Sticky Push Up Bra with Strap — OEM Wholesale Manufacturer",
     "seoTitle": "Sticky Push Up Bra with Strap OEM Wholesale",
-    "seoDescription": "silicone bra OEM sticky-bra-push-up-for-women-strapless-invisible-adhesive-bra-with: custom fabric & sizing. BSCI & OEKO-TEX certified. MOQ 200 pcs.",
+    "seoDescription": "silicone bra OEM sticky-bra-push-up-for-women-strapless-invisible-adhesive-bra-with: custom fabric & sizing. Sedex SMETA audited. MOQ 200 pcs.",
     "intro": "Sticky Push Up Bra with Strap produced in our Guangdong factory for brands, wholesalers and private-label buyers. Push-up padding that shapes and lifts naturally. Medical-grade silicone adhesive, reusable and skin-friendly. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Push-up padding that shapes and lifts naturally",
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -2494,7 +2494,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -2526,7 +2526,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -2576,7 +2576,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Backless Strapless Push Up Sticky Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Backless Strapless Push Up Sticky Bra OEM Wholesale",
-    "seoDescription": "silicone bra OEM women-sticky-bra-backless-strapless-push-up: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM women-sticky-bra-backless-strapless-push-up: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Backless Strapless Push Up Sticky Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Push-up padding that shapes and lifts naturally. Strapless silhouette that stays put without slipping. Backless cut designed for low-back garments. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Push-up padding that shapes and lifts naturally",
@@ -2585,7 +2585,7 @@ export const styleContent: Record<string, StyleContent> =
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -2630,7 +2630,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -2662,7 +2662,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -2714,12 +2714,12 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Rabbit Nipple Cover — 2 pcs — OEM Wholesale Manufacturer",
     "seoTitle": "Rabbit Nipple Cover — 2 pcs OEM Wholesale",
-    "seoDescription": "silicone bra OEM invisible-adhesive-bra-rabbit-nipple: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM invisible-adhesive-bra-rabbit-nipple: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Rabbit Nipple Cover produced in our Guangdong factory for brands, wholesalers and private-label buyers.  Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -2748,7 +2748,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -2780,7 +2780,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -2827,14 +2827,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Adhesive Lace Sticky Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Adhesive Lace Sticky Bra OEM Manufacturer | Wholesale China",
-    "seoDescription": "silicone bra OEM viomisha-sticky-lace-bra-2: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM viomisha-sticky-lace-bra-2: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Adhesive Lace Sticky Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Medical-grade silicone adhesive, reusable and skin-friendly. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -2871,7 +2871,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -2903,7 +2903,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -2953,14 +2953,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Strapless Nipple Stickers — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Strapless Nipple Stickers OEM Wholesale",
-    "seoDescription": "silicone bra OEM silicone-strapless-bra-stickers-fabric-one-piece-seamless-sticky-bra: custom fabric & sizing. BSCI & OEKO-TEX certified. MOQ 200 pcs.",
+    "seoDescription": "silicone bra OEM silicone-strapless-bra-stickers-fabric-one-piece-seamless-sticky-bra: custom fabric & sizing. Sedex SMETA audited. MOQ 200 pcs.",
     "intro": "Silicone Strapless Nipple Stickers produced in our Guangdong factory for brands, wholesalers and private-label buyers. Strapless silhouette that stays put without slipping. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Strapless silhouette that stays put without slipping",
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -2997,7 +2997,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -3029,7 +3029,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -3088,7 +3088,7 @@ export const styleContent: Record<string, StyleContent> =
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -3133,7 +3133,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -3165,7 +3165,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -3217,14 +3217,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "White Satin Slip Nightdress — OEM Wholesale Manufacturer",
     "seoTitle": "White Satin Slip Nightdress OEM Wholesale",
-    "seoDescription": "sleepwear OEM women-slip-satin-sleepwear: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM women-slip-satin-sleepwear: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "White Satin Slip Nightdress produced in our Guangdong factory for brands, wholesalers and private-label buyers. Smooth satin finish with a soft liquid drape. Fluid drape nightdress cut for comfortable sleep. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Smooth satin finish with a soft liquid drape",
       "Fluid drape nightdress cut for comfortable sleep",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -3257,7 +3257,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -3289,7 +3289,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -3339,7 +3339,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "Silky Pajama Set — Strappy Cami & Shorts — OEM Wholesale Manufacturer",
     "seoTitle": "Silky Pajama Set — Strappy Cami & Shorts OEM Wholesale",
-    "seoDescription": "sleepwear OEM silky-pajama-strappy-shorts-nightwear: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM silky-pajama-strappy-shorts-nightwear: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silky Pajama Set — Strappy Cami & Shorts produced in our Guangdong factory for brands, wholesalers and private-label buyers. Relaxed pajama fit with an elasticated, non-binding waist. Cami straps with a soft, fluid drape against the skin. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Relaxed pajama fit with an elasticated, non-binding waist",
@@ -3347,7 +3347,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -3380,7 +3380,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -3412,7 +3412,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -3463,14 +3463,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "Cotton Suspender Nightdress — OEM Wholesale Manufacturer",
     "seoTitle": "Cotton Suspender Nightdress OEM Wholesale",
-    "seoDescription": "sleepwear OEM women-pure-cotton-underwear-suspender-short-nightdress — custom fabric, colour, sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Get a quote.",
+    "seoDescription": "sleepwear OEM women-pure-cotton-underwear-suspender-short-nightdress — custom fabric, colour, sizing. Sedex & SMETA. MOQ 200 pcs. Get a quote.",
     "intro": "Cotton Suspender Nightdress produced in our Guangdong factory for brands, wholesalers and private-label buyers. Breathable cotton-rich fabric, gentle on sensitive skin. Fluid drape nightdress cut for comfortable sleep. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Breathable cotton-rich fabric, gentle on sensitive skin",
       "Fluid drape nightdress cut for comfortable sleep",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -3503,7 +3503,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -3535,7 +3535,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -3585,7 +3585,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Floral Lace Halter Bra in Red / Black — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Lace Halter Bra in Red / Black OEM Wholesale",
-    "seoDescription": "OEM bras floral-lace-halter-bra-red-black: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras floral-lace-halter-bra-red-black: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Floral Lace Halter Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Floral lace pattern selected for a soft hand feel. Halter neckline with adjustable ties for a customizable fit. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -3593,7 +3593,7 @@ export const styleContent: Record<string, StyleContent> =
       "Halter neckline with adjustable ties for a customizable fit",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -3634,7 +3634,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -3666,7 +3666,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -3717,14 +3717,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Grey Cotton Wirefree Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Grey Cotton Wirefree Bra OEM Manufacturer | Wholesale China",
-    "seoDescription": "OEM bras grey-cotton-wirefree-bra: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras grey-cotton-wirefree-bra: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Grey Cotton Wirefree Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Wirefree design for all-day comfort without pressure points. Breathable cotton-rich fabric, gentle on sensitive skin. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Wirefree design for all-day comfort without pressure points",
       "Breathable cotton-rich fabric, gentle on sensitive skin",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -3761,7 +3761,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -3793,7 +3793,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -3838,14 +3838,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Grey Underwire Bra & Black Brief Set — OEM Wholesale Manufacturer",
     "seoTitle": "Grey Underwire Bra & Black Brief Set OEM Wholesale",
-    "seoDescription": "OEM bras grey-underwire-bra-black-brief-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras grey-underwire-bra-black-brief-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Grey Underwire Bra & Black Brief Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire cups for structured lift and reliable support. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire cups for structured lift and reliable support",
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -3882,7 +3882,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -3914,7 +3914,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -3959,14 +3959,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Cheetah Print Wirefree Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Cheetah Print Wirefree Bra OEM Wholesale",
-    "seoDescription": "OEM bras cheetah-print-wirefree-bra: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras cheetah-print-wirefree-bra: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Cheetah Print Wirefree Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Wirefree design for all-day comfort without pressure points. Statement animal print, colour-fast after repeated washing. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Wirefree design for all-day comfort without pressure points",
       "Statement animal print, colour-fast after repeated washing",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -4003,7 +4003,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -4035,7 +4035,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -4080,14 +4080,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bras",
     "h1": "Floral Print Wirefree Bra in Black — OEM Wholesale Manufacturer",
     "seoTitle": "Floral Print Wirefree Bra in Black OEM Wholesale",
-    "seoDescription": "OEM bras floral-print-wirefree-bra-black: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bras floral-print-wirefree-bra-black: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Floral Print Wirefree Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Wirefree design for all-day comfort without pressure points. Floral lace pattern selected for a soft hand feel. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Wirefree design for all-day comfort without pressure points",
       "Floral lace pattern selected for a soft hand feel",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -4124,7 +4124,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -4156,7 +4156,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -4201,7 +4201,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Plus Size Bras",
     "h1": "White Floral Underwire Bra — Plus Size — OEM Wholesale Manufacturer",
     "seoTitle": "White Floral Underwire Bra — Plus Size OEM Wholesale",
-    "seoDescription": "plus-size bra OEM white-floral-underwire-bra-plus-size: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "plus-size bra OEM white-floral-underwire-bra-plus-size: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "White Floral Underwire Bra — Plus Size produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire cups for structured lift and reliable support. Floral lace pattern selected for a soft hand feel. Graded across an extended size range up to 5XL. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire cups for structured lift and reliable support",
@@ -4209,7 +4209,7 @@ export const styleContent: Record<string, StyleContent> =
       "Graded across an extended size range up to 5XL",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -4250,7 +4250,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -4282,7 +4282,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -4328,7 +4328,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Plus Size Bras",
     "h1": "Black Lace Deep V Bra — Plus Size — OEM Wholesale Manufacturer",
     "seoTitle": "Black Lace Deep V Bra — Plus Size OEM Wholesale",
-    "seoDescription": "plus-size bra OEM black-lace-deep-v-bra-plus-size: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "plus-size bra OEM black-lace-deep-v-bra-plus-size: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black Lace Deep V Bra — Plus Size produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Deep V neckline for a plunging look under low-cut tops. Graded across an extended size range up to 5XL. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -4336,7 +4336,7 @@ export const styleContent: Record<string, StyleContent> =
       "Graded across an extended size range up to 5XL",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -4377,7 +4377,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -4409,7 +4409,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -4455,14 +4455,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Plus Size Bras",
     "h1": "Black Wirefree Bra — Plus Size — OEM Wholesale Manufacturer",
     "seoTitle": "Black Wirefree Bra — Plus Size OEM Wholesale",
-    "seoDescription": "plus-size bra OEM black-wirefree-bra-plus-size: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "plus-size bra OEM black-wirefree-bra-plus-size: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black Wirefree Bra — Plus Size produced in our Guangdong factory for brands, wholesalers and private-label buyers. Wirefree design for all-day comfort without pressure points. Graded across an extended size range up to 5XL. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Wirefree design for all-day comfort without pressure points",
       "Graded across an extended size range up to 5XL",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -4499,7 +4499,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -4531,7 +4531,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -4576,14 +4576,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Plus Size Bras",
     "h1": "Beige Wirefree Bra — Plus Size — OEM Wholesale Manufacturer",
     "seoTitle": "Beige Wirefree Bra — Plus Size OEM Wholesale",
-    "seoDescription": "plus-size bra OEM beige-wirefree-bra-plus-size: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "plus-size bra OEM beige-wirefree-bra-plus-size: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Beige Wirefree Bra — Plus Size produced in our Guangdong factory for brands, wholesalers and private-label buyers. Wirefree design for all-day comfort without pressure points. Graded across an extended size range up to 5XL. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Wirefree design for all-day comfort without pressure points",
       "Graded across an extended size range up to 5XL",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -4620,7 +4620,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -4652,7 +4652,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -4697,7 +4697,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Plus Size Bras",
     "h1": "Pink Lace Halter Bra & Panty Set — Plus Size — OEM Wholesale Manufacturer",
     "seoTitle": "Pink Lace Halter Bra & Panty Set — Plus Size OEM Wholesale",
-    "seoDescription": "plus-size bra OEM pink-lace-halter-bra-panty-set-plus-size: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "plus-size bra OEM pink-lace-halter-bra-panty-set-plus-size: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Pink Lace Halter Bra & Panty Set — Plus Size produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Halter neckline with adjustable ties for a customizable fit. Graded across an extended size range up to 5XL. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -4706,7 +4706,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -4751,7 +4751,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -4783,7 +4783,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -4830,7 +4830,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Leopard Lace Underwire Bra Set — OEM Wholesale Manufacturer",
     "seoTitle": "Leopard Lace Underwire Bra Set OEM Wholesale",
-    "seoDescription": "OEM bra sets leopard-lace-underwire-bra-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets leopard-lace-underwire-bra-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Leopard Lace Underwire Bra Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Underwire cups for structured lift and reliable support. Soft-touch lace with finished scalloped edges. Statement animal print, colour-fast after repeated washing. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Underwire cups for structured lift and reliable support",
@@ -4839,7 +4839,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -4884,7 +4884,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -4916,7 +4916,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -4963,14 +4963,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Black & White Print Cotton Bra Set — OEM Wholesale Manufacturer",
     "seoTitle": "Black & White Print Cotton Bra Set OEM Wholesale",
-    "seoDescription": "OEM bra sets black-white-print-cotton-bra-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets black-white-print-cotton-bra-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black & White Print Cotton Bra Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Breathable cotton-rich fabric, gentle on sensitive skin. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Breathable cotton-rich fabric, gentle on sensitive skin",
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5007,7 +5007,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -5039,7 +5039,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -5084,14 +5084,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Red Lace Bow Bra & Thong Set — OEM Wholesale Manufacturer",
     "seoTitle": "Red Lace Bow Bra & Thong Set OEM Wholesale",
-    "seoDescription": "OEM bra sets red-lace-bow-bra-thong-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets red-lace-bow-bra-thong-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Red Lace Bow Bra & Thong Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5128,7 +5128,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -5160,7 +5160,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -5210,14 +5210,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Pink Lace Bra & Panty Set — OEM Wholesale Manufacturer",
     "seoTitle": "Pink Lace Bra & Panty Set OEM Manufacturer | Wholesale China",
-    "seoDescription": "OEM bra sets pink-lace-bra-panty-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets pink-lace-bra-panty-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Pink Lace Bra & Panty Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5254,7 +5254,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -5286,7 +5286,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -5331,7 +5331,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Black Lace Deep V Bra Set — OEM Wholesale Manufacturer",
     "seoTitle": "Black Lace Deep V Bra Set OEM Manufacturer | Wholesale China",
-    "seoDescription": "OEM bra sets black-lace-deep-v-bra-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets black-lace-deep-v-bra-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black Lace Deep V Bra Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Deep V neckline for a plunging look under low-cut tops. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -5339,7 +5339,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5380,7 +5380,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -5412,7 +5412,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -5458,7 +5458,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Bra Sets",
     "h1": "Grey Cotton Wirefree Bra Set — OEM Wholesale Manufacturer",
     "seoTitle": "Grey Cotton Wirefree Bra Set OEM Wholesale",
-    "seoDescription": "OEM bra sets grey-cotton-wirefree-bra-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM bra sets grey-cotton-wirefree-bra-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Grey Cotton Wirefree Bra Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Wirefree design for all-day comfort without pressure points. Breathable cotton-rich fabric, gentle on sensitive skin. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Wirefree design for all-day comfort without pressure points",
@@ -5466,7 +5466,7 @@ export const styleContent: Record<string, StyleContent> =
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5507,7 +5507,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -5539,7 +5539,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -5585,7 +5585,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Lace High Waist Panties — 4 Color Pack — OEM Wholesale Manufacturer",
     "seoTitle": "Lace High Waist Panties — 4 Color Pack OEM Wholesale",
-    "seoDescription": "OEM panties lace-panties-4-color-pack: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties lace-panties-4-color-pack: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Lace High Waist Panties — 4 Color Pack produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. High waist rise that smooths the midsection and stays in place. Multi-pack format that lowers per-unit landed cost. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -5593,7 +5593,7 @@ export const styleContent: Record<string, StyleContent> =
       "Multi-pack format that lowers per-unit landed cost",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5634,7 +5634,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -5666,7 +5666,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -5712,13 +5712,13 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Black & Red Lace Panties — OEM Wholesale Manufacturer",
     "seoTitle": "Black & Red Lace Panties OEM Manufacturer | Wholesale China",
-    "seoDescription": "OEM panties black-red-lace-panties: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties black-red-lace-panties: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black & Red Lace Panties produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5751,7 +5751,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -5783,7 +5783,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -5827,14 +5827,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Black Lace High Waist Panties in Neon Trim — OEM Wholesale Manufacturer",
     "seoTitle": "Black Lace High Waist Panties in Neon Trim OEM Wholesale",
-    "seoDescription": "OEM panties black-green-lace-high-waist-panties: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties black-green-lace-high-waist-panties: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black Lace High Waist Panties produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. High waist rise that smooths the midsection and stays in place. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
       "High waist rise that smooths the midsection and stays in place",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5871,7 +5871,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -5903,7 +5903,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -5948,7 +5948,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Leopard Print High Waist Panties — 3 Pack — OEM Wholesale Manufacturer",
     "seoTitle": "Leopard Print High Waist Panties — 3 Pack OEM Wholesale",
-    "seoDescription": "OEM panties leopard-print-high-waist-panties-3-pack: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties leopard-print-high-waist-panties-3-pack: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Leopard Print High Waist Panties — 3 Pack produced in our Guangdong factory for brands, wholesalers and private-label buyers. High waist rise that smooths the midsection and stays in place. Statement animal print, colour-fast after repeated washing. Multi-pack format that lowers per-unit landed cost. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "High waist rise that smooths the midsection and stays in place",
@@ -5956,7 +5956,7 @@ export const styleContent: Record<string, StyleContent> =
       "Multi-pack format that lowers per-unit landed cost",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -5997,7 +5997,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -6029,7 +6029,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -6075,7 +6075,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Cotton High Waist Panties — 5 Pack — OEM Wholesale Manufacturer",
     "seoTitle": "Cotton High Waist Panties — 5 Pack OEM Wholesale",
-    "seoDescription": "OEM panties cotton-high-waist-panties-5-pack: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties cotton-high-waist-panties-5-pack: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Cotton High Waist Panties — 5 Pack produced in our Guangdong factory for brands, wholesalers and private-label buyers. High waist rise that smooths the midsection and stays in place. Breathable cotton-rich fabric, gentle on sensitive skin. Multi-pack format that lowers per-unit landed cost. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "High waist rise that smooths the midsection and stays in place",
@@ -6083,7 +6083,7 @@ export const styleContent: Record<string, StyleContent> =
       "Multi-pack format that lowers per-unit landed cost",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -6124,7 +6124,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -6156,7 +6156,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -6202,7 +6202,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Lace High Waist Panties — 3 Pack — OEM Wholesale Manufacturer",
     "seoTitle": "Lace High Waist Panties — 3 Pack OEM Wholesale",
-    "seoDescription": "OEM panties lace-high-waist-panties-3-pack: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties lace-high-waist-panties-3-pack: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Lace High Waist Panties — 3 Pack produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft-touch lace with finished scalloped edges. High waist rise that smooths the midsection and stays in place. Multi-pack format that lowers per-unit landed cost. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Soft-touch lace with finished scalloped edges",
@@ -6210,7 +6210,7 @@ export const styleContent: Record<string, StyleContent> =
       "Multi-pack format that lowers per-unit landed cost",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -6251,7 +6251,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -6283,7 +6283,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -6329,7 +6329,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Panties",
     "h1": "Women's Seamless Safety Shorts (4-Pack) — OEM Wholesale Manufacturer",
     "seoTitle": "Women's Seamless Safety Shorts 4-Pack OEM Wholesale",
-    "seoDescription": "OEM panties womens-panties-shorts-undershorts-woman: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "OEM panties womens-panties-shorts-undershorts-woman: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Women's Seamless Safety Shorts (4-Pack) produced in our Guangdong factory for brands, wholesalers and private-label buyers. High-stretch seamless knit with bonded edges that stay flat under dresses and skirts. Mid-thigh length for anti-chafing comfort through a full day of wear. Multi-pack format that lowers per-unit landed cost. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "High-stretch seamless knit with bonded flat edges",
@@ -6337,7 +6337,7 @@ export const styleContent: Record<string, StyleContent> =
       "Breathable lightweight handfeel for all-day wear",
       "Multi-pack format that lowers per-unit landed cost",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -6382,7 +6382,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -6414,7 +6414,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -6461,7 +6461,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Adhesive Strapless Silicone Bra in Black / Nude — OEM Wholesale Manufacturer",
     "seoTitle": "Adhesive Strapless Silicone Bra in Black / Nude Wholesale",
-    "seoDescription": "silicone bra OEM adhesive-strapless-bra-black-nude: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM adhesive-strapless-bra-black-nude: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Adhesive Strapless Silicone Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Strapless silhouette that stays put without slipping. Medical-grade silicone adhesive, reusable and skin-friendly. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Strapless silhouette that stays put without slipping",
@@ -6469,7 +6469,7 @@ export const styleContent: Record<string, StyleContent> =
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -6510,7 +6510,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -6542,7 +6542,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -6588,7 +6588,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Adhesive Push Up Silicone Bra in Nude — OEM Wholesale Manufacturer",
     "seoTitle": "Adhesive Push Up Silicone Bra in Nude OEM Wholesale",
-    "seoDescription": "silicone bra OEM adhesive-bra-push-up-nude: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM adhesive-bra-push-up-nude: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Adhesive Push Up Silicone Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Push-up padding that shapes and lifts naturally. Medical-grade silicone adhesive, reusable and skin-friendly. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Push-up padding that shapes and lifts naturally",
@@ -6596,7 +6596,7 @@ export const styleContent: Record<string, StyleContent> =
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -6637,7 +6637,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -6669,7 +6669,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -6715,13 +6715,13 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Nipple Covers in Black / Nude — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Nipple Covers in Black / Nude OEM Wholesale",
-    "seoDescription": "silicone bra OEM silicone-nipple-covers-black-nude: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM silicone-nipple-covers-black-nude: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Nipple Covers produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -6754,7 +6754,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -6786,7 +6786,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -6830,14 +6830,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Adhesive Front Clasp Bra — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Adhesive Front Clasp Bra OEM Wholesale",
-    "seoDescription": "silicone bra OEM silicone-adhesive-front-clasp-bra: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM silicone-adhesive-front-clasp-bra: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Adhesive Front Clasp Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Medical-grade silicone adhesive, reusable and skin-friendly. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -6874,7 +6874,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -6906,7 +6906,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -6951,14 +6951,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Adhesive Bra in Nude — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Adhesive Bra in Nude OEM Wholesale",
-    "seoDescription": "silicone bra OEM silicone-adhesive-bra-nude: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM silicone-adhesive-bra-nude: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Adhesive Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Medical-grade silicone adhesive, reusable and skin-friendly. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -6995,7 +6995,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7027,7 +7027,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -7072,14 +7072,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Adhesive Bra in Black / Nude — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Adhesive Bra in Black / Nude OEM Wholesale",
-    "seoDescription": "silicone bra OEM silicone-adhesive-bra-black-nude-pair: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM silicone-adhesive-bra-black-nude-pair: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Adhesive Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Medical-grade silicone adhesive, reusable and skin-friendly. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -7116,7 +7116,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7148,7 +7148,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -7193,13 +7193,13 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Strap-on Breast Petals — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Strap-on Breast Petals OEM Wholesale",
-    "seoDescription": "silicone bra OEM silicone-strap-on-breast-petals: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM silicone-strap-on-breast-petals: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Strap-on Breast Petals produced in our Guangdong factory for brands, wholesalers and private-label buyers. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -7232,7 +7232,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7264,7 +7264,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -7308,14 +7308,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Silicone Bras",
     "h1": "Silicone Front Clasp Adhesive Bra in Nude / Black — OEM Wholesale Manufacturer",
     "seoTitle": "Silicone Front Clasp Adhesive Bra in Nude / Black Wholesale",
-    "seoDescription": "silicone bra OEM silicone-front-clasp-adhesive-bra: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "silicone bra OEM silicone-front-clasp-adhesive-bra: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Silicone Front Clasp Adhesive Bra produced in our Guangdong factory for brands, wholesalers and private-label buyers. Medical-grade silicone adhesive, reusable and skin-friendly. Soft silicone gel that moves with the body. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 500 pairs per design.",
     "features": [
       "Medical-grade silicone adhesive, reusable and skin-friendly",
       "Soft silicone gel that moves with the body",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -7352,7 +7352,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7384,7 +7384,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -7429,14 +7429,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "Pink Floral V-Neck Nightdress — OEM Wholesale Manufacturer",
     "seoTitle": "Pink Floral V-Neck Nightdress OEM Wholesale",
-    "seoDescription": "sleepwear OEM pink-floral-v-neck-nightdress: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM pink-floral-v-neck-nightdress: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Pink Floral V-Neck Nightdress produced in our Guangdong factory for brands, wholesalers and private-label buyers. Floral lace pattern selected for a soft hand feel. Fluid drape nightdress cut for comfortable sleep. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Floral lace pattern selected for a soft hand feel",
       "Fluid drape nightdress cut for comfortable sleep",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -7469,7 +7469,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7501,7 +7501,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -7546,14 +7546,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "Pink Tee & Printed Pants Pajama Set — OEM Wholesale Manufacturer",
     "seoTitle": "Pink Tee & Printed Pants Pajama Set OEM Wholesale",
-    "seoDescription": "sleepwear OEM pink-floral-pajama-set: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM pink-floral-pajama-set: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Pink Tee & Printed Pants Pajama Set produced in our Guangdong factory for brands, wholesalers and private-label buyers. Relaxed pajama fit with an elasticated, non-binding waist. Matching set with coordinated colour and trim across both pieces. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Relaxed pajama fit with an elasticated, non-binding waist",
       "Matching set with coordinated colour and trim across both pieces",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -7586,7 +7586,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7618,7 +7618,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -7663,14 +7663,14 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "White Cotton Suspender Nightdress — OEM Wholesale Manufacturer",
     "seoTitle": "White Cotton Suspender Nightdress OEM Wholesale",
-    "seoDescription": "sleepwear OEM white-cotton-suspender-nightdress: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM white-cotton-suspender-nightdress: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "White Cotton Suspender Nightdress produced in our Guangdong factory for brands, wholesalers and private-label buyers. Breathable cotton-rich fabric, gentle on sensitive skin. Fluid drape nightdress cut for comfortable sleep. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Breathable cotton-rich fabric, gentle on sensitive skin",
       "Fluid drape nightdress cut for comfortable sleep",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -7703,7 +7703,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7735,7 +7735,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -7780,7 +7780,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "Black Leopard Sheer Cami Nightdress — OEM Wholesale Manufacturer",
     "seoTitle": "Black Leopard Sheer Cami Nightdress OEM Wholesale",
-    "seoDescription": "sleepwear OEM black-leopard-sheer-cami-nightdress: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM black-leopard-sheer-cami-nightdress: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black Leopard Sheer Cami Nightdress produced in our Guangdong factory for brands, wholesalers and private-label buyers. Sheer mesh panels for a lightweight, breathable feel. Statement animal print, colour-fast after repeated washing. Fluid drape nightdress cut for comfortable sleep. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Sheer mesh panels for a lightweight, breathable feel",
@@ -7789,7 +7789,7 @@ export const styleContent: Record<string, StyleContent> =
       "Cami straps with a soft, fluid drape against the skin",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -7826,7 +7826,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7858,7 +7858,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -7905,7 +7905,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "Leopard Print Mesh Slip — OEM Wholesale Manufacturer",
     "seoTitle": "Leopard Print Mesh Slip OEM Manufacturer | Wholesale China",
-    "seoDescription": "sleepwear OEM leopard-print-slip: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM leopard-print-slip: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Leopard Print Mesh Slip produced in our Guangdong factory for brands, wholesalers and private-label buyers. Sheer mesh panels for a lightweight, breathable feel. Statement animal print, colour-fast after repeated washing. Fluid drape nightdress cut for comfortable sleep. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Sheer mesh panels for a lightweight, breathable feel",
@@ -7913,7 +7913,7 @@ export const styleContent: Record<string, StyleContent> =
       "Fluid drape nightdress cut for comfortable sleep",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -7950,7 +7950,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -7982,7 +7982,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -8028,7 +8028,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "Leopard Cotton Cami Slip — OEM Wholesale Manufacturer",
     "seoTitle": "Leopard Cotton Cami Slip OEM Manufacturer | Wholesale China",
-    "seoDescription": "sleepwear OEM leopard-cotton-cami-slip: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM leopard-cotton-cami-slip: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Leopard Cotton Cami Slip produced in our Guangdong factory for brands, wholesalers and private-label buyers. Breathable cotton-rich fabric, gentle on sensitive skin. Statement animal print, colour-fast after repeated washing. Fluid drape nightdress cut for comfortable sleep. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Breathable cotton-rich fabric, gentle on sensitive skin",
@@ -8037,7 +8037,7 @@ export const styleContent: Record<string, StyleContent> =
       "Cami straps with a soft, fluid drape against the skin",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -8074,7 +8074,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -8106,7 +8106,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -8153,7 +8153,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Sleepwear",
     "h1": "Black Mesh Cami Slit Nightdress — OEM Wholesale Manufacturer",
     "seoTitle": "Black Mesh Cami Slit Nightdress OEM Wholesale",
-    "seoDescription": "sleepwear OEM black-mesh-cami-slit-nightdress: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "sleepwear OEM black-mesh-cami-slit-nightdress: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black Mesh Cami Slit Nightdress produced in our Guangdong factory for brands, wholesalers and private-label buyers. Sheer mesh panels for a lightweight, breathable feel. Fluid drape nightdress cut for comfortable sleep. Cami straps with a soft, fluid drape against the skin. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 300 pcs per design.",
     "features": [
       "Sheer mesh panels for a lightweight, breathable feel",
@@ -8161,7 +8161,7 @@ export const styleContent: Record<string, StyleContent> =
       "Cami straps with a soft, fluid drape against the skin",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -8194,7 +8194,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -8226,7 +8226,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -8272,13 +8272,13 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Shapewear",
     "h1": "Black Off Shoulder Bodysuit — OEM Wholesale Manufacturer",
     "seoTitle": "Black Off Shoulder Bodysuit OEM Wholesale",
-    "seoDescription": "shapewear OEM black-off-shoulder-bodysuit: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "shapewear OEM black-off-shoulder-bodysuit: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black Off Shoulder Bodysuit produced in our Guangdong factory for brands, wholesalers and private-label buyers. Bodysuit construction that stays tucked and smooth. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Bodysuit construction that stays tucked and smooth",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -8307,7 +8307,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -8339,7 +8339,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",
@@ -8371,7 +8371,7 @@ export const styleContent: Record<string, StyleContent> =
     "categoryName": "Shapewear",
     "h1": "Black Mesh Deep V Bodysuit — OEM Wholesale Manufacturer",
     "seoTitle": "Black Mesh Deep V Bodysuit OEM Wholesale",
-    "seoDescription": "shapewear OEM black-mesh-deep-v-bodysuit: custom fabric, colour and sizing. BSCI & OEKO-TEX. MOQ 200 pcs. Request a quote today.",
+    "seoDescription": "shapewear OEM black-mesh-deep-v-bodysuit: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
     "intro": "Black Mesh Deep V Bodysuit produced in our Guangdong factory for brands, wholesalers and private-label buyers. Deep V neckline for a plunging look under low-cut tops. Sheer mesh panels for a lightweight, breathable feel. Bodysuit construction that stays tucked and smooth. Every order is built to your tech pack with your choice of fabric, colour, trim and sizing, then inspected piece by piece before packing. MOQ 200 pcs per design.",
     "features": [
       "Deep V neckline for a plunging look under low-cut tops",
@@ -8379,7 +8379,7 @@ export const styleContent: Record<string, StyleContent> =
       "Bodysuit construction that stays tucked and smooth",
       "Custom sizing from XS to 5XL, graded to your spec sheet",
       "Fabric, colour and trim fully customizable for private label",
-      "BSCI and OEKO-TEX certified production, third-party inspection welcome"
+      "Sedex SMETA audited production, third-party inspection welcome"
     ],
     "specs": [
       {
@@ -8416,7 +8416,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "label": "Certification",
-        "value": "BSCI, OEKO-TEX Standard 100"
+        "value": "Sedex, SMETA"
       },
       {
         "label": "Payment",
@@ -8448,7 +8448,7 @@ export const styleContent: Record<string, StyleContent> =
       },
       {
         "q": "Do you provide certification documents?",
-        "a": "We are BSCI audited and use OEKO-TEX Standard 100 certified materials. Test reports for fabric and accessories are available on request, and you are welcome to arrange third-party inspection before shipment."
+        "a": "Our factory is SMETA 4-pillar audited and we are a Sedex member. Fabric and accessory test reports are available on request, and you are welcome to arrange third-party inspection before shipment."
       },
       {
         "q": "Can I visit the factory before ordering?",

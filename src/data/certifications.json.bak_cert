@@ -1,0 +1,10 @@
+{
+  "title": "Certifications & Compliance",
+  "certifications": [
+    { "name": "BSCI", "desc": "Social compliance audit — factory working conditions &amp; ethics" },
+    { "name": "OEKO-TEX", "desc": "Standard 100 certified — fabric safety for intimate apparel" },
+    { "name": "ISO 9001", "desc": "Quality management system — production consistency" },
+    { "name": "FAMA", "desc": "Fair labor association — supply chain responsibility" },
+    { "name": "Sedex", "desc": "SMETA audited — ethical trade &amp; sustainable sourcing" }
+  ]
+}

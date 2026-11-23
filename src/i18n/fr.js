@@ -2,7 +2,7 @@
 export default {
   "site": {
     "title": "Fabricant OEM de Lingerie | Usine de Lingerie en Chine",
-    "desc": "Charlizi Factory — fabricant professionnel de lingerie et vêtements intimes en OEM/ODM. Certifié BSCI et OEKO-TEX. Soutiens-gorge, shapewear, culottes, soutiens-gorge en silicone et vêtements de nuit personnalisés.",
+    "desc": "Charlizi Factory — fabricant professionnel de lingerie et vêtements intimes en OEM/ODM. Certifié Sedex et SMETA. Soutiens-gorge, shapewear, culottes, soutiens-gorge en silicone et vêtements de nuit personnalisés.",
     "tagline": "Usine"
   },
   "nav": {
@@ -20,7 +20,7 @@ export default {
   "hero": {
     "label": "FABRICANT OEM/ODM DEPUIS 2018",
     "heading": "Votre Partenaire de Confiance en <span>Lingerie</span>",
-    "sub": "Lingerie, shapewear, culottes et soutiens-gorge en silicone — du design à la livraison. Qualité certifiée BSCI et OEKO-TEX.",
+    "sub": "Lingerie, shapewear, culottes et soutiens-gorge en silicone — du design à la livraison. Qualité certifiée Sedex et SMETA.",
     "browse": "Voir le Catalogue",
     "quote": "Demander un Devis",
     "sample": "📦 Échantillon en Petite Série"
@@ -47,7 +47,7 @@ export default {
     "title": "Fabrication Intégrale<br />Sous un Même Toit",
     "items": [
       { "title": "Service OEM/ODM Complet", "desc": "Du cahier des charges à la production en série. Création de patrons, développement d'échantillons, gradation des tailles." },
-      { "title": "Qualité Certifiée", "desc": "Usine certifiée BSCI et OEKO-TEX. Processus de contrôle qualité en trois étapes (AQL 2.5)." },
+      { "title": "Qualité Certifiée", "desc": "Usine certifiée Sedex et SMETA. Processus de contrôle qualité en trois étapes (AQL 2.5)." },
       { "title": "Petites Séries Disponibles", "desc": "Échantillonnage via Viomisha.com. Évaluez la qualité avant de vous engager sur de gros volumes." },
       { "title": "Expérience d'Exportation Mondiale", "desc": "Expédition vers l'Amérique du Nord, l'Europe, le Moyen-Orient et l'Asie du Sud-Est. FCL/LCL." }
     ]
@@ -87,7 +87,7 @@ export default {
     "sampleBtn": "📦 Acheter Petite Série →",
     "badges": {
       "oem": "OEM/ODM",
-      "certified": "BSCI et OEKO-TEX",
+      "certified": "Sedex et SMETA",
       "moq": "MOQ {qty} pièces",
       "leadTime": "Délai 30-45 Jours"
     },
@@ -135,7 +135,7 @@ export default {
   },
   "footer": {
     "aboutTitle": "Charlizi Factory",
-    "aboutText": "Fabricant de lingerie certifié BSCI et OEKO-TEX. OEM/ODM depuis 2018.",
+    "aboutText": "Fabricant de lingerie certifié Sedex et SMETA. OEM/ODM depuis 2018.",
     "productTitle": "Produits",
     "companyTitle": "Entreprise",
     "companyLinks": {

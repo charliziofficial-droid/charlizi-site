@@ -1,0 +1,308 @@
+---
+// src/layouts/FactoryLayout.astro
+export interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  noindex?: boolean;
+  canonical?: string;
+}
+
+const { title, description, ogImage = '/images/og-factory-default.jpg', noindex = false, canonical } = Astro.props;
+
+// Server-side region gate. Cloudflare exposes the real country on the request;
+// during local builds Astro.request.cf is undefined, so nothing is blocked.
+const blockedRegion = (() => {
+  try {
+    const cf = (Astro.request as any)?.cf;
+    return cf?.country === 'CN';
+  } catch {
+    return false;
+  }
+})();
+// Keep the rendered <title> within ~60 chars (Google truncates beyond that).
+// Page titles already end in "| Charlizi Factory" in some places, so avoid doubling the brand.
+const BRAND = 'Charlizi Factory';
+const fullTitle = (() => {
+  const t = (title || '').trim();
+  if (t.includes(BRAND)) return t;
+  const withBrand = `${t} | ${BRAND}`;
+  if (withBrand.length <= 60) return withBrand;
+  if (t.length <= 60) return t;
+  // Too long even without brand: trim the page part, then re-attach brand short form.
+  const cut = t.slice(0, 57).replace(/[\s|,-]+\S*$/, '');
+  return `${cut} | ${BRAND}`.length <= 60 ? `${cut} | ${BRAND}` : cut.slice(0, 60);
+})();
+import { factoryStats } from '../data/products-b2b.js';
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex, follow" />}
+  {!noindex && <meta name="robots" content="index, follow" />}
+  <!-- Bing Webmaster Tools site verification -->
+  <meta name="msvalidate.01" content="F977E3FA04E98031E9981F128253E707" />
+  {canonical ? (
+    <link rel="canonical" href={canonical} />
+  ) : (
+    <link rel="canonical" href={Astro.url.href} />
+  )}
+
+  <!-- JSON-LD: Organization / Manufacturer (GEO/SEO) -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': ['Organization', 'Manufacturer'],
+      '@id': 'https://charlizi.com/#organization',
+      name: 'Charlizi Factory',
+      url: 'https://charlizi.com',
+      logo: 'https://charlizi.com/factory/images/logo.png',
+      image: 'https://charlizi.com/images/og-factory-default.jpg',
+      description:
+        'Professional intimate apparel OEM/ODM manufacturer in Guangdong, China. BSCI & OEKO-TEX certified. Bras, panties, shapewear, and sleepwear for brands worldwide.',
+      foundingDate: '2018',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Shiqiaotou Industry District No.102, Junbu Town',
+        addressLocality: 'Puning',
+        addressRegion: 'Guangdong',
+        postalCode: '515300',
+        addressCountry: 'CN',
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: 23.2974, longitude: 116.1789 },
+      numberOfEmployees: { '@type': 'QuantitativeValue', value: 200 },
+      email: 'charlizi.official@gmail.com',
+      telephone: '+8613352743559',
+      knowsAbout: [
+        'lingerie manufacturing',
+        'bra OEM',
+        'intimate apparel ODM',
+        'shapewear production',
+        'private label lingerie',
+      ],
+      makesOffer: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'OEM Manufacturing' } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'ODM Custom Development' } },
+      ],
+      hasCredential: [
+        { '@type': 'EducationalOccupationalCredential', name: 'BSCI' },
+        { '@type': 'EducationalOccupationalCredential', name: 'OEKO-TEX' },
+        { '@type': 'EducationalOccupationalCredential', name: 'ISO 9001' },
+        { '@type': 'EducationalOccupationalCredential', name: 'FAMA' },
+      ],
+      areaServed: ['North America', 'Europe', 'Middle East', 'Southeast Asia'],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        url: 'https://charlizi.com/contact',
+        availableLanguage: ['English', 'Chinese'],
+      },
+    })}
+  />
+
+  <!-- JSON-LD: WebSite -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      '@id': 'https://charlizi.com/#website',
+      url: 'https://charlizi.com',
+      name: 'Charlizi Factory',
+      publisher: { '@id': 'https://charlizi.com/#organization' },
+      inLanguage: 'en',
+    })}
+  />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={Astro.url.href} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={new URL(ogImage, Astro.site).href} />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+
+  <!-- Hreflang: English is default, future languages will be added here -->
+  <link rel="alternate" hreflang="en" href={Astro.url.href} />
+  <link rel="alternate" hreflang="x-default" href={Astro.url.href} />
+
+  <!-- Google Fonts 鈥?Inter only for B2B -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicon / app icons (brand: forest green + metallic gold "C") -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#053C32" />
+  <meta name="msapplication-TileColor" content="#053C32" />
+  <meta name="msapplication-TileImage" content="/icon-192.png" />
+
+  <title>{fullTitle}</title>
+
+</head>
+<body class="bg-white text-charcoal antialiased">
+  <!-- Region gate: computed from the visitor's real country, NOT from a URL
+       parameter. A URL parameter would let anyone deface the page simply by
+       sharing a crafted link. -->
+  <script is:inline define:vars={{ blocked: blockedRegion }}>
+    if (blocked) document.documentElement.setAttribute('data-region-blocked', '1');
+  </script>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200/60">
+    <nav class="container-site flex items-center justify-between h-16 md:h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2">
+        <img src="/factory/images/logo.png" alt="Charlizi Factory" width="640" height="640" class="h-8 md:h-9 w-auto" decoding="async" />
+        <span class="hidden sm:inline text-xs text-accent font-medium tracking-widest uppercase border-l border-gray-300 pl-2">Factory</span>
+      </a>
+
+      <!-- Desktop nav -->
+      <ul class="hidden md:flex items-center gap-1 text-sm font-medium text-slate">
+        <li><a href="/" class="px-3 py-2 hover:text-navy transition-colors">Home</a></li>
+        <li><a href="/about" class="px-3 py-2 hover:text-navy transition-colors">About</a></li>
+        <li><a href="/products" class="px-3 py-2 hover:text-navy transition-colors">Products</a></li>
+        <li><a href="/catalog" class="px-3 py-2 hover:text-navy transition-colors">Catalog</a></li>
+        <li><a href="/process" class="px-3 py-2 hover:text-navy transition-colors">Process</a></li>
+        <li><a href="/blog" class="px-3 py-2 hover:text-navy transition-colors">Blog</a></li>
+        <li><a href="/faq" class="px-3 py-2 hover:text-navy transition-colors">FAQ</a></li>
+      </ul>
+
+      <!-- CTA group -->
+      <div class="flex items-center gap-3">
+        <a href="https://viomisha.com" target="_blank" class="hidden sm:inline-flex btn-outline text-xs py-2 px-4">
+          &#x1F4E6; Sample &#x2192;
+        </a>
+        <a href="/contact" class="btn-primary text-xs py-2 px-4">
+          Get Quote
+        </a>
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden p-2" aria-label="Menu">
+          <svg class="w-6 h-6 text-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-50 bg-white">
+      <div class="container-site flex justify-between items-center h-16">
+        <img src="/factory/images/logo.png" alt="Charlizi" width="640" height="640" class="h-8 w-auto" decoding="async" />
+        <button id="close-btn" class="p-2" aria-label="Close">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <ul class="container-site flex flex-col gap-4 py-8 text-lg font-medium text-charcoal">
+        <li><a href="/" class="py-2 block">Home</a></li>
+        <li><a href="/about" class="py-2 block">About</a></li>
+        <li><a href="/products" class="py-2 block">Products</a></li>
+        <li><a href="/catalog" class="py-2 block">Catalog</a></li>
+        <li><a href="/process" class="py-2 block">Process</a></li>
+        <li><a href="/blog" class="py-2 block">Blog</a></li>
+        <li><a href="/faq" class="py-2 block">FAQ</a></li>
+        <li class="pt-4 border-t border-gray-200">
+          <a href="/contact" class="btn-primary w-full text-center">Get a Quote</a>
+        </li>
+        <li>
+          <a href="https://viomisha.com" target="_blank" class="btn-outline w-full text-center">&#x1F4E6; Small Batch Sample &#x2192;</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-white/70 mt-20">
+    <div class="container-site py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- Brand -->
+        <div class="lg:col-span-2">
+          <span class="text-2xl font-bold text-white">charlizi</span>
+          <span class="text-accent text-xs tracking-widest uppercase ml-2">Factory</span>
+          <p class="mt-4 text-sm text-white/60 leading-relaxed max-w-md">
+            Professional intimate apparel OEM/ODM manufacturer since 2018.
+            BSCI & OEKO-TEX certified. {factoryStats.workers} skilled workers, {factoryStats.area} facility.
+          </p>
+          <p class="mt-2 text-xs text-white/40">
+            Export markets: {factoryStats.exportMarkets}
+          </p>
+        </div>
+        <!-- Quick links -->
+        <div>
+          <h4 class="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Products</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/products/bra-sets" class="hover:text-accent transition-colors">Bra Sets</a></li>
+            <li><a href="/products/bras" class="hover:text-accent transition-colors">Bras</a></li>
+            <li><a href="/products/plus-size-bras" class="hover:text-accent transition-colors">Plus Size Bras</a></li>
+            <li><a href="/products/panties" class="hover:text-accent transition-colors">Panties</a></li>
+            <li><a href="/products/silicone-bras" class="hover:text-accent transition-colors">Silicone Bras</a></li>
+            <li><a href="/products/shapewear" class="hover:text-accent transition-colors">Shapewear</a></li>
+            <li><a href="/products/sleepwear" class="hover:text-accent transition-colors">Sleepwear (Custom)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white text-sm font-semibold mb-4 uppercase tracking-wider">Company</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/about" class="hover:text-accent transition-colors">About Us</a></li>
+            <li><a href="/process" class="hover:text-accent transition-colors">Production Process</a></li>
+            <li><a href="/blog" class="hover:text-accent transition-colors">Blog & Insights</a></li>
+            <li><a href="/faq" class="hover:text-accent transition-colors">OEM/ODM FAQ</a></li>
+            <li><a href="/contact" class="hover:text-accent transition-colors">Contact & Inquiry</a></li>
+          </ul>
+          <div class="mt-6 pt-6 border-t border-white/10">
+            <h4 class="text-white text-sm font-semibold mb-3 uppercase tracking-wider">Brand Store</h4>
+            <a href="https://viomisha.com" target="_blank" class="inline-flex items-center gap-1 text-accent hover:text-accent-light text-sm transition-colors">
+              Viomisha.com &#x2197;
+            </a>
+            <p class="text-xs text-white/40 mt-1">Small batch & retail</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="container-site py-6 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/40">
+        <p>&copy; {new Date().getFullYear()} Charlizi Factory. All rights reserved.</p>
+        <p>Professional Intimate Apparel OEM/ODM Manufacturer</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('close-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => mobileMenu.classList.remove('hidden'));
+        closeBtn?.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+

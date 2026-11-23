@@ -9,11 +9,8 @@ export const factoryStats = {
 
 // Certifications
 export const certifications = [
-  { name: 'BSCI', desc: 'Social compliance audit — factory working conditions &amp; ethics' },
-  { name: 'OEKO-TEX', desc: 'Standard 100 certified — fabric safety for intimate apparel' },
-  { name: 'ISO 9001', desc: 'Quality management system — production consistency' },
-  { name: 'FAMA', desc: 'Fair labor association — supply chain responsibility' },
-  { name: 'Sedex', desc: 'SMETA audited — ethical trade &amp; sustainable sourcing' },
+  { name: 'Sedex', desc: 'Supplier Ethical Data Exchange — ethical trade membership, audited annually' },
+  { name: 'SMETA', desc: 'Sedex Members Ethical Trade Audit — 4-pillar social &amp; labor compliance' },
 ];
 
 // Product Categories
@@ -41,7 +38,7 @@ export const productCategories: ProductCategory[] = [
     moq: '200',
     leadTime: '30-45',
     badge1: 'OEM/ODM',
-    badge2: 'BSCI Certified',
+    badge2: 'Sedex SMETA Audited',
   },
   {
     id: 'bras',
@@ -133,7 +130,7 @@ export const productCategories: ProductCategory[] = [
 export const productionSteps = [
   { step: '01', title: 'Pattern Making & Grading', duration: '3-5 days', desc: 'Using Gerber/Gerber AccuMark CAD system. We digitize your tech pack, create first patterns, and grade across your required size range. In-house pattern engineers with 10+ years of intimate apparel experience.' },
   { step: '02', title: 'Sample Development', duration: '5-7 days', desc: 'Construction of first sample using specified fabric, trim, and hardware. Fit assessment on live models or dress forms. Photographs taken for your approval before proceeding to corrections.' },
-  { step: '03', title: 'Fabric & Trim Sourcing', duration: '5-10 days', desc: 'We source fabric from our network of GOTS/OCS/OEKO-TEX certified mills. Custom dyeing (Pantone matched), lace and embroidery development, and hardware selection all coordinated in parallel.' },
+  { step: '03', title: 'Fabric & Trim Sourcing', duration: '5-10 days', desc: 'We source fabric from a vetted supplier network and can request mill test reports and compliance documentation per order. Custom dyeing (Pantone matched), lace and embroidery development, and hardware selection all coordinated in parallel.' },
   { step: '04', title: 'Bulk Cutting', duration: '3-5 days', desc: 'Automated laser cutting or die-cutting for consistent pieces. Fabric is laid in multiple layers (up to 100 ply) and cut precisely. Each bundle labeled with style, size, and color for traceability.' },
   { step: '05', title: 'Sewing & Assembly', duration: '10-20 days', desc: 'Specialized sewing lines dedicated to intimate apparel. Each operator trained on specific construction steps. In-line quality checks at critical sewing stations every 30 minutes.' },
   { step: '06', title: 'Quality Control (3-Stage)', duration: '3-5 days', desc: 'Stage 1: In-line inspection during sewing. Stage 2: Final inspection per AQL 2.5 standard. Stage 3: Random pre-shipment inspection. Dimensional checks, seam strength, zipper/closure function, and color fastness testing.' },
@@ -144,10 +141,10 @@ export const productionSteps = [
 export const faqItems = [
   { q: 'What is your MOQ?', a: 'Our standard MOQ is 200 pieces per design for most categories. Panties and sleepwear require 300 pieces minimum. Lower MOQ is available through our small batch partner Viomisha for sampling purposes.' },
   { q: 'What is your lead time?', a: 'Typical lead times: 7-10 days for samples (1-2 rounds of revision included), and 30-45 days for bulk production from sample approval. Timeline depends on fabric availability and production line capacity at time of order.' },
-  { q: 'What certifications do you hold?', a: 'We are BSCI, OEKO-TEX Standard 100, ISO 9001, FAMA certified, and Sedex SMETA audited. We can provide copies of current certificates upon request.' },
+  { q: 'What certifications do you hold?', a: 'We are a Sedex member and our factory is SMETA audited (4-pillar). We can share our current SMETA audit report and Sedex membership details on request.' },
   { q: 'Can you work with my design/tech pack?', a: 'Absolutely. We accept tech packs, reference designs, sketches, or even inspiration images. Our pattern engineers will interpret your requirements and develop samples for approval.' },
   { q: 'What is your sampling process?', a: 'Send us your design reference (tech pack, sketch, or reference product). We review and provide a quotation within 24 hours. Upon confirmation, samples are completed in 7-10 days. Free revisions (1-2 rounds) included.' },
-  { q: 'What fabrics do you work with?', a: 'We work with cotton, modal, microfiber, nylon/spandex, bamboo, silk blends, power mesh, latex, and custom blends. All fabrics are OEKO-TEX certified on request. Custom dyeing (Pantone) available from 200 yards per color.' },
+  { q: 'What fabrics do you work with?', a: 'We work with cotton, modal, microfiber, nylon/spandex, bamboo, silk blends, power mesh, latex, and custom blends. All fabrics are Sedex SMETA audited on request. Custom dyeing (Pantone) available from 200 yards per color.' },
   { q: 'Do you offer labeling and packaging customization?', a: 'Yes. Custom woven labels, printed labels, puff heat-transfer labels, hang tags, barcode stickers, and full packaging design. You can provide your own branded materials or we source them for you.' },
   { q: 'What is your payment terms?', a: 'Standard terms: 30% deposit with order, 70% balance before shipment. Letter of Credit (L/C) accepted for bulk orders over $50,000. Payment via T/T bank transfer.' },
   { q: 'Can I visit the factory?', a: 'Factory visits are welcome by appointment. We are located in Shiqiaotou Industry District No.102, Junbu Town, Puning City, Guangdong— 30 minutes from Shenzhen Bao\'an International Airport. We can arrange pickup.' },
@@ -159,7 +156,7 @@ export const faqItems = [
 // Blog Posts
 export const blogPosts = [
   { title: 'How to Choose the Right Bra Manufacturer for Your Brand', date: 'June 1, 2026', desc: 'A practical guide for DTC brands looking for a reliable bra OEM partner — from MOQ considerations to quality certification requirements.', slug: 'choosing-bra-manufacturer' },
-  { title: 'Understanding OEKO-TEX Certification in Intimate Apparel', date: 'May 25, 2026', desc: 'What OEKO-TEX Standard 100 means for lingerie production, and why it matters for your brand\'s compliance and customer trust.', slug: 'oeko-tex-certification' },
+  { title: 'Understanding SMETA Certification in Intimate Apparel', date: 'May 25, 2026', desc: 'What SMETA means for lingerie production, and why it matters for your brand\'s compliance and customer trust.', slug: 'SMETA-certification' },
   { title: 'Bulk vs Small Batch: Sourcing Strategy for Apparel Brands', date: 'May 18, 2026', desc: 'When to start with small batch sampling and when to scale to full production. A strategic guide for intimate apparel brands.', slug: 'bulk-vs-small-batch' },
 ];
 

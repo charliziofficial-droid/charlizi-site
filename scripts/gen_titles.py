@@ -168,7 +168,7 @@ def seo_meta(style, new_title):
         seo = f'{base} {short}'
     else:
         seo = base
-    desc = (f'{base} from a BSCI & OEKO-TEX certified OEM factory. '
+    desc = (f'{base} from a Sedex SMETA audited OEM factory. '
             f'Custom fabric, colour and sizing. MOQ 200 pcs. Request a wholesale quote.')
     if len(desc) > 158:
         desc = desc[:155].rsplit(' ', 1)[0] + '.'

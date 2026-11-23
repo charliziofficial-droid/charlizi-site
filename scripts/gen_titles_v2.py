@@ -223,16 +223,19 @@ def build(style, code):
         if len(picked) >= 3:
             break
 
+    # 主理人指令 2026-11-23：格式 = { 品类 } { 卖点 } { 卖点 } — { 批发词 } — { CODE }#
+    # 品类词前置，颜色不占首位（跟在卖点后面）
     trunk_parts = []
-    if colors:
-        trunk_parts.append(colors[0])
     trunk_parts.extend(picked)
     # ????? Plus Size ??? "Plus Size Plus Size"
     if cat == "plus-size-bras":
         ps = [i for i, x in enumerate(trunk_parts) if x.lower() == "plus size"]
         for i in reversed(ps[1:]):
             trunk_parts.pop(i)
-    trunk_parts.append(core)
+    if colors:
+        trunk_parts.append(colors[0])
+    # 品类核心词提到最前
+    trunk_parts.insert(0, core)
     # ???????
     # ????????????? 'Half Cup Cup'?'Plus Size Plus Size'
     seen_words = set()
@@ -292,9 +295,10 @@ def seo_pair(style, built, code):
 
     # description：批发为主句，零售词做自然补充
     desc = (f'{trunk} from our own Guangdong factory. OEM & private label welcome, '
-            f'custom fabric/colour/size. MOQ 200. BSCI & OEKO-TEX. Request wholesale quote.')
+            f'custom fabric/colour/size. MOQ 200. Sedex & SMETA audited. Request wholesale quote.')
     if len(desc) > 158:
-        desc = desc[:155].rsplit(' ', 1)[0] + '.'
+        desc = desc[:155].rsplit(' ', 1)[0]
+    desc = re.sub(r'[.?]+$', '', desc.rstrip()) + '.'
     return seo, desc, ld_name, retail
 
 

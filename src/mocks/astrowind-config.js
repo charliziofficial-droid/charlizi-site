@@ -25,7 +25,7 @@ export const UI = {
 
 export const METADATA = {
   title: { default: 'Charlizi Factory', template: '%s | Charlizi Factory' },
-  description: 'Professional intimate apparel & lingerie OEM/ODM manufacturer. BSCI & OEKO-TEX certified.',
+  description: 'Professional intimate apparel & lingerie OEM/ODM manufacturer. Sedex SMETA audited.',
   canonical: true,
   openGraph: { type: 'website' },
 };

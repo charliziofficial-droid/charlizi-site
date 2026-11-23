@@ -127,14 +127,13 @@ def build_title(rec, qrec):
     core = CORE.get(cat, 'Lingerie')
     ws = WHOLESALE_MAIN.get(cat, 'Wholesale OEM Manufacturer')
 
-    parts = []
+    # 主理人指令：{ 品类 } { 卖点 } { 卖点 } — { 批发词 } — { CODE }#
+    parts = [core]
     if qrec:
-        # 有真实数据：颜色 + 属性 + 核心词
+        parts.extend(feats_from_property(qrec.get('property'))[:3])
         ens = zh_colors_to_en(qrec.get('colors'))
         if ens:
             parts.append(ens[0])
-        parts.extend(feats_from_property(qrec.get('property'))[:3])
-    parts.append(core)
 
     # 全局词级去重
     seen, kept = set(), []
@@ -192,13 +191,14 @@ def main():
                 extra_bits.append(f'{mat}')
             extra_str = (' ' + ', '.join(extra_bits) + '.') if extra_bits else ''
             desc = (f'{trunk} (style {code}) from our own Guangdong factory. '
-                    f'OEM & private label welcome.{extra_str} MOQ 200 pcs. BSCI & OEKO-TEX.')
+                    f'OEM & private label welcome.{extra_str} MOQ 200 pcs. Sedex & SMETA audited.')
         else:
             desc = (f'{trunk} from our own Guangdong factory. OEM & private label welcome. '
-                    f'Custom fabric, colour and sizing. MOQ 200 pcs. BSCI & OEKO-TEX.')
+                    f'Custom fabric, colour and sizing. MOQ 200 pcs. Sedex & SMETA audited.')
 
         if len(desc) > 158:
-            desc = desc[:155].rsplit(' ', 1)[0] + '.'
+            desc = desc[:155].rsplit(' ', 1)[0]
+        desc = re.sub(r'[.?]+$', '', desc.rstrip()) + '.'
 
         out[rec['key']] = {
             'category': cat,

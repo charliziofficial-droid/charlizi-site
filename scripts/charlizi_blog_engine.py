@@ -97,7 +97,7 @@ PRODUCT_LINES = {
 EXISTING_TOPICS = [
     "bra anatomy", "bra set development", "panty fit", "shapewear manufacturing",
     "silicone bra manufacturing", "size grading", "wirefree vs underwire",
-    "choosing bra manufacturer", "oeko-tex", "bulk vs small batch",
+    "choosing bra manufacturer", "SMETA", "bulk vs small batch",
 ]
 
 # B2B 采购意图词——只有带这些意图的词才值得写 ToB 文章
@@ -454,7 +454,7 @@ def cmd_qa(args):
     # --- 事实一致性（品牌硬数据）
     if "200" not in text and "MOQ" in text:
         warns.append("提到 MOQ 但未出现 200 pcs 的具体数字")
-    for bad in ["ISO 14001", "WRAP certified", "GOTS certified", "SEDEX certified"]:
+    for bad in ["ISO 14001", "SMETA certified", "SMETA certified", "SEDEX certified"]:
         if bad.lower() in low:
             fails.append("使用了未持有的认证: %s" % bad)
 

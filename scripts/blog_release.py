@@ -37,8 +37,8 @@ AI_TELLS = [
     "look no further", "rest assured", "we understand that",
     "our team of experts", "elevate", "revolutionize", "unparalleled",
 ]
-FORBIDDEN_CERTS = ["ISO 14001", "WRAP certified", "GOTS certified", "SEDEX certified",
-                   "ISO 9001 certified"]
+FORBIDDEN_CERTS = ["ISO 14001", "SMETA certified", "SMETA certified", "SEDEX certified",
+                   "Sedex SMETA audited"]
 
 
 # ------------------------------------------------------------------ helpers
@@ -134,8 +134,8 @@ def gate(slug, verbose=True):
     for bad in FORBIDDEN_CERTS:
         if bad.lower() in low:
             fails.append("使用了未持有的认证: %s" % bad)
-    if "BSCI" in plain and "OEKO" not in plain:
-        warns.append("只提 BSCI 未提 OEKO-TEX，可补一处增强可信度")
+    if "Sedex" in plain and "OEKO" not in plain:
+        warns.append("只提 Sedex 未提 SMETA，可补一处增强可信度")
     if re.search(r"\bMOQ\b", plain) and "200" not in plain:
         warns.append("提到 MOQ 但没有落具体数字（本站口径 200-300 pcs）")
 

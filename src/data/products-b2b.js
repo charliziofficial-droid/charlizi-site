@@ -9,7 +9,7 @@ export const productCategories = [
     description: 'Matching bra and panty sets, available with underwire or wirefree. Bulk OEM/ODM for brands worldwide.',
     image: '/factory/images/products-cards/bra-sets/b2046-front.webp',
     metaTitle: 'Bra Set Manufacturer China | OEM Lingerie Sets Wholesale',
-    metaDesc: 'Professional bra set manufacturer. Underwire & wirefree matching sets. BSCI certified. MOQ 200 pcs. Small batch sampling via Viomisha.',
+    metaDesc: 'Professional bra set manufacturer. Underwire & wirefree matching sets. Sedex SMETA Audited. MOQ 200 pcs. Small batch sampling via Viomisha.',
     subCategories: ['With Underwire', 'Wirefree / Wireless'],
     specs: ['Underwire bra + matching panty', 'Wirefree bra + matching panty',
             'Padded / non-padded options', 'Adjustable straps & back closure'],
@@ -21,7 +21,7 @@ export const productCategories = [
     description: 'Full range of bra styles — underwire, wirefree, and seamless. Designed for comfort and support across all sizes.',
     image: '/factory/images/products-cards/bras/b1133-front.webp',
     metaTitle: 'Bra Manufacturer China | Underwire Wirefree Seamless Bras OEM',
-    metaDesc: 'China bra manufacturer specializing in underwire, wirefree, and seamless bras. Wholesale & OEM. BSCI/OEKO-TEX certified.',
+    metaDesc: 'China bra manufacturer specializing in underwire, wirefree, and seamless bras. Wholesale & OEM. Sedex SMETA audited.',
     subCategories: ['With Underwire', 'Wirefree', 'Seamless / Molded'],
     specs: ['Underwire support bras', 'Wirefree comfort bras',
             'Seamless molded bras', 'Full cup / demi cup / triangle',
@@ -60,7 +60,7 @@ export const productCategories = [
     description: 'Adhesive silicone bras, nipple covers, and strap-on breast petals. Perfect for backless and strapless fashion.',
     image: '/factory/images/products-cards/silicone-bras/j1074-front.webp',
     metaTitle: 'Silicone Bra Manufacturer | Adhesive Bra Supplier China',
-    metaDesc: 'Silicone bra OEM manufacturer. Nipple covers, adhesive push-up bras, strap-on petals. BSCI certified. MOQ 200 pcs.',
+    metaDesc: 'Silicone bra OEM manufacturer. Nipple covers, adhesive push-up bras, strap-on petals. Sedex SMETA Audited. MOQ 200 pcs.',
     subCategories: ['Strap-on Breast Petals', 'Adhesive Push-up Bras', 'Nipple Covers'],
     specs: ['Medical-grade silicone', 'Hypoallergenic adhesive',
             'Reusable (50+ times)', 'Skin-tone color matching',
@@ -111,11 +111,8 @@ export const productCategories = [
 ];
 
 export const certifications = [
-  { name: 'BSCI', fullName: 'Business Social Compliance Initiative', desc: 'Social compliance audit passed annually' },
-  { name: 'OEKO-TEX', fullName: 'OEKO-TEX Standard 100', desc: 'All fabrics tested for harmful substances' },
-  { name: 'ISO 9001', fullName: 'ISO 9001:2015', desc: 'Quality management system certified' },
-  { name: 'FAMA', fullName: 'Disney FAMA', desc: 'Disney Facility and Merchandise Authorization' },
-  { name: 'Sedex', fullName: 'Sedex Members Ethical Trade Audit', desc: 'Ethical supply chain assessment (optional)' },
+  { name: 'Sedex', fullName: 'Supplier Ethical Data Exchange', desc: 'Ethical trade membership, audited annually' },
+  { name: 'SMETA', fullName: 'Sedex Members Ethical Trade Audit', desc: '4-pillar social & labor compliance audit' },
 ];
 
 export const factoryStats = {
@@ -130,7 +127,7 @@ export const factoryStats = {
 export const productionSteps = [
   { step: '01', title: 'Design & Pattern', desc: 'From tech pack or reference sample, our in-house pattern makers create production-ready patterns using CAD systems. We optimize for fit consistency across all sizes.', duration: '3-5 days' },
   { step: '02', title: 'Sample Making', desc: 'First samples are cut and sewn in our sample room. Fit approval, size set grading, and any revisions are completed before bulk production begins.', duration: '7-10 days' },
-  { step: '03', title: 'Fabric Sourcing', desc: 'We source OEKO-TEX certified fabrics from trusted mills. Options include cotton, modal, nylon/spandex, microfiber, lace, and custom prints.', duration: '5-7 days' },
+  { step: '03', title: 'Fabric Sourcing', desc: 'We source fabrics from a vetted mill network and can supply test reports and compliance documents per order. Options include cotton, modal, nylon/spandex, microfiber, lace, and custom prints.', duration: '5-7 days' },
   { step: '04', title: 'Cutting', desc: 'Automated cutting machines ensure precision across all layers. Marker making optimizes fabric utilization to minimize waste.', duration: '3-5 days' },
   { step: '05', title: 'Sewing & Assembly', desc: 'Skilled operators work on dedicated production lines. Each style has standardized workstations for consistent quality and output.', duration: '12-20 days' },
   { step: '06', title: 'Quality Control', desc: 'Three-stage QC: in-line inspection during production, final random inspection (AQL 2.5 or as agreed), and pre-shipment check.', duration: '2-3 days' },
@@ -161,7 +158,7 @@ export const faqItems = [
   {
     id: 'certification',
     q: 'Do you have quality certifications?',
-    a: 'Yes, we are BSCI and OEKO-TEX Standard 100 certified. ISO 9001 and Disney FAMA are also available. Full certification documents provided upon request.',
+    a: 'Yes, we are Sedex SMETA audited. SMETA and SMETA are also available. Full certification documents provided upon request.',
   },
   {
     id: 'shipping',
@@ -178,7 +175,7 @@ export const faqItems = [
   },
   {
     q: 'What fabrics and materials do you work with?',
-    a: 'We work with cotton, modal, nylon/spandex, microfiber, polyester, silk, satin, lace, and power mesh. All fabrics can be OEKO-TEX certified upon request.',
+    a: 'We work with cotton, modal, nylon/spandex, microfiber, polyester, silk, satin, lace, and power mesh. All fabrics can be Sedex SMETA audited upon request.',
   },
   {
     q: 'What sizes do you produce?',

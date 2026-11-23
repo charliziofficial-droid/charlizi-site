@@ -1,0 +1,95 @@
+{
+  "categories": [
+    {
+      "id": "bra-sets",
+      "name": "Bra Sets",
+      "slug": "bra-sets",
+      "description": "Matching bra and panty sets — underwire, wirefree, lace, and seamless options. Custom color and fabric matching available.",
+      "image": "",
+      "subCategories": "Underwire Set, Wirefree Set, Lace Set, Seamless Set, Sport Set, Bralette Set",
+      "specs": "Fabric: Cotton, Modal, Spandex, Nylon, Microfiber\nCup: A–G (custom grading available)\nBack: Standard, U-back, Racerback, Multi-way\nClosure: Hook & eye, Front-close, Pullover\nPadding: Removable, Light, Push-up, None\nTrim: Lace, Embroidery, Ribbon, Satin bow\nLabel: Custom woven/printed/puff heat transfer",
+      "moq": "200",
+      "leadTime": "30-45",
+      "badge1": "OEM/ODM",
+      "badge2": "BSCI Certified"
+    },
+    {
+      "id": "bras",
+      "name": "Bras",
+      "slug": "bras",
+      "description": "All types of bras — full cup, demi, push-up, minimizer, wireless, and more. Every style customizable.",
+      "image": "",
+      "subCategories": "Full Cup, Demi Cup, Push-up, Minimizer, Wireless, Nursing Bra, Seamless, Sport Bra, Multi-way/Convertible",
+      "specs": "Fabric: Cotton, Modal, Spandex, Nylon, Microfiber\nCup: A–G (custom grading available)\nBack: Standard, U-back, Racerback, Multi-way\nClosure: Hook & eye, Front-close, Pullover\nPadding: Removable, Light, Push-up, None\nUnderwire: Yes / No (wirefree available)\nHardware: Nickel-free, Gold/Matte Black/Silver plating",
+      "moq": "200",
+      "leadTime": "30-45",
+      "badge1": "OEM/ODM",
+      "badge2": "Sizes A–G"
+    },
+    {
+      "id": "plus-size-bras",
+      "name": "Plus Size Bras",
+      "slug": "plus-size-bras",
+      "description": "Full-bust constructions up to 44G+. Reinforced side panels, wider straps, and extra support engineering.",
+      "image": "",
+      "subCategories": "Full Coverage, Side Support, Minimizer, Wirefree Plus, Sports Plus, Front-Close Plus",
+      "specs": "Size range: Up to 44G+ (custom grading)\nReinforced side panels for support\nWider padded straps\n3/4/5 hook back closures\nExtra-strength elastic\nFull cup coverage design\nUnderwire reinforcement",
+      "moq": "200",
+      "leadTime": "35-50",
+      "badge1": "Sizes Up to 44G+",
+      "badge2": "Reinforced Construction"
+    },
+    {
+      "id": "panties",
+      "name": "Panties",
+      "slug": "panties",
+      "description": "Full range of panties — seamless, cotton, lace, high-waist, thong, boyshort. Custom elastic and trim.",
+      "image": "",
+      "subCategories": "Seamless, Cotton, Lace, High-Waist, Thong/G-String, Boyshort, Bikini, Period Panty, Shapewear Panty",
+      "specs": "Fabric: Cotton, Modal, Spandex, Microfiber, Bamboo\nGusset: Cotton, Antimicrobial (optional)\nElastic: Soft, Lace trim, No-show\nWaist: Low, Mid, High, Extra-high\nSeam: Seamless / Sewn construction\nLabel: Custom woven/printed/heat transfer\nPackaging: Polybag, Box set, Display ready",
+      "moq": "200",
+      "leadTime": "25-40",
+      "badge1": "XS–6XL",
+      "badge2": "Seamless Available"
+    },
+    {
+      "id": "silicone-bras",
+      "name": "Silicone Bras",
+      "slug": "silicone-bras",
+      "description": "Adhesive silicone bras, strapless options, backless designs. Skin-safe medical grade silicone.",
+      "image": "",
+      "subCategories": "Strapless Silicone, Backless Adhesive, Push-up Silicone, Reusable Sticky, Nipple Covers/Pasties, Wedding/Bridal Specialty",
+      "specs": "Material: Medical-grade silicone\nAdhesive: Self-adhesive, washable reuse\nSkin-safe: Hypoallergenic, latex-free\nColors: Nude, Black, White, Custom Pantone\nReusability: 30–50 wears per pair\nPackaging: Retail box, Blister pack, Custom",
+      "moq": "500",
+      "leadTime": "30-45",
+      "badge1": "Medical-Grade Silicone",
+      "badge2": "Skin-Safe"
+    },
+    {
+      "id": "shapewear",
+      "name": "Shapewear",
+      "slug": "shapewear",
+      "description": "Waist trainers, tummy control shorts, bodysuits, thigh shapers. Power mesh or latex construction.",
+      "image": "",
+      "subCategories": "Waist Trainer/Cincher, Tummy Control Shorts, Bodysuit/Full Body, Thigh Shaper, Arm Shaper, Post-Surgery/Recovery, Camisole/Top Shaper",
+      "specs": "Fabric: Nylon/Spandex power mesh, Latex, Cotton lining\nControl Level: Light, Medium, Firm, Extra Firm\nClosure: Hook & eye, Zipper, Pull-on\nBoning: Steel, Plastic, None\nFeatures: Anti-slip grip, Breathable panels\nSizes: S–XXXL, Plus size available",
+      "moq": "200",
+      "leadTime": "35-50",
+      "badge1": "Power Mesh / Latex",
+      "badge2": "Firm Control"
+    },
+    {
+      "id": "sleepwear",
+      "name": "Sleepwear",
+      "slug": "sleepwear",
+      "description": "Custom pajamas, chemises, robes, and loungewear. Soft fabrics with custom prints and trims.",
+      "image": "",
+      "subCategories": "Pajama Set (Short/Long), Chemise/Nightgown, Robe/Bathrobe, Two-Piece Lounge, Teddy/Babydoll, Kimonos & Cover-ups",
+      "specs": "Fabric: Cotton, Modal, Bamboo, Satin, Silk blend\nPrint: Solid, Stripe, Custom print/all-over\nTrim: Lace, Ribbon, Satin binding\nClosure: Button, Wrap, Pullover\nPackaging: Gift box, Tissue wrap, Drawstring bag",
+      "moq": "300",
+      "leadTime": "30-50",
+      "badge1": "Custom Only",
+      "badge2": "Custom Print Available"
+    }
+  ]
+}
