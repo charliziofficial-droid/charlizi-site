@@ -6449,7 +6449,7 @@ export const styleExtra: Record<string, StyleContent> =
     "title": "Camisole Set B6051",
     "baseTitle": "Camisole Set B6051",
     "category": "camisoles",
-    "categoryName": "Camisole Sets",
+    "categoryName": "Camisoles & Tank Tops",
     "h1": "Camisole Set B6051 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set B6051 OEM Wholesale Manufacturer",
     "seoDescription": "camisole set OEM b6051: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
@@ -6468,7 +6468,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Category",
-        "value": "Camisole Sets"
+        "value": "Camisoles & Tank Tops"
       },
       {
         "label": "MOQ",
@@ -6552,7 +6552,7 @@ export const styleExtra: Record<string, StyleContent> =
     "title": "Camisole Set M001",
     "baseTitle": "Camisole Set M001",
     "category": "camisoles",
-    "categoryName": "Camisole Sets",
+    "categoryName": "Camisoles & Tank Tops",
     "h1": "Camisole Set M001 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set M001 OEM Wholesale Manufacturer",
     "seoDescription": "camisole set OEM m001: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
@@ -6571,7 +6571,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Category",
-        "value": "Camisole Sets"
+        "value": "Camisoles & Tank Tops"
       },
       {
         "label": "MOQ",
@@ -6650,7 +6650,7 @@ export const styleExtra: Record<string, StyleContent> =
     "title": "Camisole Set M002",
     "baseTitle": "Camisole Set M002",
     "category": "camisoles",
-    "categoryName": "Camisole Sets",
+    "categoryName": "Camisoles & Tank Tops",
     "h1": "Camisole Set M002 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set M002 OEM Wholesale Manufacturer",
     "seoDescription": "camisole set OEM m002: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
@@ -6669,7 +6669,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Category",
-        "value": "Camisole Sets"
+        "value": "Camisoles & Tank Tops"
       },
       {
         "label": "MOQ",
@@ -6748,7 +6748,7 @@ export const styleExtra: Record<string, StyleContent> =
     "title": "Camisole Set M13",
     "baseTitle": "Camisole Set M13",
     "category": "camisoles",
-    "categoryName": "Camisole Sets",
+    "categoryName": "Camisoles & Tank Tops",
     "h1": "Camisole Set M13 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set M13 OEM Wholesale Manufacturer",
     "seoDescription": "camisole set OEM m13: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
@@ -6767,7 +6767,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Category",
-        "value": "Camisole Sets"
+        "value": "Camisoles & Tank Tops"
       },
       {
         "label": "MOQ",
@@ -6846,7 +6846,7 @@ export const styleExtra: Record<string, StyleContent> =
     "title": "Camisole Set U018",
     "baseTitle": "Camisole Set U018",
     "category": "camisoles",
-    "categoryName": "Camisole Sets",
+    "categoryName": "Camisoles & Tank Tops",
     "h1": "Camisole Set U018 — OEM Wholesale Manufacturer",
     "seoTitle": "Camisole Set U018 OEM Wholesale Manufacturer",
     "seoDescription": "camisole set OEM u018: custom fabric, colour and sizing. Sedex & SMETA. MOQ 200 pcs. Request a quote today.",
@@ -6865,7 +6865,7 @@ export const styleExtra: Record<string, StyleContent> =
       },
       {
         "label": "Category",
-        "value": "Camisole Sets"
+        "value": "Camisoles & Tank Tops"
       },
       {
         "label": "MOQ",

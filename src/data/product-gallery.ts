@@ -10,10 +10,11 @@
 
 import { supplementByCategory } from './product-gallery-supplement';
 import { dDriveByCategory } from './product-gallery-d-drive';
+import { dDrive2ByCategory } from './product-gallery-d-drive-2';
 
 export interface GalleryImage {
   file: string;   // /factory/images/products-cards/<cat>/<name>.webp
-  view: 'front' | 'back';
+  view: 'front' | 'back' | 'view3' | 'view4' | 'view5' | 'view6' | 'view7' | 'view8';
   alt: string;
 }
 
@@ -311,14 +312,15 @@ export const galleryByCategory: Record<string, GalleryStyle[]> = {
   ],
 };
 
-/** 取某分类的款式清单（基础 + 2026-10-30 新增 + 2026-11-08 D盘新增） */
+/** 取某分类的款式清单（基础 + 2026-10-30 新增 + 2026-11-08 D盘新增 + 2026-11-22 D盘新增） */
 export function getGallery(categoryId: string): GalleryStyle[] {
   const base = galleryByCategory[categoryId] ?? [];
   const extra = supplementByCategory[categoryId] ?? [];
   const dDrive = dDriveByCategory[categoryId] ?? [];
+  const dDrive2 = dDrive2ByCategory[categoryId] ?? [];
   const seen = new Set(base.map((s) => s.slug));
   const merged = [...base];
-  for (const list of [extra, dDrive]) {
+  for (const list of [extra, dDrive, dDrive2]) {
     for (const s of list) {
       if (seen.has(s.slug)) continue;
       seen.add(s.slug);

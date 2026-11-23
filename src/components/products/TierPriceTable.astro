@@ -1,0 +1,747 @@
+---
+/**
+ * 采购量阶梯报价表 —— 询盘后解锁（progressive disclosure）
+ *
+ * 展示逻辑：
+ *   1. 档位结构（数量区间 + 交期）公开 —— 客户据此判断量级，不影响 SEO
+ *   2. 单价默认遮罩，显示 "Reveal wholesale price"
+ *   3. 点开后在表单内填写登记信息（公司/姓名/邮箱/国家/量级）即可看到单价
+ *   4. 登记信息同时作为询盘提交到 /api/inquiry —— 一次动作，两个结果
+ *   5. 登记状态写入 localStorage，同站其他款式自动解锁（提交一次，全站可见）
+ *
+ * 为什么不直接把价格写进 HTML：
+ *   单价是报价表核心资产，公开后竞品可整表爬取。
+ *   单价不进 HTML 也意味着 schema.org Offer 不带 price —— 这是刻意取舍：
+ *   保留 AggregateOffer 的价格区间（lowPrice/highPrice）既能让 AI 摘要出
+ *   "roughly USD 1.85–2.34" 这类答案，又不泄露分档明细。
+ */
+interface Tier {
+  min: number;
+  max: number;
+  price: number;
+}
+
+interface Props {
+  tiers: Tier[];
+  moq: number;
+  stock: 'in-stock' | 'made-to-order';
+  sku?: string;
+  productName?: string;
+}
+
+const { tiers: rawTiers, moq, stock, sku, productName } = Astro.props;
+
+// 相邻档位单价相同时合并展示（参考定价常见），避免出现两行同价
+const tiers = rawTiers.reduce<Tier[]>((acc, t) => {
+  const last = acc[acc.length - 1];
+  if (last && Math.abs(last.price - t.price) < 0.005) {
+    last.max = t.max;
+  } else {
+    acc.push({ ...t });
+  }
+  return acc;
+}, []);
+
+const fmt = (n: number) => n.toFixed(2);
+
+// 档位跨度，用于遮罩态给出价格范围提示（不算泄密，报价表本来就要谈）
+const minPrice = Math.min(...tiers.map((t) => t.price));
+const maxPrice = Math.max(...tiers.map((t) => t.price));
+
+// 全表只有一个价格（所有档位同价）时，区间本身已经等于单价。
+// 再要求客户填表「解锁」一个已经写在页面上的数字，只是浪费客户时间、
+// 也会让人怀疑站点在收集线索而不是真的想报价——这类款直接公开。
+const singlePrice = Math.abs(maxPrice - minPrice) < 0.005;
+
+const stockLabel = stock === 'in-stock' ? 'In stock — ready to ship' : 'Made to order';
+const stockNote =
+  stock === 'in-stock'
+    ? 'Order quantity is confirmed against live stock at the time of enquiry. Send your target quantity and colour breakdown and we will confirm availability, the applicable tier rate and the delivery window.'
+    : 'This style is produced to order. Quantity is confirmed against factory capacity at the time of enquiry — send your target volume and we will confirm the run size, rate and schedule.';
+
+const uid = `tq-${(sku ?? 'x').toLowerCase().replace(/[^a-z0-9]/g, '')}`;
+
+// 分档单价不进 HTML（连 data-* 都不放）—— HTML 是公开可爬的。
+// 价格只能在登记后由 /api/tier-prices 取回，这里只输出档位结构。
+// 区间值本身可以公开（GEO 需要，且不泄露分档策略）。
+const skuKey = (sku ?? '').toUpperCase();
+---
+
+<div class="tier-quote" data-sku={sku} data-uid={uid} data-gated={singlePrice ? '0' : '1'}>
+  <div class="tier-head">
+    <h2>Wholesale Pricing by Order Quantity</h2>
+    <span class:list={['badge', stock === 'in-stock' ? 'badge-stock' : 'badge-mto']}>{stockLabel}</span>
+  </div>
+
+  <p class="tier-note">{stockNote}</p>
+
+  <table class="tier-table">
+    <thead>
+      <tr>
+        <th>Order quantity</th>
+        <th>Unit price (EXW)</th>
+        <th>Production</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        tiers.map((t, idx) => (
+          <tr>
+            <td class="qty">
+              {t.min}–{t.max === 1000 ? '1,000+' : Number(t.max) - 1} pcs
+            </td>
+            <td class="price">
+              {/* 真实单价由 JS 在登记成功后填入，HTML 里只有空壳 */}
+              <span class="val" data-tier-idx={idx} hidden></span>
+              {/*
+                登记前一律显示掩码，连区间也不放在表格里。
+                曾经在首行显示 minPrice–maxPrice，但当只有两档时该区间恰好等于
+                两档单价（如 M004 的 1.85–2.34＝第二档∶第一档），等于直接泄露。
+                区间已在上方 pricing-answer 正文里以文字形式公开，这里无需重复。
+              */}
+              {singlePrice ? (
+                /* 价格本身已经以区间文字公开，直接显示，不做无意义的登记 */
+                <span class="val publicly-shown"><span class="cur">USD</span> {fmt(t.price)}</span>
+              ) : (
+                <span class="mask" aria-hidden="true">••••</span>
+              )}
+            </td>
+            <td class="lead">{t.min >= 500 ? '20–30 days' : '30–45 days'}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+
+  <!-- 解锁条：登记前显示，登记/解锁后隐藏。单一价格款无需登记，整块不渲染 -->
+  {!singlePrice && (
+  <div class="gate-bar" data-gate-bar>
+    <div class="gate-copy">
+      <strong>Wholesale prices are shown to registered buyers.</strong>
+      <span>
+        Enter your business details — the full tier table unlocks instantly and we send the
+        quotation sheet to your inbox. One registration unlocks every style on this site.
+      </span>
+    </div>
+    <button type="button" class="btn-unlock" data-gate-open>
+      Reveal wholesale price
+    </button>
+  </div>
+  )}
+
+  <!-- 登记表单：默认隐藏 -->
+  <form class="gate-form" data-gate-form hidden novalidate>
+    <p class="gate-form-title">Unlock the tier prices for this style</p>
+    <div class="gate-grid">
+      <label>
+        <span>Company <em>*</em></span>
+        <input type="text" name="company" autocomplete="organization" required maxlength="200" />
+      </label>
+      <label>
+        <span>Your name <em>*</em></span>
+        <input type="text" name="name" autocomplete="name" required maxlength="120" />
+      </label>
+      <label>
+        <span>Business email <em>*</em></span>
+        <input type="email" name="email" autocomplete="email" required maxlength="200" />
+      </label>
+      <label>
+        <span>Phone / WhatsApp <em>*</em></span>
+        <input
+          type="tel"
+          name="phone"
+          autocomplete="tel"
+          required
+          maxlength="60"
+          placeholder="+49 170 1234567"
+        />
+      </label>
+      <label>
+        <span>Country / market <em>*</em></span>
+        <input type="text" name="market" autocomplete="country-name" required maxlength="100" />
+      </label>
+      <label class="wide">
+        <span>Planned order quantity</span>
+        <select name="quantity">
+          <option value="30-100 pcs">30–100 pcs</option>
+          <option value="100-300 pcs">100–300 pcs</option>
+          <option value="300-500 pcs">300–500 pcs</option>
+          <option value="500-1,000 pcs" selected>500–1,000 pcs</option>
+          <option value="1,000+ pcs">1,000+ pcs</option>
+          <option value="Not sure yet">Not sure yet</option>
+        </select>
+      </label>
+    </div>
+    <!-- honeypot: 机器人会填，真人看不到 -->
+    <div class="hp" aria-hidden="true">
+      <label>Website<input type="text" name="_hp" tabindex="-1" autocomplete="off" /></label>
+    </div>
+    <input type="hidden" name="_t" value="0" />
+    <input type="hidden" name="category" value="" data-gate-category />
+    <input type="hidden" name="message" value="" data-gate-message />
+    <input type="hidden" name="source" value="AI / ChatGPT" data-gate-source />
+    <input type="hidden" name="payment_method" value="Not Sure Yet" />
+    <input type="hidden" name="ref_landing" value="" data-gate-landing />
+    <input type="hidden" name="ref_referrer" value="" data-gate-referrer />
+    <input type="hidden" name="ref_utm" value="" data-gate-utm />
+
+    <div class="gate-actions">
+      <button type="submit" class="btn-submit">Show prices</button>
+      <span class="gate-privacy">No spam. Your details are used only to send this quotation.</span>
+    </div>
+    <p class="gate-error" data-gate-error hidden></p>
+  </form>
+
+  <div class="tier-foot">
+    <p class="tier-inc">
+      Price includes bulk production only. Labelling, polybags, hangtags and cartons quoted
+      separately. Payment: 30% deposit, balance against B/L copy.
+    </p>
+    <p class="tier-cta" data-gate-foot hidden>
+      Prices unlocked for <span data-gate-who>your account</span>.
+      <a href="/contact/">Send this style to our team</a> for a formal quotation.
+    </p>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var KEY = 'cz_price_unlock_v1';
+
+    function readUnlock() {
+      try {
+        var raw = localStorage.getItem(KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) {
+        return null;
+      }
+    }
+    function writeUnlock(data) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(data));
+      } catch (e) {
+        /* localStorage 不可用（隐私模式）时退化为仅当前页解锁 */
+      }
+    }
+
+    function unlockBox(box, who, table) {
+      box.setAttribute('data-gated', '0');
+      var bar = box.querySelector('[data-gate-bar]');
+      var form = box.querySelector('[data-gate-form]');
+      var foot = box.querySelector('[data-gate-foot]');
+      var whoEl = box.querySelector('[data-gate-who]');
+      if (bar) bar.hidden = true;
+      if (form) form.hidden = true;
+      if (foot) foot.hidden = false;
+      if (who && whoEl) whoEl.textContent = who;
+
+      // 从接口取回的分档单价表填入空壳（HTML 里本来没数字）
+      if (!table) return;
+      var sku = (box.getAttribute('data-sku') || '').toUpperCase();
+      var rec = table[sku];
+      if (!rec || !rec.tiers) return;
+      var vals = box.querySelectorAll('.val[data-tier-idx]');
+      var i = 0;
+      // 组件已把相邻同价档位合并，这里按合并后的顺序重现同样的合并结果
+      var merged = [];
+      rec.tiers.forEach(function (t) {
+        var last = merged[merged.length - 1];
+        if (last && Math.abs(last.price - t.price) < 0.005) return;
+        merged.push(t);
+      });
+      vals.forEach(function (el) {
+        var t = merged[i++];
+        if (!t) return;
+        el.innerHTML = '<span class="cur">USD</span> ' + Number(t.price).toFixed(2);
+        el.hidden = false;
+      });
+    }
+
+    // 登记一次，全站复用：把价格表缓存进 sessionStorage，翻页不用再请求
+    var TABLE_KEY = 'cz_tier_table_v1';
+    function cachedTable() {
+      try {
+        var raw = sessionStorage.getItem(TABLE_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (e) {
+        return null;
+      }
+    }
+    function cacheTable(t) {
+      try {
+        sessionStorage.setItem(TABLE_KEY, JSON.stringify(t));
+      } catch (e) {
+        /* 忽略 */
+      }
+    }
+    function fetchTable(email) {
+      return fetch('/api/tier-prices?email=' + encodeURIComponent(email), {
+        headers: { Accept: 'application/json' },
+      })
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (j) {
+          if (j && j.ok && j.table) {
+            cacheTable(j.table);
+            return j.table;
+          }
+          throw new Error((j && j.error) || 'no_table');
+        });
+    }
+
+    function initBox(box) {
+      var uid = box.getAttribute('data-uid');
+      var bar = box.querySelector('[data-gate-bar]');
+      var openBtn = box.querySelector('[data-gate-open]');
+      var form = box.querySelector('[data-gate-form]');
+      var errEl = box.querySelector('[data-gate-error]');
+
+      // 单一价格款在服务端已标记为解锁（data-gated="0"），价格已直接写在表格里。
+      // 这里不要再跑任何解锁逻辑，否则会把公开的价格重新盖住。
+      if (box.getAttribute('data-gated') === '0' && !bar) return;
+
+      var stored = readUnlock();
+      if (stored && stored.email) {
+        var cached = cachedTable();
+        if (cached) {
+          unlockBox(box, stored.company || stored.email, cached);
+        } else {
+          fetchTable(stored.email)
+            .then(function (table) {
+              document
+                .querySelectorAll('.tier-quote[data-gated="1"]')
+                .forEach(function (b) {
+                  unlockBox(b, stored.company || stored.email, table);
+                });
+            })
+            .catch(function () {
+              /* 取价失败则保留遮罩，客户仍可走询盘路径 */
+            });
+        }
+        return;
+      }
+
+      // 记录填写时长，供后端反机器人判断
+      var tEl = form ? form.querySelector('input[name="_t"]') : null;
+      var t0 = Date.now();
+      if (tEl) {
+        var stamp = function () {
+          tEl.value = String(Date.now() - t0);
+        };
+        stamp();
+        ['input', 'change'].forEach(function (ev) {
+          form.addEventListener(ev, stamp, { passive: true });
+        });
+      }
+
+      if (openBtn && form && bar) {
+        openBtn.addEventListener('click', function () {
+          form.hidden = false;
+          bar.hidden = true;
+          var first = form.querySelector('input[name="company"]');
+          if (first) first.focus({ preventScroll: true });
+          form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+      }
+
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (errEl) errEl.hidden = true;
+
+        var data = new FormData(form);
+        var company = String(data.get('company') || '').trim();
+        var name = String(data.get('name') || '').trim();
+        var email = String(data.get('email') || '').trim();
+        var phone = String(data.get('phone') || '').trim();
+        var market = String(data.get('market') || '').trim();
+        var quantity = String(data.get('quantity') || '').trim();
+
+        var missing = [];
+        if (!company) missing.push('company');
+        if (!name) missing.push('name');
+        if (!email) missing.push('email');
+        if (!phone) missing.push('phone');
+        if (!market) missing.push('market');
+        if (missing.length) {
+          if (errEl) {
+            errEl.textContent = 'Please fill in company, name, email, phone and country.';
+            errEl.hidden = false;
+          }
+          return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) {
+          if (errEl) {
+            errEl.textContent = 'That email address does not look right.';
+            errEl.hidden = false;
+          }
+          return;
+        }
+
+        var sku = box.getAttribute('data-sku') || '';
+        var category = '';
+        var crumb = document.querySelectorAll('.breadcrumb a');
+        if (crumb.length >= 3) category = crumb[crumb.length - 1].textContent.trim();
+
+        var catEl = form.querySelector('[data-gate-category]');
+        if (catEl) catEl.value = category;
+        var msgEl = form.querySelector('[data-gate-message]');
+        if (msgEl) {
+          msgEl.value =
+            'Price access request for style ' +
+            sku +
+            (quantity ? ' — planned quantity ' + quantity : '') +
+            '. Please confirm the applicable tier rate, stock status and lead time.';
+        }
+        var landEl = form.querySelector('[data-gate-landing]');
+        if (landEl) landEl.value = location.href;
+        var refEl = form.querySelector('[data-gate-referrer]');
+        if (refEl) refEl.value = document.referrer || 'direct';
+        var utmEl = form.querySelector('[data-gate-utm]');
+        if (utmEl) {
+          var p = new URLSearchParams(location.search);
+          var found = [];
+          [
+            'utm_source',
+            'utm_medium',
+            'utm_campaign',
+            'utm_term',
+            'utm_content',
+            'gclid',
+            'fbclid',
+            'msclkid',
+          ].forEach(function (k) {
+            var v = p.get(k);
+            if (v) found.push(k + '=' + v);
+          });
+          utmEl.value = found.length ? found.join(' | ') : 'none';
+        }
+        // 补充品类到 message 之外，也把 quantity 覆盖成表单选择值
+        data.set('category', category);
+        var msgEl2 = form.querySelector('[data-gate-message]');
+        if (msgEl2) data.set('message', msgEl2.value);
+        var landEl2 = form.querySelector('[data-gate-landing]');
+        if (landEl2) data.set('ref_landing', landEl2.value);
+        var refEl2 = form.querySelector('[data-gate-referrer]');
+        if (refEl2) data.set('ref_referrer', refEl2.value);
+        var utmEl2 = form.querySelector('[data-gate-utm]');
+        if (utmEl2) data.set('ref_utm', utmEl2.value);
+
+        var btn = form.querySelector('button[type="submit"]');
+        var label = btn ? btn.innerHTML : '';
+        if (btn) {
+          btn.disabled = true;
+          btn.innerHTML = 'Unlocking…';
+        }
+
+        fetch('/api/inquiry', {
+          method: 'POST',
+          body: data,
+          headers: { Accept: 'application/json' },
+        })
+          .then(function (res) {
+            return res.json().catch(function () {
+              return {};
+            });
+          })
+          .then(function (json) {
+            if (json && json.ok) {
+              writeUnlock({ email: email, company: company, at: Date.now() });
+              // 取回价格表，然后解锁全站所有报价表
+              return fetchTable(email).then(function (table) {
+                document.querySelectorAll('.tier-quote[data-gated="1"]').forEach(function (b) {
+                  unlockBox(b, company, table);
+                });
+                unlockBox(box, company, table);
+              });
+            } else {
+              throw new Error((json && json.error) || 'failed');
+            }
+          })
+          .catch(function () {
+            if (errEl) {
+              errEl.textContent =
+                'We could not unlock the prices just now. Please try again, or message us on WhatsApp.';
+              errEl.hidden = false;
+            }
+            if (btn) {
+              btn.disabled = false;
+              btn.innerHTML = label;
+            }
+          });
+      });
+    }
+
+    function boot() {
+      document.querySelectorAll('.tier-quote').forEach(initBox);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', boot);
+    } else {
+      boot();
+    }
+  })();
+</script>
+
+<style>
+  .tier-quote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid #e5e1da;
+    border-radius: 0.5rem;
+    background: #fdfcfa;
+  }
+  .tier-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  .tier-head h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .badge-stock {
+    background: #e6f4ea;
+    color: #1e6b34;
+  }
+  .badge-mto {
+    background: #fdf0e3;
+    color: #8a5314;
+  }
+  .tier-note {
+    font-size: 0.875rem;
+    color: #55504a;
+    margin: 0 0 1rem;
+  }
+  .tier-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .tier-table th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #77716a;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e5e1da;
+  }
+  .tier-table td {
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid #f0ece6;
+  }
+  .tier-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  .qty {
+    font-variant-numeric: tabular-nums;
+  }
+  .price {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    position: relative;
+    min-width: 8rem;
+  }
+  .cur {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #77716a;
+  }
+  .mask {
+    color: #b4ada3;
+    letter-spacing: 0.02em;
+  }
+  .tier-quote[data-gated='0'] .mask {
+    display: none;
+  }
+  .tier-quote[data-gated='1'] .val {
+    display: none;
+  }
+  .val[hidden] {
+    display: none !important;
+  }
+  .lead {
+    color: #55504a;
+    font-size: 0.85rem;
+  }
+
+  .gate-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+    padding: 1rem;
+    border: 1px dashed #d8b98c;
+    border-radius: 0.375rem;
+    background: #fffaf2;
+  }
+  .gate-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-width: 34rem;
+    font-size: 0.85rem;
+    color: #6b4a1e;
+  }
+  .gate-copy strong {
+    color: #4a2f0d;
+  }
+  .btn-unlock {
+    background: #8a5314;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn-unlock:hover {
+    background: #6f410f;
+  }
+
+  .gate-form {
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    border: 1px solid #e5e1da;
+    border-radius: 0.5rem;
+    background: #fff;
+  }
+  /* 显式保证 hidden 生效，避免其他 display 声明把它顶掉 */
+  .gate-form[hidden],
+  .gate-bar[hidden],
+  .gate-foot[hidden],
+  .gate-error[hidden] {
+    display: none !important;
+  }
+  .gate-form-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    color: #1f2a44;
+  }
+  .gate-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.85rem;
+  }
+  .gate-grid label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    color: #55504a;
+  }
+  .gate-grid label.wide {
+    grid-column: 1 / -1;
+  }
+  .gate-grid em {
+    color: #d9736b;
+    font-style: normal;
+  }
+  .gate-grid input,
+  .gate-grid select {
+    border: 1px solid #e0dbd3;
+    border-radius: 0.375rem;
+    padding: 0.6rem 0.7rem;
+    font-size: 0.9rem;
+    color: #1f2a44;
+    background: #fff;
+  }
+  .gate-grid input:focus,
+  .gate-grid select:focus {
+    outline: none;
+    border-color: #8a5314;
+  }
+  .hp {
+    position: absolute;
+    left: -9999px;
+    height: 0;
+    overflow: hidden;
+  }
+  .gate-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  .btn-submit {
+    background: #1f2a44;
+    color: #fff;
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .btn-submit:hover {
+    background: #16203a;
+  }
+  .btn-submit:disabled {
+    opacity: 0.65;
+    cursor: default;
+  }
+  .gate-privacy {
+    font-size: 0.75rem;
+    color: #8b857c;
+  }
+  .gate-error {
+    margin: 0.75rem 0 0;
+    font-size: 0.82rem;
+    color: #b23b32;
+  }
+
+  .tier-foot {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #e5e1da;
+  }
+  .tier-inc {
+    font-size: 0.78rem;
+    color: #77716a;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .tier-cta {
+    margin: 0.6rem 0 0;
+    font-size: 0.875rem;
+  }
+  .tier-cta a {
+    color: #8a5314;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 640px) {
+    .gate-grid {
+      grid-template-columns: 1fr;
+    }
+    .gate-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .btn-unlock {
+      width: 100%;
+    }
+  }
+</style>

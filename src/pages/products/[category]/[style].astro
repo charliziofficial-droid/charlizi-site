@@ -5,6 +5,9 @@
 import FactoryLayout from '../../../layouts/FactoryLayout.astro';
 import { styleContent, type StyleContent } from '../../../data/product-style-content';
 import { styleExtra } from '../../../data/product-style-content-extra';
+import { styleDDrive2 } from '../../../data/product-style-content-d-drive-2';
+import { getPricing } from '../../../data/product-pricing';
+import TierPriceTable from '../../../components/products/TierPriceTable.astro';
 import { applyTitleOverrides } from '../../../data/style-titles-override';
 import { FACTS, factSummary } from '../../../data/factory-facts';
 import { CONTACT } from '../../../data/contact';
@@ -12,8 +15,8 @@ import { CONTACT } from '../../../data/contact';
 // 注意：Astro 会把 getStaticPaths 提升到模块级执行，它无法访问同文件里的
 // 任何模块级变量，所以这里的 import 必须直接在函数体内部引用。
 export function getStaticPaths() {
-  const merged: Record<string, StyleContent> = { ...styleContent, ...styleExtra };
-  // 标题覆盖层：批发意图为主 + 零售词为辅 + 款号收尾（gen_titles_v2.py 产出）
+  const merged: Record<string, StyleContent> = { ...styleContent, ...styleExtra, ...styleDDrive2 };
+  // ?????????? + ???? + ?????gen_titles_v2.py / gen_titles_extra.py ???
   const titled = applyTitleOverrides(merged);
   return Object.values(titled).map((s) => ({
     params: { category: s.category, style: s.slug },
@@ -26,13 +29,72 @@ const front = s.images.find((i) => i.view === 'front') ?? s.images[0];
 const backs = s.images.filter((i) => i !== front);
 const related = s.related;
 
+// SKU 从 specs 的 "Style No." 行取；没有则回退到 slug 大写
+const styleNo =
+  s.specs?.find((x: { label: string; value: string }) => /style\s*no/i.test(x.label))?.value ?? null;
+
 const canonical = `https://charlizi.com/products/${s.category}/${s.slug}/`;
+
+// 报价表价格（EXW 阶梯价）。source=reference 表示该 SKU 未录入报价表，按同款参考定价。
+const price = getPricing(s.category, s.slug);
+
+// 起订量：以实际库存/产能沟通为准，不在页面上写死数字
+const moqText = price
+  ? price.stock === 'in-stock'
+    ? 'Confirmed per enquiry against live stock'
+    : 'Confirmed per enquiry (produced to order)'
+  : 'Confirmed per enquiry';
+
+// 价格区间（只露区间，不露分档明细）。这是 GEO 的关键燃料：
+// AI 摘要需要能抽出一句带数字的答案，"USD 1.85-2.34 per piece" 就够用，
+// 但分档单价是报价表核心资产，必须登记后才给。
+const tierPrices = (price?.tiers ?? [])
+  .map((t) => t.price)
+  .filter((p) => typeof p === 'number' && p > 0);
+const priceLow = tierPrices.length ? Math.min(...tierPrices) : 0;
+const priceHigh = tierPrices.length ? Math.max(...tierPrices) : 0;
+
+// 所有档位同价时区间没有意义（USD 1.85–1.85 看着像笔误），改成单一价。
+// 这类款的价格在表格里直接公开，不需要登记。
+const hasPrice = tierPrices.length > 0;
+const isFlatPrice = hasPrice && Math.abs(priceHigh - priceLow) < 0.005;
+const priceRangeText = !hasPrice
+  ? null
+  : isFlatPrice
+    ? `USD ${priceLow.toFixed(2)}`
+    : `USD ${priceLow.toFixed(2)}–${priceHigh.toFixed(2)}`;
+const minQty = price?.tiers?.length
+  ? Math.min(...price.tiers.map((t: { min: number }) => t.min))
+  : (price?.moq ?? 0);
+const maxQty = price?.tiers?.length
+  ? Math.max(...price.tiers.map((t: { max: number }) => t.max))
+  : 1000;
+
+// GEO：一句可被整句摘走的定价事实（放在正文，跟着 specs 一起被模型读到）
+// 单一价款的区间描述要去掉，否则会和「已公开」的事实矛盾。
+const pricingAnswer = !priceRangeText
+  ? null
+  : isFlatPrice
+    ? `Wholesale pricing for this style is ${priceRangeText} per piece EXW across the order range from ${minQty} to ${maxQty}+ pieces; the same rate applies at every quantity tier. Formal quotations are issued within 24 hours of enquiry.`
+    : `Wholesale pricing for this style runs ${priceRangeText} per piece EXW, scaling with order quantity from ${minQty} to ${maxQty}+ pieces. The full tier table is released to registered buyers on the page; formal quotations are issued within 24 hours of enquiry.`;
 
 const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: s.baseTitle,
   description: s.seoDescription,
+  sku: styleNo ?? undefined,
+  mpn: styleNo ?? undefined,
+  material: price?.material || s.specs?.find((x: { label: string; value: string }) => /fabric/i.test(x.label))?.value || undefined,
+  color:
+    price?.colors?.length
+      ? price.colors.join(', ')
+      : s.specs?.find((x: { label: string; value: string }) => /^colou?r$/i.test(x.label))?.value
+          ?.replace(/\s*\(Pantone[^)]*\)/i, '') || undefined,
+  size:
+    price?.sizes?.length
+      ? price.sizes.join(', ')
+      : s.specs?.find((x: { label: string; value: string }) => /size/i.test(x.label))?.value || undefined,
   image: s.images.map((i) => `https://charlizi.com${i.file}`),
   brand: { '@type': 'Brand', name: 'Charlizi' },
   manufacturer: {
@@ -47,15 +109,34 @@ const productSchema = {
     },
   },
   category: s.categoryName,
-  // 【2026-11-23 修复】原来声明了 offers 却不给 price，且写死 availability: InStock。
-  //   Google Product 结构化数据规范要求 Offer 必须有 price，空 offers 属于无效标记，
-  //   会拉低富媒体摘要通过率；写死 InStock 而实际无库存数据也属于误导性声明。
-  //   价格/库存属于受保护数据（未登录不可见），静态页本就不应泄露。
-  //   正确做法：不声明 offers，改为声明 manufacturer + 行业属性；
-  //   B2B 批发场景下 Product 不带 Offer 是合规且常见的（价格需询盘）。
-  isRelatedTo: {
-    '@type': 'ProductModel',
-    name: s.baseTitle,
+  // ???????(?-?)??????? ?? ????????????????
+  // ?? B2B ??????? SEO/GEO ??????AggregateOffer ?????
+  // ???????????????? HTML ???????
+  // 只保留价格区间，不含分档单价 —— 分档单价需登记后在前端解锁。
+  offers: priceRangeText
+    ? {
+        '@type': 'AggregateOffer',
+        priceCurrency: 'USD',
+        lowPrice: priceLow.toFixed(2),
+        highPrice: priceHigh.toFixed(2),
+        offerCount: String(price?.tiers?.length || 1),
+        availability:
+          price?.stock === 'in-stock'
+            ? 'https://schema.org/InStock'
+            : 'https://schema.org/PreOrder',
+        eligibleQuantity: {
+          '@type': 'QuantitativeValue',
+          minValue: minQty,
+          maxValue: maxQty,
+          unitCode: 'C62',
+        },
+        seller: { '@type': 'Organization', name: CONTACT.company },
+      }
+    : undefined,
+  hasMerchantReturnPolicy: {
+    '@type': 'MerchantReturnPolicy',
+    returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+    merchantReturnDays: 30,
   },
   additionalProperty: [
     { '@type': 'PropertyValue', name: 'Minimum Order Quantity', value: FACTS.ordering.moq },
@@ -91,6 +172,64 @@ const faqSchema = {
   })),
 };
 ---
+
+<style>
+  .price-teaser {
+    padding: 1rem 1.1rem;
+    border: 1px solid #e3ddd3;
+    border-radius: 0.5rem;
+    background: #fbf9f5;
+  }
+  .price-teaser-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .price-teaser-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #8b857c;
+  }
+  .price-teaser-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1f2a44;
+    font-variant-numeric: tabular-nums;
+  }
+  .price-teaser-value em {
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #8b857c;
+  }
+  .price-teaser-note {
+    margin: 0.5rem 0 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #6f6a62;
+  }
+  .price-teaser-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #8a5314;
+    text-decoration: underline;
+  }
+  .pricing-answer {
+    margin: 1.25rem 0 0;
+    max-width: 42rem;
+    padding: 0.85rem 1rem;
+    border-left: 3px solid #1f2a44;
+    background: #f6f5f2;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #45403a;
+  }
+</style>
 
 <FactoryLayout title={s.seoTitle} description={s.seoDescription} canonical={canonical}>
   <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
@@ -155,35 +294,81 @@ const faqSchema = {
           </a>
         </div>
         <p class="text-xs text-stone mt-4">
-          Reply within 24 hours · MOQ {s.specs.find((x) => x.label === 'MOQ')?.value ?? '200 pcs'}
+          Reply within 24 hours · MOQ {moqText}
         </p>
+
+        {priceRangeText && (
+          <div class="price-teaser mt-5">
+            <div class="price-teaser-row">
+              <span class="price-teaser-label">
+                {isFlatPrice ? 'Wholesale price' : 'Wholesale price range'}
+              </span>
+              <span class="price-teaser-value">{priceRangeText}<em> / pc EXW</em></span>
+            </div>
+            <p class="price-teaser-note">
+              {
+                isFlatPrice
+                  ? 'The same rate applies at every order quantity — no registration needed to see it.'
+                  : 'Full tier pricing by order quantity is released to registered buyers below. Registration takes 20 seconds and unlocks every style on this site.'
+              }
+            </p>
+            <a href="#tier-pricing" class="price-teaser-link">See pricing by quantity →</a>
+          </div>
+        )}
       </div>
     </div>
 
     <!-- Specifications -->
-    <section class="mb-16">
+    <section class="mb-16" id="tier-pricing">
       <span class="section-label">Specifications</span>
       <h2 class="section-title text-2xl md:text-3xl">{s.baseTitle} Details</h2>
       <div class="card p-6 mt-8 rounded-lg max-w-2xl">
         <dl class="divide-y divide-gray-200">
-          {s.specs.map((sp) => (
+          {price && (
+            <div class="flex justify-between gap-6 py-3">
+              <dt class="text-sm text-stone">Availability</dt>
+              <dd class="text-sm font-medium text-navy text-right">
+                {price.stock === 'in-stock' ? 'In stock' : 'Made to order'}
+              </dd>
+            </div>
+          )}
+          {s.specs
+            .filter((sp) => sp.label !== 'MOQ' && sp.label !== 'Unit price')
+            .map((sp) => (
             <div class="flex justify-between gap-6 py-3">
               <dt class="text-sm text-stone">{sp.label}</dt>
               <dd class="text-sm font-medium text-navy text-right">{sp.value}</dd>
             </div>
           ))}
+          {price && (
+            <div class="flex justify-between gap-6 py-3">
+              <dt class="text-sm text-stone">MOQ</dt>
+              <dd class="text-sm font-medium text-navy text-right">{moqText}</dd>
+            </div>
+          )}
         </dl>
       </div>
-    </section>
 
-    <!-- Use cases -->
+      {price && (
+        <>
+          {pricingAnswer && <p class="pricing-answer">{pricingAnswer}</p>}
+          <TierPriceTable
+            tiers={price.tiers}
+            moq={price.moq}
+            stock={price.stock}
+            sku={price.sku}
+            productName={s.baseTitle}
+          />
+        </>
+      )}
+    </section>
     <section class="bg-cream rounded-lg p-8 mb-16">
       <span class="section-label">Applications</span>
       <h2 class="section-title text-2xl md:text-3xl mb-6">Where This Style Sells</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {s.useCases.map((u) => (
           <div class="bg-white rounded-lg p-5 border border-gray-200">
-            <p class="text-sm font-medium text-navy">{u}</p>
+            <h3 class="text-sm font-medium text-navy">{u}</h3>
           </div>
         ))}
       </div>
@@ -253,9 +438,11 @@ const faqSchema = {
       <span class="section-label">FAQ</span>
       <h2 class="section-title text-2xl md:text-3xl">Ordering &amp; Customization</h2>
       <div class="mt-8 space-y-3 max-w-3xl">
-        {s.faq.map((f) => (
-          <details class="card p-5 rounded-lg">
-            <summary class="font-semibold text-navy cursor-pointer">{f.q}</summary>
+        {s.faq.map((f, idx) => (
+          <details class="card p-5 rounded-lg" open={idx === 0}>
+            <summary class="cursor-pointer">
+              <h3 class="font-semibold text-navy inline">{f.q}</h3>
+            </summary>
             <p class="text-sm text-stone mt-3 leading-relaxed">{f.a}</p>
           </details>
         ))}
